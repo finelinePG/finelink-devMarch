@@ -1,0 +1,664 @@
+<layout>
+	<name>1_column_full</name>
+	<header>header</header>
+	<footer>footer</footer>
+
+	<!--  Blocks  -->
+	<block>
+		<name>block10</name>
+		<block_cols><![CDATA[]]></block_cols>
+		<block_class><![CDATA[]]></block_class>
+		<custom_class><![CDATA[]]></custom_class>
+		<background><![CDATA[]]></background>
+		<background_image><![CDATA[]]></background_image>
+		<background_repeat>0</background_repeat>
+		<background_cover>0</background_cover>
+		<parallax>0</parallax>
+		<fullwidth>0</fullwidth>
+		<padding_top><![CDATA[]]></padding_top>
+		<padding_bottom><![CDATA[]]></padding_bottom>
+		<block_position>0</block_position>
+	</block>
+	
+	<block>
+		<name>block11</name>
+		<block_cols>12</block_cols>
+		<block_class><![CDATA[]]></block_class>
+		<custom_class><![CDATA[]]></custom_class>
+		<background><![CDATA[#f1f1f1]]></background>
+		<background_image><![CDATA[]]></background_image>
+		<background_repeat>0</background_repeat>
+		<background_cover>0</background_cover>
+		<parallax>0</parallax>
+		<fullwidth>0</fullwidth>
+		<padding_top>28</padding_top>
+		<padding_bottom>6</padding_bottom>
+		<block_position>2</block_position>
+	</block>
+	
+	<block>
+		<name>block12</name>
+		<block_cols><![CDATA[12]]></block_cols>
+		<block_class><![CDATA[]]></block_class>
+		<custom_class><![CDATA[]]></custom_class>
+		<background><![CDATA[#fff]]></background>
+		<background_image><![CDATA[]]></background_image>
+		<background_repeat>0</background_repeat>
+		<background_cover>0</background_cover>
+		<parallax>0</parallax>
+		<fullwidth>0</fullwidth>
+		<padding_top>20</padding_top>
+		<padding_bottom>20</padding_bottom>
+		<block_position>10</block_position>
+	</block>
+	
+	<block>
+		<name>block13</name>
+		<block_cols><![CDATA[3,3,3,3]]></block_cols>
+		<block_class><![CDATA[]]></block_class>
+		<custom_class><![CDATA[default-store]]></custom_class>
+		<background><![CDATA[#fff]]></background>
+		<background_image><![CDATA[]]></background_image>
+		<background_repeat>0</background_repeat>
+		<background_cover>0</background_cover>
+		<parallax>0</parallax>
+		<fullwidth>0</fullwidth>
+		<padding_top><![CDATA[20]]></padding_top>
+		<padding_bottom><![CDATA[35]]></padding_bottom>
+		<block_position>11</block_position>
+	</block>
+	
+	<block>
+		<name>block15</name>
+		<block_cols><![CDATA[12]]></block_cols>
+		<block_class><![CDATA[]]></block_class>
+		<custom_class><![CDATA[default-store]]></custom_class>
+		<background><![CDATA[#fff]]></background>
+		<background_image><![CDATA[]]></background_image>
+		<background_repeat>0</background_repeat>
+		<background_cover>0</background_cover>
+		<parallax>0</parallax>
+		<fullwidth>0</fullwidth>
+		<padding_top><![CDATA[]]></padding_top>
+		<padding_bottom>40</padding_bottom>
+		<block_position>12</block_position>
+	</block>
+	
+	<block>
+		<name>block23</name>
+		<block_cols><![CDATA[12]]></block_cols>
+		<block_class><![CDATA[]]></block_class>
+		<custom_class><![CDATA[default-store]]></custom_class>
+		<background><![CDATA[#fff]]></background>
+		<background_image><![CDATA[]]></background_image>
+		<background_repeat>0</background_repeat>
+		<background_cover>0</background_cover>
+		<parallax>0</parallax>
+		<fullwidth>0</fullwidth>
+		<padding_top><![CDATA[33]]></padding_top>
+		<padding_bottom>30</padding_bottom>
+		<block_position>1</block_position>
+	</block>
+	
+	<block>
+		<name>block24</name>
+		<block_cols>12</block_cols>
+		<block_class><![CDATA[]]></block_class>
+		<custom_class><![CDATA[default-store shoes]]></custom_class>
+		<background><![CDATA[#f1f1f1]]></background>
+		<background_image><![CDATA[]]></background_image>
+		<background_repeat>0</background_repeat>
+		<background_cover>0</background_cover>
+		<parallax>0</parallax>
+		<fullwidth>0</fullwidth>
+		<padding_top><![CDATA[]]></padding_top>
+		<padding_bottom><![CDATA[26]]></padding_bottom>
+		<block_position>3</block_position>
+	</block>
+	
+	<block>
+		<name>block26</name>
+		<block_cols>12</block_cols>
+		<block_class><![CDATA[]]></block_class>
+		<custom_class><![CDATA[default-store electronics]]></custom_class>
+		<background><![CDATA[#f1f1f1]]></background>
+		<background_image><![CDATA[]]></background_image>
+		<background_repeat>0</background_repeat>
+		<background_cover>0</background_cover>
+		<parallax>0</parallax>
+		<fullwidth>0</fullwidth>
+		<padding_top><![CDATA[]]></padding_top>
+		<padding_bottom><![CDATA[26]]></padding_bottom>
+		<block_position>6</block_position>
+	</block>
+	
+	<block>
+		<name>block27</name>
+		<block_cols>12</block_cols>
+		<block_class><![CDATA[]]></block_class>
+		<custom_class><![CDATA[default-store furnitures]]></custom_class>
+		<background><![CDATA[#f1f1f1]]></background>
+		<background_image><![CDATA[]]></background_image>
+		<background_repeat>0</background_repeat>
+		<background_cover>0</background_cover>
+		<parallax>0</parallax>
+		<fullwidth>0</fullwidth>
+		<padding_top><![CDATA[]]></padding_top>
+		<padding_bottom><![CDATA[25]]></padding_bottom>
+		<block_position>4</block_position>
+	</block>
+	
+	<block>
+		<name>block28</name>
+		<block_cols><![CDATA[12]]></block_cols>
+		<block_class><![CDATA[]]></block_class>
+		<custom_class><![CDATA[default-store health]]></custom_class>
+		<background><![CDATA[#f1f1f1]]></background>
+		<background_image><![CDATA[]]></background_image>
+		<background_repeat>0</background_repeat>
+		<background_cover>0</background_cover>
+		<parallax>0</parallax>
+		<fullwidth>0</fullwidth>
+		<padding_top><![CDATA[3]]></padding_top>
+		<padding_bottom><![CDATA[26]]></padding_bottom>
+		<block_position>5</block_position>
+	</block>
+	
+	<block>
+		<name>block29</name>
+		<block_cols><![CDATA[6,6]]></block_cols>
+		<block_class><![CDATA[]]></block_class>
+		<custom_class><![CDATA[toys sport]]></custom_class>
+		<background><![CDATA[#f1f1f1]]></background>
+		<background_image><![CDATA[]]></background_image>
+		<background_repeat>0</background_repeat>
+		<background_cover>0</background_cover>
+		<parallax>0</parallax>
+		<fullwidth>0</fullwidth>
+		<padding_top><![CDATA[]]></padding_top>
+		<padding_bottom><![CDATA[40]]></padding_bottom>
+		<block_position>7</block_position>
+	</block>
+	
+	<block>
+		<name>block30</name>
+		<block_cols><![CDATA[12]]></block_cols>
+		<block_class><![CDATA[]]></block_class>
+		<custom_class><![CDATA[]]></custom_class>
+		<background><![CDATA[#fff]]></background>
+		<background_image><![CDATA[]]></background_image>
+		<background_repeat>0</background_repeat>
+		<background_cover>0</background_cover>
+		<parallax>0</parallax>
+		<fullwidth>0</fullwidth>
+		<padding_top><![CDATA[26]]></padding_top>
+		<padding_bottom><![CDATA[20]]></padding_bottom>
+		<block_position>9</block_position>
+	</block>
+	
+	<block>
+		<name>block38</name>
+		<block_cols><![CDATA[]]></block_cols>
+		<block_class><![CDATA[]]></block_class>
+		<custom_class><![CDATA[]]></custom_class>
+		<background><![CDATA[]]></background>
+		<background_image><![CDATA[]]></background_image>
+		<background_repeat>0</background_repeat>
+		<background_cover>0</background_cover>
+		<parallax>0</parallax>
+		<fullwidth>0</fullwidth>
+		<padding_top><![CDATA[]]></padding_top>
+		<padding_bottom><![CDATA[]]></padding_bottom>
+		<block_position>8</block_position>
+	</block>
+
+	<!--  Childs  -->
+	
+	<child>
+		<block_name>block13-1</block_name>
+		<block_content><![CDATA[]]></block_content>
+		<static_block_title><![CDATA[Cetus Shipping Static Block 2]]></static_block_title>
+		<static_block_identifier><![CDATA[cetus_shipping_static_block2]]></static_block_identifier>
+		<static_block_content><![CDATA[<div class="policy">
+<div class="icon-policy"><img src="{{media url="wysiwyg/icon-footer-2.png"}}" alt="" /></div>
+<div class="text-policy">
+<h2>QUICK DELIVERY</h2>
+<p>it's only 24 hours</p>
+</div>
+</div>]]></static_block_content>
+		<type>static</type>
+		<position>1</position>
+		<setting><![CDATA[{"custom_class":"col-sm-6 col-xs-12","animation":"","animation_delay":""}]]></setting>
+		<col>12</col>
+		<custom_class><![CDATA[]]></custom_class>
+	</child>
+	
+	<child>
+		<block_name>block13-2</block_name>
+		<block_content><![CDATA[]]></block_content>
+		<static_block_title><![CDATA[Cetus Shipping Static Block 3]]></static_block_title>
+		<static_block_identifier><![CDATA[cetus_shipping_static_block3]]></static_block_identifier>
+		<static_block_content><![CDATA[<div class="policy">
+<div class="icon-policy"><img src="{{media url="wysiwyg/icon-footer-3.png"}}" alt="" /></div>
+<div class="text-policy">
+<h2>123-456-7890</h2>
+<p>8.00 am - 6.00 pm</p>
+</div>
+</div>]]></static_block_content>
+		<type>static</type>
+		<position>1</position>
+		<setting><![CDATA[{"custom_class":"col-sm-6 col-xs-12","animation":"","animation_delay":""}]]></setting>
+		<col>12</col>
+		<custom_class><![CDATA[]]></custom_class>
+	</child>
+	
+	<child>
+		<block_name>block13-3</block_name>
+		<block_content><![CDATA[]]></block_content>
+		<static_block_title><![CDATA[Cetus Shipping Static Block 4]]></static_block_title>
+		<static_block_identifier><![CDATA[cetus_shipping_static_block4]]></static_block_identifier>
+		<static_block_content><![CDATA[<div class="policy policy-right">
+<div class="icon-policy"><img src="{{media url="wysiwyg/icon-footer-4.png"}}" alt="" /></div>
+<div class="text-policy">
+<h2>MONNEY BACK</h2>
+<p>guarantee 100%</p>
+</div>
+</div>]]></static_block_content>
+		<type>static</type>
+		<position>1</position>
+		<setting><![CDATA[{"custom_class":"col-sm-6 col-xs-12","animation":"","animation_delay":""}]]></setting>
+		<col>12</col>
+		<custom_class><![CDATA[]]></custom_class>
+	</child>
+	
+	<child>
+		<block_name>block13-0</block_name>
+		<block_content><![CDATA[]]></block_content>
+		<static_block_title><![CDATA[Cetus Shipping Static Block 1]]></static_block_title>
+		<static_block_identifier><![CDATA[cetus_shipping_static_block1]]></static_block_identifier>
+		<static_block_content><![CDATA[<div class="policy">
+<div class="icon-policy"><img src="{{media url="wysiwyg/icon-footer-1.png"}}" alt="" /></div>
+<div class="text-policy">
+<h2>FREE SHIPPING</h2>
+<p>over than $150</p>
+</div>
+</div>]]></static_block_content>
+		<type>static</type>
+		<position>4</position>
+		<setting><![CDATA[{"custom_class":"col-sm-6 col-xs-12","animation":"","animation_delay":""}]]></setting>
+		<col>12</col>
+		<custom_class><![CDATA[]]></custom_class>
+	</child>
+	
+	<child>
+		<block_name>block13-0</block_name>
+		<block_content><![CDATA[]]></block_content>
+		<static_block_title><![CDATA[Cetus Title Best Selling]]></static_block_title>
+		<static_block_identifier><![CDATA[cetus-title-best-selling]]></static_block_identifier>
+		<static_block_content><![CDATA[<p><span>Best Selling</span></p>]]></static_block_content>
+		<type>static</type>
+		<position>5</position>
+		<setting><![CDATA[{"custom_class":"","animation":"","animation_delay":""}]]></setting>
+		<col>12</col>
+		<custom_class><![CDATA[]]></custom_class>
+	</child>
+	
+	<child>
+		<block_name>block12-0</block_name>
+		<block_content><![CDATA[]]></block_content>
+		<static_block_title><![CDATA[Cetus Title Home & Furnitures]]></static_block_title>
+		<static_block_identifier><![CDATA[cetus_title_furnitures]]></static_block_identifier>
+		<static_block_content><![CDATA[<p><span><a href="http://mgs.arrowhitech.net/cetus/index.php/home-furnitures.html">Home &amp; Furnitures</a></span></p>]]></static_block_content>
+		<type>static</type>
+		<position>6</position>
+		<setting><![CDATA[{"custom_class":"","animation":"","animation_delay":""}]]></setting>
+		<col>12</col>
+		<custom_class><![CDATA[]]></custom_class>
+	</child>
+	
+	<child>
+		<block_name>block12-0</block_name>
+		<block_content><![CDATA[]]></block_content>
+		<static_block_title><![CDATA[Cetus Title Best Selling]]></static_block_title>
+		<static_block_identifier><![CDATA[cetus-title-best-selling]]></static_block_identifier>
+		<static_block_content><![CDATA[<p><span>Best Selling</span></p>]]></static_block_content>
+		<type>static</type>
+		<position>1</position>
+		<setting><![CDATA[{"custom_class":"","animation":"","animation_delay":""}]]></setting>
+		<col>12</col>
+		<custom_class><![CDATA[]]></custom_class>
+	</child>
+	
+	<child>
+		<block_name>block15-0</block_name>
+		<block_content><![CDATA[]]></block_content>
+		<static_block_title><![CDATA[Cetus Menu Footer]]></static_block_title>
+		<static_block_identifier><![CDATA[cetus-menu-footer]]></static_block_identifier>
+		<static_block_content><![CDATA[<div class="menu-footer">
+<div class="block-title">
+<h4 class="title-name">Main menu</h4>
+</div>
+<ul class="nav-footer">
+<li><a href="#">Home</a></li>
+<li><a href="#">About Us</a></li>
+<li><a href="#">Our Products</a></li>
+<li><a href="#">Our Brands</a></li>
+<li><a href="#">Blog</a></li>
+<li><a href="#">FAQs</a></li>
+<li><a href="#">Contact Us</a></li>
+</ul>
+</div>]]></static_block_content>
+		<type>static</type>
+		<position>3</position>
+		<setting><![CDATA[{"custom_class":"","animation":"","animation_delay":""}]]></setting>
+		<col>2</col>
+		<custom_class><![CDATA[]]></custom_class>
+	</child>
+	
+	<child>
+		<block_name>block15-0</block_name>
+		<block_content><![CDATA[]]></block_content>
+		<static_block_title><![CDATA[Cetus Follow Footer]]></static_block_title>
+		<static_block_identifier><![CDATA[cetus-follow-footer]]></static_block_identifier>
+		<static_block_content><![CDATA[<div class="menu-footer">
+<div class="block-title">
+<h4 class="title-name">Follow us</h4>
+</div>
+<ul class="nav-footer">
+<li><a href="#"><em class="fa fa-facebook"></em>Facebook</a></li>
+<li><a href="#"><em class="fa fa-twitter"></em>Twitter</a></li>
+<li><a href="#"><em class="fa fa-google-plus"></em>Google+</a></li>
+<li><a href="#"><em class="fa fa-pinterest-p"></em>Pinterest</a></li>
+<li><a href="#"><em class="fa fa-youtube"></em>Youtube</a></li>
+</ul>
+</div>]]></static_block_content>
+		<type>static</type>
+		<position>4</position>
+		<setting><![CDATA[{"custom_class":"","animation":"","animation_delay":""}]]></setting>
+		<col>2</col>
+		<custom_class><![CDATA[]]></custom_class>
+	</child>
+	
+	<child>
+		<block_name>block15-0</block_name>
+		<block_content><![CDATA[]]></block_content>
+		<static_block_title><![CDATA[Cetus Payment Method Footer]]></static_block_title>
+		<static_block_identifier><![CDATA[cetus-payment-method-footer]]></static_block_identifier>
+		<static_block_content><![CDATA[<div class="menu-footer">
+<div class="block-title">
+<h4 class="title-name">Payment Method</h4>
+</div>
+<p>You can pay directly form your Credit Card via Moneybookers or Paypal and NEVER store your card information on our site</p>
+</div>]]></static_block_content>
+		<type>static</type>
+		<position>5</position>
+		<setting><![CDATA[{"custom_class":"","animation":"","animation_delay":""}]]></setting>
+		<col>2</col>
+		<custom_class><![CDATA[]]></custom_class>
+	</child>
+	
+	<child>
+		<block_name>block26-0</block_name>
+		<block_content><![CDATA[]]></block_content>
+		<static_block_title><![CDATA[Cetus Title Electronics & Computer]]></static_block_title>
+		<static_block_identifier><![CDATA[cetus_title_electronics]]></static_block_identifier>
+		<static_block_content><![CDATA[<p><span><a href="http://mgs.arrowhitech.net/cetus/index.php/home-electronic.html">Electronics &amp; Computer</a></span></p>]]></static_block_content>
+		<type>static</type>
+		<position>1</position>
+		<setting><![CDATA[{"custom_class":"","animation":"","animation_delay":""}]]></setting>
+		<col>12</col>
+		<custom_class><![CDATA[]]></custom_class>
+	</child>
+	
+	<child>
+		<block_name>block30-0</block_name>
+		<block_content><![CDATA[]]></block_content>
+		<static_block_title><![CDATA[Cetus Title Our Brands]]></static_block_title>
+		<static_block_identifier><![CDATA[cetus-title-our-brands]]></static_block_identifier>
+		<static_block_content><![CDATA[<p class="title"><span>Our Brands</span></p>]]></static_block_content>
+		<type>static</type>
+		<position>1</position>
+		<setting><![CDATA[{"custom_class":"title-categories","animation":"","animation_delay":""}]]></setting>
+		<col>12</col>
+		<custom_class><![CDATA[]]></custom_class>
+	</child>
+	
+	<child>
+		<block_name>block23-0</block_name>
+		<block_content><![CDATA[]]></block_content>
+		<static_block_title><![CDATA[Cetus Title Deal]]></static_block_title>
+		<static_block_identifier><![CDATA[cetus_title_deal]]></static_block_identifier>
+		<static_block_content><![CDATA[<p class="title"><span>Deal Of The Day</span></p>
+<p><a class="link-category" href="http://mgs.arrowhitech.net/cetus/index.php/deals"><em class="fa fa-th-large">&nbsp;</em>View All</a></p>]]></static_block_content>
+		<type>static</type>
+		<position>1</position>
+		<setting><![CDATA[{"custom_class":"title-categories","animation":"","animation_delay":""}]]></setting>
+		<col>12</col>
+		<custom_class><![CDATA[]]></custom_class>
+	</child>
+	
+	<child>
+		<block_name>block24-0</block_name>
+		<block_content><![CDATA[]]></block_content>
+		<static_block_title><![CDATA[Cetus Title Clothing]]></static_block_title>
+		<static_block_identifier><![CDATA[cetus_title_clothing]]></static_block_identifier>
+		<static_block_content><![CDATA[<p class="title"><span>Clothing, Shoes &amp; Jewelry</span></p>
+<p><a class="link-category" href="http://mgs.arrowhitech.net/cetus/index.php/clothing-shoes.html"><em class="fa fa-th-large">&nbsp;</em>View All</a></p>]]></static_block_content>
+		<type>static</type>
+		<position>1</position>
+		<setting><![CDATA[{"custom_class":"title-categories","animation":"","animation_delay":""}]]></setting>
+		<col>12</col>
+		<custom_class><![CDATA[]]></custom_class>
+	</child>
+	
+	<child>
+		<block_name>block27-0</block_name>
+		<block_content><![CDATA[]]></block_content>
+		<static_block_title><![CDATA[Cetus Title Category Home]]></static_block_title>
+		<static_block_identifier><![CDATA[cetus-title-category-home]]></static_block_identifier>
+		<static_block_content><![CDATA[<p class="title"><span>Home &amp; Funitures</span></p>
+<p><a class="link-category" href="http://mgs.arrowhitech.net/cetus/index.php/home-furnitures.html"><em class="fa fa-th-large">&nbsp;</em>View All</a></p>]]></static_block_content>
+		<type>static</type>
+		<position>1</position>
+		<setting><![CDATA[{"custom_class":"title-categories","animation":"","animation_delay":""}]]></setting>
+		<col>12</col>
+		<custom_class><![CDATA[]]></custom_class>
+	</child>
+	
+	<child>
+		<block_name>block26-0</block_name>
+		<block_content><![CDATA[]]></block_content>
+		<static_block_title><![CDATA[Cetus Title Categry Electronic]]></static_block_title>
+		<static_block_identifier><![CDATA[cetus-title-categry-electronic]]></static_block_identifier>
+		<static_block_content><![CDATA[<p class="title"><span>Electronics &amp; Computer</span></p>
+<p><a class="link-category" href="http://mgs.arrowhitech.net/cetus/index.php/home-electronic.html"><em class="fa fa-th-large">&nbsp;</em>View All</a></p>]]></static_block_content>
+		<type>static</type>
+		<position>1</position>
+		<setting><![CDATA[{"custom_class":"title-categories","animation":"","animation_delay":""}]]></setting>
+		<col>12</col>
+		<custom_class><![CDATA[]]></custom_class>
+	</child>
+	
+	<child>
+		<block_name>block28-0</block_name>
+		<block_content><![CDATA[]]></block_content>
+		<static_block_title><![CDATA[Cetus Title Catogory Beauty]]></static_block_title>
+		<static_block_identifier><![CDATA[cetus-title-catogory-beauty]]></static_block_identifier>
+		<static_block_content><![CDATA[<p class="title"><span>Beauty & Health</span></p>
+<a class="link-category" href="http://mgs.arrowhitech.net/cetus/index.php/beauty-health.html"><em class="fa fa-th-large">&nbsp;</em>View All</a>]]></static_block_content>
+		<type>static</type>
+		<position>1</position>
+		<setting><![CDATA[{"custom_class":"title-categories","animation":"","animation_delay":""}]]></setting>
+		<col>12</col>
+		<custom_class><![CDATA[]]></custom_class>
+	</child>
+	
+	<child>
+		<block_name>block12-0</block_name>
+		<block_content><![CDATA[{{block type="promobanners/promobanners" banner_id="%s" template="mgs/promobanners/banner.phtml"}}]]></block_content>
+		<type>promo_banner</type>
+		<banner_title><![CDATA[Cetus We Give You]]></banner_title>
+		<banner_filename><![CDATA[image-11.png]]></banner_filename>
+		<banner_url>#</banner_url>
+		<banner_content><![CDATA[<h4>WE GIVE YOU</h4>
+<h2>"QUICK DELIVERY" SEVICE</h2>]]></banner_content>
+		<banner_button><![CDATA[]]></banner_button>
+		<banner_text_align><![CDATA[right]]></banner_text_align>
+		<position>2</position>
+		<setting><![CDATA[{"custom_class":"","animation":"","animation_delay":"","text_colour":"text-colour-white","link_colour":"","link_hover_colour":"","button_colour":"","button_hover_colour":"","button_text_colour":"","button_text_hover_colour":"","button_border_colour":"","button_border_hover_colour":"","banner_id":"%s"}]]></setting>
+		<col>12</col>
+		<custom_class><![CDATA[]]></custom_class>
+	</child>
+	
+	<child>
+		<block_name>block27-0</block_name>
+		<block_content><![CDATA[{{block type="promobanners/promobanners" banner_id="%s" template="mgs/promobanners/banner.phtml"}}]]></block_content>
+		<type>promo_banner</type>
+		<banner_title><![CDATA[Cetus Ads Beauty & Health]]></banner_title>
+		<banner_filename><![CDATA[2.jpg]]></banner_filename>
+		<banner_url>#</banner_url>
+		<banner_content><![CDATA[<h3>KITCHEN SET</h3>
+<h4>NOW AVAILABLE</h4>]]></banner_content>
+		<banner_button><![CDATA[Shop Now]]></banner_button>
+		<banner_text_align><![CDATA[bottom-left]]></banner_text_align>
+		<position>2</position>
+		<setting><![CDATA[{"custom_class":"hidden-sm","animation":"","animation_delay":"","text_colour":"text-colour-white","link_colour":"","link_hover_colour":"","button_colour":"","button_hover_colour":"","button_text_colour":"button-text-colour-white","button_text_hover_colour":"","button_border_colour":"button-border-colour-white","button_border_hover_colour":"","banner_id":"%s"}]]></setting>
+		<col>3</col>
+		<custom_class><![CDATA[]]></custom_class>
+	</child>
+	
+	<child>
+		<block_name>block28-0</block_name>
+		<block_content><![CDATA[{{block type="promobanners/promobanners" banner_id="%s" template="mgs/promobanners/banner.phtml"}}]]></block_content>
+		<type>promo_banner</type>
+		<banner_title><![CDATA[Cetus Ads Home Beauty & Health]]></banner_title>
+		<banner_filename><![CDATA[3.jpg]]></banner_filename>
+		<banner_url>#</banner_url>
+		<banner_content><![CDATA[<h3>SHAMPOO</h3>
+<h4>NOW AVAILABLE</h4>]]></banner_content>
+		<banner_button><![CDATA[Shop Now]]></banner_button>
+		<banner_text_align><![CDATA[bottom-left]]></banner_text_align>
+		<position>3</position>
+		<setting><![CDATA[{"custom_class":"hidden-sm","animation":"","animation_delay":"","text_colour":"text-colour-white","link_colour":"","link_hover_colour":"","button_colour":"","button_hover_colour":"","button_text_colour":"button-text-colour-white","button_text_hover_colour":"","button_border_colour":"button-border-colour-white","button_border_hover_colour":"","banner_id":"%s"}]]></setting>
+		<col>3</col>
+		<custom_class><![CDATA[]]></custom_class>
+	</child>
+	
+	<child>
+		<block_name>block29-0</block_name>
+		<block_content><![CDATA[{{block type="promobanners/promobanners" banner_id="%s" template="mgs/promobanners/banner.phtml"}}]]></block_content>
+		<type>promo_banner</type>
+		<banner_title><![CDATA[Cetus Promo Ads Toys]]></banner_title>
+		<banner_filename><![CDATA[lego.jpg]]></banner_filename>
+		<banner_url>#</banner_url>
+		<banner_content><![CDATA[]]></banner_content>
+		<banner_button><![CDATA[Shop Now]]></banner_button>
+		<banner_text_align><![CDATA[bottom-left]]></banner_text_align>
+		<position>4</position>
+		<setting><![CDATA[{"custom_class":"","animation":"","animation_delay":"","text_colour":"","link_colour":"","link_hover_colour":"","button_colour":"","button_hover_colour":"","button_text_colour":"button-text-colour-white","button_text_hover_colour":"","button_border_colour":"button-border-colour-white","button_border_hover_colour":"","banner_id":"%s"}]]></setting>
+		<col>12</col>
+		<custom_class><![CDATA[]]></custom_class>
+	</child>
+	
+	<child>
+		<block_name>block29-1</block_name>
+		<block_content><![CDATA[{{block type="promobanners/promobanners" banner_id="%s" template="mgs/promobanners/banner.phtml"}}]]></block_content>
+		<type>promo_banner</type>
+		<banner_title><![CDATA[Cetus Promo Ads Sports]]></banner_title>
+		<banner_filename><![CDATA[01_homepage_defaassdault_1_.jpg]]></banner_filename>
+		<banner_url>#</banner_url>
+		<banner_content><![CDATA[]]></banner_content>
+		<banner_button><![CDATA[Shop Now]]></banner_button>
+		<banner_text_align><![CDATA[bottom-left]]></banner_text_align>
+		<position>4</position>
+		<setting><![CDATA[{"custom_class":"","animation":"","animation_delay":"","text_colour":"","link_colour":"","link_hover_colour":"","button_colour":"","button_hover_colour":"","button_text_colour":"button-text-colour-white","button_text_hover_colour":"","button_border_colour":"button-border-colour-white","button_border_hover_colour":"","banner_id":"%s"}]]></setting>
+		<col>12</col>
+		<custom_class><![CDATA[]]></custom_class>
+	</child>
+	
+	<child>
+		<block_name>block24-0</block_name>
+		<block_content><![CDATA[{{block type="promobanners/promobanners" banner_id="%s" template="mgs/promobanners/banner.phtml"}}]]></block_content>
+		<type>promo_banner</type>
+		<banner_title><![CDATA[Cetus Ads Clothing shoes]]></banner_title>
+		<banner_filename><![CDATA[1.jpg]]></banner_filename>
+		<banner_url>#</banner_url>
+		<banner_content><![CDATA[<h3>ACTIVE LIFE</h3>
+<h4>NOW AVAILABLE</h4>]]></banner_content>
+		<banner_button><![CDATA[Shop Now]]></banner_button>
+		<banner_text_align><![CDATA[bottom-left]]></banner_text_align>
+		<position>3</position>
+		<setting><![CDATA[{"custom_class":"hidden-sm","animation":"","animation_delay":"","text_colour":"text-colour-white","link_colour":"","link_hover_colour":"","button_colour":"","button_hover_colour":"","button_text_colour":"button-text-colour-white","button_text_hover_colour":"","button_border_colour":"button-border-colour-white","button_border_hover_colour":"","banner_id":"%s"}]]></setting>
+		<col>3</col>
+		<custom_class><![CDATA[]]></custom_class>
+	</child>
+	
+	<child>
+		<block_name>block26-0</block_name>
+		<block_content><![CDATA[{{block type="promobanners/promobanners" banner_id="%s" template="mgs/promobanners/banner.phtml"}}]]></block_content>
+		<type>promo_banner</type>
+		<banner_title><![CDATA[Cetus Ads Electronic Computer]]></banner_title>
+		<banner_filename><![CDATA[4.jpg]]></banner_filename>
+		<banner_url>#</banner_url>
+		<banner_content><![CDATA[<h3>LG FRIDGE</h3>
+<h4>NOW AVAILABLE</h4>]]></banner_content>
+		<banner_button><![CDATA[Shop Now]]></banner_button>
+		<banner_text_align><![CDATA[bottom-left]]></banner_text_align>
+		<position>3</position>
+		<setting><![CDATA[{"custom_class":"hidden-sm","animation":"","animation_delay":"","text_colour":"text-colour-white","link_colour":"","link_hover_colour":"","button_colour":"","button_hover_colour":"","button_text_colour":"button-text-colour-white","button_text_hover_colour":"","button_border_colour":"button-border-colour-white","button_border_hover_colour":"","banner_id":"%s"}]]></setting>
+		<col>3</col>
+		<custom_class><![CDATA[]]></custom_class>
+	</child>
+	
+	<child>
+		<block_name>block38-0</block_name>
+		<block_content><![CDATA[{{block type="promobanners/promobanners" banner_id="%s" template="mgs/promobanners/banner.phtml"}}]]></block_content>
+		<type>promo_banner</type>
+		<banner_title><![CDATA[Cetus Promo Ads Sports]]></banner_title>
+		<banner_filename><![CDATA[01_homepage_defaassdault_1_.jpg.jpg]]></banner_filename>
+		<banner_url>#</banner_url>
+		<banner_content><![CDATA[]]></banner_content>
+		<banner_button><![CDATA[Shop Now]]></banner_button>
+		<banner_text_align><![CDATA[bottom-left]]></banner_text_align>
+		<position>2</position>
+		<setting><![CDATA[{"custom_class":"col-sm-6 col-xs-12","animation":"","animation_delay":"","text_colour":"","link_colour":"","link_hover_colour":"","button_colour":"","button_hover_colour":"","button_text_colour":"button-text-colour-white","button_text_hover_colour":"","button_border_colour":"button-border-colour-white","button_border_hover_colour":"","banner_id":"%s"}]]></setting>
+		<col>6</col>
+		<custom_class><![CDATA[]]></custom_class>
+	</child>
+	
+	<child>
+		<block_name>block38-0</block_name>
+		<block_content><![CDATA[{{block type="promobanners/promobanners" banner_id="%s" template="mgs/promobanners/banner.phtml"}}]]></block_content>
+		<type>promo_banner</type>
+		<banner_title><![CDATA[Cetus Promo Ads Toys]]></banner_title>
+		<banner_filename><![CDATA[lego.jpg]]></banner_filename>
+		<banner_url>#</banner_url>
+		<banner_content><![CDATA[]]></banner_content>
+		<banner_button><![CDATA[Shop Now]]></banner_button>
+		<banner_text_align><![CDATA[bottom-left]]></banner_text_align>
+		<position>1</position>
+		<setting><![CDATA[{"custom_class":"col-sm-6 col-xs-12","animation":"","animation_delay":"","text_colour":"","link_colour":"","link_hover_colour":"","button_colour":"","button_hover_colour":"","button_text_colour":"button-text-colour-white","button_text_hover_colour":"","button_border_colour":"button-border-colour-white","button_border_hover_colour":"","banner_id":"%s"}]]></setting>
+		<col>6</col>
+		<custom_class><![CDATA[]]></custom_class>
+	</child>
+	
+	<child>
+		<block_name>block32-0</block_name>
+		<block_content><![CDATA[]]></block_content>
+		<type>separator</type>
+		<position>3</position>
+		<setting><![CDATA[{"custom_class":"","separator_type":"white-space","border_type":"full","border_style":"style1","border_icon":"","text_content":"","margin_top":"30","margin_bottom":""}]]></setting>
+		<col>12</col>
+		<custom_class><![CDATA[]]></custom_class>
+	</child>
+	
+	<child>
+		<block_name>block15-0</block_name>
+		<block_content><![CDATA[{{block type="testimonial/testimonial" template="mgs/testimonial/view.phtml" view_mode="grid" title="Testimonials" item_count="3"}}]]></block_content>
+		<type>testimonials</type>
+		<position>2</position>
+		<setting><![CDATA[{"custom_class":"","animation":"","animation_delay":"","title":"Testimonials","item_count":"3","view_mode":"grid"}]]></setting>
+		<col>3</col>
+		<custom_class><![CDATA[]]></custom_class>
+	</child>
+</layout>

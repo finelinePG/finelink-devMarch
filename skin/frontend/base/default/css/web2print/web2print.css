@@ -1,0 +1,61 @@
+.web2print-editor-load .main {
+    background-image: none;
+    margin: 0;
+    width: 100%;
+}
+
+body.web2print-editor-load,
+.web2print-editor-load .main,
+.web2print-editor-load .main-container,
+.web2print-editor-load .product-essential {
+    background-image: none;
+    background-color: transparent;
+}
+
+.web2print-editor-load .product-essential {
+    height: 25px;
+}
+
+.web2print-editor-load .col1-layout .product-view .product-essential {
+	padding-bottom: 10px;
+}
+
+.web2print-editor-load .col1-layout .main {
+    padding: 0;
+}
+
+.web2print-editor-load .product-view {
+    border: 0;
+}
+
+.web2print-editor-load .editor-links button {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+#editorForm tr { display:block; margin-bottom:10px; }
+#editorForm td.label { padding-left: 10px; width:150px; }
+#jsInputForm h3 { padding-left:10px; }
+
+#navigation .item { border-right:1px solid #BFBFBF; padding-right: 5px; margin-right: 5px; display:block; float: left; margin-top:1px;}
+
+.col1-layout .main .product-web2print-links ul { display:inline; }
+.col1-layout .main .product-web2print-links ul li { float:left; margin-right:10px; }
+.col1-layout .main .product-web2print-links h3 { float:left; margin-right:10px; display:none; }
+
+#save-options { margin: -70px 0 0 25px; position: relative; }
+
+.editor-links .left { float: left; }
+.editor-links .right { float: right; }
+.editor-links button { margin-left: 5px; margin-right: 5px; }
+.editor-links #productOptions { margin: 5px 0 0 0!important; }
+.editor-links #productOptions .product-options { margin-top:0; padding-bottom: 50px; width: 245px; }
+.editor-links #productOptions .product-options dd { border-bottom: 0; }
+.editor-links #confirmed{ margin-right:10px; }
+
+.required-entry.product-custom-option.highlighted { border:1px solid red!important; }
+ 
+.product-image{ overflow:hidden!important; }
+
+.my-conceptlist textarea { display: block; height: 109px; width: 97%; }
+.concept-image{ display: block; height: 135px; margin-top: 5px; overflow: hidden; width: 135px; }

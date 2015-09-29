@@ -1,0 +1,53 @@
+<?php
+$_item = $this->getItem();
+$_chiliDocumentId = $_item->getProductOptionByCode('chili_document_id');
+?>
+<?php $this->setPriceDataObject($_item) ?>
+<tr class="border">
+    <td>
+        <?php if ($this->canDisplayContainer()): ?>
+            <div id="<?php echo $this->getHtmlId() ?>" class="item-container">
+            <?php endif; ?>
+            <div class="item-text">
+                <?php echo $this->getColumnHtml($_item, 'name') ?>
+            </div>
+            <?php if ($this->canDisplayContainer()): ?>
+            </div>
+        <?php endif ?>
+        <div>
+            <?php echo Mage::helper('web2print')->__('<b>Document id:</b> %s', $_chiliDocumentId); ?>
+        </div>
+    </td>
+    <td class="a-center"><?php echo $_item->getStatus() ?></td>
+    <td><?php echo $this->getColumnHtml($_item, 'qty') ?></td>
+    <td class="downloadlink a-center">
+        <?php $downloadLinkArray = $this->getDocumentPdfStatus($_chiliDocumentId, 'frontend');?>
+        <?php if ($downloadLinkArray['downloadLink']): ?>
+            <a title="<?php echo $this->__('Created at: ') . $downloadLinkArray['pdf']->getCreatedAt() ?>" href="<?php echo $downloadLinkArray['downloadLink'] ?>"><?php echo $this->__('Download pdf') ?></a><br/>
+            Export profile:<br/>
+            <?php $exportProfileSplit = explode('|', $downloadLinkArray['pdf']->getExportProfile());?>
+            <b><span title="<?php echo $exportProfileSplit[1];?>"><?php echo $exportProfileSplit[0];?></span></b>
+        <?php elseif ($downloadLinkArray['pdf']): ?>
+            <b><?php echo $downloadLinkArray['pdf']->getStatus() ?></b><br/>
+            <?php if ($downloadLinkArray['pdf']->getMessage()): ?>
+                <b>Message: <?php echo $downloadLinkArray['pdf']->getMessage() ?></b><br/>
+            <?php endif; ?>
+            <b><?php echo $downloadLinkArray['pdf']->getCreatedAt() ?></b>
+        <?php endif; ?>
+    </td>
+    <td class="downloadlink a-center last">
+        <?php $downloadLinkArray = $this->getDocumentPdfStatus($_chiliDocumentId, 'backend') ?>
+        <?php if ($downloadLinkArray['downloadLink']): ?>
+            <a title="<?php echo $this->__('Created at: ') . $downloadLinkArray['pdf']->getCreatedAt() ?>" href="<?php echo $downloadLinkArray['downloadLink'] ?>"><?php echo $this->__('Download pdf') ?></a><br/>
+            Export profile:<br/>
+            <?php $exportProfileSplit = explode('|', $downloadLinkArray['pdf']->getExportProfile());?>
+            <b><span title="<?php echo $exportProfileSplit[1];?>"><?php echo $exportProfileSplit[0];?></span></b>
+        <?php elseif ($downloadLinkArray['pdf']): ?>
+            <b><?php echo $downloadLinkArray['pdf']->getStatus() ?></b><br/>
+            <?php if ($downloadLinkArray['pdf']->getMessage()): ?>
+                <b>Message: <?php echo $downloadLinkArray['pdf']->getMessage() ?></b><br/>
+            <?php endif; ?>
+            <b><?php echo $downloadLinkArray['pdf']->getCreatedAt() ?></b>
+        <?php endif; ?>
+    </td>
+</tr>

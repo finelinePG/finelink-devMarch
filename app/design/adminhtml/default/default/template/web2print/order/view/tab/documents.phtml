@@ -1,0 +1,30 @@
+<?php
+    /*download the pdfs (if available) to the local environment*/
+    $_order = $this->getOrder();
+    $error = '';
+ ?>
+
+<style type="text/css">
+    .pdfError{color:red; margin-left:15px; font-weight:bold;}
+</style>
+<div>
+    <button id="downloadPdfBtn" onclick="ajaxPdfCall('<?php echo $this->getUrl('adminhtml/ajax/downloadPdfs',array('orderid'=>$_order->getId()))?>');" style="margin-bottom:10px;" class="scalable" type="button"><span><?php echo Mage::helper('web2print')->__('Download all PDF files');?></span></button>
+    <button id="requestPdfBtn" onclick="ajaxPdfCall('<?php echo $this->getUrl('adminhtml/ajax/regeneratePdfFiles',array('order_id'=>$_order->getId()))?>');" style="margin-bottom:10px;" class="scalable" type="button"><span><?php echo Mage::helper('web2print')->__('Regenerate PDF files');?></span></button>
+    <button id="updatePdfBtn" onclick="ajaxPdfCall('<?php echo $this->getUrl('adminhtml/ajax/updatePdfFiles',array('order_id'=>$_order->getId()))?>');" style="margin-bottom:10px;" class="scalable" type="button"><span><?php echo Mage::helper('web2print')->__('Update PDF files');?></span></button>
+    <button id="refreshBtn" onclick="ajaxPdfCall('<?php echo $this->getUrl('adminhtml/ajax/refreshPdfFiles',array('order_id'=>$_order->getId()))?>');" style="margin-bottom:10px;" class="scalable" type="button"><span><?php echo Mage::helper('web2print')->__('Refresh data');?></span></button>
+    <?php echo $error;?>
+    <?php echo $this->getChildHtml('order_info') ?>
+    <input id="orderId" type="hidden" name="order_id" value="<?php echo $_order->getId() ?>"/>
+    <div class="clear"></div>
+    <?php echo $this->getGiftOptionsHtml() ?>
+    <div class="clear"></div>
+    <div class="entry-edit">
+        <div class="entry-edit-head">
+            <h4 class="icon-head head-products"><?php echo Mage::helper('sales')->__('Items Ordered') ?></h4>
+        </div>
+    </div>
+    <?php echo $this->getItemsHtml() ?>
+    <div class="clear"></div>
+    <span style="text-align: center"><?php echo $this->__('Last refresh at: ').Mage::getModel('core/date')->date() ?></span>
+</div>
+

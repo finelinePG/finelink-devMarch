@@ -1,0 +1,29 @@
+<theme_layout>
+	<item>
+		<page_type>category</page_type>
+		<page_id>0</page_id>
+		<place>left</place>
+		<type>category_navigation</type>
+		<title>Categories</title>
+		<options>a:2:{s:5:"title";s:10:"Categories";s:20:"selected_category_id";s:1:"0";}</options>
+		<sort_order>1</sort_order>
+	</item>
+	<item>
+		<page_type>category</page_type>
+		<page_id>0</page_id>
+		<place>left</place>
+		<type>layered_navigation</type>
+		<title>Filter Produdct</title>
+		<options>a:1:{s:5:"title";s:15:"Filter Produdct";}</options>
+		<sort_order>2</sort_order>
+	</item>
+	<item>
+		<page_type>category</page_type>
+		<page_id>0</page_id>
+		<place>left</place>
+		<type>compare_sidebar</type>
+		<title>Compare</title>
+		<options>a:1:{s:5:"title";s:7:"Compare";}</options>
+		<sort_order>3</sort_order>
+	</item>
+</theme_layout>

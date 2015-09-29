@@ -1,0 +1,438 @@
+<?xml version="1.0"?>
+<!-- Remove this file if your module does not have a system configuration interface -->
+<config>
+    <tabs>
+        <web2print translate="label">
+            <label>CHILI</label>
+            <sort_order>300</sort_order>
+        </web2print>
+    </tabs>
+    <sections>
+        <web2print translate="label">
+            <label>Web2print</label>
+            <tab>web2print</tab>
+            <sort_order>33</sort_order>
+            <show_in_default>1</show_in_default>
+            <show_in_website>1</show_in_website>
+            <show_in_store>1</show_in_store>
+            <groups>
+                <info>
+                    <label>Module information</label>
+                    <frontend_type>text</frontend_type>
+                    <sort_order>0</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>1</show_in_store>
+                    <fields>
+                        <module_version translate="label">
+                            <label>Module version</label>
+                            <frontend_type>label</frontend_type>
+                            <frontend_model>web2print/system_config_info_module</frontend_model>
+                            <sort_order>1</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>0</show_in_website>
+                            <show_in_store>0</show_in_store>
+                        </module_version>
+                        <magento_version translate="label">
+                            <label>Magento version</label>
+                            <frontend_type>label</frontend_type>
+                            <frontend_model>web2print/system_config_info_magento</frontend_model>
+                            <sort_order>2</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>0</show_in_website>
+                            <show_in_store>0</show_in_store>
+                        </magento_version>
+                    </fields>
+                </info>
+                <general>
+                    <label>General settings</label>
+                    <frontend_type>text</frontend_type>
+                    <sort_order>1</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>1</show_in_store>
+                    <fields>
+                        <cache translate="label">
+                            <label>Enable WSDL caching</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                            <sort_order>1</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>0</show_in_website>
+                            <show_in_store>0</show_in_store>
+                            <comment>Enable caching of the webservice WSDL file to improve performance</comment>
+                        </cache>
+                        <debug translate="label">
+                            <label>Enable debugging</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                            <sort_order>2</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>0</show_in_website>
+                            <show_in_store>0</show_in_store>
+                            <comment>If enabled, all webservice called are logged in a database table called "web2print_log"</comment>
+                        </debug>
+                        <logfile translate="label">
+                            <label>Log file</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>3</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>0</show_in_website>
+                            <show_in_store>0</show_in_store>
+                            <comment>Specifies the file where log messages should be written.</comment>
+                        </logfile>
+                    </fields>
+                </general>
+                <connection>
+                    <label>CHILI server connection settings</label>
+                    <frontend_type>text</frontend_type>
+                    <sort_order>2</sort_order>
+                    <expanded>1</expanded>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>1</show_in_store>
+                    <fields>
+                        <domain translate="label">
+                            <label>Webservice URL</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>1</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>0</show_in_store>
+                            <comment>The CHILI webservice domain. Make sure this does not end with a slash. The URL of the WSDL is configured by adding 'main.asmx?wsdl'</comment>
+                        </domain>
+                        <environment translate="label">
+                            <label>Environment name</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>2</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>0</show_in_store>
+                            <comment>The preferred CHILI environment name</comment>
+                        </environment>
+                        <username translate="label">
+                            <label>Username</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>3</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>0</show_in_store>
+                            <comment>CHILI server username for the defined environment</comment>
+                        </username>
+                        <password translate="label">
+                            <label>Password</label>
+                            <frontend_type>password</frontend_type>
+                            <sort_order>4</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>0</show_in_store>
+                            <comment>CHILI server password for the defined environment</comment>
+                        </password>
+                        <redirect_exception>
+                            <label>Print errors on front-end</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                            <sort_order>5</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store> 
+                            <comment>Enables printing of exceptions and errors to the front-end such as "Unable to connect ot CHILI server"</comment>
+                        </redirect_exception>
+                        <exception_cms>
+                            <label>Error CMS page</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_cms_page</source_model>
+                            <sort_order>6</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <comment>The module will redirect to this page when an error occurs</comment>
+                        </exception_cms>       
+                    </fields>
+                </connection>
+
+                <profiles>
+                    <label>Image Conversion Profiles configuration</label>
+                    <frontend_type>text</frontend_type>
+                    <sort_order>3</sort_order>
+                    <expanded>1</expanded>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>1</show_in_store>
+                    <fields>
+                        <cache_lifetime_images>
+                            <label>Cache lifetime images</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>10</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <comment>Time that images are cached (in seconds). If you want to ignore this caching, leave empty or disable under System->Cache Management.</comment>
+                        </cache_lifetime_images>  
+                        <preview_location>
+                            <label>Generate CHILI preview images on the following locations</label>
+                            <frontend_type>multiselect</frontend_type>
+                            <source_model>web2print/system_config_source_imagelocation</source_model>
+                            <sort_order>20</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <comment>CHILI preview images will only be loaded on the selected locations</comment>
+                        </preview_location>
+                        <default translate="label">
+                            <label>Default profile</label>
+                            <frontend_type>text</frontend_type>
+                            <frontend_model>web2print/system_config_form_element_resourcebrowser</frontend_model>
+                            <sort_order>30</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <comment>Fallback if no specific Image Conversion Profile is found</comment>
+                            <resource_type>ImageConversionProfiles</resource_type>
+                        </default>
+                        <category translate="label">
+                            <label>Category overview page profile</label>
+                            <frontend_type>text</frontend_type>
+                            <frontend_model>web2print/system_config_form_element_resourcebrowser</frontend_model>
+                            <sort_order>40</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <resource_type>ImageConversionProfiles</resource_type>
+                        </category>
+                        <product translate="label">
+                            <label>Product detail page profile</label>
+                            <frontend_type>text</frontend_type>
+                            <frontend_model>web2print/system_config_form_element_resourcebrowser</frontend_model>
+                            <sort_order>50</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <resource_type>ImageConversionProfiles</resource_type>
+                        </product>
+                        <cart translate="label">
+                            <label>Shopping cart page profile</label>
+                            <frontend_type>text</frontend_type>
+                            <frontend_model>web2print/system_config_form_element_resourcebrowser</frontend_model>
+                            <sort_order>60</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <resource_type>ImageConversionProfiles</resource_type>
+                        </cart>
+                        <order translate="label">
+                            <label>Order detail page profile</label>
+                            <frontend_type>text</frontend_type>
+                            <frontend_model>web2print/system_config_form_element_resourcebrowser</frontend_model>
+                            <sort_order>70</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <resource_type>ImageConversionProfiles</resource_type>
+                        </order>
+                        <concept translate="label">
+                            <label>Concept overview page profile</label>
+                            <frontend_type>text</frontend_type>
+                            <frontend_model>web2print/system_config_form_element_resourcebrowser</frontend_model>
+                            <sort_order>75</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <resource_type>ImageConversionProfiles</resource_type>
+                        </concept>
+                    </fields>
+                </profiles>
+                <editor_page>
+                    <label>CHILI editor page configuration</label>
+                    <frontend_type>text</frontend_type>
+                    <sort_order>4</sort_order>
+                    <expanded>0</expanded>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>1</show_in_store>
+                    <fields>
+                        <cache_lifetime_editor>
+                            <label>HTML form cache lifetime</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>1</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <comment>Amount of time auto-generated HTML forms are cached</comment>
+                        </cache_lifetime_editor>  
+                        <simulate_workspace translate="label">
+                            <label>Allow simulate workspace</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                            <sort_order>2</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <comment>Allow or disallow simulating workspaces</comment>
+                        </simulate_workspace>
+                        <iframe_inversed_height translate="label">
+                            <label>Header height</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>3</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <comment>The height of the header which is visible on the editor page (to insure the fullpage height is used without any scrollbar)</comment>
+                        </iframe_inversed_height>
+                        <workspace_preference translate="label">
+                            <label>Default Workspace</label>
+                            <frontend_type>text</frontend_type>
+                            <frontend_model>web2print/system_config_form_element_resourcebrowser</frontend_model>
+                            <sort_order>4</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <comment>System-wide default document Workspace that should be used</comment>
+                            <resource_type>Workspaces</resource_type>
+                        </workspace_preference>
+                        <view_preference translate="label">
+                            <label>Default View Preference</label>
+                            <frontend_type>text</frontend_type>
+                            <frontend_model>web2print/system_config_form_element_resourcebrowser</frontend_model>
+                            <sort_order>5</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <comment>System-wide default document View Preference that should be used</comment>
+                            <resource_type>ViewPreferences</resource_type>
+                        </view_preference>
+                        <document_constraint translate="label">
+                            <label>Default Document Constraints</label>
+                            <frontend_type>text</frontend_type>
+                            <frontend_model>web2print/system_config_form_element_resourcebrowser</frontend_model>
+                            <sort_order>6</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <comment>System-wide default document Document Constraints that should be used</comment>
+                            <resource_type>DocumentConstraints</resource_type>
+                        </document_constraint>
+                        <concepts_enabled translate="label, comment">
+                            <label>Customer concepts enabled</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                            <sort_order>7</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <comment>Enable the concepts list feature for customers.</comment>
+                        </concepts_enabled>
+                        <cart_confirmation translate="label, comment">
+                            <label>Add confirmation</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                            <sort_order>8</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <comment>Confirm design before adding it to the shopping cart.</comment>
+                        </cart_confirmation>                      
+                     </fields>
+                </editor_page>                
+                <pdf>
+                    <label>PDF Export Settings configuration</label>
+                    <frontend_type>text</frontend_type>
+                    <sort_order>5</sort_order>
+                    <expanded>1</expanded>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>1</show_in_store>
+                    <fields>
+                        <frontend_pdf_profile translate="label">
+                            <label>Preview PDF Export Settings</label>
+                            <frontend_type>text</frontend_type>
+                            <frontend_model>web2print/system_config_form_element_resourcebrowser</frontend_model>
+                            <sort_order>1</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <resource_type>PdfExportSettings</resource_type>
+                            <comment>PDF export Settings that should be used to generate PDF files which become available to the end customer (e.g. with a watermark for test printing)</comment>
+                        </frontend_pdf_profile>
+                        <frontend_pdf_path translate="label">
+                            <label>Preview PDF save path</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>2</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <comment>Path where generated front-end PDF files should be stored</comment>
+                        </frontend_pdf_path>
+                        <backend_pdf_profile translate="label">
+                            <label>Print-ready PDF Export Settings</label>
+                            <frontend_type>text</frontend_type>
+                            <frontend_model>web2print/system_config_form_element_resourcebrowser</frontend_model>
+                            <sort_order>3</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <resource_type>PdfExportSettings</resource_type>
+                            <comment>PDF Export Settings that should be used to generate PDF files which become available to the webshop administrator (usually high-res print-ready PDF files)</comment>
+                        </backend_pdf_profile>
+                        <backend_pdf_path translate="label">
+                            <label>Print-ready PDF save path</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>4</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <comment>Path where generated back-end PDF files should be stored (these are usually print-ready PDF files)</comment>
+                        </backend_pdf_path>
+                    </fields>                    
+                </pdf>
+                <savepath>
+                    <label>CHILI server document savepath settings</label>
+                    <frontend_type>text</frontend_type>
+                    <sort_order>6</sort_order>
+                    <expanded>0</expanded>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>1</show_in_store>
+                    <fields>
+                        <default_location translate="label">
+                            <label>Quote document save path</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>1</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <comment>Save path on CHILI server for documents which have been added to a shopping cart</comment>
+                        </default_location>
+                        <final_location translate="label">
+                            <label>Order document save path</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>2</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <comment>Save path for documents which have been ordered</comment>
+                        </final_location>
+                        <temp_location translate="label">
+                            <label>Temporary save path</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>3</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <comment>Save path for documents which are being modified but have not been added to a shopping cart</comment>
+                        </temp_location>
+                        <concept_location translate="label">
+                            <label>Concepts save path</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>3</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <comment>Save path for documents which are put in the customer's concepts list</comment>
+                        </concept_location>
+                    </fields>
+                </savepath>
+            </groups>
+        </web2print>
+    </sections>
+</config>

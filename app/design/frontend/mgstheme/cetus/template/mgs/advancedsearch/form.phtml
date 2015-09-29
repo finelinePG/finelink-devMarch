@@ -1,0 +1,55 @@
+<?php
+/* * ****************************************************
+ * Package   : AdvancedSearch
+ * Author    : HIEPNH
+ * Copyright : (c) 2014
+ * ***************************************************** */
+?>
+<form id="advancedsearch_mini_form" class="search-mini-form" action="<?php echo $this->helper('catalogsearch')->getResultUrl() ?>" method="get">
+    <div class="form-search <?php if(Mage::getStoreConfig('advancedsearch/general/enabled') == 0): ?> no-advansearch <?php endif ?>">
+		<input id="advancedsearch" type="text" name="<?php echo $this->helper('catalogsearch')->getQueryParamName() ?>" class="input-text" />
+        <!--label for="search"><?php echo $this->__('Search:') ?></label-->
+        <?php $categorySearchHelper = $this->helper('advancedsearch'); ?>
+        <?php if ($categorySearchHelper->isEnabled()): ?>
+		<div class="all-categories">
+            <select id="<?php echo $categorySearchHelper->getCategoryParamName() ?>" name="<?php echo $categorySearchHelper->getCategoryParamName() ?>">
+                <option value="" selected><?php echo $this->__('All Categories') ?></option>
+                <?php foreach ($this->getSearchableCategories() as $mainCategory): ?>
+                    <option value="<?php echo $mainCategory->getEntityId() ?>"><?php echo $mainCategory->getName() ?></option>
+                    <?php if ($categorySearchHelper->showSubCategories()) : ?>
+                        <?php foreach ($this->getSearchableSubCategories($mainCategory) as $category) : ?>
+                            <option value="<?php echo $category->getEntityId() ?>"><?php echo $categorySearchHelper->getIndentationText() . $category->getName() ?></option>
+                        <?php endforeach; ?>
+                    <?php endif ?>
+                <?php endforeach; ?>
+            </select>
+		</div>
+        <?php endif ?>        
+		<div class="button-search">
+			<button type="submit" title="<?php echo $this->__('Search') ?>" class="button"><span><span><i class="fa fa-search"></i></span></span></button>
+		</div>
+        <div id="advancedsearch_autocomplete" class="search-autocomplete"></div>
+    </div>
+</form>
+<script type="text/javascript">
+//<![CDATA[
+    <?php if ($this->helper('advancedsearch')->isEnabled()): ?>
+        <?php if ($this->helper('advancedsearch')->isCategoryPage() || $this->helper('advancedsearch')->isSearchResultsPage()) : ?>
+                Event.observe(window, 'load', function () {
+                    $$('select#<?php echo $this->helper('advancedsearch')->getCategoryParamName() ?> option').each(function (o) {
+                        if (o.value == '<?php echo $this->getCurrentlySelectedCategoryId() ?>') {
+                            o.selected = true;
+                            throw $break;
+                        }
+                    });
+                    escapedQueryText = '<?php echo $this->helper('catalogsearch')->getEscapedQueryText() ?>';
+                    if (escapedQueryText !== '') {
+                        $('advancedsearch').value = escapedQueryText;
+                    }
+                });
+        <?php endif; ?>
+    <?php endif; ?>
+    var advancedSearchForm = new Varien.searchForm('advancedsearch_mini_form', 'advancedsearch', '<?php echo $this->__('Search entire store here...') ?>');
+    advancedSearchForm.initAutocomplete('<?php echo $this->helper('catalogsearch')->getSuggestUrl() ?>', 'advancedsearch_autocomplete');
+//]]>
+</script>

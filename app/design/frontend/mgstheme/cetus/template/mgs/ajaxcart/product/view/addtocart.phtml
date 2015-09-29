@@ -1,0 +1,44 @@
+<?php
+/* * ****************************************************
+ * Package   : AjaxCart
+ * Author    : http://www.arrowhitech.com
+ * Copyright : (c) 2013 - ArrowHiTech.Com
+ * ***************************************************** */
+?>
+<?php $_product = $this->getProduct(); ?>
+<?php $buttonTitle = $this->__('Add to Cart'); ?>
+<?php if ($_product->isSaleable()): ?>
+    <div class="add-to-cart">
+        <?php if (!$_product->isGrouped()): ?>
+            <label for="qty"><?php echo $this->__('Qty:') ?></label>
+			<span class="decrease-qty" onclick="minusQty('qty')"><i class="fa fa-minus"></i></span>
+            <input type="text" name="qty" id="qty" maxlength="12" value="<?php echo $this->getProductDefaultQty() * 1 ?>" title="<?php echo $this->__('Qty') ?>" class="input-text qty" />
+			<span class="increase-qty" onclick="plusQty('qty')"><i class="fa fa-plus"></i></span>
+		<?php endif; ?>
+        <button type="button" title="<?php echo $buttonTitle ?>" class="button btn btn-primary btn-lg btn-full" onclick="ajaxSubmitForm.submit(this)"><span><span><?php echo $buttonTitle ?></span></span></button>        
+        &nbsp;<span id="ajax_cart_loader" style="display:none;"><img src="<?php echo $this->getSkinUrl('images/opc-ajax-loader.gif') ?>"/></span>
+            <?php echo $this->getChildHtml('', true, true) ?>
+    </div>
+<?php endif; ?>
+<script type="text/javascript">
+	function plusQty(qtyInput){
+		if(jQuery('#'+qtyInput).attr('disabled')!='disabled'){
+			qty = $(qtyInput).value;
+			qty = parseInt(qty);
+			qty++;
+			$(qtyInput).value = qty;
+		}
+	}
+	
+	function minusQty(qtyInput){
+		if(jQuery('#'+qtyInput).attr('disabled')!='disabled'){
+			qty = $(qtyInput).value;
+			qty = parseInt(qty);
+			
+			if(qty>1){
+				qty--;
+				$(qtyInput).value = qty;
+			}
+		}
+	}
+</script>

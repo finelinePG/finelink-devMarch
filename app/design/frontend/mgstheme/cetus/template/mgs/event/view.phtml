@@ -1,0 +1,23 @@
+<?php
+/* * ****************************************************
+ * Package   : Event
+ * Author    : HIEPNH
+ * Copyright : (c) 2014
+ * ***************************************************** */
+?>
+<?php $event = $this->getEvent(); ?>
+<div class="page-title event-title">
+    <h1><?php echo $this->__($event->getTitle()); ?></h1>
+</div>
+<div class="event-detail">
+    <div class="event-time">
+        <p><?php echo $this->__('<span>Time From:</span> %s', date('F j, Y g:i A', strtotime($event->getTimeFrom()))); ?></p>
+        <p><?php echo $this->__('<span>Time To:</span> %s', date('F j, Y g:i A', strtotime($event->getTimeTo()))); ?></p>
+    </div>
+    <div class="event-location">
+        <p><?php echo $this->__('Location: %s', $event->getLocation()); ?></p>                    
+    </div>
+    <div class="event-description">
+        <?php echo $event->getDescription(); ?>                   
+    </div>
+</div>

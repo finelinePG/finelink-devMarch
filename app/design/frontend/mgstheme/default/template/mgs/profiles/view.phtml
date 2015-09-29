@@ -1,0 +1,14 @@
+<?php $profile = $this->getProfile(); ?>
+<?php $name = $profile->getName(); ?>
+<?php $photoUrl = Mage::getBaseUrl(Mage_Core_Model_Store::URL_TYPE_MEDIA).$profile->getPhoto() ?>
+<?php $position = $profile->getPosition(); ?>
+<?php $address = $profile->getAddress(); ?>
+<?php $email = $profile->getEmail(); ?>
+<?php $facebook = $profile->getFacebook(); ?>
+<?php $twitter = $profile->getTwitter(); ?>
+<?php $linkedin = $profile->getLinkedin(); ?>
+<?php $instagram = $profile->getInstagram(); ?>
+<?php $googlePlus = $profile->getGooglePlus(); ?>
+<?php $detail = $profile->getDetail(); ?>
+
+template/mgs/profiles/view.phtml

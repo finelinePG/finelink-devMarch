@@ -1,0 +1,544 @@
+<layout>
+	<name>1_column_full</name>
+	<header>header</header>
+	<footer>footer3</footer>
+	
+		<!--  Blocks  -->
+	<block>
+		<name>block1</name>
+		<block_cols><![CDATA[3,9]]></block_cols>
+		<block_class><![CDATA[]]></block_class>
+		<custom_class><![CDATA[super-sidebar]]></custom_class>
+		<background><![CDATA[#f1f1f1]]></background>
+		<background_image><![CDATA[]]></background_image>
+		<background_repeat>0</background_repeat>
+		<background_cover>0</background_cover>
+		<parallax>0</parallax>
+		<fullwidth>0</fullwidth>
+		<padding_top><![CDATA[40]]></padding_top>
+		<padding_bottom><![CDATA[40]]></padding_bottom>
+		<block_position>1</block_position>
+	</block>
+	<block>
+		<name>block5</name>
+		<block_cols><![CDATA[3,9]]></block_cols>
+		<block_class><![CDATA[]]></block_class>
+		<custom_class><![CDATA[]]></custom_class>
+		<background><![CDATA[]]></background>
+		<background_image><![CDATA[bg-header-1.png]]></background_image>
+		<background_repeat>0</background_repeat>
+		<background_cover>0</background_cover>
+		<parallax>0</parallax>
+		<fullwidth>0</fullwidth>
+		<padding_top><![CDATA[]]></padding_top>
+		<padding_bottom><![CDATA[]]></padding_bottom>
+		<block_position>0</block_position>
+	</block>
+	<block>
+		<name>block6</name>
+		<block_cols><![CDATA[12]]></block_cols>
+		<block_class><![CDATA[]]></block_class>
+		<custom_class><![CDATA[super-sidebar]]></custom_class>
+		<background><![CDATA[]]></background>
+		<background_image><![CDATA[bg-brands.png]]></background_image>
+		<background_repeat>0</background_repeat>
+		<background_cover>0</background_cover>
+		<parallax>0</parallax>
+		<fullwidth>0</fullwidth>
+		<padding_top><![CDATA[40]]></padding_top>
+		<padding_bottom><![CDATA[40]]></padding_bottom>
+		<block_position>2</block_position>
+	</block>
+	<block>
+		<name>block7</name>
+		<block_cols><![CDATA[3,3,3,3]]></block_cols>
+		<block_class><![CDATA[]]></block_class>
+		<custom_class><![CDATA[super-sidebar]]></custom_class>
+		<background><![CDATA[]]></background>
+		<background_image><![CDATA[]]></background_image>
+		<background_repeat>0</background_repeat>
+		<background_cover>0</background_cover>
+		<parallax>0</parallax>
+		<fullwidth>0</fullwidth>
+		<padding_top><![CDATA[40]]></padding_top>
+		<padding_bottom><![CDATA[20]]></padding_bottom>
+		<block_position>3</block_position>
+	</block>
+	<block>
+		<name>block8</name>
+		<block_cols><![CDATA[3,9]]></block_cols>
+		<block_class><![CDATA[]]></block_class>
+		<custom_class><![CDATA[]]></custom_class>
+		<background><![CDATA[]]></background>
+		<background_image><![CDATA[]]></background_image>
+		<background_repeat>0</background_repeat>
+		<background_cover>0</background_cover>
+		<parallax>0</parallax>
+		<fullwidth>0</fullwidth>
+		<padding_top><![CDATA[20]]></padding_top>
+		<padding_bottom><![CDATA[40]]></padding_bottom>
+		<block_position>5</block_position>
+	</block>
+	
+	
+	<child>
+		<block_name>block1-0</block_name>
+		<block_content><![CDATA[]]></block_content>
+		<static_block_title><![CDATA[Cetus Tags]]></static_block_title>
+		<static_block_identifier><![CDATA[cetus_tags]]></static_block_identifier>
+		<static_block_content><![CDATA[<p>{{block type="tag/popular" name="tags_popular" as="tags_popular" template="tag/popular.phtml"/}}</p>]]></static_block_content>
+		<type>static</type>
+		<position>5</position>
+		<setting><![CDATA[{"custom_class":"","animation":"","animation_delay":""}]]></setting>
+		<col>12</col>
+		<custom_class><![CDATA[]]></custom_class>
+	</child>
+	
+	<child>
+		<block_name>block8-1</block_name>
+		<block_content><![CDATA[]]></block_content>
+		<static_block_title><![CDATA[Super Map]]></static_block_title>
+		<static_block_identifier><![CDATA[super_map]]></static_block_identifier>
+		<static_block_content><![CDATA[<p><img class="img-responsive" src="{{media url="wysiwyg/map.jpg"}}" alt="" /></p>]]></static_block_content>
+		<type>static</type>
+		<position>1</position>
+		<setting><![CDATA[{"custom_class":"","animation":"","animation_delay":""}]]></setting>
+		<col>12</col>
+		<custom_class><![CDATA[]]></custom_class>
+	</child>
+	<child>
+		<block_name>block8-0</block_name>
+		<block_content><![CDATA[]]></block_content>
+		<static_block_title><![CDATA[Panel Block Info]]></static_block_title>
+		<static_block_identifier><![CDATA[panel_block_info]]></static_block_identifier>
+		<static_block_content><![CDATA[<div class="menu-footer">
+<h4 class="title-footer">Store info</h4>
+<div class="store store-contact">
+<div class="store-container">
+<div class="icon-store">&nbsp;</div>
+<div class="content-store">
+<p>Address:</p>
+<p>108 Street, AZ District, Green City</p>
+</div>
+</div>
+<div class="store-container">
+<div class="icon-store">&nbsp;</div>
+<div class="content-store">
+<p>Feel Free to Call Us:</p>
+<p>+123 456 7890</p>
+</div>
+</div>
+<div class="store-container">
+<div class="icon-store">&nbsp;</div>
+<div class="content-store">
+<p>Email:</p>
+<p><a href="#">owner@example.com</a></p>
+</div>
+</div>
+</div>
+<div class="store store-open">
+<div class="store-container">
+<div class="icon-store">&nbsp;</div>
+<div class="content-store">
+<p>Opening Hour:</p>
+<p>9:00 am - 21:00 pm / 7 days a week</p>
+</div>
+</div>
+<div class="store-container">
+<div class="icon-store">&nbsp;</div>
+<div class="content-store">
+<p>Join us:</p>
+<p>3 Positions Available</p>
+</div>
+</div>
+</div>
+</div>]]></static_block_content>
+		<type>static</type>
+		<position>1</position>
+		<setting><![CDATA[{"custom_class":"store-info","animation":"","animation_delay":""}]]></setting>
+		<col>12</col>
+		<custom_class><![CDATA[]]></custom_class>
+	</child>
+	<child>
+		<block_name>block7-3</block_name>
+		<block_content><![CDATA[]]></block_content>
+		<static_block_title><![CDATA[Cetus Shipping Static Block 4]]></static_block_title>
+		<static_block_identifier><![CDATA[cetus_shipping_static_block4]]></static_block_identifier>
+		<static_block_content><![CDATA[<div class="policy policy-right">
+<div class="icon-policy"><img src="{{media url="wysiwyg/icon-footer-4.png"}}" alt="" /></div>
+<div class="text-policy">
+<h2>MONNEY BACK</h2>
+<p>guarantee 100%</p>
+</div>
+</div>]]></static_block_content>
+		<type>static</type>
+		<position>1</position>
+		<setting><![CDATA[{"custom_class":"","animation":"","animation_delay":""}]]></setting>
+		<col>12</col>
+		<custom_class><![CDATA[]]></custom_class>
+	</child>
+	<child>
+		<block_name>block7-2</block_name>
+		<block_content><![CDATA[]]></block_content>
+		<static_block_title><![CDATA[Cetus Shipping Static Block 3]]></static_block_title>
+		<static_block_identifier><![CDATA[cetus_shipping_static_block3]]></static_block_identifier>
+		<static_block_content><![CDATA[<div class="policy">
+<div class="icon-policy"><img src="{{media url="wysiwyg/icon-footer-3.png"}}" alt="" /></div>
+<div class="text-policy">
+<h2>123-456-7890</h2>
+<p>8.00 am - 6.00 pm</p>
+</div>
+</div>]]></static_block_content>
+		<type>static</type>
+		<position>1</position>
+		<setting><![CDATA[{"custom_class":"","animation":"","animation_delay":""}]]></setting>
+		<col>12</col>
+		<custom_class><![CDATA[]]></custom_class>
+	</child>
+	<child>
+		<block_name>block7-1</block_name>
+		<block_content><![CDATA[]]></block_content>
+		<static_block_title><![CDATA[Cetus Shipping Static Block 2]]></static_block_title>
+		<static_block_identifier><![CDATA[cetus_shipping_static_block2]]></static_block_identifier>
+		<static_block_content><![CDATA[<div class="policy">
+<div class="icon-policy"><img src="{{media url="wysiwyg/icon-footer-2.png"}}" alt="" /></div>
+<div class="text-policy">
+<h2>QUICK DELIVERY</h2>
+<p>it's only 24 hours</p>
+</div>
+</div>]]></static_block_content>
+		<type>static</type>
+		<position>1</position>
+		<setting><![CDATA[{"custom_class":"","animation":"","animation_delay":""}]]></setting>
+		<col>12</col>
+		<custom_class><![CDATA[]]></custom_class>
+	</child>
+	<child>
+		<block_name>block7-0</block_name>
+		<block_content><![CDATA[]]></block_content>
+		<static_block_title><![CDATA[Cetus Shipping Static Block 1]]></static_block_title>
+		<static_block_identifier><![CDATA[cetus_shipping_static_block1]]></static_block_identifier>
+		<static_block_content><![CDATA[<div class="policy">
+<div class="icon-policy"><img src="{{media url="wysiwyg/icon-footer-1.png"}}" alt="" /></div>
+<div class="text-policy">
+<h2>FREE SHIPPING</h2>
+<p>over than $150</p>
+</div>
+</div>]]></static_block_content>
+		<type>static</type>
+		<position>1</position>
+		<setting><![CDATA[{"custom_class":"","animation":"","animation_delay":""}]]></setting>
+		<col>12</col>
+		<custom_class><![CDATA[]]></custom_class>
+	</child>
+	<child>
+		<block_name>block1-0</block_name>
+		<block_content><![CDATA[{{block type="promobanners/promobanners" banner_id="%s" template="mgs/promobanners/banner.phtml"}}]]></block_content>
+		<type>promo_banner</type>
+		<banner_title><![CDATA[Cetus Promobanner]]></banner_title>
+		<banner_filename><![CDATA[promobaner.jpg]]></banner_filename>
+		<banner_url>#</banner_url>
+		<banner_content><![CDATA[<h4>BEST OFFER</h4>
+<h3>OFF 25%</h3>]]></banner_content>
+		<banner_button><![CDATA[Shop Now]]></banner_button>
+		<banner_text_align><![CDATA[center]]></banner_text_align>
+		<position>9</position>
+		<setting><![CDATA[{"custom_class":"has-overlay","animation":"","animation_delay":"","text_colour":"text-colour-white","link_colour":"","link_hover_colour":"","button_colour":"","button_hover_colour":"","button_text_colour":"button-text-colour-white","button_text_hover_colour":"","button_border_colour":"button-border-colour-white","button_border_hover_colour":"","banner_id":"%s"}]]></setting>
+		<col>12</col>
+		<custom_class><![CDATA[]]></custom_class>
+	</child>
+	<child>
+		<block_name>block1-1</block_name>
+		<block_content><![CDATA[{{block type="promobanners/promobanners" banner_id="%s" template="mgs/promobanners/banner.phtml"}}]]></block_content>
+		<type>promo_banner</type>
+		<banner_title><![CDATA[Cetus Promo Toy Kid]]></banner_title>
+		<banner_filename><![CDATA[02_homepage_sidebar.jpg]]></banner_filename>
+		<banner_url>#</banner_url>
+		<banner_content><![CDATA[]]></banner_content>
+		<banner_button><![CDATA[]]></banner_button>
+		<banner_text_align><![CDATA[left]]></banner_text_align>
+		<position>11</position>
+		<setting><![CDATA[{"custom_class":"","animation":"","animation_delay":"","text_colour":"","link_colour":"","link_hover_colour":"","button_colour":"","button_hover_colour":"","button_text_colour":"","button_text_hover_colour":"","button_border_colour":"","button_border_hover_colour":"","banner_id":"%s"}]]></setting>
+		<col>12</col>
+		<custom_class><![CDATA[]]></custom_class>
+	</child>
+	<child>
+		<block_name>block1-1</block_name>
+		<block_content><![CDATA[{{block type="promobanners/promobanners" banner_id="%s" template="mgs/promobanners/banner.phtml"}}]]></block_content>
+		<type>promo_banner</type>
+		<banner_title><![CDATA[Cetus Promo Furnitures]]></banner_title>
+		<banner_filename><![CDATA[banner-super.jpg]]></banner_filename>
+		<banner_url>#</banner_url>
+		<banner_content><![CDATA[]]></banner_content>
+		<banner_button><![CDATA[]]></banner_button>
+		<banner_text_align><![CDATA[left]]></banner_text_align>
+		<position>6</position>
+		<setting><![CDATA[{"custom_class":"col-sm-12","animation":"","animation_delay":"","text_colour":"","link_colour":"","link_hover_colour":"","button_colour":"","button_hover_colour":"","button_text_colour":"","button_text_hover_colour":"","button_border_colour":"","button_border_hover_colour":"","banner_id":"%s"}]]></setting>
+		<col>12</col>
+		<custom_class><![CDATA[]]></custom_class>
+	</child>
+	<child>
+		<block_name>block1-0</block_name>
+		<block_content><![CDATA[]]></block_content>
+		<type>separator</type>
+		<position>10</position>
+		<setting><![CDATA[{"custom_class":"","separator_type":"white-space","border_type":"full","border_style":"style1","border_icon":"","text_content":"","margin_top":"16","margin_bottom":"16"}]]></setting>
+		<col>12</col>
+		<custom_class><![CDATA[]]></custom_class>
+	</child>
+	<child>
+		<block_name>block1-1</block_name>
+		<block_content><![CDATA[]]></block_content>
+		<type>separator</type>
+		<position>8</position>
+		<setting><![CDATA[{"custom_class":"","separator_type":"white-space","border_type":"full","border_style":"style1","border_icon":"","text_content":"","margin_top":"20","margin_bottom":"20"}]]></setting>
+		<col>12</col>
+		<custom_class><![CDATA[]]></custom_class>
+	</child>
+	<child>
+		<block_name>block1-1</block_name>
+		<block_content><![CDATA[]]></block_content>
+		<type>separator</type>
+		<position>5</position>
+		<setting><![CDATA[{"custom_class":"","separator_type":"white-space","border_type":"full","border_style":"style1","border_icon":"","text_content":"","margin_top":"18","margin_bottom":"18"}]]></setting>
+		<col>12</col>
+		<custom_class><![CDATA[]]></custom_class>
+	</child>
+	<child>
+		<block_name>block1-1</block_name>
+		<block_content><![CDATA[]]></block_content>
+		<type>separator</type>
+		<position>2</position>
+		<setting><![CDATA[{"custom_class":"","separator_type":"white-space","border_type":"full","border_style":"style1","border_icon":"","text_content":"","margin_top":"18","margin_bottom":"18"}]]></setting>
+		<col>12</col>
+		<custom_class><![CDATA[]]></custom_class>
+	</child>
+	<child>
+		<block_name>block1-0</block_name>
+		<block_content><![CDATA[]]></block_content>
+		<type>separator</type>
+		<position>12</position>
+		<setting><![CDATA[{"custom_class":"","separator_type":"white-space","border_type":"full","border_style":"style1","border_icon":"","text_content":"","margin_top":"16","margin_bottom":"16"}]]></setting>
+		<col>12</col>
+		<custom_class><![CDATA[]]></custom_class>
+	</child>
+	<child>
+		<block_name>block1-1</block_name>
+		<block_content><![CDATA[]]></block_content>
+		<type>separator</type>
+		<position>10</position>
+		<setting><![CDATA[{"custom_class":"","separator_type":"white-space","border_type":"full","border_style":"style1","border_icon":"","text_content":"","margin_top":"18","margin_bottom":"18"}]]></setting>
+		<col>12</col>
+		<custom_class><![CDATA[]]></custom_class>
+	</child>
+	<child>
+		<block_name>block1-1</block_name>
+		<block_content><![CDATA[]]></block_content>
+		<type>separator</type>
+		<position>13</position>
+		<setting><![CDATA[{"custom_class":"","separator_type":"white-space","border_type":"full","border_style":"style1","border_icon":"","text_content":"","margin_top":"18","margin_bottom":"18"}]]></setting>
+		<col>12</col>
+		<custom_class><![CDATA[]]></custom_class>
+	</child>
+	<child>
+		<block_name>block1-1</block_name>
+		<block_content><![CDATA[]]></block_content>
+		<type>separator</type>
+		<position>16</position>
+		<setting><![CDATA[{"custom_class":"","separator_type":"white-space","border_type":"full","border_style":"style1","border_icon":"","text_content":"","margin_top":"20","margin_bottom":"20"}]]></setting>
+		<col>12</col>
+		<custom_class><![CDATA[]]></custom_class>
+	</child>
+	
+	<child>
+		<block_name>block1-1</block_name>
+		<block_content><![CDATA[]]></block_content>
+		<type>separator</type>
+		<position>18</position>
+		<setting><![CDATA[{"custom_class":"","separator_type":"white-space","border_type":"full","border_style":"style1","border_icon":"","text_content":"","margin_top":"18","margin_bottom":"18"}]]></setting>
+		<col>12</col>
+		<custom_class><![CDATA[]]></custom_class>
+	</child>
+	
+	<child>
+		<block_name>block1-1</block_name>
+		<block_content><![CDATA[]]></block_content>
+		<type>separator</type>
+		<position>21</position>
+		<setting><![CDATA[{"custom_class":"","separator_type":"white-space","border_type":"full","border_style":"style1","border_icon":"","text_content":"","margin_top":"18","margin_bottom":"18"}]]></setting>
+		<col>12</col>
+		<custom_class><![CDATA[]]></custom_class>
+	</child>
+	
+	<child>
+		<block_name>block1-0</block_name>
+		<block_content><![CDATA[]]></block_content>
+		<type>separator</type>
+		<position>2</position>
+		<setting><![CDATA[{"custom_class":"","separator_type":"white-space","border_type":"full","border_style":"style1","border_icon":"","text_content":"","margin_top":"16","margin_bottom":"16"}]]></setting>
+		<col>12</col>
+		<custom_class><![CDATA[]]></custom_class>
+	</child>
+	<child>
+		<block_name>block1-0</block_name>
+		<block_content><![CDATA[]]></block_content>
+		<type>separator</type>
+		<position>4</position>
+		<setting><![CDATA[{"custom_class":"","separator_type":"white-space","border_type":"full","border_style":"style1","border_icon":"","text_content":"","margin_top":"16","margin_bottom":"16"}]]></setting>
+		<col>12</col>
+		<custom_class><![CDATA[]]></custom_class>
+	</child>
+	<child>
+		<block_name>block1-0</block_name>
+		<block_content><![CDATA[]]></block_content>
+		<type>separator</type>
+		<position>8</position>
+		<setting><![CDATA[{"custom_class":"","separator_type":"white-space","border_type":"full","border_style":"style1","border_icon":"","text_content":"","margin_top":"16","margin_bottom":"16"}]]></setting>
+		<col>12</col>
+		<custom_class><![CDATA[]]></custom_class>
+	</child>
+	<child>
+		<block_name>block1-0</block_name>
+		<block_content><![CDATA[]]></block_content>
+		<type>separator</type>
+		<position>6</position>
+		<setting><![CDATA[{"custom_class":"","separator_type":"white-space","border_type":"full","border_style":"style1","border_icon":"","text_content":"","margin_top":"16","margin_bottom":"16"}]]></setting>
+		<col>12</col>
+		<custom_class><![CDATA[]]></custom_class>
+	</child>
+	<child>
+		<block_name>block1-1</block_name>
+		<block_content><![CDATA[{{block type="mpanel/products" products_count="8" slider="1" count_per_row="4" title="Best Selling" product_ratio="4" auto_play="false" stop_hover="false" navigation="true" pagination="false" number_row="1" template="mgs/mpanel/products/hot_products.phtml"}}]]></block_content>
+		<type>hot</type>
+		<position>1</position>
+		<setting><![CDATA[{"title":"Best Selling","custom_class":"tabs-small col-sm-12 col-xs-12 ","animation":"","animation_delay":"","product_count":"8","view_mode":"grid","count_per_row":"4","product_ratio":"4","slider":{"active":"1","number_row":"1","auto":"false","stop_hover":"false","navigation":"true","pagination":"false"},"load_more":"0","text_colour":"","link_colour":"","link_hover_colour":"","button_colour":"","button_hover_colour":"","button_text_colour":"","button_text_hover_colour":"","button_border_colour":"","button_border_hover_colour":"","price_colour":""}]]></setting>
+		<col>12</col>
+		<custom_class><![CDATA[]]></custom_class>
+	</child>
+	<child>
+		<block_name>block1-0</block_name>
+		<block_content><![CDATA[{{block type="mpanel/product_rate" products_count="3" title="Trending Products" template="mgs/mpanel/products/list/rate_products.phtml" product_ratio="4"}}]]></block_content>
+		<type>rate</type>
+		<position>3</position>
+		<setting><![CDATA[{"title":"Trending Products","custom_class":"","animation":"","animation_delay":"","product_count":"3","view_mode":"list","count_per_row":"1","product_ratio":"4","slider":{"active":"0","number_row":"","auto":"false","stop_hover":"false","navigation":"false","pagination":"false"},"load_more":"0","text_colour":"","link_colour":"","link_hover_colour":"","button_colour":"","button_hover_colour":"","button_text_colour":"","button_text_hover_colour":"","button_border_colour":"","button_border_hover_colour":"","price_colour":""}]]></setting>
+		<col>12</col>
+		<custom_class><![CDATA[]]></custom_class>
+	</child>
+	<child>
+		<block_name>block1-0</block_name>
+		<block_content><![CDATA[{{block type="testimonial/testimonial" template="mgs/testimonial/view.phtml" view_mode="grid" title="Testimonials" item_count="3"}}]]></block_content>
+		<type>testimonials</type>
+		<position>7</position>
+		<setting><![CDATA[{"custom_class":"","animation":"","animation_delay":"","title":"Testimonials","item_count":"3","view_mode":"grid"}]]></setting>
+		<col>12</col>
+		<custom_class><![CDATA[]]></custom_class>
+	</child>
+	
+	<child>
+		<block_name>block1-1</block_name>
+		<block_content><![CDATA[]]></block_content>
+		<static_block_title><![CDATA[Cetus Tile And View All Electronics]]></static_block_title>
+		<static_block_identifier><![CDATA[cetus-tile-and-view-all-electronics]]></static_block_identifier>
+		<static_block_content><![CDATA[<p class="title"><span>Electronics &amp; Computer</span></p>
+<p><a class="link-category" href="http://mgs.arrowhitech.net/cetus/index.php/home-electronic.html"><em class="fa fa-th-large">&nbsp;</em>View All</a></p>]]></static_block_content>
+		<type>static</type>
+		<position>3</position>
+		<setting><![CDATA[{"custom_class":"title-categories","animation":"","animation_delay":""}]]></setting>
+		<col>12</col>
+		<custom_class><![CDATA[]]></custom_class>
+	</child>
+	
+	<child>
+		<block_name>block1-1</block_name>
+		<block_content><![CDATA[]]></block_content>
+		<static_block_title><![CDATA[Cetus Tile And View All Funitures]]></static_block_title>
+		<static_block_identifier><![CDATA[cetus-tile-and-view-all-funitures]]></static_block_identifier>
+		<static_block_content><![CDATA[<p class="title"><span>Home &amp; Funitures</span></p>
+<p><a class="link-category" href="http://mgs.arrowhitech.net/cetus/index.php/home-funitures.html"> <em class="fa fa-th-large">&nbsp;</em>View All</a></p>]]></static_block_content>
+		<type>static</type>
+		<position>6</position>
+		<setting><![CDATA[{"custom_class":"title-categories","animation":"","animation_delay":""}]]></setting>
+		<col>12</col>
+		<custom_class><![CDATA[]]></custom_class>
+	</child>
+	
+	<child>
+		<block_name>block1-1</block_name>
+		<block_content><![CDATA[]]></block_content>
+		<static_block_title><![CDATA[Cetus Tile And View All Beauty]]></static_block_title>
+		<static_block_identifier><![CDATA[cetus-tile-and-view-all-beauty]]></static_block_identifier>
+		<static_block_content><![CDATA[<p class="title"><span>Beauty &amp; Health</span></p>
+<p><a class="link-category" href="http://mgs.arrowhitech.net/cetus/index.php/beauty-health.html"> <em class="fa fa-th-large">&nbsp;</em>View All</a></p>]]></static_block_content>
+		<type>static</type>
+		<position>11</position>
+		<setting><![CDATA[{"custom_class":"title-categories","animation":"","animation_delay":""}]]></setting>
+		<col>12</col>
+		<custom_class><![CDATA[]]></custom_class>
+	</child>
+	
+	<child>
+		<block_name>block1-1</block_name>
+		<block_content><![CDATA[]]></block_content>
+		<static_block_title><![CDATA[Cetus Tile And View All Toys]]></static_block_title>
+		<static_block_identifier><![CDATA[cetus-tile-and-view-all-toys]]></static_block_identifier>
+		<static_block_content><![CDATA[<p class="title"><span>Toy, Kid &amp; Baby</span></p>
+<p><a class="link-category" href="http://mgs.arrowhitech.net/cetus/index.php/toys-kids-baby.html"> <em class="fa fa-th-large">&nbsp;</em>View All</a></p>]]></static_block_content>
+		<type>static</type>
+		<position>14</position>
+		<setting><![CDATA[{"custom_class":"title-categories","animation":"","animation_delay":""}]]></setting>
+		<col>12</col>
+		<custom_class><![CDATA[]]></custom_class>
+	</child>
+	
+	<child>
+		<block_name>block1-1</block_name>
+		<block_content><![CDATA[]]></block_content>
+		<static_block_title><![CDATA[Cetus Tile And View All Sport]]></static_block_title>
+		<static_block_identifier><![CDATA[cetus-tile-and-view-all-sport]]></static_block_identifier>
+		<static_block_content><![CDATA[<p class="title"><span>Sport &amp; Ourdoor</span></p>
+<p><a class="link-category" href="http://mgs.arrowhitech.net/cetus/index.php/sport-outdoors.html"> <em class="fa fa-th-large">&nbsp;</em>View All</a></p>]]></static_block_content>
+		<type>static</type>
+		<position>19</position>
+		<setting><![CDATA[{"custom_class":"title-categories","animation":"","animation_delay":""}]]></setting>
+		<col>12</col>
+		<custom_class><![CDATA[]]></custom_class>
+	</child>
+	
+	<child>
+		<block_name>block1-1</block_name>
+		<block_content><![CDATA[]]></block_content>
+		<static_block_title><![CDATA[Cetus Tile And View All Clothing]]></static_block_title>
+		<static_block_identifier><![CDATA[cetus-tile-and-view-all-clothing]]></static_block_identifier>
+		<static_block_content><![CDATA[<p class="title"><span>Clothing, Shoes &amp; Jewelry</span></p>
+<p><a class="link-category" href="http://mgs.arrowhitech.net/cetus/index.php/clothing-shoes.html"> <em class="fa fa-th-large">&nbsp;</em>View All</a></p>]]></static_block_content>
+		<type>static</type>
+		<position>22</position>
+		<setting><![CDATA[{"custom_class":"title-categories","animation":"","animation_delay":""}]]></setting>
+		<col>12</col>
+		<custom_class><![CDATA[]]></custom_class>
+	</child>
+	
+	<child>
+		<block_name>block1-1</block_name>
+		<block_content><![CDATA[]]></block_content>
+		<static_block_title><![CDATA[Cetus Sticky Left Menu]]></static_block_title>
+		<static_block_identifier><![CDATA[cetus_sticky_left_menu]]></static_block_identifier>
+		<static_block_content><![CDATA[<div class="menu-tooltip navbar navbar-custom navbar-fixed-top">
+<div id="tt-menu" class="tt-menu navbar-collapse navbar-right navbar-main-collapse collapse">
+<ul class="tt-wrapper nav navbar-nav">
+<li><a class="tt-icon tip-electronics" href="#"><em class="fa fa-desktop icon"></em> <span>Electronics &amp; Computer</span> </a></li>
+<li><a class="tt-icon tip-furnitures" href="#"><em class="fa fa-building-o icon"></em> <span>Home &amp; Furnitures</span> </a></li>
+<li><a class="tt-icon tip-health" href="#"><em class="fa fa-pagelines icon"></em> <span>Beauty &amp; Health</span> </a></li>
+<li><a class="tt-icon tip-toys" href="#"><em class="fa fa-reddit icon"></em> <span>Smart &amp; safe toys</span> </a></li>
+<li><a class="tt-icon tip-shoes" href="#"><em class="fa fa-umbrella icon"></em> <span>Clothing &amp; Shoes</span> </a></li>
+<li><a class="tt-icon tip-sport" href="#"><em class="fa fa-futbol-o icon"></em> <span>Sport &amp; Outdoors</span> </a></li>
+</ul>
+</div>
+</div>]]></static_block_content>
+		<type>static</type>
+		<position>24</position>
+		<setting><![CDATA[{"custom_class":"","animation":"","animation_delay":""}]]></setting>
+		<col>12</col>
+		<custom_class><![CDATA[]]></custom_class>
+	</child>
+</layout>

@@ -1,0 +1,38 @@
+<?php if ($posts = $this->getRecent()): ?>
+<?php
+if ($this->getTitle() != '') {
+    $title = $this->getTitle();
+} else {
+    $title = 'Recent Posts';
+}
+?>
+<div class="block block-layered-nav">
+    <div class="block-title">
+        <h2 class="title-name"><?php echo $this->__($title) ?></h2>
+    </div>
+    <div class="block-content">
+		<ul class="nav-block">
+                <?php foreach ($posts as $post): ?>
+                    <li class="level0"><a href="<?php echo $post->getAddress(); ?>" ><?php echo $post->getTitle(); ?></a></li>
+                <?php endforeach; ?>
+		</ul>
+		<?php echo $this->getChildHtml('blog_tags'); ?>
+    </div>
+</div>
+<?php endif; ?>
+<?php if ($this->getCategories()->count() && Mage::getStoreConfig('blog/menu/category')): ?>
+<div class="block block-layered-nav">
+    <div class="block-title">
+        <h2 class="title-name"><?php echo Mage::helper('blog')->__('Categories'); ?></h2>
+    </div>
+    <div class="block-content">
+		<ul class="nav-block">
+                <?php $cats = $this->getCategories(); ?>
+                <?php foreach ($cats as $cat): ?>
+                    <li class="level0"><a href="<?php echo $cat->getAddress(); ?>" ><?php echo $cat->getTitle(); ?></a></li>
+                <?php endforeach; ?>
+		</ul>
+		<?php echo $this->getChildHtml('blog_tags'); ?>
+    </div>
+</div>
+<?php endif; ?>

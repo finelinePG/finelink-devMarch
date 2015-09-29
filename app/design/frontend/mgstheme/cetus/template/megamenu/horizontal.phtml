@@ -1,0 +1,17 @@
+<?php $megaMenu = $this->getMegamenuItems(); ?>
+<?php if(count($megaMenu)>0):?>
+<div class="content-filter sub-container nav-sub-menu menu-effect">
+	<div class="nav-sub">
+		<ul id="horizontal-menu-<?php echo $this->getMenuId()?>" class="horizontal-menu nav nav-pills nav-main mega-nav">
+			<?php if(count($megaMenu)>0): ?>
+				<?php $i=0; foreach($megaMenu as $item): $i++ ?>
+					<li class="<?php echo $this->getClass($item) ?>">
+						<?php echo $this->getMenuHtml($item) ?>
+					</li>
+				<?php endforeach ?>
+			<?php endif ?>
+		</ul>
+	</div>
+</div>
+<?php endif ?>
+

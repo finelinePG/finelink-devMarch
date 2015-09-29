@@ -1,0 +1,21 @@
+<div id="alert_messages_block"><?php echo $this->getMessageHtml() ?></div>
+
+<div class="entry-edit">
+
+    <div class="entry-edit-head">
+        <h4 class="icon-head head-edit-form fieldset-legend"><?php echo Mage::helper('catalog')->__('Chili Web2Print') ?></h4>
+    </div>
+    
+	<fieldset>
+        <legend><?php echo Mage::helper('catalog')->__('Chili Web2Print') ?></legend>
+        <table cellspacing="0" class="form-list" id="table_web2print">
+        <tr>
+        	<td class="label">
+        		<label for="web2print_document_id"><?php echo Mage::helper('catalog')->__('Document id') ?></label></td>
+        	<td class="value">
+        		<input type="text" class="input-text required-entry" id="web2print_document_id" name="<?php echo $this->getFieldSuffix() ?>[web2print][document_id]" value="<?php echo $this->getFieldValue('document_id') ?>"/>
+        	</td>
+        </tr>	
+        </table>
+    </fieldset>
+</div>	

@@ -1,0 +1,35 @@
+/* Resourcebrowser styles */
+ul.resource-level{padding-left:15px; }
+ul.resource-level.open{}
+ul.resource-level.hidden{display:none;}
+
+ul.resource-level a{padding-left:15px;}
+ul.resource-level .folder{color:#000;background-image:url(../images/bg_collapse.gif);background-repeat: no-repeat;}
+ul.resource-level .folder.open{background-position:0 -54px;}
+ul.resource-level .folder.hidden{background-position:0 3px;}
+
+.fieldset-wide .form-list td.value input.input-text{width: 220px!important}
+
+ul.resource-level li{display:block;}
+ul.resource-level.open .even{background-color:#FAFAFA; border-bottom:1px solid #BEBEBE; padding:8px 5px; }
+ul.resource-level.open .odd{background-color:#E7EFEF; border-bottom:1px solid #BEBEBE;padding:8px 5px;}
+
+ul.resource-level.list.open .even{background-color:#FAFAFA; border-bottom:1px solid #BEBEBE; padding:8px 5px; float:left; width: 100px; height:160px; text-align: center; margin-right: 10px; margin-bottom: 10px; cursor: pointer; }
+ul.resource-level.list.open .odd{background-color:#E7EFEF; border-bottom:1px solid #BEBEBE;padding:8px 5px; float:left; width: 100px; height:160px; text-align: center; margin-right: 10px; margin-bottom: 10px; cursor: pointer;}
+ul.resource-level .dir{clear:left;}
+
+
+ul.resource-level.open .even:hover{background-color: #D8E6E6;}
+ul.resource-level.open .odd:hover{background-color: #D8E6E6;}
+
+ul.documentWrapper{cursor: pointer;}
+ul.documentWrapper li{display: inline-block; }
+ul.documentWrapper a{text-decoration:none;}
+ul.documentWrapper li.documentImage img{background:white;}
+.magento_content{padding-top:15px;}
+.magento_content h3{color:#61777F; margin-bottom: 10px;}
+
+ul.resource-level .dir{clear:left;}
+
+.web2print_popup_container{width:370px!important;}
+.input-text.resourcebrowser-result{width:220px!important;}

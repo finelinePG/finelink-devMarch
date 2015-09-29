@@ -1,0 +1,117 @@
+<?php
+$this->_conceptCollection;
+?>
+
+<div class="my-conceptlist">
+    <div class="page-title title-buttons">
+        <h1><?php echo $this->__('My Conceptlist') ?></h1>
+    </div>
+    <?php if(count($this->_conceptCollection) > 0) : ?>
+    <form id="conceptlist-view-form" action="<?php echo $this->getUrl('web2print/concept/update/'); ?>" method="post">
+        <fieldset>
+            <table class="data-table" id="conceptlist-table">
+                <thead>
+                <tr>
+                    <th><?php echo $this->__('Preview') ?></th>
+                    <th><?php echo $this->__('Product Details and Comment') ?></th>
+                    <th><?php echo $this->__('Options') ?></th>
+                    <th></th>
+                </tr>
+                </thead>
+                <tbody>
+                <?php foreach($this->_conceptCollection as $conceptItem):
+                    $_product = Mage::getModel('catalog/product')->load($conceptItem->getProductId());
+                ?>
+                <tr>
+                    <td>
+                        <?php
+                            $img_url = $this->helper('catalog/image')->init($_product, 'small_image')->resize(113, 113);
+                            if ($url = $this->helper('catalog/image')->getImageByOption($conceptItem->getChiliId(),$_product->getId())){
+                                $img_url = $url;
+                            }
+                        ?>
+                        <a href="<?php echo $img_url; ?>" class="concept-image" target="_blank">
+                            <img src="<?php echo $img_url ?>" height="100%" width="100%" alt="<?php echo $this->stripTags($this->getImageLabel($_product, 'small_image'), null, true) ?>" />
+                        </a>
+                    </td>
+                    <td><h3 class="product-name">
+                            <a href="<?php echo $this->getUrl($_product->getUrlPath()); ?>" title="<?php echo $_product->getName(); ?>">
+                                <?php echo $_product->getName(); ?>
+                            </a></h3>
+                        <div class="description std">
+                            <div class="inner">
+                            <?php echo $_product->getShortDescription(); ?>
+                            </div>
+                        </div>
+                        <textarea name="<?php echo 'description['.$conceptItem->getConceptId().']'; ?>" rows="2" cols="5" onfocus="focusComment(this)" onblur="focusComment(this)" title="Comment"><?php echo ($this->escapeHtml($conceptItem->getDescription())) ?></textarea>
+                    </td>
+                    <td><div class="cart-cell">
+                            <div class="price-box">
+                                <span class="regular-price" id="product-price-93">
+                                    <span class="price"><?php echo Mage::helper('core')->currency($_product->getPrice(), true, false); ?></span>
+                                </span>
+                            </div>
+                            <div class="add-to-cart-alt">
+                                <button type="button" title="Add to Cart" onclick="<?php echo 'addConceptToCart('.$conceptItem->getConceptId().')'; ?>" class="button btn-cart">
+                                    <span><span><?php echo $this->__('Add to Cart') ?></span></span>
+                                </button>
+                            </div>
+                            <br />
+                            <p>
+                                <a href="<?php echo $this->getUrl('web2print/editor/load/',array('type' => 'concept', 'id' => $conceptItem->getConceptId())) ?>" title="<?php echo $this->__('Edit concept') ?>">
+                                    <?php echo $this->__('Edit concept') ?>
+                                </a>
+                            </p>
+                        </div>
+                    </td>
+                    <td>
+                        <a href="<?php echo $this->getUrl('web2print/concept/remove',array('id'=>$conceptItem->getConceptId()))?>" onclick="return confirmRemoveConceptlistItem();" title="Remove Item" class="btn-remove btn-remove2"><?php echo $this->__('Remove item') ?></a>
+                    </td>
+                </tr>
+                <?php endforeach; ?>
+                </tbody>
+            </table>
+
+            <div class="buttons-set buttons-set2">
+                <button class="button btn-update" title="<?php echo $this->__('Update Conceptlist') ?>" name="do" type="submit">
+                    <span>
+                        <span><?php echo $this->__('Update Conceptlist') ?></span>
+                    </span>
+                </button>
+            </div>
+
+            <script type="text/javascript">
+                //<![CDATA[
+                var addtocartUrl = '<?php echo $this->getUrl('*/*/addtocart') ?>';
+
+                function addConceptToCart(conceptId) {
+                    var data = null;
+
+                    new Ajax.Request(addtocartUrl, {
+                        method: 'post',
+                        parameters: {conceptId: conceptId},
+                        onSuccess: function(transport){
+                            var responseObject = transport.responseText.evalJSON();
+
+                            if(responseObject.status == "success") {
+                                window.location = responseObject.redirect;
+                            } else {
+                                alert('<?php echo $this->__('Unable to add concept to shoppingcart'); ?>');
+                            }
+                        }
+                    });
+                }
+
+                function confirmRemoveConceptlistItem() {
+                    return confirm('<?php echo $this->__('Are you sure you want to remove this product from your Conceptlist?') ?>');
+                }
+
+
+                //]]>
+            </script>
+        </fieldset>
+    </form>
+    <?php else: ?>
+        <?php echo $this->__('You have no items in your conceptslist'); ?>
+    <?php endif; ?>
+</div>

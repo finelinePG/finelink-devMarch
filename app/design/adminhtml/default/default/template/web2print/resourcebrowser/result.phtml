@@ -1,0 +1,48 @@
+<?php $params = $this->getParams() ?>
+<?php if(isset($params['resourceType'])):?>
+<h3><?php echo $this->__($params['resourceType']);?></h3>
+<?php endif;?>
+
+
+<ul class="resource-level<?php if(isset($params['resourceType']) &&in_array($params['resourceType'], $this->getDisplaySettings())): echo ' list'; endif; ?> <?php echo $params['visibility'] ?>">
+    <?php $i = 0;?>
+    <?php foreach($this->getItem() as $item):  ?>
+    
+    <?php
+        $class = '';
+        if($i%2 == 0):
+            $class = 'class="child even"'; 
+            
+        else: 
+            $class = 'class="child odd"'; 
+        endif;
+        $website = Mage::getModel('core/website')->load($this->getRequest()->getParam('website'));
+    ?>
+    <li  <?php if($item['isFolder'] != 'true'):  echo $class; else: echo 'class="dir"'; endif; ?>>
+        <?php if($item['isFolder'] == 'true'): ?>
+        <a href="#" class="folder hidden" onclick="resourceTreeTrigger(this, '<?php echo $this->getUrl('adminhtml/ajax/loadItems', array('type' => 'Documents', 'folder' => base64_encode($item['path']), 'element' => $params['element'], 'website'=>$website->getId())) ?>')"><?php echo $item['name'] ?></a>
+        <?php else: ?> 
+        <ul class="documentWrapper" onclick="resourceWindowSelect('<?php echo $item['name'].'|'.$item['id']?>','<?php echo $params['element'] ?>');return false;">
+            <?php if($item['iconURL'] != null):?>
+            <li class="documentImage">
+            <?php
+            $imgUrl = Mage::helper('web2print')->getChiliDomain($website).'/'.$item['iconURL'];
+            echo '<div class="img-placeholder" style="display: none;">' . $imgUrl . '</div>';                  
+            ?>
+            </li>
+            <?php endif; ?>
+            <li class="documentLink">
+                 <a href="#" title="<?php echo $item['id'];?>"><?php echo $item['name']; ?></a>
+            </li>
+        </ul>           
+           
+        <?php endif; ?>
+        
+        
+        <?php if($item->item->count()): ?>
+        <?php echo $this->getChildrenItems($item,array('element'=>$params['element'],'visibility'=>'hidden')); ?>
+        <?php endif; ?>
+    </li>   
+    
+    <?php $i++; endforeach; ?>
+</ul>

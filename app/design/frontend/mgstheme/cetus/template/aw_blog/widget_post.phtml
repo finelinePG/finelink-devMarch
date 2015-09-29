@@ -1,0 +1,110 @@
+<?php if ($posts = $this->getRecent()): ?>
+<div class="widget-latest block">
+<?php if ($this->getTitle() && $this->getTitle() != ''): ?>
+    <div class="block-title">
+        <h2 class="title-name"><?php echo $this->getTitle(); ?></h2>
+    </div>
+<?php endif ?>
+<?php if ($this->getViewMode() == 'grid'): ?>
+    <?php if ($this->getSlider() == 1): ?>
+        <div class="owl-carousel latest-post-carousel" id="latest-post-carousel" data-plugin-options='{"items": 1, "autoHeight": true}'>
+            <?php $i = 0;
+            foreach ($posts as $post):
+                ?>
+                <div class="item social-blog row">
+                    <div class="img-bg col-md-4 col-sm-4 col-xs-12">
+                        <?php if ($post->getFeaturedImage() != ''): ?>
+						<a href="<?php echo $post->getAddress(); ?>" >
+                            <img class="img-responsive" alt="" src="<?php echo Mage::getBaseUrl(Mage_Core_Model_Store::URL_TYPE_MEDIA) . 'blog/' . $post->getFeaturedImage(); ?>"/>
+                        <?php endif ?>
+						</a>
+                    </div>
+                    <div class="blog-container col-md-8 col-sm-8 col-xs-12">
+                        <h2><a href="<?php echo $post->getAddress(); ?>" ><?php echo $post->getTitle(); ?></a></h2>
+                        <p class="date"><?php echo date('d', strtotime($post->getCreatedTime())) ?> <?php echo date('F', strtotime($post->getCreatedTime())) ?>, <?php echo date('o', strtotime($post->getCreatedTime())) ?></p>
+
+                            <?php if ($post->getShortContent()): ?>
+                            <p class="desc">
+								<?php if($this->getCharacterCount()!=''): ?>
+									<?php echo Mage::helper('core/string')->truncate(strip_tags($post->getShortContent()), $this->getCharacterCount()); ?>
+								<?php else: ?>
+									<?php echo substr(strip_tags($post->getShortContent()),0,150); ?><?php if(strlen($post->getShortContent()) >= 150): ?><span>...</span><?php endif; ?>
+								<?php endif ?>
+							</p>
+        					<?php endif ?>
+                    </div>
+                </div>
+    <?php endforeach; ?>
+   </div>
+
+    <script type="text/javascript">
+        initSlider('latest-post-carousel', <?php echo $this->getColumn() ?>, <?php echo $this->getAutoPlay() ?>, <?php echo $this->getStopHover() ?>, <?php 		echo $this->getNavigation() ?>, <?php echo $this->getPagination() ?>);
+    </script>
+    <?php else: ?>
+            <div class="latest-post-container block-content">
+                <?php $i = 0;
+                foreach ($posts as $post):
+                    ?>
+                <div class="col-md-<?php echo $this->helper('mpanel')->convertColRow($this->getColumn()) ?> col-sm-6 col-xs-12">
+                    <div class="item social-blog row">
+                        <div class="img-bg col-md-4 col-sm-4 col-xs-12">
+                        <?php if ($post->getFeaturedImage() != ''): ?>
+						<a href="<?php echo $post->getAddress(); ?>" >
+                                <img class="img-responsive" alt="" src="<?php echo Mage::getBaseUrl(Mage_Core_Model_Store::URL_TYPE_MEDIA) . 'blog/' . $post->getFeaturedImage(); ?>"/>
+                        <?php endif ?>
+						</a>
+                        </div>
+                        <div class="blog-container col-md-8 col-sm-8 col-xs-12">
+                            <h2><a href="<?php echo $post->getAddress(); ?>" ><?php echo $post->getTitle(); ?></a></h2>
+                            <p class="date"><?php echo date('d', strtotime($post->getCreatedTime())) ?> <?php echo date('F', strtotime($post->getCreatedTime())) ?>, <?php echo date('o', strtotime($post->getCreatedTime())) ?></p>
+
+                                <?php if ($post->getShortContent()): ?>
+                                <p class="desc">
+									<?php if($this->getCharacterCount()!=''): ?>
+										<?php echo Mage::helper('core/string')->truncate(strip_tags($post->getShortContent()), $this->getCharacterCount()); ?>
+									<?php else: ?>
+										<?php echo substr(strip_tags($post->getShortContent()),0,150); ?><?php if(strlen($post->getShortContent()) >= 150): ?><span>...</span><?php endif; ?>
+									<?php endif ?>
+								</p>
+                    			<?php endif ?>
+                        </div>
+                    </div>
+                </div>
+            <?php endforeach; ?>
+            </div>
+            <?php endif ?>
+        <?php else: ?>
+        <div class="latest-post-list block-content">
+    <?php $i = 0;
+    foreach ($posts as $post):
+        ?>
+                <div class="item social-blog">
+                    <div class="img-bg col-md-4 col-sm-4 col-xs-12">
+                        <?php if ($post->getFeaturedImage() != ''): ?>
+						<a href="<?php echo $post->getAddress(); ?>" >
+                                <img class="img-responsive" alt="" src="<?php echo Mage::getBaseUrl(Mage_Core_Model_Store::URL_TYPE_MEDIA) . 'blog/' . $post->getFeaturedImage(); ?>"/>
+                        <?php endif ?>
+						</a>
+                    </div>
+                    <div class="blog-container col-md-8 col-sm-8 col-xs-12">
+                        <h2><a href="<?php echo $post->getAddress(); ?>" ><?php echo $post->getTitle(); ?></a></h2>
+                        <span class="date"><?php echo date('d', strtotime($post->getCreatedTime())) ?> <?php echo date('F', strtotime($post->getCreatedTime())) ?>, <?php echo date('o', strtotime($post->getCreatedTime())) ?></span>
+						<?php if ($this->getCommentsEnabled()): ?>
+							<?php ($post->getCommentCount() >= 1) ? $post->getCommentCount() : 0 ?> <a class="comments" href="<?php echo $post->getAddress(); ?>#commentBox" ><i class="fa fa-comments-o"></i> <?php echo Mage::helper('blog')->__(' Comments'); ?></a>
+						<?php endif; ?>
+                        <?php if ($post->getShortContent()): ?>
+                        <p class="desc">
+							<?php if($this->getCharacterCount()!=''): ?>
+								<?php echo Mage::helper('core/string')->truncate(strip_tags($post->getShortContent()), $this->getCharacterCount()); ?>
+							<?php else: ?>
+								<?php echo substr(strip_tags($post->getShortContent()),0,150); ?><?php if(strlen($post->getShortContent()) >= 150): ?><span>...</span><?php endif; ?>
+							<?php endif ?>
+						</p>
+            			<?php endif ?>
+                    </div>
+                </div>
+    <?php endforeach; ?>
+        </div>
+<?php endif ?>
+</div>
+<?php endif; ?>

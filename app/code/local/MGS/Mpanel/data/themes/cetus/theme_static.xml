@@ -1,0 +1,423 @@
+<static_block>
+	<item>
+		<title>Cetus Vertical Menu</title>
+		<identifier>cetus_vertical_menu</identifier>
+		<content><![CDATA[<div class="btn-menu">
+<h3>Shop by Category</h3>
+<span><em class="fa fa-list">&nbsp;</em></span></div>
+<div class="img-vertical-menu">{{block type="megamenu/vertical" menu_id="2" template="megamenu/vertical.phtml"}}
+<div class="big-sale">
+<div class="img-sale"><a href="#"><img src="{{media url="wysiwyg/img-vertical.jpg"}}" alt="" /></a></div>
+<div class="text-sale">
+<h2>Customs Static Block</h2>
+<p>Easy To Edit</p>
+<p>&nbsp;</p>
+</div>
+</div>
+</div>]]></content>
+	</item>
+	
+	<item>
+		<title>Cetus Newsletter Footer</title>
+		<identifier>cetus_newsletter_footer</identifier>
+		<content><![CDATA[<div class="newletter">
+<div class="form-subscribe">
+<div class="n-title">
+<h4>Newsletter</h4>
+<p>Make sure you don&rsquo;t miss interesting happenings</p>
+</div>
+{{block type="newsletter/subscribe" name="home.newsletter" as="home.newsletter" template="newsletter/footer-subscribe.phtml"/}}</div>
+</div>]]></content>
+	</item>
+	
+	<item>
+		<title>Cetus Footer Main Menu</title>
+		<identifier>cetus_main_menu</identifier>
+		<content><![CDATA[<div class="menu-footer">
+<h4 class="title-footer">Main menu</h4>
+<ul class="nav-footer">
+<li><a href="#">Home</a></li>
+<li><a href="#">About Us</a></li>
+<li><a href="#">Our Products</a></li>
+<li><a href="#">Our Brands</a></li>
+<li><a href="#">Blog</a></li>
+<li><a href="#">FAQs</a></li>
+<li><a href="#">Contact Us</a></li>
+</ul>
+</div>]]></content>
+	</item>
+	
+	<item>
+		<title>Cetus Footer Shopping Info</title>
+		<identifier>cetus_shopping_info</identifier>
+		<content><![CDATA[<div class="menu-footer">
+<h4 class="title-footer">Shopping Info</h4>
+<ul class="nav-footer">
+<li><a href="#">Returns</a></li>
+<li><a href="#">Delivery</a></li>
+<li><a href="#">Services</a></li>
+<li><a href="#">Gift Cards</a></li>
+<li><a href="#">Manufacturers</a></li>
+<li><a href="#">Discount Code</a></li>
+</ul>
+</div>]]></content>
+	</item>
+	
+	<item>
+		<title>Cetus Footer Userful Links</title>
+		<identifier>cetus_userful_links</identifier>
+		<content><![CDATA[<div class="menu-footer">
+<h4 class="title-footer">Userful Links</h4>
+<ul class="nav-footer">
+<li><a href="#">Site Map</a></li>
+<li><a href="#">Search Terms</a></li>
+<li><a href="#">Advanced Search</a></li>
+<li><a href="#">Mobile</a></li>
+<li><a href="#">Contact Us</a></li>
+<li><a href="#">Mobile</a></li>
+<li><a href="#">Addresses</a></li>
+</ul>
+</div>]]></content>
+	</item>
+	
+	<item>
+		<title>Cetus Footer Policies</title>
+		<identifier>cetus_policies</identifier>
+		<content><![CDATA[<div class="menu-footer">
+<h4 class="title-footer">Policies</h4>
+<ul class="nav-footer">
+<li><a href="#">Terms Of Service</a></li>
+<li><a href="#">Privacy</a></li>
+<li><a href="#">Security</a></li>
+<li><a href="#">Terms Of Use</a></li>
+</ul>
+</div>]]></content>
+	</item>
+	
+	<item>
+		<title>Cetus Payments</title>
+		<identifier>cetus_payments</identifier>
+		<content><![CDATA[<ul>
+<li><a href="#"><em class="fa fa-cc-visa">&nbsp;</em></a></li>
+<li><a href="#"><em class="fa fa-cc-paypal">&nbsp;</em></a></li>
+<li><a href="#"><em class="fa fa-cc-mastercard">&nbsp;</em></a></li>
+<li><a href="#"><em class="fa fa-cc-discover">&nbsp;</em></a></li>
+<li><a href="#"><em class="fa fa-cc-discover">&nbsp;</em></a></li>
+</ul>]]></content>
+	</item>
+	
+	<item>
+		<title>Cetus Shipping Static Block 1</title>
+		<identifier>cetus_shipping_static_block1</identifier>
+		<content><![CDATA[<div class="policy">
+<div class="icon-policy"><img src="{{media url="wysiwyg/icon-footer-1.png"}}" alt="" /></div>
+<div class="text-policy">
+<h2>FREE SHIPPING</h2>
+<p>over than $150</p>
+</div>
+</div>]]></content>
+	</item>
+	
+	<item>
+		<title>Cetus Shipping Static Block 2</title>
+		<identifier>cetus_shipping_static_block2</identifier>
+		<content><![CDATA[<div class="policy">
+<div class="icon-policy"><img src="{{media url="wysiwyg/icon-footer-2.png"}}" alt="" /></div>
+<div class="text-policy">
+<h2>Quick Delivery</h2>
+<p>it's only 24 hours</p>
+</div>
+</div>]]></content>
+	</item>
+	
+	<item>
+		<title>Cetus Shipping Static Block 3</title>
+		<identifier>cetus_shipping_static_block3</identifier>
+		<content><![CDATA[<div class="policy">
+<div class="icon-policy"><img src="{{media url="wysiwyg/icon-footer-3.png"}}" alt="" /></div>
+<div class="text-policy">
+<h2>123-456-7890</h2>
+<p>8.00 am - 6.00 pm</p>
+</div>
+</div>]]></content>
+	</item>
+	
+	<item>
+		<title>Cetus Shipping Static Block 4</title>
+		<identifier>cetus_shipping_static_block4</identifier>
+		<content><![CDATA[<div class="policy policy-right">
+<div class="icon-policy"><img src="{{media url="wysiwyg/icon-footer-4.png"}}" alt="" /></div>
+<div class="text-policy">
+<h2>Money Back</h2>
+<p>guarantee 100%</p>
+</div>
+</div>]]></content>
+	</item>
+	
+	<item>
+		<title>Cetus Product Static 1</title>
+		<identifier>cetus_product_static_1</identifier>
+		<content><![CDATA[<img src="{{media url="wysiwyg/2015-06-30_133612.png"}}" alt="" />]]></content>
+	</item>
+	
+	<item>
+		<title>Cetus Footer Logo</title>
+		<identifier>cetus_logo_footer</identifier>
+		<content><![CDATA[<div class="home-footer">
+<div class="img-footer"><img class="img-responsive" src="{{media url="wysiwyg/logo-footer.png"}}" alt="" /></div>
+<div class="text-footer">Suspendisse vel enim ut nisl malesuada tristique ut vel nunc. Integer sed justo ac tortor porta bibendum non vehicula sapien. Cras vel augue nisl. Nulla id aliquam purus.</div>
+</div>]]></content>
+	</item>
+	
+	<item>
+		<title>Cetus Store Info</title>
+		<identifier>cetus_store_info</identifier>
+		<content><![CDATA[<h4>Store info</h4>
+<div class="pull-left">
+<div class="store-container">
+<div class="icon-store"><em class="fa fa-home">&nbsp;</em></div>
+<div class="content-store">
+<p>Address:</p>
+<p>108 Street, AZ District, Green City</p>
+</div>
+</div>
+<div class="store-container">
+<div class="icon-store"><em class="fa fa-phone">&nbsp;</em></div>
+<div class="content-store">
+<p>Feel Free to Call Us:</p>
+<p>+123 456 7890</p>
+</div>
+</div>
+<div class="store-container">
+<div class="icon-store"><em class="fa fa-envelope">&nbsp;</em></div>
+<div class="content-store">
+<p>Email: info@magesolution.com</p>
+</div>
+</div>
+</div>
+<div class="pull-right">
+<div class="store-container">
+<div class="icon-store"><em class="fa fa-user-plus">&nbsp;</em></div>
+<div class="content-store">
+<p>Opening Hour:</p>
+<p>9:00 am - 21:00 pm / 7 days a week</p>
+</div>
+</div>
+<div class="store-container">
+<div class="icon-store"><em class="fa fa-clock-o">&nbsp;</em></div>
+<div class="content-store">
+<p>Join us:</p>
+<p>3 Positions Available</p>
+</div>
+</div>
+</div>]]></content>
+	</item>
+	
+	<item>
+		<title>Cetus Call Us Now</title>
+		<identifier>cetus_call_us_now</identifier>
+		<content><![CDATA[<p><span class="call-us">Call Us: <em class="fa fa-phone">&nbsp;</em> 123456789</span></p>]]></content>
+	</item>
+	
+	<item>
+		<title>Cetus Follow Footer</title>
+		<identifier>cetus-follow-footer</identifier>
+		<content><![CDATA[<div class="menu-footer">
+<div class="block-title">
+<h4 class="title-name">Follow us</h4>
+</div>
+<ul class="nav-footer">
+<li><a href="#"><em class="fa fa-facebook"></em>Facebook</a></li>
+<li><a href="#"><em class="fa fa-twitter"></em>Twitter</a></li>
+<li><a href="#"><em class="fa fa-google-plus"></em>Google+</a></li>
+<li><a href="#"><em class="fa fa-pinterest-p"></em>Pinterest</a></li>
+<li><a href="#"><em class="fa fa-youtube"></em>Youtube</a></li>
+</ul>
+</div>]]></content>
+	</item>
+	
+	<item>
+		<title>Cetus Payment Method Footer</title>
+		<identifier>cetus-payment-method-footer</identifier>
+		<content><![CDATA[<div class="menu-footer">
+<div class="block-title">
+<h4 class="title-name">Payment Method</h4>
+</div>
+<p>You can pay directly form your Credit Card via Moneybookers or Paypal and NEVER store your card information on our site</p>
+</div>]]></content>
+	</item>
+	
+	<item>
+		<title>Cetus Tags</title>
+		<identifier>cetus_tags</identifier>
+		<content><![CDATA[{{block type="tag/popular" name="tags_popular" as="tags_popular" template="tag/popular.phtml"/}}]]></content>
+	</item>
+	
+	<item>
+		<title>Cetus Social</title>
+		<identifier>cetus_social</identifier>
+		<content><![CDATA[<ul>
+<li><a href="#"><em class="fa fa-facebook">&nbsp;</em></a></li>
+<li><a href="#"><em class="fa fa-twitter">&nbsp;</em></a></li>
+<li><a href="#"><em class="fa fa-instagram">&nbsp;</em></a></li>
+<li><a href="#"><em class="fa fa-pinterest">&nbsp;</em></a></li>
+</ul>]]></content>
+	</item>
+	
+	<item>
+		<title>Cetus Follow Us</title>
+		<identifier>cetus_follow_us</identifier>
+		<content><![CDATA[<h4>Follow us</h4>
+<ul>
+<li><a href="#"><em class="fa fa-facebook">&nbsp;</em></a></li>
+<li><a href="#"><em class="fa fa-twitter">&nbsp;</em></a></li>
+<li><a href="#"><em class="fa fa-instagram">&nbsp;</em></a></li>
+<li><a href="#"><em class="fa fa-pinterest">&nbsp;</em></a></li>
+<li><a href="#"><em class="fa fa-google-plus">&nbsp;</em></a></li>
+<li><a href="#"><em class="fa fa-deviantart">&nbsp;</em></a></li>
+</ul>]]></content>
+	</item>
+	
+	<item>
+		<title>Cetus Landing Category Grid</title>
+		<identifier>cetus_landing_category_grid</identifier>
+		<content><![CDATA[<div>{{block type="catalog/navigation" template="mgs/mpanel/landing-grid.phtml"}}</div>]]></content>
+	</item>
+	
+	<item>
+		<title>Cetus Landing Category Lookbook</title>
+		<identifier>cetus_landing_category_lookbook</identifier>
+		<content><![CDATA[<div>{{block type="catalog/navigation" template="mgs/mpanel/landing-lookbook.phtml"}}</div>]]></content>
+	</item>
+	
+	<item>
+		<title>Cetus Landing Category Mansory</title>
+		<identifier>cetus_landing_category_mansory</identifier>
+		<content><![CDATA[<div>{{block type="catalog/navigation" template="mgs/mpanel/landing-mansory.phtml"}}</div>]]></content>
+	</item>
+	
+	<item>
+		<title>Cetus Newsletter Popup</title>
+		<identifier>newsletter_popup</identifier>
+		<content><![CDATA[<p id="img-newsletter"><img src="{{media url="wysiwyg/bg_newsletter_popup.jpg"}}" alt="" /></p>
+<div class="newsletter-popup">
+<p><img src="{{media url="wysiwyg/logo_cetus.png"}}" alt="" /></p>
+<h3>Join Our Newsletter</h3>
+<p class="desc-popup hidden-xs">Subscribe to the Cetus eCommerce newsletter to receive timely updates from your favorite products.</p>
+</div>]]></content>
+	</item>
+	
+	<item>
+		<title>Cetus Mobile Homepage</title>
+		<identifier>cetus_mobile_homepage</identifier>
+		<content><![CDATA[<div class="mobile-homepage-content">
+<div class="rev-slider">{{widget type="revslider/slider_preview" id="2"}}</div>
+<div class="featured">{{block type="mpanel/products" products_count="10" title="Featured Products" template="cms/home/featured_products.phtml"}}</div>
+<div class="mobile-v-menu">
+<div class="v-menu-title">
+<h3>Shop By Category</h3>
+</div>
+{{block type="page/html_topmenu" template="page/html/topmenu.phtml"}}</div>
+</div>]]></content>
+	</item>
+	
+	<item>
+		<title>Main Menu</title>
+		<identifier>cetus_mobile_footer_block_1</identifier>
+		<content><![CDATA[<ul>
+<li><a href="{{store url=""}}">Home</a></li>
+<li><a href="{{store url="about-us"}}">About Us</a></li>
+<li><a href="#&quot;">Our Brands</a></li>
+<li><a href="{{store">Blog</a></li>
+<li><a href="{{store">FAQs</a></li>
+<li><a href="{{store">Contacts</a></li>
+</ul>]]></content>
+	</item>
+	
+	<item>
+		<title>Information</title>
+		<identifier>cetus_mobile_footer_block_2</identifier>
+		<content><![CDATA[<p>Suspendisse vel enim ut nisl malesuada tristique ut vel nunc. Integer sed justo ac tortor porta bibendum non vehicula sapien. Cras vel augue nisl. Nulla id aliquam purus.</p>]]></content>
+	</item>
+	
+	<item>
+		<title>Store Info</title>
+		<identifier>cetus_mobile_footer_block_3</identifier>
+		<content><![CDATA[<div>
+<div class="store-container">
+<div class="content-store">
+<p><em class="fa fa-home">&nbsp;</em> Address:</p>
+<p>108 Street, AZ District, Green City</p>
+</div>
+</div>
+<div class="store-container">
+<div class="content-store">
+<p><em class="fa fa-phone">&nbsp;</em> Feel Free to Call Us:</p>
+<p>+123 456 7890</p>
+</div>
+</div>
+<div class="store-container">
+<div class="content-store">
+<p><em class="fa fa-envelope">&nbsp;</em> Email: info@magesolution.com</p>
+</div>
+</div>
+</div>]]></content>
+	</item>
+	
+	<item>
+		<title>Cetus Mobile Copyright</title>
+		<identifier>cetus_mobile_copyright</identifier>
+		<content><![CDATA[Coppyright &copy; 2014 <a href="#">Cetus</a>. All Rights Reserved.<br />Powered by <a href="#">ArrowHitech</a>.]]></content>
+	</item>
+	
+	<item>
+		<title>Cetus Mobile Payments</title>
+		<identifier>cetus_mobile_payments</identifier>
+		<content><![CDATA[<img src="{{media url="wysiwyg/payments.png"}}" alt="" />]]></content>
+	</item>
+	
+	<item>
+		<title>Cetus Mobile Socials</title>
+		<identifier>cetus_mobile_socilas</identifier>
+		<content><![CDATA[<div class="block-title">
+<h3>Follow Us</h3>
+</div>
+<div class="block-content">
+<ul>
+<li><a href="#"><span class="fa fa-facebook">&nbsp;</span></a></li>
+<li><a href="#"><span class="fa fa-twitter">&nbsp;</span></a></li>
+<li><a href="#"><span class="fa fa-pinterest-p">&nbsp;</span></a></li>
+<li><a href="#"><span class="fa fa-instagram">&nbsp;</span></a></li>
+<li><a href="#"><span class="fa fa-youtube-play">&nbsp;</span></a></li>
+<li><a href="#"><span class="fa fa-google-plus">&nbsp;</span></a></li>
+</ul>
+</div>]]></content>
+	</item>
+	
+	<item>
+		<title>Cetus Mobile Main Menu</title>
+		<identifier>cetus_mobile_main_menu</identifier>
+		<content><![CDATA[<div>{{block type="megamenu/horizontal" menu_id="4" template="megamenu/horizontal.phtml"}}</div>]]></content>
+	</item>
+	
+	<item>
+		<title>Cetus Header Store Location</title>
+		<identifier>cetus-header-store-location</identifier>
+		<content><![CDATA[<div class="img-block-header"><img src="{{media url="wysiwyg/icon-location.png"}}" alt="" /></div>
+<div class="text-block-header">
+<h6>STORE LOCATION</h6>
+<p>1234 Street Name, City Name, United States</p>
+</div>]]></content>
+	</item>
+	
+	<item>
+		<title>Cetus Header Store Call Us</title>
+		<identifier>cetus-header-store-call-us</identifier>
+		<content><![CDATA[<div class="img-block-header"><img src="{{media url="wysiwyg/icon-callus.png"}}" alt="" /></div>
+<div class="text-block-header">
+<h6>CALL US</h6>
+<p>+1234 567 890</p>
+</div>]]></content>
+	</item>
+	
+</static_block>

@@ -1,0 +1,22 @@
+<script type="text/javascript">
+    function callColorBox(prodId, docId , e){
+        e.preventDefault();
+        var reloadurl = '<?php echo $this->getUrl('web2print/ajax/preview/'); ?>';
+        var data = "";
+        data += "&productId="+prodId;
+        data += "&documentId="+docId;
+        new Ajax.Request(reloadurl, {
+            type: "POST",
+            parameters: data,
+            onComplete: function(transport) {
+                var responseArray = transport.responseText.evalJSON();
+                if(responseArray['status']=="success"){
+                    jQuery.colorbox({iframe:true, width:"95%", height:"90%",href:responseArray['content']});
+                }
+                else{
+                    alert(responseArray['content']);
+                }
+            }
+        });
+    }
+</script>

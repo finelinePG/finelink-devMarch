@@ -1,0 +1,18 @@
+<cms_page>
+	<item>
+		<title>About Us</title>
+		<identifier>about-us</identifier>
+		<content_heading><![CDATA[]]></content_heading>
+		<root_template>two_columns_left</root_template>
+		<content>
+			<![CDATA[<h1><span>we&rsquo;re emart</span></h1>
+<h2>multipurpose magento template</h2>
+<p><a href="#"><img src="{{media url="wysiwyg/28_about.png"}}" alt="" /></a></p>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ut iaculis arcu. Proin tincidunt, ipsum nec vehicula euismod, neque nibh pretium lorem, at ornare risus sem et risus. Curabitur pulvinar dui viverra libero lobortis in dictum velit luctus. Donec imperdiet tincidunt interdum. Duis ultricies condimentum interdum. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Phasellus laoreet sagittis ligula, sed sollicitudin odio bibendum sed. Duis nec libero magna. Nullam et orci a quam accumsan laoreet. Donec nisl sem, rhoncus in lacinia sed, eleifend in nisl. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Ut interdum, lacus in fermentum ultricies, urna dolor pretium odio, fringilla tincidunt sapien urna vel diam. Donec lobortis eros a justo fringilla luctus. Morbi diam leo, ultrices in tempor ac, facilisis consequat odio. Aenean condimentum vestibulum justo in imperdiet..</p>
+<p>&nbsp;</p>
+<p>&ldquo; Suspendisse vel enim ut nisl malesuada tristique ut vel nunc. Integer sed justo ac tortor porta bibendum non vehicula sapien. Cras vel augue nisl. Nulla id aliquam purus. Quisque egestas, sem semper semper pulvinar, leo dolor adipiscing elit, at faucibus tortor urna nec ipsum. Sed fermentum adipiscing lacus, varius bibendum lorem ultrices id. Sed tincidunt faucibus lectus vel placerat. Pellentesque interdum nulla eget elit mattis elementum. Nulla faucibus elementum ante, interdum pellentesque velit interdum vitae.</p>
+<p>&nbsp;</p>
+<p>Etiam elementum ligula a nibh semper elementum at vel ipsum. Suspendisse vehicula tellus non metus fringilla non interdum risus iaculis. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Cras sit amet metus risus. Aenean mattis orci quis erat vehicula ultricies. Nam mollis velit et augue tincidunt vel blandit risus semper. Nulla nisl odio, varius ut mollis non, fermentum viverra urna. Etiam non lorem sed erat egestas iaculis. Etiam justo est, cursus vitae adipiscing sit amet, iaculis non metus. Duis tellus nisl, tempus sed lacinia ac, luctus eget purus. Donec vel est nec lorem ornare posuere sit amet eget turpis. Duis lacinia purus facilisis quam tristique ut dignissim nulla viverra. Suspendisse potenti.</p>]]>
+		</content>
+	</item>
+</cms_page>

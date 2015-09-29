@@ -1,0 +1,19 @@
+<?php
+
+/* * ****************************************************
+ * Package   : Social
+ * Author    : HIEPNH
+ * Copyright : (c) 2014
+ * ***************************************************** */
+?>
+<div class="carousel_wrapper facebook-title block">
+	<?php if($this->getTitle()): ?>
+		<div class="block-title">
+			<h2 class="title-name"><?php echo $this->getTitle() ?></h2>
+		</div>
+	<?php endif ?>
+	<div class="block-content">
+		<?php echo $this->getFacebookLikeBox(); ?>
+	</div>
+</div>
+

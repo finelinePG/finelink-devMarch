@@ -1,0 +1,114 @@
+<?php
+/**
+ * Magento
+ *
+ * NOTICE OF LICENSE
+ *
+ * This source file is subject to the Academic Free License (AFL 3.0)
+ * that is bundled with this package in the file LICENSE_AFL.txt.
+ * It is also available through the world-wide-web at this URL:
+ * http://opensource.org/licenses/afl-3.0.php
+ * If you did not receive a copy of the license and are unable to
+ * obtain it through the world-wide-web, please send an email
+ * to license@magentocommerce.com so we can send you a copy immediately.
+ *
+ * DISCLAIMER
+ *
+ * Do not edit or add to this file if you wish to upgrade Magento to newer
+ * versions in the future. If you wish to customize Magento for your
+ * needs please refer to http://www.magentocommerce.com for more information.
+ *
+ * @category    design
+ * @package     base_default
+ * @copyright   Copyright (c) 2014 Magento Inc. (http://www.magentocommerce.com)
+ * @license     http://opensource.org/licenses/afl-3.0.php  Academic Free License (AFL 3.0)
+ */
+/**
+ * @var Mage_Page_Block_Html_Header $this
+ */
+?>
+<?php $helper = $this->helper('mpanel'); ?>
+<div id="header-v4" class="builder-container header-builder header-v4<?php if (Mage::getStoreConfig('mgs_theme/general/sticky_menu')): ?> sticky-menu<?php endif ?>">
+    <?php echo $helper->getEditHeaderPanel() ?>
+    <div class="header-top">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 text-center-xs">
+                    <?php echo $this->getLayout()->createBlock('cms/block')->setBlockId('emart_call_us_now')->setCanEdit(1)->toHtml(); ?>
+                    <div class="welcome-msg builder-container inline-builder">
+                        <?php echo $helper->getEditStoreConfig('design-header-welcome', Mage::getStoreConfig('design/header/welcome')) ?>
+                        <span><?php echo $this->getChildHtml('welcome') ?> <?php echo $this->getAdditionalHtml() ?></span>
+                    </div>
+                </div>
+                <div class="col-lg-8 col-md-8 col-sm-6 col-xs-12">
+                    <div class="quick-access">
+                        <div class="social-login">
+                            <?php if (Mage::helper('social')->getGeneralConfig('show_on_header', Mage::app()->getStore()->getStoreId())): ?>
+                                <a id="social" href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="true">
+                                    <?php echo $this->__('Social Login'); ?>
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="social">
+                                    <?php echo $this->getChildHtml('social_header'); ?>
+                                </div>
+                            <?php endif; ?>
+                        </div>
+                        <?php echo $this->getChildHtml('topLinks') ?>
+                        <?php echo $this->getChildHtml('top.currency') ?>
+                        <?php echo $this->getChildHtml('store_language') ?>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <section class="header-content">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3 col-sm-12 col-xs-12 logo-header builder-container child-builder">
+                    <?php if ($this->getIsHomePage()): ?>
+                        <h1 class="logo">
+                            <a class="logo" href="<?php echo $this->getUrl('') ?>" title="<?php echo $this->getLogoAlt() ?>" >
+                                <img src="<?php echo $this->getLogoSrc() ?>" alt="<?php echo $this->getLogoAlt() ?>" />
+                            </a>
+                        </h1>
+                    <?php else: ?>
+                        <a class="logo" href="<?php echo $this->getUrl('') ?>" title="<?php echo $this->getLogoAlt() ?>">
+                            <img src="<?php echo $this->getLogoSrc() ?>" alt="<?php echo $this->getLogoAlt() ?>" />
+                        </a>
+                    <?php endif ?>
+                    <?php echo $helper->getEditLogoPanel() ?>
+                </div>
+				<div class="col-md-7 col-sm-4 col-xs-12 static-block-header">
+					<div class="header-call-us">
+						<?php echo $this->getLayout()->createBlock('cms/block')->setBlockId('cetus-header-store-call-us')->setCanEdit(1)->toHtml(); ?>
+					</div>
+					<div class="header-location">
+						<?php echo $this->getLayout()->createBlock('cms/block')->setBlockId('cetus-header-store-location')->setCanEdit(1)->toHtml(); ?>
+					</div>
+				</div>
+                <div class="col-md-2 col-sm-2 col-xs-12 cart-header">
+                    <?php echo $this->getChildHtml('cart_sidebar3') ?>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div id="nav_container" class="menu nav-container">
+        <div class="container">
+            <div class="row">
+                <div id="cavas_menu" class="col-md-12 col-sm-12 col-xs-12 box-menu-01 menu-mobile main-menu pull-right">
+                    <div id="pts-top-menu" class="collapse navbar-collapse navbar-ex1-collapse">
+                        <?php echo $this->getChildHtml('topMenu') ?>
+                    </div>
+                    <div class="normal-search">
+                        <?php echo $this->getChildHtml('topSearch'); ?>
+                    </div>
+                    <div class="navbar-header">
+                        <button type="menu-button" class="navbar-toggle menu-button" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                            <i class="fa fa-bars"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>

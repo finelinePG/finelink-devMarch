@@ -1,0 +1,39 @@
+<?php $params = $this->getParams() ?>
+<ul class="resource-level<?php if(isset($params['resourceType']) &&in_array($params['resourceType'], $this->getDisplaySettings())): echo ' list'; endif; ?> <?php echo $params['visibility'] ?>">
+    <?php $i = 0;?>
+<?php foreach($this->getItem() as $item):  ?>
+<?php
+    $class = '';
+    if($i%2 == 0):
+        $class = 'class="child even"';     
+    else: 
+        $class = 'class="child odd"'; 
+    endif;
+?>
+<li  <?php if($item['isFolder'] != 'true'):  echo $class; else: echo 'class="dir"'; endif; ?>>
+    <?php if($item['isFolder'] != 'true'): ?>
+    <?php $website = Mage::getModel('core/website')->load($this->getRequest()->getParam('website'));?>
+    <ul class="documentWrapper" onclick="resourceWindowSelect('<?php echo $item['name'].'|'.$item['id']?>','<?php echo $params['element'] ?>');return false;">
+        <?php if($item['iconURL'] != null):?>
+        <li class="documentImage">
+        <?php   
+        $imgUrl = Mage::helper('web2print')->getChiliDomain($website).'/'.$item['iconURL'];
+        echo '<img src="' . $imgUrl . '"/>';                  
+        ?>
+        </li>
+        <?php endif; ?>
+        <li class="documentLink">
+             <a href="#" title="<?php echo $item['id'];?>"><?php echo $item['name']; ?></a>
+        </li>
+    </ul>           
+       
+    <?php endif; ?>
+    
+    
+    <?php if($item->item->count()): ?>
+    <?php echo $this->getChildrenItems($item,array('element'=>$params['element'],'visibility'=>'hidden')); ?>
+    <?php endif; ?>
+</li>   
+
+<?php $i++; endforeach; ?>
+</ul>

@@ -1,0 +1,35 @@
+<?php 
+    $data = $this->getData(); 
+    if(isset($data['resource_type'])):
+        $resourceType = $data['resource_type'];
+    else:
+        $resourceType = $this->getOriginalData('resource_type');
+    endif;
+?>
+
+<div id="<?php echo $this->getHtmlId(); ?>_container" class="web2print_popup_container" style="width: 366px;">
+    <?php 
+        $value = '';
+        if($this->getValue()){
+            $value = explode( '|', $this->getValue());
+            $value = $value[0];
+        }
+    ?>
+    
+    <input type="text" id="<?php echo $this->getHtmlId(); ?>_value" class="input-text resourcebrowser-result" name="" value="<?php echo $value;?>" disabled />
+    <input type="hidden" id="<?php echo $this->getHtmlId(); ?>" class="hidden resourcebrowser-result" name="<?php echo $this->getName(); ?>"
+        value="<?php echo $this->getValue(); ?>"<?php //if ($this->getCanUseDefaultValue() || $this->getCanUseWebsiteValue()) { echo ' disabled'; } ?> />
+    <?php if($this->getRequest()->getControllerName() == 'catalog_product'): ?>
+    <button id="<?php echo $this->getHtmlId() ?>_button" type="button" class="scalable add" onclick="openResourceBrowserProduct('<?php echo $this->getUrl('adminhtml/ajax/getresources',array('type'=>$resourceType,'element'=>$this->getHtmlId()))?>','<?php echo $resourceType;?>','#<?php echo $this->getHtmlId() ?>');" style="">
+        <span>Browse</span>
+    </button>
+    <?php else: ?>
+    <button id="<?php echo $this->getHtmlId() ?>_button" type="button" class="scalable add" onclick="openResourceBrowser('<?php echo $this->getUrl('adminhtml/ajax/getresources',array('website'=>$this->getRequest()->getParam('website'),'type'=>$resourceType,'element'=>$this->getHtmlId()))?>','<?php echo $resourceType;?>','#<?php echo $this->getHtmlId() ?>');" style="">
+        <span>Browse</span>
+    </button>
+    <?php endif; ?>
+    
+    <button onclick="clearValue(<?php echo $this->getHtmlId();?>)"  class="clearBtn" type="button" class="scalable" style="">
+        <span>Clear</span>
+    </button>
+</div>

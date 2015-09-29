@@ -1,0 +1,226 @@
+<layout>
+    <name>1_column_full</name>
+	<header>header4</header>
+	<footer>footer</footer>
+
+    <!--  Blocks  -->
+    <block>
+        <name>block31</name>
+        <block_cols><![CDATA[3,9]]></block_cols>
+        <block_class><![CDATA[]]></block_class>
+        <custom_class><![CDATA[mid-sidebar]]></custom_class>
+        <background><![CDATA[#f1f1f1]]></background>
+        <background_image><![CDATA[]]></background_image>
+        <background_repeat>0</background_repeat>
+        <background_cover>0</background_cover>
+        <parallax>0</parallax>
+        <fullwidth>0</fullwidth>
+        <padding_top><![CDATA[30]]></padding_top>
+        <padding_bottom><![CDATA[10]]></padding_bottom>
+        <block_position>1</block_position>
+    </block>
+	
+    <block>
+        <name>block32</name>
+        <block_cols>12</block_cols>
+        <block_class><![CDATA[]]></block_class>
+        <custom_class><![CDATA[mid-store]]></custom_class>
+        <background><![CDATA[#f1f1f1]]></background>
+        <background_image><![CDATA[bg-phone.jpg]]></background_image>
+        <background_repeat>0</background_repeat>
+        <background_cover>0</background_cover>
+        <parallax>0</parallax>
+        <fullwidth>0</fullwidth>
+        <padding_top>20</padding_top>
+        <padding_bottom>40</padding_bottom>
+        <block_position>2</block_position>
+    </block>
+	
+    <block>
+        <name>block36</name>
+        <block_cols><![CDATA[]]></block_cols>
+        <block_class><![CDATA[]]></block_class>
+        <custom_class><![CDATA[]]></custom_class>
+        <background><![CDATA[]]></background>
+        <background_image><![CDATA[]]></background_image>
+        <background_repeat>0</background_repeat>
+        <background_cover>0</background_cover>
+        <parallax>0</parallax>
+        <fullwidth>0</fullwidth>
+        <padding_top><![CDATA[]]></padding_top>
+        <padding_bottom><![CDATA[]]></padding_bottom>
+        <block_position>0</block_position>
+    </block>
+    <!--  Childs  -->
+    <child>
+        <block_name>block31-0</block_name>
+        <block_content><![CDATA[]]></block_content>
+        <static_block_title><![CDATA[Cetus Shop By Cate 2]]></static_block_title>
+        <static_block_identifier><![CDATA[cetus_shop_by_cate_2]]></static_block_identifier>
+        <static_block_content><![CDATA[<div class="btn-menu">
+<h3>Shop by Category</h3>
+<span><em class="fa fa-list">&nbsp;</em></span></div>]]></static_block_content>
+        <type>static</type>
+        <position>1</position>
+        <setting><![CDATA[{"custom_class":"nav-container","animation":"","animation_delay":""}]]></setting>
+        <col>12</col>
+        <custom_class><![CDATA[]]></custom_class>
+    </child>
+	
+    <child>
+        <block_name>block31-1</block_name>
+        <block_content><![CDATA[{{block type="promobanners/promobanners" banner_id="%s" template="mgs/promobanners/banner.phtml"}}]]></block_content>
+        <type>promo_banner</type>
+        <banner_title><![CDATA[Cetus Ads Bot Mid Sidebar]]></banner_title>
+        <banner_filename><![CDATA[05_homepage_dsadasdasdsadmid_sidebar.jpg]]></banner_filename>
+        <banner_url>#</banner_url>
+        <banner_content><![CDATA[]]></banner_content>
+        <banner_button><![CDATA[]]></banner_button>
+        <banner_text_align><![CDATA[left]]></banner_text_align>
+        <position>12</position>
+        <setting><![CDATA[{"custom_class":"","animation":"","animation_delay":"","text_colour":"","link_colour":"","link_hover_colour":"","button_colour":"","button_hover_colour":"","button_text_colour":"","button_text_hover_colour":"","button_border_colour":"","button_border_hover_colour":"","banner_id":"%s"}]]></setting>
+        <col>12</col>
+        <custom_class><![CDATA[]]></custom_class>
+    </child>
+	
+    <child>
+        <block_name>block31-1</block_name>
+        <block_content><![CDATA[{{block type="promobanners/promobanners" banner_id="%s" template="mgs/promobanners/banner.phtml"}}]]></block_content>
+        <type>promo_banner</type>
+        <banner_title><![CDATA[Cetus Mid Sidebar Ads Top Left]]></banner_title>
+        <banner_filename><![CDATA[05_homepage_mid_sidebar.jpg]]></banner_filename>
+        <banner_url>#</banner_url>
+        <banner_content><![CDATA[<h3>SIMPLY THE BEST</h3>
+<p>Best Of The Best</p>]]></banner_content>
+        <banner_button><![CDATA[]]></banner_button>
+        <banner_text_align><![CDATA[center]]></banner_text_align>
+        <position>3</position>
+        <setting><![CDATA[{"custom_class":"","animation":"","animation_delay":"","text_colour":"text-colour-white","link_colour":"","link_hover_colour":"","button_colour":"","button_hover_colour":"","button_text_colour":"","button_text_hover_colour":"","button_border_colour":"","button_border_hover_colour":"","banner_id":"%s"}]]></setting>
+        <col>6</col>
+        <custom_class><![CDATA[]]></custom_class>
+    </child>
+	
+    <child>
+        <block_name>block31-1</block_name>
+        <block_content><![CDATA[{{block type="promobanners/promobanners" banner_id="%s" template="mgs/promobanners/banner.phtml"}}]]></block_content>
+        <type>promo_banner</type>
+        <banner_title><![CDATA[Cetus Mid Sidebar Ads Top Right]]></banner_title>
+        <banner_filename><![CDATA[05_homepage_dsadmid_sidebar.jpg]]></banner_filename>
+        <banner_url>#</banner_url>
+        <banner_content><![CDATA[<h3>SUNNY SIDE</h3>
+<p>Shop Accessories</p>]]></banner_content>
+        <banner_button><![CDATA[]]></banner_button>
+        <banner_text_align><![CDATA[center]]></banner_text_align>
+        <position>4</position>
+        <setting><![CDATA[{"custom_class":"","animation":"","animation_delay":"","text_colour":"text-colour-white","link_colour":"","link_hover_colour":"","button_colour":"","button_hover_colour":"","button_text_colour":"","button_text_hover_colour":"","button_border_colour":"","button_border_hover_colour":"","banner_id":"%s"}]]></setting>
+        <col>6</col>
+        <custom_class><![CDATA[]]></custom_class>
+    </child>
+	
+    <child>
+        <block_name>block31-0</block_name>
+        <block_content><![CDATA[{{block type="promobanners/promobanners" banner_id="%s" template="mgs/promobanners/banner.phtml"}}]]></block_content>
+        <type>promo_banner</type>
+        <banner_title><![CDATA[Cetus Promo Mid Sidebar 2]]></banner_title>
+        <banner_filename><![CDATA[bg-toys.png]]></banner_filename>
+        <banner_url>#</banner_url>
+        <banner_content><![CDATA[<h4>BEST OFFER</h4>
+<h3>OFF 25%</h3>]]></banner_content>
+        <banner_button><![CDATA[SHOW NOW]]></banner_button>
+        <banner_text_align><![CDATA[center]]></banner_text_align>
+        <position>6</position>
+        <setting><![CDATA[{"custom_class":"has-overlay","animation":"","animation_delay":"","text_colour":"text-colour-white","link_colour":"","link_hover_colour":"","button_colour":"","button_hover_colour":"","button_text_colour":"button-text-colour-white","button_text_hover_colour":"","button_border_colour":"button-border-colour-white","button_border_hover_colour":"","banner_id":"%s"}]]></setting>
+        <col>12</col>
+        <custom_class><![CDATA[]]></custom_class>
+    </child>
+	
+    <child>
+        <block_name>block31-1</block_name>
+        <block_content><![CDATA[{{block type="core/template" products_count="5" slider="1" count_per_row="4" tabs="featured_products,hot_products,rate_products" product_ratio="4" new_label="" featured_label="Featured Items" hot_label="Best Selling" sale_label="" rate_label="Most Viewed" auto_play="false" stop_hover="false" navigation="true" pagination="false" number_row="1" category_id="3" template="mgs/mpanel/tabs.phtml"}}]]></block_content>
+        <type>tabs</type>
+        <position>1</position>
+        <setting><![CDATA[{"custom_class":"","animation":"","animation_delay":"","product_tab":["featured_products","hot_products","rate_products"],"new_label":"","featured_label":"Featured Items","hot_label":"Best Selling","sale_label":"","rate_label":"Most Viewed","product_count":"5","count_per_row":"4","product_ratio":"4","slider":{"active":"1","number_row":"1","auto":"false","stop_hover":"false","navigation":"true","pagination":"false"},"category_id":"3","text_colour":"","link_colour":"","link_hover_colour":"","button_colour":"","button_hover_colour":"","button_text_colour":"","button_text_hover_colour":"","button_border_colour":"","button_border_hover_colour":"","price_colour":""}]]></setting>
+        <col>12</col>
+        <custom_class><![CDATA[]]></custom_class>
+    </child>
+	
+    <child>
+        <block_name>block31-1</block_name>
+        <block_content><![CDATA[{{block type="mpanel/product_new" display_type="new_products" products_count="6" slider="1" count_per_row="4" title="New Arrivals" product_ratio="4" auto_play="false" stop_hover="false" navigation="true" pagination="false" number_row="1" template="mgs/mpanel/products/new_products.phtml"}}]]></block_content>
+        <type>new_products</type>
+        <position>7</position>
+        <setting><![CDATA[{"title":"New Arrivals","custom_class":"tabs-small","animation":"","animation_delay":"","product_count":"6","view_mode":"grid","count_per_row":"4","product_ratio":"4","slider":{"active":"1","number_row":"1","auto":"false","stop_hover":"false","navigation":"true","pagination":"false"},"load_more":"0","text_colour":"","link_colour":"","link_hover_colour":"","button_colour":"","button_hover_colour":"","button_text_colour":"","button_text_hover_colour":"","button_border_colour":"","button_border_hover_colour":"","price_colour":""}]]></setting>
+        <col>12</col>
+        <custom_class><![CDATA[]]></custom_class>
+    </child>
+	
+	<child>
+        <block_name>block32-0</block_name>
+        <block_content><![CDATA[{{block type="testimonial/testimonial" template="mgs/testimonial/view.phtml" view_mode="grid" title="Testimonials" item_count="3"}}]]></block_content>
+        <type>testimonials</type>
+        <position>3</position>
+        <setting><![CDATA[{"custom_class":"","animation":"","animation_delay":"","title":"Testimonials","item_count":"3","view_mode":"grid"}]]></setting>
+        <col>3</col>
+        <custom_class><![CDATA[]]></custom_class>
+    </child>
+	
+	<child>
+        <block_name>block31-1</block_name>
+        <block_content><![CDATA[]]></block_content>
+        <type>separator</type>
+        <position>5</position>
+        <setting><![CDATA[{"custom_class":"","separator_type":"white-space","border_type":"full","border_style":"style1","border_icon":"","text_content":"","margin_top":"15","margin_bottom":"15"}]]></setting>
+        <col>12</col>
+        <custom_class><![CDATA[]]></custom_class>
+    </child>
+	
+	<child>
+        <block_name>block31-1</block_name>
+        <block_content><![CDATA[]]></block_content>
+        <type>separator</type>
+        <position>8</position>
+        <setting><![CDATA[{"custom_class":"","separator_type":"white-space","border_type":"full","border_style":"style1","border_icon":"","text_content":"","margin_top":"15","margin_bottom":"15"}]]></setting>
+        <col>12</col>
+        <custom_class><![CDATA[]]></custom_class>
+    </child>
+	
+	<child>
+        <block_name>block31-1</block_name>
+        <block_content><![CDATA[]]></block_content>
+        <type>separator</type>
+        <position>2</position>
+        <setting><![CDATA[{"custom_class":"","separator_type":"white-space","border_type":"full","border_style":"style1","border_icon":"","text_content":"","margin_top":"10","margin_bottom":""}]]></setting>
+        <col>12</col>
+        <custom_class><![CDATA[]]></custom_class>
+    </child>
+	
+	<child>
+        <block_name>block31-1</block_name>
+        <block_content><![CDATA[]]></block_content>
+        <type>separator</type>
+        <position>11</position>
+        <setting><![CDATA[{"custom_class":"","separator_type":"white-space","border_type":"full","border_style":"style1","border_icon":"","text_content":"","margin_top":"10","margin_bottom":""}]]></setting>
+        <col>12</col>
+        <custom_class><![CDATA[]]></custom_class>
+    </child>
+	
+	<child>
+        <block_name>block31-0</block_name>
+        <block_content><![CDATA[]]></block_content>
+        <type>separator</type>
+        <position>3</position>
+        <setting><![CDATA[{"custom_class":"","separator_type":"white-space","border_type":"full","border_style":"style1","border_icon":"","text_content":"","margin_top":"20","margin_bottom":"20"}]]></setting>
+        <col>12</col>
+        <custom_class><![CDATA[]]></custom_class>
+    </child>
+	
+	<child>
+        <block_name>block31-0</block_name>
+        <block_content><![CDATA[]]></block_content>
+        <type>separator</type>
+        <position>5</position>
+        <setting><![CDATA[{"custom_class":"","separator_type":"white-space","border_type":"full","border_style":"style1","border_icon":"","text_content":"","margin_top":"15","margin_bottom":"15"}]]></setting>
+        <col>12</col>
+        <custom_class><![CDATA[]]></custom_class>
+    </child>
+</layout>

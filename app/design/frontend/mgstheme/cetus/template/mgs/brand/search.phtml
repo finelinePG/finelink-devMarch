@@ -1,0 +1,47 @@
+<?php
+/* * ****************************************************
+ * Package   : Brand
+ * Author    : HIEPNH
+ * Copyright : (c) 2015
+ * ***************************************************** */
+?>
+<?php
+$params = $this->getRequest()->getParams();
+$urlKey = $this->getUrlKey();
+?>
+<div class="block brands-search">
+    <div class="block-title">
+        <strong><h2 class="title-name"><?php echo $this->__('Brands Search'); ?></h2></strong>
+    </div>
+    <div class="block-content">
+        <div class="brands-search-form">
+            <form action="" method="get" id="brands-search-form">
+				<div class="col-md-12 col-sm-12 col-xs-12 no-padding">
+					 <input type="text" value="<?php
+						if (isset($params['q'])) {
+							echo $params['q'];
+						}
+						?>" title="<?php echo $this->__('Enter Keyword'); ?>" class="input-text"
+                       placeholder="<?php echo $this->__('Enter Keyword'); ?>" name="q">
+				</div>
+                <div class="col-md-9 col-sm-12 col-xs-12 no-padding">
+					 <ul class="chars-filter pull-left">
+						<li><a href="<?php echo $this->getUrl() . $urlKey; ?>"><?php echo $this->__('All'); ?></a></li>
+						<?php foreach (range('A', 'Z') as $char): ?>
+							<li <?php if (isset($params['char']) && $params['char'] == $char): ?>class="active"<?php endif; ?>><a
+								href="<?php echo $this->getUrl() . $urlKey . '?char=' . $char; ?>"><?php echo $char; ?></a></li>
+							<?php endforeach; ?>
+					</ul>
+				</div>
+				<div class="col-md-3 col-sm-12 col-xs-12 no-padding">
+					<button type="submit" class="btn btn-primary btn-xs pull-right">
+						<span><span><?php echo $this->__('Search'); ?></span></span>
+					</button>
+					<button type="button" class="btn btn-primary btn-xs pull-right" onclick="setLocation('<?php echo $this->getUrl() . $urlKey; ?>')">
+						<span><span><?php echo $this->__('Reset Filter'); ?></span></span>
+					</button>
+				</div>
+            </form>
+        </div>
+    </div>
+</div>

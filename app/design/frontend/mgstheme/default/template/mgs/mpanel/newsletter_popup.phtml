@@ -1,0 +1,48 @@
+<?php if(Mage::getStoreConfig('mgs_theme/general/popup_newsletter')): ?>
+<div style="display:none">
+	<div id="newsletter-popup">
+		<div class="block-popup-subscribe">
+			<form action="<?php echo $this->getFormActionUrl() ?>" method="post" id="newsletter-validate-popup">
+				<div class="block-content">
+					<?php echo $this->getLayout()->createBlock('cms/block')->setBlockId('passion_newsletter_popup_content')->toHtml() ?>
+					<div class="input-box">
+					   <input type="text" name="email" id="newsletter" title="<?php echo $this->__('Sign up for our newsletter') ?>" class="input-text required-entry validate-email" />
+					</div>
+					<div class="actions">
+						<button type="submit" title="<?php echo $this->__('Subscribe') ?>" class="button"><span><span><?php echo $this->__('Subscribe') ?></span></span></button>
+					</div>
+				</div>
+			</form>
+			
+			<div class="checkbox">
+				<label for="dont_show">
+					<input type="checkbox" id="dont_show" onclick="dontShowPopup(this.id)" /> <?php echo $this->__("Don't show this popup again") ?>
+				</label>
+			</div>
+			<script type="text/javascript">
+			//<![CDATA[
+				var newsletterSubscriberFormDetail = new VarienForm('newsletter-validate-popup');
+			//]]>
+			</script>
+		</div>
+
+	</div>
+</div>
+
+<script type="text/javascript">
+	mgsjQuery(document).ready(function () {
+		if(mgsjQuery(window).width() > 991) {
+			if(getCookie('newsletterpopup')!='nevershow'){
+				if (mgsjQuery('#newsletter-popup').length) {
+					mgsjQuery.magnificPopup.open({
+						items: {
+							src: '#newsletter-popup' 
+						},
+						type: 'inline'
+					});
+				}
+			}
+		}
+	});
+</script>
+<?php endif ?>

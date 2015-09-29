@@ -1,0 +1,70 @@
+<?xml version="1.0"?>
+<layout>
+    <adminhtml_sales_order_view>
+       <reference name="head">
+           <action method="addJs"><script>web2print/pdfhandler.js</script></action>
+       </reference>
+       <reference name="sales_order_tabs">
+            <block type="web2print/adminhtml_sales_order_view_tab_documents" name="order_documents_grid" template="web2print/order/view/tab/documents.phtml">
+                    <block type="adminhtml/sales_order_view_items" name="order_items" template="web2print/order/view/items.phtml">
+                        <action method="addItemRender"><type>default</type><block>web2print/adminhtml_sales_order_view_items_renderer_default</block><template>web2print/order/view/items/renderer/default.phtml</template></action>
+                        <action method="addColumnRender"><column>qty</column><block>adminhtml/sales_items_column_qty</block><template>sales/items/column/qty.phtml</template></action>
+                        <action method="addColumnRender"><column>name</column><block>adminhtml/sales_items_column_name</block><template>sales/items/column/name.phtml</template></action>
+                        <action method="addColumnRender"><column>name</column><block>adminhtml/sales_items_column_name_grouped</block><template>sales/items/column/name.phtml</template><type>grouped</type></action>
+                    </block>
+             </block>
+            <!--<action method="addTab"><name>order_documents</name><block>web2print/adminhtml_sales_order_view_tab_documents</block></action>-->
+            <action method="addTab"><name>order_documents</name><block>order_documents_grid</block></action>
+        </reference>
+    </adminhtml_sales_order_view>
+   
+   <adminhtml_system_config_edit>
+        <reference name="head">
+        	<action method="addCss"><stylesheet>css/config.css</stylesheet></action>
+        </reference>
+    </adminhtml_system_config_edit>
+    <adminhtml_ajax_getresources>
+<!--        <reference name="content">-->
+            <block type="web2print/adminhtml_resourcebrowser_result" name="resourcebrowser_result" template="web2print/resourcebrowser/result.phtml" />
+<!--        </reference>-->
+    </adminhtml_ajax_getresources>
+    <adminhtml_ajax_loaditems>
+            <block type="web2print/adminhtml_resourcebrowser_item_result" name="resourcebrowser_item_result" template="web2print/resourcebrowser/item/result.phtml" />
+    </adminhtml_ajax_loaditems>
+    
+    <adminhtml_ajax_pdfgrid>
+        <block type="web2print/adminhtml_sales_order_view_tab_documents" name="order_documents_grid" template="web2print/order/view/tab/documents.phtml">
+            <block type="web2print/adminhtml_sales_order_view_items" name="order_items" template="web2print/order/view/items.phtml">
+                <action method="addItemRender"><type>default</type><block>web2print/adminhtml_sales_order_view_items_renderer_default</block><template>web2print/order/view/items/renderer/default.phtml</template></action>
+                <action method="addColumnRender"><column>qty</column><block>adminhtml/sales_items_column_qty</block><template>sales/items/column/qty.phtml</template></action>
+                <action method="addColumnRender"><column>name</column><block>adminhtml/sales_items_column_name</block><template>sales/items/column/name.phtml</template></action>
+                <action method="addColumnRender"><column>name</column><block>adminhtml/sales_items_column_name_grouped</block><template>sales/items/column/name.phtml</template><type>grouped</type></action>
+            </block>
+        </block>
+    </adminhtml_ajax_pdfgrid>
+
+    <adminhtml_ajax_refreshpdffiles>
+        <update handle="adminhtml_ajax_pdfgrid" />
+    </adminhtml_ajax_refreshpdffiles>
+
+    <adminhtml_ajax_regeneratepdffiles>
+        <update handle="adminhtml_ajax_pdfgrid" />
+    </adminhtml_ajax_regeneratepdffiles>
+    
+    <adminhtml_ajax_updatepdffiles>
+        <update handle="adminhtml_ajax_pdfgrid" />
+    </adminhtml_ajax_updatepdffiles>
+     
+    <adminhtml_pdfs_index>
+        <reference name="content">
+            <block type="web2print/adminhtml_pdfs" name="pdfs"/>
+        </reference>
+    </adminhtml_pdfs_index>
+    
+    <adminhtml_logs_index>
+        <reference name="content">
+            <block type="web2print/adminhtml_logs" name="logs"/>
+        </reference>
+    </adminhtml_logs_index>
+
+</layout>	
