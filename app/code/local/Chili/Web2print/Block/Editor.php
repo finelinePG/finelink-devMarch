@@ -92,7 +92,7 @@ class Chili_Web2print_Block_Editor extends Mage_Catalog_Block_Product_View {
     private function renderVariableTypes($data){
 
         $html =  "<form id='editorForm'>";
-        $html .= "<table width='100%'>";
+        $html .= "<table width='80%'>";
 
         $i = 0;
 
@@ -134,9 +134,9 @@ class Chili_Web2print_Block_Editor extends Mage_Catalog_Block_Product_View {
         $html = '<span><button id="btn-concept" type="button" class="button"><span><span>';
 
         if ($this->_editor->getMode() == 'concept') {
-            $html .= $this->__('Update concept');
+            $html .= $this->__('Update Concept');
         } else {
-            $html .= $this->__('Add to concepts');
+            $html .= $this->__('Add to Concepts');
         }
 
         $html .= '</span></span></button></span>';
@@ -166,7 +166,7 @@ class Chili_Web2print_Block_Editor extends Mage_Catalog_Block_Product_View {
         if ($this->_editor->getMode() == 'quoteitem') {
             $html .= $this->__('Save & back to shoppingcart');
         } else {
-            $html .= $this->__('Add to shoppingcart');
+            $html .= $this->__('Add to Shopping Cart');
         }
 
         $html .= '</span></span></button>';

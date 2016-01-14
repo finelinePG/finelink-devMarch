@@ -1,0 +1,46 @@
+<?php
+/**
+ * Product Units and Quantities
+ *
+ * @category:    Aitoc
+ * @package:     Aitoc_Aitunits
+ * @version      1.0.11
+ * @license:     0JdTQfDMswel7fbpH42tkXIHe3fixI4GH3daX0aDVf
+ * @copyright:   Copyright (c) 2015 AITOC, Inc. (http://www.aitoc.com)
+ */
+?>
+<!--
+ * @copyright  Copyright (c) 2012 AITOC, Inc. 
+-->
+<script type="text/javascript">
+//<![CDATA[
+    cart.aitunitsUpdatePost = function(event)
+    {
+        var params = Form.serialize(this.getCheckout().getForm()) + '&' + 
+            Object.toQueryString({step : this.name, reload_steps : this.reloadSteps.join(',')});  
+
+        this.loadWaiting();     
+        this.reloadSteps.each(
+            function(stepName) {
+                this.getCheckout().getStep(stepName).loadWaiting();    
+            }.bind(this)
+        );  
+        var request = new Ajax.Request(
+            this.urls.updatePostUrl,
+            {
+                method:'post',
+                parameters: params,
+                onComplete: this.onUpdateChild,
+                onSuccess: this.onUpdate,
+                onFailure: this.getCheckout().ajaxFailure.bind(this.getCheckout())
+            }
+        );   
+    }
+    
+    //remove Aitcheckout buttons
+    $$('table#shopping-cart-table tbody div.qty_box p.qty_buttons').each(function(element){
+        element.remove();
+    })
+    
+//]]>
+</script>

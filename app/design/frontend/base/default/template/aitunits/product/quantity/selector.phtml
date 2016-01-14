@@ -1,0 +1,21 @@
+<?php
+/**
+ * Product Units and Quantities
+ *
+ * @category:    Aitoc
+ * @package:     Aitoc_Aitunits
+ * @version      1.0.11
+ * @license:     0JdTQfDMswel7fbpH42tkXIHe3fixI4GH3daX0aDVf
+ * @copyright:   Copyright (c) 2015 AITOC, Inc. (http://www.aitoc.com)
+ */
+if($this->canRender()): ?>
+    <?php if($this->canTypeBlockRender()): ?>
+        <?php echo $this->getTypeBlockHtml(); ?>
+    <?php endif; ?>
+    <script type="text/javascript">
+        var aitunitsSelectBlock_<?php echo $this->getId(); ?> = new aitunitsSelectQtyHelper(<?php echo $this->getJsParams();?> );
+        <?php if($this->canJsRender()): ?>
+            aitunitsSelectBlock_<?php echo $this->getId(); ?>.render();
+        <?php endif; ?>
+    </script>
+<?php endif; ?>

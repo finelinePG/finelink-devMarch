@@ -103,9 +103,9 @@
             </action>
         </reference>
 
-        <remove name="header" />
+  <!--       <remove name="header" />
         <remove name="breadcrumbs" />
-        <remove name="footer" />
+        <remove name="footer" /> -->
 		
         <reference name="content">
             <block type="web2print/editor" name="web2print.editor" template="web2print/editor.phtml">

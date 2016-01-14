@@ -1,0 +1,118 @@
+<?php
+/**
+ * Product Units and Quantities
+ *
+ * @category:    Aitoc
+ * @package:     Aitoc_Aitunits
+ * @version      1.0.11
+ * @license:     0JdTQfDMswel7fbpH42tkXIHe3fixI4GH3daX0aDVf
+ * @copyright:   Copyright (c) 2015 AITOC, Inc. (http://www.aitoc.com)
+ */
+?>
+<script type="text/javascript">
+    function adj_nav_page_autoload_products_insert(el, mode)
+    {
+        if (mode == 'list')
+        {
+            Element.select(el, '.item').each(function(item){
+                $('products-list').insert({bottom:item});
+                //aitunits changes
+                if(item !== undefined && item.innerHTML !== undefined)
+                {
+                    item.innerHTML.evalScripts();
+                }
+                //--
+            });
+            $('products-list').select('li.item').each(function(item){
+                item.removeClassName('odd');
+                item.removeClassName('even');
+                item.removeClassName('last');
+            });
+            decorateList('products-list', 'none-recursive');
+        }
+        if (mode == 'grid')
+        {
+            adj_nav_page_autoload_grid_update(el);
+            //aitunits changes
+            if(el !== undefined && el.innerHTML !== undefined)
+            {
+                var aitunitsDecorator = el.select('#aitunits_grid_decorator').first();
+                if(aitunitsDecorator!== undefined)
+                {
+                    aitunitsDecorator.innerHTML.evalScripts();
+                }
+                //el.innerHTML.evalScripts();
+            }
+            //
+            $$('.products-grid', '.item').each(function(item){
+                item.removeClassName('odd');
+                item.removeClassName('even');
+                item.removeClassName('first');
+                item.removeClassName('last');
+            });
+
+            decorateGeneric($$('.products-grid'), ['odd','even','first','last']);
+            $$('.products-grid').each(function(item){
+                decorateGeneric(item.select('.item'), ['first','last']);
+            });
+        }
+    }
+
+    function adj_nav_page_autoload_grid_update(el)
+    {    
+
+        function _insert()
+        {
+            $R(0, count, true).each(function(index){
+                var item = Element.select(el, '.item').first();
+                $$('.products-grid').last().insert({bottom:item});
+                //aitunits changes
+                if(item !== undefined && item.innerHTML !== undefined)
+                {
+                    item.innerHTML.evalScripts();
+                }
+                //--
+            });
+            var row = Element.select(el, '.products-grid').first();
+            if (Element.select(row, '.item').size() > 0)
+            {
+                $$('.products-grid').last().insert({after:row});
+                //aitunits changes
+                if(row !== undefined && row.innerHTML !== undefined)
+                {
+                    row.innerHTML.evalScripts();
+                }
+                //--
+            } else {
+                Element.remove(row)
+            }
+            if (Element.select(el, '.products-grid').first())
+            {
+                _insert();
+            } else {
+                return;
+            }
+        }
+
+        var columnCount = $('adjnav-page-column-count').value;
+        var pageLimit = $('adjnav-page-product-limit').value;
+        var currentPage = $$('.adjnav-page-autoload-nextpage').first().value - 1;
+
+        var count = columnCount - (pageLimit * currentPage) % columnCount;
+
+        if (count == columnCount)
+        {
+            Element.select(el, '.products-grid').each(function(item){
+                $$('.products-grid').last().insert({after:item});
+                //aitunits changes
+                if(item !== undefined && item.innerHTML !== undefined)
+                {
+                    item.innerHTML.evalScripts();
+                }
+                //--
+            });
+        } else {
+            _insert();
+        }
+    }
+</script>

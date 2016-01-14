@@ -1,0 +1,589 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+/**
+ * MageParts
+ * 
+ * NOTICE OF LICENSE
+ * 
+ * This code is copyrighted by MageParts and may not be reproduced
+ * and/or redistributed without a written permission by the copyright 
+ * owners. If you wish to modify and/or redistribute this file please
+ * contact us at info@mageparts.com for confirmation before doing
+ * so. Please note that you are free to modify this file for personal
+ * use only.
+ *
+ * If you wish to make modifications to this file we advice you to use
+ * the "local" file scope in order to aviod conflicts with future updates. 
+ * For information regarding modifications see http://www.magentocommerce.com.
+ *  
+ * DISCLAIMER
+ * 
+ * THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" 
+ * AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE 
+ * IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE 
+ * ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT OWNER OR CONTRIBUTORS BE LIABLE 
+ * FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES 
+ * (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF 
+ * USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY 
+ * OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE 
+ * OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED 
+ * OF THE POSSIBILITY OF SUCH DAMAGE.
+ * 
+ * @category   MageParts
+ * @package    MageParts_Ddq
+ * @copyright  Copyright (c) 2009 MageParts (http://www.mageparts.com/)
+ * @author     MageParts Crew
+ */
+-->
+<config>
+    <tabs>
+        <mageparts translate="label" module="core">
+            <label>MageParts</label>
+            <sort_order>9999999</sort_order>
+        </mageparts>
+    </tabs>
+    <sections>
+        <ddq translate="label" module="ddq">
+            <class>separator-top</class>
+            <label>Quantity Options &amp; Fixed Prices</label>
+            <tab>mageparts</tab>
+            <sort_order>610</sort_order>
+            <show_in_default>1</show_in_default>
+            <show_in_website>1</show_in_website>
+            <show_in_store>1</show_in_store>
+            <groups>
+                <general translate="label">
+                    <label>General Settings</label>
+                    <frontend_type>text</frontend_type>
+                    <sort_order>0</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>1</show_in_store>
+                    <fields>
+                        <enabled translate="label">
+                            <label>Enabled</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                            <sort_order>0</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </enabled>
+                        <breaker_1>
+                            <frontend_model>mageparts_base/adminhtml_system_config_source_breaker</frontend_model>
+                            <sort_order>9</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </breaker_1>
+                        <enable_product_collection translate="label comment">
+                            <label>Enabled For Product Collections</label>
+                            <comment>Enables the extension for product lists (category view, search results etc.).</comment>
+                            <frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                            <sort_order>10</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </enable_product_collection>
+                        <collection_injection translate="label comment">
+                            <label>Injection Locations</label>
+                            <comment>Allows you to specify exactly where the extension should be applied to product lists.</comment>
+                            <frontend_model>mageparts_base/adminhtml_system_config_form_field_urltable</frontend_model>
+                            <backend_model>adminhtml/system_config_backend_serialized_array</backend_model>
+                            <sort_order>11</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </collection_injection>
+                        <breaker_2>
+                            <frontend_model>mageparts_base/adminhtml_system_config_source_breaker</frontend_model>
+                            <sort_order>19</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </breaker_2>
+                        <price_updates_enabled translate="label comment">
+                            <label>Display Prices Based On Quantity</label>
+                            <comment>If enabled prices on the frontend will be calculated and displayed based on their selected quantity.</comment>
+                            <frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                            <sort_order>20</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </price_updates_enabled>
+                        <breaker_3>
+                            <frontend_model>mageparts_base/adminhtml_system_config_source_breaker</frontend_model>
+                            <sort_order>29</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </breaker_3>
+                        <debug_enabled translate="label comment">
+                            <label>Enable Debug Log</label>
+                            <comment>Please make sure that the standard log options are enabled under the Development section.</comment>
+                            <frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                            <sort_order>30</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </debug_enabled>
+                    </fields>
+                </general>
+                <quantity_options translate="label">
+                    <label>Quantity Options</label>
+                    <frontend_type>text</frontend_type>
+                    <sort_order>10</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>1</show_in_store>
+                    <fields>
+                        <quantities translate="label">
+                            <label>Quantities</label>
+                            <frontend_model>ddq/adminhtml_system_config_form_field_qtys</frontend_model>
+                            <backend_model>adminhtml/system_config_backend_serialized_array</backend_model>
+                            <sort_order>0</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </quantities>
+                        <preselected translate="label comment">
+                            <label>Preselected Quantity</label>
+                            <frontend_type>text</frontend_type>
+                            <comment>If this field is left empty the first available quantity option will be used instead.</comment>
+                            <sort_order>1</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </preselected>
+                        <hide_unavailable_qty translate="label comment">
+                            <label>Hide Unavailable Quantities</label>
+                            <comment>Do not display quantity options which are out of stock.</comment>
+                            <frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                            <sort_order>2</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </hide_unavailable_qty>
+                        <no_options_action translate="label comment">
+                            <label>No Options Action</label>
+                            <comment>Action taken if none of the configured quantity options are available for a product.</comment>
+                            <frontend_type>select</frontend_type>
+                            <source_model>ddq/system_config_source_nooptionsaction</source_model>
+                            <sort_order>3</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </no_options_action>
+                    </fields>
+                </quantity_options>
+                <layout translate="label">
+                    <label>Layout Settings</label>
+                    <frontend_type>text</frontend_type>
+                    <sort_order>20</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>1</show_in_store>
+                    <fields>
+                        <label_template translate="label">
+                            <label>Default Label Template</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>0</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </label_template>
+                        <label_prefix translate="label">
+                            <label>Label Prefix</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>1</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </label_prefix>
+                        <label_suffix translate="label">
+                            <label>Label Suffix</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>2</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </label_suffix>
+                        <breaker_1>
+                            <frontend_model>mageparts_base/adminhtml_system_config_source_breaker</frontend_model>
+                            <sort_order>9</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </breaker_1>
+                        <type translate="label">
+                            <label>Default Layout Type</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>ddq/system_config_source_layout</source_model>
+                            <sort_order>10</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </type>
+                        <breaker_2>
+                            <frontend_model>mageparts_base/adminhtml_system_config_source_breaker</frontend_model>
+                            <sort_order>19</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </breaker_2>
+                        <layout_title_select>
+                            <frontend_model>ddq/adminhtml_system_config_source_layout_selecttitle</frontend_model>
+                            <sort_order>20</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </layout_title_select>
+                        <select_header translate="label">
+                            <label>Include Header Option</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                            <sort_order>21</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </select_header>
+                        <select_header_text translate="label">
+                            <label>Header Option Text</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>22</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </select_header_text>
+                        <breaker_3>
+                            <frontend_model>mageparts_base/adminhtml_system_config_source_breaker</frontend_model>
+                            <sort_order>29</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </breaker_3>
+                        <layout_title_table>
+                            <frontend_model>ddq/adminhtml_system_config_source_layout_tabletitle</frontend_model>
+                            <sort_order>30</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </layout_title_table>
+                        <table_columns translate="label comment">
+                            <label>Table Columns</label>
+                            <comment>Only used when Layout Type is set to Table.</comment>
+                            <frontend_model>ddq/adminhtml_system_config_form_field_tablecolumns</frontend_model>
+                            <backend_model>adminhtml/system_config_backend_serialized_array</backend_model>
+                            <sort_order>31</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </table_columns>
+                        <table_product_types translate="label comment">
+                            <label>Use Table Layout For</label>
+                            <comment>Please choose which product types the layout should be applied to. Remaining product types will use the default which is Drop-Down List.</comment>
+                            <frontend_type>multiselect</frontend_type>
+                            <source_model>ddq/system_config_source_producttypes</source_model>
+                            <sort_order>32</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </table_product_types>
+                        <breaker_4>
+                            <frontend_model>mageparts_base/adminhtml_system_config_source_breaker</frontend_model>
+                            <sort_order>39</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </breaker_4>
+                        <hide_qty_boxes translate="label comment">
+                            <label>Hide Quantity Text Boxes</label>
+                            <comment>Hide quantity text boxes using CSS. This will prevent the element from briefly appearing on the screen before it's replaced.</comment>
+                            <frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                            <sort_order>40</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </hide_qty_boxes>
+                        <hide_tier_price_box translate="label">
+                            <label>Hide Tier Price Table</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                            <sort_order>41</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </hide_tier_price_box>
+                    </fields>
+                </layout>
+                <cache translate="label">
+                    <label>Cache Settings</label>
+                    <frontend_type>text</frontend_type>
+                    <sort_order>30</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>1</show_in_store>
+                    <fields>
+                        <customer_group_unique translate="label">
+                            <label>Cache Unique to Customer Group</label>
+                            <comment>This option should be activated in case your products have prices (like tier pricing for example) or other setting which varies depending on customer group.</comment>
+                            <frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                            <sort_order>0</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </customer_group_unique>
+                        <cache_cart_items translate="label">
+                            <label>Cache Cart Items</label>
+                            <comment>If you are having performance problems on your shopping cart page you can try using this option. It will cache the output of the quantity options block based on the items options. This setting is considered experimental and shouldn't be used carelessly.</comment>
+                            <frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                            <sort_order>1</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </cache_cart_items>
+                        <lifetime translate="label">
+                            <label>Refresh Interval</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>mageparts_base/system_config_source_cacherefreshinterval</source_model>
+                            <sort_order>2</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </lifetime>
+                    </fields>
+                </cache>
+                <incremental translate="label">
+                    <label>Incremental Quantity Settings</label>
+                    <frontend_type>text</frontend_type>
+                    <sort_order>70</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>1</show_in_store>
+                    <fields>
+                        <enabled translate="label">
+                            <label>Enabled</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                            <sort_order>0</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </enabled>
+                        <store_on_product translate="label">
+                            <label>Save Values to Product</label>
+                            <comment>Enable this in order to modify prices, labels etc. for the generated quantity options.</comment>
+                            <frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                            <sort_order>1</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </store_on_product>
+                        <breaker_1>
+                            <frontend_model>mageparts_base/adminhtml_system_config_source_breaker</frontend_model>
+                            <sort_order>9</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </breaker_1>
+                        <field translate="label">
+                            <label>Generate From Field</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>ddq/system_config_source_incrementfield</source_model>
+                            <sort_order>10</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </field>
+                        <custom_increment translate="label">
+                            <label>Custom Value</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>11</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <depends>
+                                <field>custom</field>
+                            </depends>
+                        </custom_increment>
+                        <breaker_2>
+                            <frontend_model>mageparts_base/adminhtml_system_config_source_breaker</frontend_model>
+                            <sort_order>19</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </breaker_2>
+                        <option_limit_type translate="label">
+                            <label>Option Limit</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>ddq/system_config_source_optionlimit</source_model>
+                            <sort_order>20</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </option_limit_type>
+                        <custom_option_limit translate="label comment">
+                            <label>Custom Option Limit</label>
+                            <comment>Must be a number and may not include decimals.</comment>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>21</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <depends>
+                                <option_limit_type>custom</option_limit_type>
+                            </depends>
+                        </custom_option_limit>
+                    </fields>
+                </incremental>
+                <cart translate="label">
+                    <label>Shopping Cart Settings</label>
+                    <frontend_type>text</frontend_type>
+                    <sort_order>80</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>1</show_in_store>
+                    <fields>
+                        <handle_unavailable_option translate="label comment">
+                            <label>Method For Handling Unavailable Quantities</label>
+                            <comment>How to proceed if the requested quantity option does not exist.</comment>
+                            <frontend_type>select</frontend_type>
+                            <source_model>ddq/system_config_source_method</source_model>
+                            <sort_order>0</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </handle_unavailable_option>
+                        <error_message translate="label">
+                            <label>Error Message</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>1</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <depends>
+                                <handle_unavailable_option>error</handle_unavailable_option>
+                            </depends>
+                        </error_message>
+                        <breaker_1>
+                            <frontend_model>mageparts_base/adminhtml_system_config_source_breaker</frontend_model>
+                            <sort_order>9</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </breaker_1>
+                        <reload_cart_on_change_qty translate="label comment">
+                            <label>Reload Cart When Changing Quantity</label>
+                            <comment>Automatically reload the shopping cart page when changing the quantity of an item.</comment>
+                            <frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                            <sort_order>10</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </reload_cart_on_change_qty>
+                        <allow_zero_price translate="label comment">
+                            <label>Allow Zero Price</label>
+                            <comment>Allow customers to purchase items even if the price of the item is zero (0).</comment>
+                            <frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                            <sort_order>11</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </allow_zero_price>
+                    </fields>
+                </cart>
+                <element_paths translate="label">
+                    <label>Element Paths</label>
+                    <frontend_type>text</frontend_type>
+                    <sort_order>90</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>1</show_in_store>
+                    <fields>
+                        <explanation translate="label">
+                            <frontend_model>ddq/adminhtml_system_config_source_elementpaths</frontend_model>
+                            <sort_order>0</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </explanation>
+                        <qty_box translate="label">
+                            <label>Quantity Box</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>0</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </qty_box>
+                        <qty_box_configurable translate="label comment">
+                            <label>Configurable Product View</label>
+                            <comment>Quantity text box on configurable product view.</comment>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>2</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </qty_box_configurable>
+                        <qty_box_bundle translate="label comment">
+                            <label>Bundle Product View</label>
+                            <comment>Quantity text box on bundle product view.</comment>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>3</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </qty_box_bundle>
+                        <cart_form translate="label comment">
+                            <label>Shopping Cart Form Element</label>
+                            <comment>The form element, not the qty boxes within it.</comment>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>4</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </cart_form>
+                        <tier_price_box translate="label comment">
+                            <label>Tier Price Box</label>
+                            <comment>Ex: .product-essential .tier-prices</comment>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>6</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </tier_price_box>
+                    </fields>
+                </element_paths>
+                <ajax translate="label">
+                    <label>Ajax Settings</label>
+                    <frontend_type>text</frontend_type>
+                    <sort_order>90</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>1</show_in_store>
+                    <fields>
+                        <enabled translate="label comment">
+                            <label>Use Ajax Updating</label>
+                            <comment>Use ajax to fetch quantity options for your products. Currently this is only being applied for configurable products.</comment>
+                            <frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                            <sort_order>0</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </enabled>
+                    </fields>
+                </ajax>
+            </groups>
+        </ddq>
+    </sections>
+</config>

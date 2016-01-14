@@ -65,12 +65,12 @@ class Chili_Web2print_Block_Adminhtml_Sales_Order_View_Tab_Documents
      */
     public function getTabLabel()
     {
-        return Mage::helper('sales')->__('CHILI documents');
+        return Mage::helper('sales')->__('PDF Documents');
     }
 
     public function getTabTitle()
     {
-        return Mage::helper('sales')->__('CHILI documents');
+        return Mage::helper('sales')->__('PDF Documents');
     }
 
     public function canShowTab()

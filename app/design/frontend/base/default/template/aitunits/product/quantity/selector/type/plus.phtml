@@ -1,0 +1,19 @@
+<?php
+/**
+ * Product Units and Quantities
+ *
+ * @category:    Aitoc
+ * @package:     Aitoc_Aitunits
+ * @version      1.0.11
+ * @license:     0JdTQfDMswel7fbpH42tkXIHe3fixI4GH3daX0aDVf
+ * @copyright:   Copyright (c) 2015 AITOC, Inc. (http://www.aitoc.com)
+ */
+if($this->hasContainer()): ?>
+<span id="aitunits_qty_container_<?php echo $this->getId(); ?>" class="aitunits-select-container" >
+<?php endif; ?>
+    <img id="aitunits_button_minus_<?php echo $this->getId(); ?>" src="<?php echo $this->getSkinUrl('images/slider_btn_zoom_out.gif') ?>" alt="<?php echo $this->__('Decrease Qty') ?>" title="<?php echo $this->__('Decrease Qty') ?>" class="aitunits-btn-minus" />
+    <input id="aitunits_input_<?php echo $this->getId(); ?>" type="text" value="0" name="qty">
+    <img id="aitunits_button_plus_<?php echo $this->getId(); ?>" src="<?php echo $this->getSkinUrl('images/slider_btn_zoom_in.gif') ?>" alt="<?php echo $this->__('Increase Qty') ?>" title="<?php echo $this->__('Increase Qty') ?>" class="aitunits-btn-plus" />
+<?php if($this->hasContainer()): ?>
+</span>
+<?php endif; ?>

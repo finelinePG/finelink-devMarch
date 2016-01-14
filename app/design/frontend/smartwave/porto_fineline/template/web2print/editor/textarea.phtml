@@ -1,0 +1,11 @@
+<?php
+    $item = $this->getItem()->attributes();   
+    $varNum = $this->getVarNum();
+    $display_none = (isset($item['visible']) && $item['visible']) ? 'style="display:none;"' : '';
+
+    $displayName = (String)$item->displayName;
+?>
+<tr <?php echo $display_none ?> > 
+    <td class="label"><?php echo Mage::helper('web2print')->__($displayName);?></td>
+    <td><textarea class="editor_textarea" style='height:250px;' id='<?php echo "var_".$item->name?>' name="<?php echo $varNum;?>" width="100%"><?php echo $item->value;?></textarea></td>
+</tr>

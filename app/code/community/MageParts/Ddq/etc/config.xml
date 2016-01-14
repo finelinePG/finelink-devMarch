@@ -1,0 +1,345 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+/**
+ * MageParts
+ * 
+ * NOTICE OF LICENSE
+ * 
+ * This code is copyrighted by MageParts and may not be reproduced
+ * and/or redistributed without a written permission by the copyright 
+ * owners. If you wish to modify and/or redistribute this file please
+ * contact us at info@mageparts.com for confirmation before doing
+ * so. Please note that you are free to modify this file for personal
+ * use only.
+ *
+ * If you wish to make modifications to this file we advice you to use
+ * the "local" file scope in order to aviod conflicts with future updates. 
+ * For information regarding modifications see http://www.magentocommerce.com.
+ *  
+ * DISCLAIMER
+ * 
+ * THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" 
+ * AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE 
+ * IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE 
+ * ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT OWNER OR CONTRIBUTORS BE LIABLE 
+ * FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES 
+ * (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF 
+ * USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY 
+ * OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE 
+ * OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED 
+ * OF THE POSSIBILITY OF SUCH DAMAGE.
+ * 
+ * @category   MageParts
+ * @package    MageParts_Ddq
+ * @copyright  Copyright (c) 2009 MageParts (http://www.mageparts.com/)
+ * @author     MageParts Crew
+ */
+-->
+<config>
+    <modules>
+        <MageParts_Ddq>
+            <version>2.0.1.1</version>
+        </MageParts_Ddq>
+    </modules>
+    <global>
+        <models>
+            <ddq>
+                <class>MageParts_Ddq_Model</class>
+            </ddq>
+        </models>
+        <helpers>
+            <ddq>
+                <class>MageParts_Ddq_Helper</class>
+            </ddq>
+        </helpers>
+        <blocks>
+            <ddq>
+                <class>MageParts_Ddq_Block</class>
+            </ddq>
+        </blocks>
+        <resources>
+            <ddq_setup>
+                <setup>
+                    <module>MageParts_Ddq</module>
+                </setup>
+            </ddq_setup>
+        </resources>
+        <events>
+            <catalog_product_load_after>
+                <observers>
+                    <mageparts_ddq_observer_global>
+                        <type>singleton</type>
+                        <class>MageParts_Ddq_Model_Observer_Global</class>
+                        <method>addDefaultDdqValues</method>
+                    </mageparts_ddq_observer_global>
+                </observers>
+            </catalog_product_load_after>
+            <catalog_product_collection_load_after>
+                <observers>
+                    <mageparts_ddq_observer_global>
+                        <type>singleton</type>
+                        <class>MageParts_Ddq_Model_Observer_Global</class>
+                        <method>addDefaultDdqValuesToProductCollection</method>
+                    </mageparts_ddq_observer_global>
+                </observers>
+            </catalog_product_collection_load_after>
+            <cataloginventory_stock_item_save_after>
+                <observers>
+                    <mageparts_ddq_observer_global>
+                        <type>singleton</type>
+                        <class>MageParts_Ddq_Model_Observer_Global</class>
+                        <method>refreshDdqCache</method>
+                    </mageparts_ddq_observer_global>
+                </observers>
+            </cataloginventory_stock_item_save_after>
+        </events>
+        <cache>
+            <types>
+                <mageparts_ddq translate="label,description" module="ddq">
+                    <label>Quantity Options</label>
+                    <description>Data related to the MageParts Quantity Options &amp; Fixed Prices extension.</description>
+                    <tags>mageparts_ddq</tags>
+                </mageparts_ddq>
+            </types>
+        </cache>
+    </global>
+    <adminhtml>
+        <acl>
+            <resources>
+                <admin>
+                    <children>
+                        <system>
+                            <children>
+                                <config>
+                                    <children>
+                                        <ddq>
+                                            <title>MageParts - Quantity Options &amp; Fixed Prices</title>
+                                            <sort_order>900</sort_order>
+                                        </ddq>
+                                    </children>
+                                </config>
+                            </children>
+                        </system>
+                    </children>
+                </admin>
+            </resources>
+        </acl>
+        <events>
+            <catalog_product_save_before>
+                <observers>
+                    <mageparts_ddq_observer_adminhtml>
+                        <type>singleton</type>
+                        <class>MageParts_Ddq_Model_Observer_Adminhtml</class>
+                        <method>beforeProductSave</method>
+                    </mageparts_ddq_observer_adminhtml>
+                </observers>
+            </catalog_product_save_before>
+            <admin_system_config_changed_section_ddq>
+                <observers>
+                    <mageparts_ddq_observer_adminhtml>
+                        <type>singleton</type>
+                        <class>MageParts_Ddq_Model_Observer_Adminhtml</class>
+                        <method>changedCfg</method>
+                    </mageparts_ddq_observer_adminhtml>
+                </observers>
+            </admin_system_config_changed_section_ddq>
+            <admin_system_config_changed_section_cataloginventory>
+                <observers>
+                    <mageparts_ddq_observer_adminhtml>
+                        <type>singleton</type>
+                        <class>MageParts_Ddq_Model_Observer_Adminhtml</class>
+                        <method>changedCfg</method>
+                    </mageparts_ddq_observer_adminhtml>
+                </observers>
+            </admin_system_config_changed_section_cataloginventory>
+            <admin_system_config_changed_section_tax>
+                <observers>
+                    <mageparts_ddq_observer_adminhtml>
+                        <type>singleton</type>
+                        <class>MageParts_Ddq_Model_Observer_Adminhtml</class>
+                        <method>changedCfg</method>
+                    </mageparts_ddq_observer_adminhtml>
+                </observers>
+            </admin_system_config_changed_section_tax>
+            <admin_system_config_changed_section_catalog>
+                <observers>
+                    <mageparts_ddq_observer_adminhtml>
+                        <type>singleton</type>
+                        <class>MageParts_Ddq_Model_Observer_Adminhtml</class>
+                        <method>changedCfg</method>
+                    </mageparts_ddq_observer_adminhtml>
+                </observers>
+            </admin_system_config_changed_section_catalog>
+            <core_block_abstract_to_html_after>
+                <observers>
+                    <mageparts_ddq_observer_adminhtml>
+                        <type>singleton</type>
+                        <class>MageParts_Ddq_Model_Observer_Adminhtml</class>
+                        <method>afterAbstractHtml</method>
+                    </mageparts_ddq_observer_adminhtml>
+                </observers>
+            </core_block_abstract_to_html_after>
+            <controller_action_layout_load_before>
+                <observers>
+                    <mageparts_ddq_observer_adminhtml>
+                        <type>singleton</type>
+                        <class>MageParts_Ddq_Model_Observer_Adminhtml</class>
+                        <method>modifyLayout</method>
+                    </mageparts_ddq_observer_adminhtml>
+                </observers>
+            </controller_action_layout_load_before>
+            <controller_action_predispatch_adminhtml_catalog_product_action_attribute_save>
+                <observers>
+                    <mageparts_ddq_observer_adminhtml>
+                        <type>singleton</type>
+                        <class>MageParts_Ddq_Model_Observer_Adminhtml</class>
+                        <method>serializeDdqAttributeData</method>
+                    </mageparts_ddq_observer_adminhtml>
+                </observers>
+            </controller_action_predispatch_adminhtml_catalog_product_action_attribute_save>
+            <catalog_product_new_action>
+                <observers>
+                    <mageparts_ddq_observer_global>
+                        <type>singleton</type>
+                        <class>MageParts_Ddq_Model_Observer_Global</class>
+                        <method>addDefaultDdqValues</method>
+                    </mageparts_ddq_observer_global>
+                </observers>
+            </catalog_product_new_action>
+        </events>
+        <layout>
+            <updates>
+                <ddq>
+                    <file>mageparts/ddq.xml</file>
+                </ddq>
+            </updates>
+        </layout>
+        <translate>
+            <modules>
+                <MageParts_Ddq>
+                    <files>
+                        <default>MageParts_Ddq.csv</default>
+                    </files>
+                </MageParts_Ddq>
+            </modules>
+        </translate>
+    </adminhtml>
+    <frontend>
+        <routers>
+            <ddq>
+                <use>standard</use>
+                <args>
+                    <module>MageParts_Ddq</module>
+                    <frontName>ddq</frontName>
+                </args>
+            </ddq>
+        </routers>
+        <events>
+            <sales_quote_product_add_after>
+                <observers>
+                    <mageparts_ddq_observer>
+                        <type>singleton</type>
+                        <class>MageParts_Ddq_Model_Observer</class>
+                        <method>evaluateQuantity</method>
+                    </mageparts_ddq_observer>
+                </observers>
+            </sales_quote_product_add_after>
+            <sales_quote_item_save_after>
+                <observers>
+                    <mageparts_ddq_observer>
+                        <type>singleton</type>
+                        <class>MageParts_Ddq_Model_Observer</class>
+                        <method>addOptionHashToSession</method>
+                    </mageparts_ddq_observer>
+                </observers>
+            </sales_quote_item_save_after>
+            <sales_quote_collect_totals_after>
+                <observers>
+                    <mageparts_ddq_observer>
+                        <type>singleton</type>
+                        <class>MageParts_Ddq_Model_Observer</class>
+                        <method>overrideItemPrices</method>
+                    </mageparts_ddq_observer>
+                </observers>
+            </sales_quote_collect_totals_after>
+            <checkout_cart_update_items_before>
+                <observers>
+                    <mageparts_ddq_observer>
+                        <type>singleton</type>
+                        <class>MageParts_Ddq_Model_Observer</class>
+                        <method>resetOverridingPrices</method>
+                    </mageparts_ddq_observer>
+                </observers>
+            </checkout_cart_update_items_before>
+            <checkout_cart_update_items_before>
+                <observers>
+                    <mageparts_ddq_observer>
+                        <type>singleton</type>
+                        <class>MageParts_Ddq_Model_Observer</class>
+                        <method>resetOverridingPrices</method>
+                    </mageparts_ddq_observer>
+                </observers>
+            </checkout_cart_update_items_before>
+            <checkout_cart_update_item_complete>
+                <observers>
+                    <mageparts_ddq_observer>
+                        <type>singleton</type>
+                        <class>MageParts_Ddq_Model_Observer</class>
+                        <method>resetOverridingConfigurePrice</method>
+                    </mageparts_ddq_observer>
+                </observers>
+            </checkout_cart_update_item_complete>
+            <sales_quote_load_after>
+                <observers>
+                    <mageparts_ddq_observer>
+                        <type>singleton</type>
+                        <class>MageParts_Ddq_Model_Observer</class>
+                        <method>collectParentItemProducts</method>
+                    </mageparts_ddq_observer>
+                </observers>
+            </sales_quote_load_after>
+        </events>
+        <layout>
+            <updates>
+                <ddq>
+                    <file>mageparts/ddq.xml</file>
+                </ddq>
+            </updates>
+        </layout>
+    </frontend>
+    <default>
+        <ddq>
+            <general>
+                <enabled>0</enabled>
+                <price_updates_enabled>1</price_updates_enabled>
+                <collection_injection><![CDATA[a:3:{s:18:"_1397385131547_547";a:2:{s:3:"url";s:21:"catalog/category/view";s:4:"type";s:3:"mca";}s:18:"_1397385540372_372";a:2:{s:3:"url";s:15:"catalogsearch/*";s:4:"type";s:3:"mca";}s:18:"_1398244185886_886";a:2:{s:3:"url";s:20:"wishlist/index/index";s:4:"type";s:3:"mca";}}]]></collection_injection>
+            </general>
+            <quantity_options>
+                <hide_unavailable_qty>0</hide_unavailable_qty>
+                <no_options_action>out_of_stock</no_options_action>
+            </quantity_options>
+            <layout>
+                <type>select</type>
+                <table_columns><![CDATA[a:4:{s:18:"_1398331149463_463";a:3:{s:4:"type";s:5:"radio";s:5:"title";s:0:"";s:5:"order";s:1:"0";}s:18:"_1398331150688_688";a:3:{s:4:"type";s:3:"qty";s:5:"title";s:3:"Qty";s:5:"order";s:1:"1";}s:18:"_1398331151394_394";a:3:{s:4:"type";s:5:"price";s:5:"title";s:5:"Price";s:5:"order";s:1:"2";}s:18:"_1398331152126_126";a:3:{s:4:"type";s:10:"price_unit";s:5:"title";s:10:"Unit Price";s:5:"order";s:1:"3";}}]]></table_columns>
+                <table_product_types>simple,grouped,configurable,virtual,bundle,downloadable</table_product_types>
+                <hide_qty_boxes>1</hide_qty_boxes>
+            </layout>
+            <cart>
+                <handle_unavailable_option>separate_entry</handle_unavailable_option>
+                <error_message>%s is not an available quantity option for this product. The current cart quantity for this item is %s.</error_message>
+                <allow_zero_price>0</allow_zero_price>
+            </cart>
+            <element_paths>
+                <qty_box>#qty</qty_box>
+                <qty_box_configurable>#qty</qty_box_configurable>
+                <qty_box_bundle>#qty</qty_box_bundle>
+                <cart_form>.col-main form</cart_form>
+                <tier_price_box>.product-essential .tier-prices</tier_price_box>
+            </element_paths>
+            <cache>
+                <customer_group_unique>1</customer_group_unique>
+                <lifetime>0</lifetime>
+            </cache>
+        </ddq>
+    </default>
+</config>

@@ -1,0 +1,56 @@
+
+/**
+ * Product Units and Quantities
+ *
+ * @category:    Aitoc
+ * @package:     Aitoc_Aitunits
+ * @version      1.0.11
+ * @license:     n/a
+ * @copyright:   Copyright (c) 2015 AITOC, Inc. (http://www.aitoc.com)
+ */
+/* 
+    Document   : auitunits
+    Created on : 24.1.2012, 17.15.34
+    Author     : Augen
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+/* 
+   TODO customize this sample style
+   Syntax recommendation http://www.w3.org/TR/REC-CSS2/
+*/
+span.aitunits-slider {}
+.aitunits-select-container {display:block;}
+span.aitunits-slider-track { position:relative; float:left;width: 2.05em !important; z-index:9; height:18px; margin:13px auto 13px; padding:0 28px; background:url(../../../../../default/default/images/slider_bg.gif) 50% 50% no-repeat; cursor:pointer; }
+span.aitunits-slider-handle { position:absolute; left:0; top:-1px; width:9px; height:22px; background:url(../../../../../default/default/images/magnifier_handle.gif) 0 0 no-repeat;  }
+img.aitunits-btn-minus { float:left; vertical-align:middle; display:block; width: 20px; float:left; margin:2px 3px 0 0; cursor:pointer;}
+img.aitunits-btn-plus { float:right; margin-right: 2px; vertical-align:middle; width: 20px; float:right; margin: 2px 0 0 0px; cursor:pointer;}
+img.aitunits-btn-arrow-minus { float:left; margin:6px 7px 0 0; vertical-align:middle; cursor:pointer;}
+img.aitunits-btn-arrow-plus { float:right; margin:6px 0px 0 3px; vertical-align:middle; cursor:pointer;}
+.aitunits-select-container {float:left; position:relative; clear:none; margin-right: 5px; width:82px;}
+table td .aitunits-select-container { margin-right: 5px; width:84px;}
+table#giftreg-table td .aitunits-select-container, table#shopping-cart-table td .aitunits-select-container { margin-left: 2px; width:86px;}
+table#giftreg-table td .aitunits-select-container input, table#shopping-cart-table td .aitunits-select-container input{ float:left; width:33px;}
+table#giftreg-table td .aitunits-select-container img.aitunits-btn-arrow-plus{float: left; margin: 6px 0 0 6px;}
+table#shopping-cart-table td .aitunits-select-container img.aitunits-btn-arrow-plus {float: left; margin: 6px 0 0 9px;}
+table#shopping-cart-table td .qty_box{width:86px;}
+table#shopping-cart-table td .qty_box select{width:55px;}
+table#shopping-cart-table td .aititemqty{margin:0 0 0 2px;}
+.aitunits-arrow-box{width: 70px; margin-right:8px;}
+table td .aitunits-arrow-box{margin-right:0px; width: 72px;}
+input.aitunits-input {float:right;}
+.products-grid .aitunits-select-container{ position:absolute; bottom: 80px;}
+.products-grid li.item { float: left;  padding: 12px 10px 100px; width: 138px;}
+.aitunits-select-container input.qty{margin:0;}
+.product-shop .product-options-bottom .price-box{ float:left;}
+.products-grid .aitunits-select-container{ clear:both; }
+table td .aitunits-select-container{ margin:0px auto 5px auto; }
+.products-list .product-shop select{ display:block;  float:left; margin-right:5px;}
+li.aitunits-item-slider .aitunits-select-container{bottom:70px;}
+.products-grid li.aitunits-item-slider{padding-bottom:140px;}
+.aitunits-dropdown-box{width:60px;}
+table td .aitunits-select-container{float:none;}
+.aitunits-dropdown-box select{width:55px;}
+.products-list .minimal-price-link {display: block; width: 90px; }
+.product-view .aitunits-selector-dropdown {width:38px;}

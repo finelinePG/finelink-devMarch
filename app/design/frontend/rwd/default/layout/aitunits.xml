@@ -1,0 +1,237 @@
+<?xml version="1.0"?>
+<!--
+    Document   : aitunits.xml
+    Created on : December 02, 2011, 16:57 PM
+    Author     : lyskovets
+    Description:
+        Purpose of the document follows.
+-->
+<layout version="0.1.0">
+    
+    <default>
+        <reference name="head"> 
+            <action method="addCss"><stylesheet>css/aitoc/aitunits/default.css</stylesheet></action>
+            <action method="addItem"><type>skin_css</type><name>css/aitoc/aitunits/default-ie.css</name><params/><if>lt IE 8</if></action>
+        </reference>
+    </default>
+    
+    <PRODUCT_TYPE_simple >
+        <reference name="head">
+            <action method="addJs"><file>aitoc/aitunits/view_helper/abstract.js</file></action>
+            <action method="addJs"><file>aitoc/aitunits/view_helper/catalog_product_simple_view.js</file></action>
+        </reference>
+        <reference name="content">
+            <block type="aitunits/category_product_quantity_available" name="aitunits.product.available" after="addtocart" template="aitunits/product/quantity/available.phtml">
+                <action method="InitBlock"><value>catalog_product_view</value></action>
+            </block>
+            <block type="aitunits/category_product_unit" name="aitunits.product.unit" template="aitunits/product/unit.phtml">
+                <action method="InitBlock"><value>catalog_product_view</value></action>
+            </block>
+            <block type="aitunits/category_product_quantity_selector" name="aitunits.product.selector" template="aitunits/product/quantity/selector.phtml">
+                <action method="InitBlock"><value>catalog_product_view</value></action>
+            </block>
+        </reference>
+    </PRODUCT_TYPE_simple>
+    
+    <PRODUCT_TYPE_grouped>
+        <reference name="head">
+            <action method="addJs"><file>aitoc/aitunits/view_helper/abstract.js</file></action>
+            <action method="addJs"><file>aitoc/aitunits/view_helper/catalog_product_grouped_view.js</file></action>
+        </reference>
+    </PRODUCT_TYPE_grouped>
+    
+    <PRODUCT_TYPE_configurable>
+        <reference name="head">
+            <action method="addJs"><file>aitoc/aitunits/view_helper/abstract.js</file></action>
+            <action method="addJs"><file>aitoc/aitunits/view_helper/catalog_product_simple_view.js</file></action>
+        </reference>
+        <reference name="content">
+            <block type="aitunits/category_product_quantity_available" name="aitunits.product.available" after="addtocart" template="aitunits/product/quantity/available.phtml">
+                <action method="InitBlock"><value>catalog_product_view</value></action>
+            </block>
+            <block type="aitunits/category_product_unit" name="aitunits.product.unit" template="aitunits/product/unit.phtml">
+                <action method="InitBlock"><value>catalog_product_view</value></action>
+            </block>
+            <block type="aitunits/category_product_quantity_selector" name="aitunits.product.selector" template="aitunits/product/quantity/selector.phtml">
+                <action method="InitBlock"><value>catalog_product_view</value></action>
+            </block>
+        </reference>
+    </PRODUCT_TYPE_configurable>
+        
+    <PRODUCT_TYPE_virtual>
+        <reference name="head">
+            <action method="addJs"><file>aitoc/aitunits/view_helper/abstract.js</file></action>
+            <action method="addJs"><file>aitoc/aitunits/view_helper/catalog_product_simple_view.js</file></action>
+        </reference>
+        <reference name="content">
+            <block type="aitunits/category_product_quantity_available" name="aitunits.product.available" after="addtocart" template="aitunits/product/quantity/available.phtml">
+                <action method="InitBlock"><value>catalog_product_view</value></action>
+            </block>
+            <block type="aitunits/category_product_unit" name="aitunits.product.unit" template="aitunits/product/unit.phtml">
+                <action method="InitBlock"><value>catalog_product_view</value></action>
+            </block>
+            <block type="aitunits/category_product_quantity_selector" name="aitunits.product.selector" template="aitunits/product/quantity/selector.phtml">
+                <action method="InitBlock"><value>catalog_product_view</value></action>
+            </block>
+        </reference>
+    </PRODUCT_TYPE_virtual>
+    
+    <checkout_cart_index>
+        <reference name="head">
+            <action method="addJs"><file>aitoc/aitunits/view_helper/abstract.js</file></action>
+            <action method="addJs"><file>aitoc/aitunits/view_helper/abstract/checkout_cart.js</file></action>
+            <action method="addJs"><file>aitoc/aitunits/view_helper/checkout_cart_index.js</file></action>
+        </reference>
+    </checkout_cart_index>
+    
+    <catalog_category_default>
+        <reference name="product_list">
+            <action method="setTemplate"><template>aitcommonfiles/design--frontend--rwd--default--template--catalog--product--list.phtml</template></action>
+        </reference>
+        <reference name="head">
+            <action method="addJs"><file>aitoc/aitunits/view_helper/abstract.js</file></action>
+            <action method="addJs"><file>aitoc/aitunits/view_helper/catalog_category_view.js</file></action>
+            <action method="addJs"><file>aitoc/aitunits/form/abstract.js</file></action>
+        </reference>
+        <reference name="content">
+            <block type="aitunits/category_product_form" name="aitunits.product.form" template="aitunits/product/form.phtml"/>
+        </reference>
+    </catalog_category_default>
+    
+    <catalog_category_layered>
+        <reference name="product_list">
+            <action method="setTemplate"><template>aitcommonfiles/design--frontend--rwd--default--template--catalog--product--list.phtml</template></action>
+        </reference>
+        <reference name="head">
+            <action method="addJs"><file>aitoc/aitunits/view_helper/abstract.js</file></action>
+            <action method="addJs"><file>aitoc/aitunits/view_helper/catalog_category_view.js</file></action>
+            <action method="addJs"><file>aitoc/aitunits/form/abstract.js</file></action>
+        </reference>
+        <reference name="content">
+            <block type="aitunits/category_product_form" name="aitunits.product.form" template="aitunits/product/form.phtml"/>
+        </reference>
+    </catalog_category_layered>
+    
+    <catalogsearch_result_index>
+        <reference name="search_result_list">
+            <action method="setTemplate"><template>aitcommonfiles/design--frontend--rwd--default--template--catalog--product--list.phtml</template></action>
+        </reference>
+        <reference name="head">
+            <action method="addJs"><file>aitoc/aitunits/view_helper/abstract.js</file></action>
+            <action method="addJs"><file>aitoc/aitunits/view_helper/catalog_category_view.js</file></action>
+            <action method="addJs"><file>aitoc/aitunits/form/abstract.js</file></action>
+        </reference>
+        <reference name="content">
+            <block type="aitunits/category_product_form" name="aitunits.product.form" template="aitunits/product/form.phtml"/>
+        </reference>
+    </catalogsearch_result_index>
+        
+    <catalogsearch_advanced_result>
+        <reference name="search_result_list">
+            <action method="setTemplate"><template>aitcommonfiles/design--frontend--rwd--default--template--catalog--product--list.phtml</template></action>
+        </reference>
+        <reference name="head">
+            <action method="addJs"><file>aitoc/aitunits/view_helper/abstract.js</file></action>
+            <action method="addJs"><file>aitoc/aitunits/view_helper/catalog_category_view.js</file></action>
+            <action method="addJs"><file>aitoc/aitunits/form/abstract.js</file></action>
+        </reference>
+        <reference name="content">
+            <block type="aitunits/category_product_form" name="aitunits.product.form" template="aitunits/product/form.phtml"/>
+        </reference>
+    </catalogsearch_advanced_result>
+        
+    <tag_product_list>
+        <reference name="search_result_list">
+            <action method="setTemplate"><template>aitcommonfiles/design--frontend--rwd--default--template--catalog--product--list.phtml</template></action>
+        </reference>
+        <reference name="head">
+            <action method="addJs"><file>aitoc/aitunits/view_helper/abstract.js</file></action>
+            <action method="addJs"><file>aitoc/aitunits/view_helper/catalog_category_view.js</file></action>
+            <action method="addJs"><file>aitoc/aitunits/form/abstract.js</file></action>
+        </reference>
+        <reference name="content">
+            <block type="aitunits/category_product_form" name="aitunits.product.form" template="aitunits/product/form.phtml"/>
+        </reference>
+    </tag_product_list>
+    
+    <wishlist_index_index>
+        <reference name="head">
+            <action method="addJs"><file>aitoc/aitunits/view_helper/abstract.js</file></action>
+            <action method="addJs"><file>aitoc/aitunits/view_helper/wishlist_index.js</file></action>
+        </reference>
+    </wishlist_index_index>
+    
+    <aitcheckout_checkout_review_default>
+        <reference name="head">
+            <action method="addJs"><file>aitoc/aitunits/view_helper/abstract.js</file></action>
+            <action method="addJs"><file>aitoc/aitunits/view_helper/abstract/checkout_cart.js</file></action>
+            <action method="addJs"><file>aitoc/aitunits/view_helper/aitcheckout_checkout_index.js</file></action>
+        </reference>
+    </aitcheckout_checkout_review_default>
+    
+    <aitmanufacturers_index_view>
+        <reference name="product_list">
+            <action method="setTemplate"><template>aitcommonfiles/design--frontend--rwd--default--template--catalog--product--list.phtml</template></action>
+        </reference>
+        <reference name="head">
+            <action method="addJs"><file>aitoc/aitunits/view_helper/abstract.js</file></action>
+            <action method="addJs"><file>aitoc/aitunits/view_helper/catalog_category_view.js</file></action>
+            <action method="addJs"><file>aitoc/aitunits/form/abstract.js</file></action>
+        </reference>
+        <reference name="content">
+            <block type="aitunits/category_product_form" name="aitunits.product.form" template="aitunits/product/form.phtml"/>
+        </reference>
+    </aitmanufacturers_index_view>
+    
+    <adjgiftreg_event_details>
+        <reference name="head">
+            <action method="addJs"><file>aitoc/aitunits/view_helper/abstract.js</file></action>
+            <action method="addJs"><file>aitoc/aitunits/view_helper/adjgiftreg_event_details.js</file></action>
+        </reference>
+    </adjgiftreg_event_details>
+    
+    <adjgiftreg_index_view>
+        <reference name="head">
+            <action method="addJs"><file>aitoc/aitunits/view_helper/abstract.js</file></action>
+            <action method="addJs"><file>aitoc/aitunits/view_helper/adjgiftreg_index_view.js</file></action>
+        </reference>
+    </adjgiftreg_index_view>
+        
+    <adjgiftreg_index_popular>
+        <reference name="adjgiftreg_popular">
+            <action method="setTemplate"><template>aitcommonfiles/design--frontend--rwd--default--template--catalog--product--list.phtml</template></action>
+        </reference>
+        <reference name="head">
+            <action method="addJs"><file>aitoc/aitunits/view_helper/abstract.js</file></action>
+            <action method="addJs"><file>aitoc/aitunits/view_helper/catalog_category_view.js</file></action>
+            <action method="addJs"><file>aitoc/aitunits/form/abstract.js</file></action>
+        </reference>
+        <reference name="content">
+            <block type="aitunits/category_product_form" name="aitunits.product.form" template="aitunits/product/form.phtml"/>
+        </reference>
+    </adjgiftreg_index_popular>
+    
+    <adjnav_ajax_category>
+        <reference name="product_list">
+            <action method="setTemplate"><template>aitcommonfiles/design--frontend--rwd--default--template--catalog--product--list.phtml</template></action>
+        </reference>
+    </adjnav_ajax_category>
+    
+    <adjnav_ajax_search>
+        <reference name="product_list">
+            <action method="setTemplate"><template>aitcommonfiles/design--frontend--rwd--default--template--catalog--product--list.phtml</template></action>
+        </reference>
+    </adjnav_ajax_search>
+</layout>
+
+<!--
+/**
+ * Product Units and Quantities
+ *
+ * @category:    Aitoc
+ * @package:     Aitoc_Aitunits
+ * @version      1.0.11
+ * @license:     0JdTQfDMswel7fbpH42tkXIHe3fixI4GH3daX0aDVf
+ * @copyright:   Copyright (c) 2015 AITOC, Inc. (http://www.aitoc.com)
+ */
+-->

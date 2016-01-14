@@ -18,6 +18,13 @@ $_product = $this->getProduct();
     var fullyLoaded = false;
 </script>
 
+
+
+
+
+
+
+
 <div id="messages_product_view">
     <?php echo $this->getMessagesBlock()->getGroupedHtml() ?>
 </div>
@@ -25,6 +32,8 @@ $_product = $this->getProduct();
 <div class="product-view">
 <div class="product-essential">
 
+
+<!---TOP EDITOR BUTTONS-->
 <form action="<?php echo $this->getChiliAddToCartUrl($_product->getId()) ?>" method="post" id="product_addtocart_form" <?php if ($_product->getOptions()): ?> enctype="multipart/form-data"<?php endif; ?>>
     <input type="hidden" name="related_product" id="related-products-field" value="" />
     <input type="hidden" name="product_id" id="product_id" value="<?php echo $_product->getId(); ?>" />
@@ -33,7 +42,7 @@ $_product = $this->getProduct();
     <div class="editor-links">
         <div class="left">
             <span>
-                <a href="javascript:history.go(-1)" title="<?php echo $this->__('Back'); ?>" class="">&lt;&lt; <?php echo $this->__('Back'); ?></a>
+              <a href="javascript:history.go(-1)" title="<?php echo $this->__('Back'); ?>" class="">&lt;&lt; <?php echo $this->__('Back'); ?></a>
             </span>
             <span style="display: none;">
                 <div id="navigation">
@@ -42,6 +51,7 @@ $_product = $this->getProduct();
             </span>
         </div>
         <div class="right">
+		
             <?php if (count($_product->getOptions()) >= 1) { ?>
                 <span>
                     <a href="#" class="actionLink" title="<?php echo $this->__('Configure options'); ?>" id="configure-options"><?php echo $this->__('Configure options'); ?></a>
@@ -62,7 +72,8 @@ $_product = $this->getProduct();
             <?php } ?>
             
                 <?php echo $this->getConceptActionButtonHtml(); ?>
-            
+       
+			
             <span>
                 <?php echo $this->getShoppingcartActionButtonHtml(); ?>
             </span>
@@ -155,8 +166,10 @@ $_product = $this->getProduct();
     }.bind(productAddToCartForm);
 </script>
 </div>
+
+<!--CHILI EDITOR FRAME STARTS HERE---->
 <?php if ($this->getChiliEditorUrl()) : ?>
-    <table width="100%" height="750px">
+    <table width="90%" height="1000px" style="margin-left:5%; margin-right:5%; margin-bottom:20px;">
         <tr valign="top">
             <?php if ($this->isChiliVariableHtmlFormEnabled()): ?>
                 <td id="jsInput" runat="server" width="310px">
@@ -167,11 +180,19 @@ $_product = $this->getProduct();
                 </td>
             <?php endif; ?>
             <td>
-                <iframe frameborder="0" src="<?php echo $this->getChiliEditorUrl(); ?>" onload="GetEditor()" id="iframe" width="100%" height="750px"></iframe>
+                <iframe frameborder="0" src="<?php echo $this->getChiliEditorUrl(); ?>" onload="GetEditor()" id="iframe" width="100%" height="100%"></iframe>
             </td>
         </tr>
     </table>
 <?php else :
     echo "<p>".$this->__("Service is currently not available. Please try again later.")."</p>";
 endif; ?>
+</div>
+
+<!---FOOTER-->
+<div class="footer-container ">
+
+
+
+    
 </div>

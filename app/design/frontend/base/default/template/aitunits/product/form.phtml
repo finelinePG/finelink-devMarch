@@ -1,0 +1,65 @@
+<?php
+/**
+ * Product Units and Quantities
+ *
+ * @category:    Aitoc
+ * @package:     Aitoc_Aitunits
+ * @version      1.0.11
+ * @license:     0JdTQfDMswel7fbpH42tkXIHe3fixI4GH3daX0aDVf
+ * @copyright:   Copyright (c) 2015 AITOC, Inc. (http://www.aitoc.com)
+ */
+?>
+<form action="" method="post" id="<?php echo $this->getId(); ?>">
+    <div class="no-display">
+        <!--<input type="hidden" name="product" value=" !setProductId" />-->
+        <!--<input type="hidden" name="related_product" id="related-products-field" value="" />-->
+        <input type="hidden" name="qty" id="aitunits_qty" maxlength="12" value="10" />
+    </div>
+</form>
+
+<script type="text/javascript">
+//aitunitsForm_productQty
+var aitunitsForm_<?php echo 'productQty'; ?> = new aitunitsForm();
+
+var productAddToCartForm = new VarienForm('<?php echo $this->getId(); ?>');
+productAddToCartForm.submit = function(button, url) {
+    if (this.validator.validate()) {
+        var form = this.form;
+        var oldUrl = form.action;
+
+        if (url) {
+            form.action = url;
+        }
+        var e = null;
+        try {
+            this.form.submit();
+        } catch (e) {
+        }
+        this.form.action = oldUrl;
+        if (e) {
+            throw e;
+        }
+
+        if (button && button != 'undefined') {
+            button.disabled = true;
+        }
+    }
+}.bind(productAddToCartForm);
+
+productAddToCartForm.submitLight = function(button, url){
+    if(this.validator) {
+        var nv = Validation.methods;
+        delete Validation.methods['required-entry'];
+        delete Validation.methods['validate-one-required'];
+        delete Validation.methods['validate-one-required-by-name'];
+        if (this.validator.validate()) {
+            if (url) {
+                this.form.action = url;
+            }
+            this.form.submit();
+        }
+        Object.extend(Validation.methods, nv);
+    }
+}.bind(productAddToCartForm);
+
+</script>

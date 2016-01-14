@@ -1,0 +1,40 @@
+<?php $_product = $this->getProduct() ?>
+
+<?php echo $this->getPriceHtml($_product) ?>
+
+
+
+<!-- Stock Status -->
+
+<?php
+    $manageStock = $_product->getStockItem()->getManageStock();
+    $inventoryQuantity = (int)Mage::getModel('cataloginventory/stock_item')->loadByProduct($_product)->getQty();
+ 
+    if ($manageStock == 1) // If 'Manage Stock' is set to YES
+        {
+        // If 'Qty' is less than or equal to zero
+            if($inventoryQuantity <= 0) { ?>
+                 <p class="availability out-of-stock">
+                    <span>
+                    <?php
+                        echo $this->__('Out of Stock'); ?>
+                    </span>
+                 </p>
+            <?php } else { ?>
+            <p class="availability in-stock">
+               
+                    <?php
+                    echo $this->__('Qty on Hand:') ?> <span><?= (int) Mage::getModel('cataloginventory/stock_item')->loadByProduct($_product)->getQty()?></span>
+              
+            </p>
+        <?php }
+        }
+    else {echo "<p style ='font-size: 16px; font-weight: bold; color:#ff0000;'>Made to Order!</p>"; } // safe default
+       
+    ?>
+   
+<!-- // Stock Status -->
+
+
+
+<?php echo $this->getChildHtml('product_type_data_extra') ?>

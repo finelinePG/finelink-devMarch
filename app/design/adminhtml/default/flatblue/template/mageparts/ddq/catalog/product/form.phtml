@@ -1,0 +1,82 @@
+<?php
+/**
+ * MageParts
+ *
+ * NOTICE OF LICENSE
+ *
+ * This code is copyrighted by MageParts and may not be reproduced
+ * and/or redistributed without a written permission by the copyright
+ * owners. If you wish to modify and/or redistribute this file please
+ * contact us at info@mageparts.com for confirmation before doing
+ * so. Please note that you are free to modify this file for personal
+ * use only.
+ *
+ * If you wish to make modifications to this file we advice you to use
+ * the "local" file scope in order to aviod conflicts with future updates.
+ * For information regarding modifications see http://www.magentocommerce.com.
+ *
+ * DISCLAIMER
+ *
+ * THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS"
+ * AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
+ * IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE
+ * ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT OWNER OR CONTRIBUTORS BE LIABLE
+ * FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES
+ * (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF
+ * USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY
+ * OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE
+ * OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED
+ * OF THE POSSIBILITY OF SUCH DAMAGE.
+ *
+ * @category   MageParts
+ * @package    MageParts_Ddq
+ * @copyright  Copyright (c) 2009 MageParts (http://www.mageparts.com/)
+ * @author     MageParts Crew
+ */
+?>
+<?php /* @var $this MageParts_Ddq_Block_Adminhtml_Catalog_Product_Form */ ?>
+
+<div class="entry-edit" id="mp-ddq-form">
+    <?php echo $this->getFormHtml() ?>
+</div>
+
+<script type="text/javascript">
+//<![CDATA[
+
+    // table row template
+    var ddqRowTemplateString = '<tr>'
+        + '<td><input class="required-entry validate-number mp-ddq-qty-field" type="text" name="<?php echo $this->_getFieldNamespace() ?>[ddq_qty_list][{{index}}][qty]" value="{{qty}}" id="ddq_qty_option_row_{{index}}_qty" /></td>'
+        + '<td><input class="validate-number mp-ddq-price-field" type="text" name="<?php echo $this->_getFieldNamespace() ?>[ddq_qty_list][{{index}}][price]" value="{{price}}" id="ddq_qty_option_row_{{index}}_price" /></td>'
+        + '<td><input class="mp-ddq-label-field" type="text" name="<?php echo $this->_getFieldNamespace() ?>[ddq_qty_list][{{index}}][label]" value="{{label}}" id="ddq_qty_option_row_{{index}}_label" /></td>'
+        + '<td><input class="validate-number mp-ddq-order-field" type="text" name="<?php echo $this->_getFieldNamespace() ?>[ddq_qty_list][{{index}}][order]" value="{{order}}" id="ddq_qty_option_row_{{index}}_order" /></td>'
+        + '<td class="last mp-ddq-action-column"><button title="<?php echo Mage::helper("ddq")->__("Delete") ?>" type="button" class="scalable delete icon-btn delete-product-row" id="ddq_qty_option_row_{{index}}_delete_button" onclick="return mpDdq.deleteRow(event);"><span><?php echo Mage::helper("ddq")->__("Delete") ?></span></button></td>'
+        + '</tr>';
+
+    var ddqRowTemplate = new Template(ddqRowTemplateString, new RegExp('(^|.|\\r|\\n)({{\\s*(\\w+)\\s*}})', ""));
+
+    // create object instance
+    var mpDdq = new MageParts.Ddq.Product({
+        enabled: <?php echo Mage::helper('ddq')->isEnabled() ? 'true' : 'false' ?>,
+        rowTemplate: ddqRowTemplate,
+        isOnUpdateAttributePage: <?php echo (bool) $this->getIsOnUpdateAttributePage() ? 'true' : 'false' ?>,
+        readOnly: <?php echo (bool) $this->getReadOnly() ? 'true' : 'false' ?>,
+        ddqEnabledLabel: '<?php echo $this->__('Quantity Options Enabled') ?>',
+        storeId: <?php echo Mage::helper('ddq')->getStoreId() ?>,
+        useConfig: <?php echo !$this->getIsOnUpdateAttributePage() ? Zend_Json::encode($this->_getProduct()->getDdqUseConfig()) : '{}' ?>
+    });
+
+    // apply readonly protection
+    <?php if ((bool) $this->getReadOnly()): ?>
+        mpDdq.toggle(false);
+    <?php endif; ?>
+
+    Event.observe(window, 'load', function() {
+        // initialize form
+        mpDdq.initForm();
+
+        // insert existing values
+        <?php echo $this->getInitJs() ?>
+    });
+
+//]]>
+</script>

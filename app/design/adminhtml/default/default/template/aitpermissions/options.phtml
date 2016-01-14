@@ -1,0 +1,49 @@
+<?php
+/**
+ * Advanced Permissions
+ *
+ * @category:    Aitoc
+ * @package:     Aitoc_Aitpermissions
+ * @version      2.10.9
+ * @license:     bJ9U1uR7Gejdp32uEI9Z7xOqHZ5UnP25Ct3xHTMyeC
+ * @copyright:   Copyright (c) 2015 AITOC, Inc. (http://www.aitoc.com)
+ */
+?>
+<br />
+
+<div style="background-color: whiteSmoke;">
+    <input type="checkbox"
+        <?php echo $this->canEditGlobalAttributes() ? 'checked="checked"' : '' ?>
+           name="allowupdateglobalattrs"
+           id="allowupdateglobalattrs"
+           value="1" />&nbsp;
+    <label for="allowupdateglobalattrs">
+        <b><?php echo $this->__('Allow to update global attributes') ?></b>
+    </label>
+</div>
+
+<br />
+
+<div style="background-color: whiteSmoke;">
+    <input type="checkbox"
+        <?php echo $this->canEditOwnProductsOnly() ? 'checked="checked"' : '' ?>
+           name="caneditownproductsonly"
+           id="caneditownproductsonly"
+           value="1" />&nbsp;
+    <label for="caneditownproductsonly">
+        <b><?php echo $this->__('Allow to manage own products only') ?></b>
+        <p><?php echo $this->__('If this is set to "Yes", sub-admins will be able to see and manage only products created by them.') ?><br/>
+           <?php echo $this->__('If this is set to "No", sub-admins will see products according to their advanced permissions settings for store and category.') ?></p>
+    </label>
+</div>
+
+<div style="background-color: whiteSmoke;">
+    <input type="checkbox"
+        <?php echo $this->manageOrdersOwnProductsOnly() ? 'checked="checked"' : '' ?>
+           name="manage_orders_own_products_only"
+           id="manage_orders_own_products_only"
+           value="1" />&nbsp;
+    <label for="manage_orders_own_products_only">
+        <b><?php echo $this->__('Allow to manage orders with own products only') ?></b>
+    </label>
+</div>

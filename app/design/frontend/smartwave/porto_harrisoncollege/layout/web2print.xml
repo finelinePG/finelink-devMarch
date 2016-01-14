@@ -1,0 +1,196 @@
+<?xml version="1.0"?>
+<layout version="0.1.0">
+    <default>
+        <reference name="head">
+            <block type="web2print/javascript" name="web2print.ajaximgloader" template="web2print/dynamic/ajaximgloader.phtml"/>
+            <action method="addCss">
+                <stylesheet>css/web2print/web2print.css</stylesheet>
+            </action>
+            <action method="addCss">
+                <stylesheet>css/web2print/magento.css</stylesheet>
+            </action>
+        </reference>   
+        <reference name="return_link">
+            <action method="setTemplate">
+                <template></template>
+            </action>
+        </reference>
+        <reference name="cart_sidebar">
+            <action method="addItemRender">
+                <type>simple</type>
+                <block>checkout/cart_item_renderer</block>
+                <template>web2print/cart/sidebar/default.phtml</template>
+            </action>
+            <action method="addItemRender">
+                <type>grouped</type>
+                <block>checkout/cart_item_renderer_grouped</block>
+                <template>web2print/cart/sidebar/default.phtml</template>
+            </action>
+            <action method="addItemRender">
+                <type>configurable</type>
+                <block>checkout/cart_item_renderer_configurable</block>
+                <template>web2print/cart/sidebar/default.phtml</template>
+            </action>  
+        </reference>
+    </default>
+
+    <catalog_product_view>
+        <reference name="product.info">
+            <block type="web2print/product_view_addtocart" name="product.info.addtocart" as="addtocart" template="web2print/product/view/addtocart.phtml"/>
+        </reference>
+        <reference name="product.info.options.wrapper.bottom">
+            <action method="append">
+                <block>product.info.addtocart</block>
+            </action>
+        </reference>
+        <reference name="product.info.upsell">
+            <action method="setTemplate">
+                <template>web2print/product/list/upsell.phtml</template>
+            </action>
+        </reference>
+    </catalog_product_view>
+        
+    <checkout_cart_index translate="label">
+        <reference name="head">
+            <action method="addCss"><stylesheet>css/web2print/colorbox.css</stylesheet></action>
+            <action method="addJs"><script>web2print/jquery-1.6.js</script></action>
+            <action method="addJs"><script>web2print/jquery.colorbox.js</script></action>
+            <action method="addJs"><script>web2print/export-pdf.js</script></action>
+            <block type="core/template" name="preview" template="web2print/preview/js.phtml"/>
+        </reference>
+
+        <reference name="checkout.cart">
+            <action method="setCartTemplate">
+                <value>web2print/cart/cart.phtml</value>
+            </action>
+            <action method="addItemRender">
+                <type>simple</type>
+                <block>web2print/checkout_cart_item_renderer</block>
+                <template>web2print/cart/item/default.phtml</template>
+            </action>
+            <action method="addItemRender">
+                <type>grouped</type>
+                <block>checkout/cart_item_renderer_grouped</block>
+                <template>web2print/cart/item/default.phtml</template>
+            </action>
+            <action method="addItemRender">
+                <type>configurable</type>
+                <block>checkout/cart_item_renderer_configurable</block>
+                <template>web2print/cart/item/default.phtml</template>
+            </action>
+        </reference>
+        <reference name="checkout.cart.crosssell">
+            <action method="setTemplate">
+                <template>web2print/cart/crosssell.phtml</template>
+            </action>
+        </reference>
+    </checkout_cart_index>
+	
+    <web2print_editor_load>
+        <reference name="head">
+            <action method="addJs"><script>varien/product.js</script></action>
+            <action method="addJs"><script>varien/configurable.js</script></action>
+            <action method="addJs"><script>prototype/window.js</script></action>
+            <action method="addJs"><script>web2print/editor.js</script></action>
+            <action method="addItem"><type>js_css</type><name>prototype/windows/themes/default.css</name></action>
+            <action method="addItem"><type>js_css</type><name>calendar/calendar-win2k-1.css</name><params/><!--<if/><condition>can_load_calendar_js</condition>--></action>
+            <action method="addItem"><type>js</type><name>calendar/calendar.js</name><!--<params/><if/><condition>can_load_calendar_js</condition>--></action>
+            <action method="addItem"><type>js</type><name>calendar/calendar-setup.js</name><!--<params/><if/><condition>can_load_calendar_js</condition>--></action>
+        </reference>
+        <reference name="root">
+            <action method="setTemplate">
+                <template>page/1column.phtml</template>
+            </action>
+        </reference>
+
+		        <remove name="breadcrumbs" />
+  <!--       <remove name="header" />
+        <remove name="footer" /> -->
+		
+        <reference name="content">
+            <block type="web2print/editor" name="web2print.editor" template="web2print/editor.phtml">
+                <block type="catalog/product_view" name="product.info.options.wrapper" as="product_options_wrapper" template="catalog/product/view/options/wrapper.phtml" translate="label">
+                    <label>Info Column Options Wrapper</label>
+                    <block type="core/template" name="options_js" template="catalog/product/view/options/js.phtml"/>
+                    <block type="catalog/product_view_options" name="product.info.options" as="product_options" template="catalog/product/view/options.phtml">
+                        <action method="addOptionRenderer"><type>text</type><block>catalog/product_view_options_type_text</block><template>catalog/product/view/options/type/text.phtml</template></action>
+                        <action method="addOptionRenderer"><type>file</type><block>catalog/product_view_options_type_file</block><template>catalog/product/view/options/type/file.phtml</template></action>
+                        <action method="addOptionRenderer"><type>select</type><block>catalog/product_view_options_type_select</block><template>catalog/product/view/options/type/select.phtml</template></action>
+                        <action method="addOptionRenderer"><type>date</type><block>catalog/product_view_options_type_date</block><template>catalog/product/view/options/type/date.phtml</template></action>
+                    </block>
+                    <block type="core/html_calendar" name="html_calendar" as="html_calendar" template="page/js/calendar.phtml"/>
+                </block>
+                <block type="catalog/product_view" name="product.info.options.wrapper.bottom" as="product_options_wrapper_bottom" template="catalog/product/view/options/wrapper/bottom.phtml" translate="label">
+                    <label>Bottom Block Options Wrapper</label>
+                    <action method="insert">
+                        <block>product.tierprices</block>
+                    </action>
+                    <block type="catalog/product_view" name="product.clone_prices" as="prices" template="catalog/product/view/price_clone.phtml"/>
+                    <action method="append">
+                        <block>product.info.addtocart</block>
+                    </action>
+                    <action method="append">
+                        <block>product.info.addto</block>
+                    </action>
+                </block>
+                <block type="catalog/product_view" name="product.info.addtocart" as="addtocart" template="catalog/product/view/addtocart.phtml"/>
+            </block>
+        </reference>
+    </web2print_editor_load>
+
+    <sales_order_view translate="label">
+        <reference name="head">
+            <action method="addCss"><stylesheet>css/web2print/colorbox.css</stylesheet></action>
+            <action method="addJs"><script>web2print/jquery-1.6.js</script></action>
+            <action method="addJs"><script>web2print/jquery.colorbox.js</script></action>
+            <action method="addJs"><script>web2print/export-pdf.js</script></action>
+            <block type="core/template" name="preview" template="web2print/preview/js.phtml"/>
+        </reference>
+        <reference name="order_items">
+            <action method="setTemplate">
+                <template>web2print/order/items.phtml</template>
+            </action>
+            <action method="addItemRender">
+                <type>default</type>
+                <block>sales/order_item_renderer_default</block>
+                <template>web2print/order/items/renderer/default.phtml</template>
+            </action>
+            <action method="addItemRender">
+                <type>grouped</type>
+                <block>sales/order_item_renderer_grouped</block>
+                <template>web2print/order/items/renderer/default.phtml</template>
+            </action>
+        </reference>
+
+        <reference name="order_totals">
+            <action method="setTemplate">
+                <template>web2print/order/totals.phtml</template>
+            </action>
+            <action method="setLabelProperties">
+                <value>colspan="5" class="a-right"</value>
+            </action>
+            <action method="setValueProperties">
+                <value>class="last a-right"</value>
+            </action>
+        </reference>
+    </sales_order_view>
+
+    <!-- Conceptlist -->
+    <customer_account>
+        <reference name="customer_account_navigation">
+            <action method="addLink" translate="label title" module="web2print" ifconfig="web2print/editor_page/concepts_enabled">
+                <label>My Concept List</label>
+                <url>web2print/concept/conceptlist</url>
+                <title>My Concept List</title>
+            </action>
+        </reference>
+    </customer_account>
+
+    <web2print_concept_conceptlist translate="label">
+        <label>Customer Mys Account My Conceptlist</label>
+        <update handle="customer_account" />
+        <reference name="my.account.wrapper">
+            <block name="customer.concepts.list" type="web2print/customer_concepts_list" template="web2print/concept/view.phtml" />
+        </reference>
+    </web2print_concept_conceptlist>
+</layout>

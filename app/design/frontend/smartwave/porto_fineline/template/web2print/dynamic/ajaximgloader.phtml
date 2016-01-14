@@ -1,0 +1,17 @@
+<style type="text/css">
+    .preloader { display: inline-block; background:url('<?php echo Mage::getDesign()->getSkinUrl('images/ajax-loader.gif');?>') center center no-repeat; }
+    .preloader img { width: 100%; height: auto; background:none; }
+    .preloader.loaded{ background:none; }
+    .box135 {width: 135px; height: 135px;}
+    .box125 {width: 125px; height: 125px;}
+    .box75 {width: 75px; height: 75px;}
+</style>
+<script type="text/javascript">
+    document.observe('dom:loaded', function(e) {
+        $$('.preloader').each(function (item) {
+            item.observe('load', function (e) {
+                this.addClassName("loaded");
+            });
+        });
+    });
+</script>

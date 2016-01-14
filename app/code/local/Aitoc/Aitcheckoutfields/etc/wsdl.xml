@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<definitions xmlns:typens="urn:{{var wsdl.name}}" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/"
+    xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns="http://schemas.xmlsoap.org/wsdl/"
+    name="{{var wsdl.name}}" targetNamespace="urn:{{var wsdl.name}}">
+    <types>
+        <schema xmlns="http://www.w3.org/2001/XMLSchema" targetNamespace="urn:Magento">
+            <import namespace="http://schemas.xmlsoap.org/soap/encoding/" schemaLocation="http://schemas.xmlsoap.org/soap/encoding/" />
+            <complexType name="salesOrderEntity">
+                <all>
+                    <element name="aitoc_order_custom_data" type="typens:aitocOrderDataArray" minOccurs="0" />
+                </all>
+            </complexType>
+            <complexType name="salesOrderListEntity">
+                <all>
+                    <element name="aitoc_order_custom_data" type="typens:aitocOrderDataArray" minOccurs="0" />
+                </all>
+            </complexType>
+            <complexType name="aitocOrderData">
+                <all>
+                    <element name="label" type="xsd:string" minOccurs="0" />
+                    <element name="value" type="xsd:string" minOccurs="0" />
+                    <element name="code" type="xsd:string" minOccurs="0" />
+                    <element name="type" type="xsd:string" minOccurs="0" />
+                    <element name="rawval" type="xsd:string" minOccurs="0" />
+                    <element name="id" type="xsd:string" minOccurs="0" />
+                </all>
+            </complexType>            
+            <complexType name="aitocOrderDataArray">
+            	<complexContent>
+                    <restriction base="soapenc:Array">
+                        <attribute ref="soapenc:arrayType" wsdl:arrayType="typens:aitocOrderData[]" />
+                    </restriction>
+                </complexContent>
+            </complexType>
+    	</schema>
+    </types>
+</definitions>
+<!--
+/**
+ * All-In-One Checkout v1.0.15 : All-In-One Checkout v1.0.15 (CFM Unit)
+ *
+ * @category:    Aitoc
+ * @package:     Aitoc_Aitcheckout / Aitoc_Aitcheckoutfields
+ * @version      1.0.15 - 2.9.15
+ * @license:     jC7sr77MwqoHj2SDR8w4YXR3o3w7irXLNFUdRYpgyc
+ * @copyright:   Copyright (c) 2015 AITOC, Inc. (http://www.aitoc.com)
+ */
+-->

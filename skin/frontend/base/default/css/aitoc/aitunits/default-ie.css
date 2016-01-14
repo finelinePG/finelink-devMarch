@@ -1,0 +1,31 @@
+
+/**
+ * Product Units and Quantities
+ *
+ * @category:    Aitoc
+ * @package:     Aitoc_Aitunits
+ * @version      1.0.11
+ * @license:     n/a
+ * @copyright:   Copyright (c) 2015 AITOC, Inc. (http://www.aitoc.com)
+ */
+/* 
+    Document   : auitunits
+    Created on : 24.1.2012, 17.15.34
+    Author     : Augen
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+/* 
+   TODO customize this sample style
+   Syntax recommendation http://www.w3.org/TR/REC-CSS2/
+*/
+
+ul.products-grid{ overflow:hidden; clear:both; }
+ul.products-grid li.item{ overflow:hidden; position:relative; min-height:235px; }
+li.aitunits-item-slider .aitunits-select-container {bottom: 90px}
+.aitunits-select-container input.qty {float:left;}
+.category-products .pager, .category-products .sorter{ overflow:hidden;}
+td .aitunits-select-container{ margin-left:auto; margin-right:auto;}
+table td .aitunits-container-slider input.qty{float:none;}
+.minimal-price-link .price {white-space:normal !important;}

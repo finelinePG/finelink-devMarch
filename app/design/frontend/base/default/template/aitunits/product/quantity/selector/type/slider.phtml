@@ -1,0 +1,22 @@
+<?php
+/**
+ * Product Units and Quantities
+ *
+ * @category:    Aitoc
+ * @package:     Aitoc_Aitunits
+ * @version      1.0.11
+ * @license:     0JdTQfDMswel7fbpH42tkXIHe3fixI4GH3daX0aDVf
+ * @copyright:   Copyright (c) 2015 AITOC, Inc. (http://www.aitoc.com)
+ */
+if($this->hasContainer()): ?>
+<span id="aitunits_qty_container_<?php echo $this->getId(); ?>" class="aitunits-select-container aitunits-container-slider" >
+<?php endif; ?>
+    <input id="aitunits_input_<?php echo $this->getId(); ?>" type="text" value="0" name="qty">
+    <span class="aitunits-slider">
+        <span class="aitunits-slider-track" style="width:72px;" id="aitunits_slider_track_<?php echo $this->getId(); ?>">
+            <span class="aitunits-slider-handle" id="aitunits_slider_handle_<?php echo $this->getId(); ?>" ></span>
+        </span>
+    </span>
+<?php if($this->hasContainer()): ?>
+</span>
+<?php endif; ?>

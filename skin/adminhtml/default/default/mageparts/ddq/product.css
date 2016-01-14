@@ -1,0 +1,10 @@
+.pricegroups-field-short { width:100px !important; }
+.pricegroups-field-full { width:100% !important; }
+.pricegroups-field-price { width:168px; margin-left:5px; }
+
+.mp-ddq-qty-field { width:45px; }
+.mp-ddq-price-field { width:68px; }
+.mp-ddq-label-field { width:250px; }
+.mp-ddq-order-field { width:30px; }
+
+#ddq_qty_list { width:284px; }

@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<config>
+    <template>
+        <frontend>
+            <file path="design--frontend--base--default--template--catalog--product--list"></file>
+            <file path="design--frontend--rwd--default--template--catalog--product--list" version="1.9.0.0" operator="ge" optional="1"></file>
+            <file path="design--frontend--rwd--default--template--catalog--product--list" version="1.9.1.0" operator="ge" optional="1"></file>
+        </frontend>
+    </template>
+</config>
+<!--
+/**
+ * Product Units and Quantities
+ *
+ * @category:    Aitoc
+ * @package:     Aitoc_Aitunits
+ * @version      1.0.11
+ * @license:     0JdTQfDMswel7fbpH42tkXIHe3fixI4GH3daX0aDVf
+ * @copyright:   Copyright (c) 2015 AITOC, Inc. (http://www.aitoc.com)
+ */
+-->

@@ -28,11 +28,11 @@ function editorLoad(action,iFrameInversedHeight)
     }
     
     // adapt height of the iframe
-    var height = getWindowHeight()-iFrameInversedHeight;
-    height = height+'px';
-    if($('iframe')) {
-        $('iframe').setStyle({'height': height});
-    }
+   var height = getWindowHeight()-iFrameInversedHeight;
+   height = height+'px';
+   if($('iframe')) {
+       $('iframe').setStyle({'height': height});
+   }
 
     //show popup
     if($('configure-options')) {

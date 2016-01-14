@@ -1,0 +1,45 @@
+NameVirtualHost *:80
+NameVirtualHost *:443
+
+<VirtualHost *:80>
+    UseCanonicalName Off
+    ServerAdmin  webmaster@localhost
+    DocumentRoot /var/www/magento/
+
+
+<Ifmodule proxy_module>
+ProxyRequests Off
+ProxyPreserveHost On
+
+<Proxy *>
+Order allow,deny
+Allow from all
+</Proxy>
+
+ProxyPass /chili   http://devchili.finelink.com/chili/
+ProxyPassReverse /chili  http://devchili.finelink.com/chili/
+ProxyPass /CHILI http://devchili.finelink.com/CHILI/
+ProxyPassReverse /CHILI http://devchili.finelink.com/chili/
+
+</Ifmodule>
+
+
+
+</VirtualHost>
+
+<VirtualHost *:443>
+    SSLEngine on
+    SSLCertificateFile /etc/ssl/certs/cert.pem
+    ServerAdmin  webmaster@localhost
+    DocumentRoot /var/www/magento/
+</VirtualHost>
+
+<VirtualHost *:80>
+	ServerName harrisoncollege.finelink.com
+	ServerAlias www.harrisoncollege.finelink.com
+	DocumentRoot /var/www/magento
+</VirtualHost>
+
+
+
+

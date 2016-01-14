@@ -1,0 +1,80 @@
+<?php
+/**
+ * MageParts
+ *
+ * NOTICE OF LICENSE
+ *
+ * This code is copyrighted by MageParts and may not be reproduced
+ * and/or redistributed without a written permission by the copyright
+ * owners. If you wish to modify and/or redistribute this file please
+ * contact us at info@mageparts.com for confirmation before doing
+ * so. Please note that you are free to modify this file for personal
+ * use only.
+ *
+ * If you wish to make modifications to this file we advice you to use
+ * the "local" file scope in order to aviod conflicts with future updates.
+ * For information regarding modifications see http://www.magentocommerce.com.
+ *
+ * DISCLAIMER
+ *
+ * THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS"
+ * AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
+ * IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE
+ * ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT OWNER OR CONTRIBUTORS BE LIABLE
+ * FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES
+ * (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF
+ * USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY
+ * OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE
+ * OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED
+ * OF THE POSSIBILITY OF SUCH DAMAGE.
+ *
+ * @category   MageParts
+ * @package    MageParts_Ddq
+ * @copyright  Copyright (c) 2009 MageParts (http://www.mageparts.com/)
+ * @author     MageParts Crew
+ */
+?>
+
+<?php /* @var $block MageParts_Ddq_Block_Adminhtml_Catalog_Product_Form_Renderer_Quantityoption */ ?>
+<?php $block = Mage::getBlockSingleton('ddq/adminhtml_catalog_product_form_renderer_quantityoption') ?>
+
+<tr>
+    <td class="label"><?php echo $block->getLabel() ?></td>
+    <td class="grid">
+        <table cellspacing="0" class="data border" id="ddq_qty_list">
+            <col width="45px" />
+            <col width="68px" />
+            <col width="250px" />
+            <col width="30px" />
+            <col />
+            <thead>
+                <tr class="headings">
+                    <th><?php echo Mage::helper('ddq')->__('Quantity') ?></th>
+                    <th><?php echo Mage::helper('ddq')->__('Custom Price') ?></th>
+                    <th><?php echo Mage::helper('ddq')->__('Custom Label') ?></th>
+                    <th><?php echo Mage::helper('ddq')->__('Order') ?></th>
+                    <th class="last"><?php echo Mage::helper('catalog')->__('Action') ?></th>
+                </tr>
+            </thead>
+            <tbody id="<?php echo $this->getHtmlId() ?>_container"></tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="5" class="a-right"><?php echo $block->getAddButtonHtml() ?></td>
+                </tr>
+            </tfoot>
+        </table>
+        <?php if ($block->getIsOnUpdateAttributePage()): ?>
+        <span class="attribute-change-checkbox">
+            <input type="checkbox" id="ddq_qty_list-checkbox" onclick="mpDdq.toggle(this.checked)">
+            <label for="ddq_qty_list-checkbox">Change</label>
+        </span>
+        <?php endif; ?>
+    </td>
+    <td class="scope-label"><span class="nobr"><?php echo $this->getScopeLabel() ?></span></td>
+    <?php if ($this instanceof Mage_Adminhtml_Block_Catalog_Form_Renderer_Fieldset_Element && $this->canDisplayUseDefault()): ?>
+    <td class="value use-default">
+        <input <?php if($this->getElement()->getReadonly()):?> disabled="disabled"<?php endif; ?> type="checkbox" name="use_default[]" id="<?php echo $this->getElement()->getHtmlId() ?>_default"<?php if ($block->qtyListFieldUsedDefault()): ?> checked="checked"<?php endif; ?> onclick="<?php echo ($this->getElement()->getToggleCode() ? $this->getElement()->getToggleCode() : 'toggleValueElements(this, this.parentNode.parentNode)') ?>" value="<?php echo $this->getAttributeCode() ?>"/>
+        <label for="<?php echo $this->getElement()->getHtmlId() ?>_default" class="normal"><?php echo $this->__('Use Default Value') ?></label>
+    </td>
+    <?php endif; ?>
+</tr>

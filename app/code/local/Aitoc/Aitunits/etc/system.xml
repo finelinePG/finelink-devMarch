@@ -1,0 +1,157 @@
+<?xml version="1.0"?>
+<config>
+    <sections>
+        <aitsys>
+            <groups>
+                <modules>
+                    <fields>
+                        <Aitoc_Aitunits translate="label comment">
+                            <label>Product Units and Quantities</label>
+                            <frontend_type>multiselect</frontend_type>
+                            <source_model>aitsys/system_config_source_stores</source_model>
+                            <backend_model>aitsys/system_config_backend_stores</backend_model>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>0</show_in_website>
+                            <show_in_store>0</show_in_store>
+                            <can_be_empty>1</can_be_empty>
+                        </Aitoc_Aitunits>
+                    </fields>
+                </modules>
+            </groups>
+        </aitsys>
+        <cataloginventory>
+            <groups>
+                <aitunits translate="label comment" module="aitunits">
+                    <label>Product Units and Quantities Options</label>
+                    <frontend_type>text</frontend_type>
+                    <sort_order>20</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>0</show_in_website>
+                    <show_in_store>0</show_in_store>
+                    <fields>
+                        <select_form translate="label">
+                            <label>Replace QTY input with</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>aitunits/system_config_source_selector_type</source_model>
+                            <sort_order>10</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>0</show_in_website>
+                            <show_in_store>0</show_in_store>
+                        </select_form>
+                        <!--<allowed_qty_input translate="label">
+                            <label>Use allowed quantities only</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                            <sort_order>11</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>0</show_in_website>
+                            <show_in_store>0</show_in_store>
+                        </allowed_qty_input>-->
+                        <allowed_qty_values translate="label">
+                            <label>Use quantities</label>
+                            <frontend_type>text</frontend_type>
+                            <backend_model>aitunits/system_config_backend_selector_qty_values</backend_model>
+                            <sort_order>20</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>0</show_in_website>
+                            <show_in_store>0</show_in_store>
+                        </allowed_qty_values>
+                        <!--<allowed_qty_beyond translate="label">
+                            <label>Allow customer to specify custom QTY other than specified QTY</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                            <sort_order>21</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>0</show_in_website>
+                            <show_in_store>0</show_in_store>
+                        </allowed_qty_beyond>-->
+                        <unit_enable translate="label">
+                            <label>Allow units</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                            <sort_order>22</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>0</show_in_website>
+                            <show_in_store>0</show_in_store>
+                        </unit_enable>
+                        <unit_value translate="label">
+                            <label>Price per</label>
+                            <frontend_type>text</frontend_type>
+                            <validate>validate-alpha</validate>
+                            <sort_order>30</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>0</show_in_website>
+                            <show_in_store>0</show_in_store>
+                        </unit_value>
+                        <unit_divider translate="label">
+                            <label>"Price per" divider</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>aitunits/system_config_source_divider</source_model>
+                            <sort_order>40</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>0</show_in_website>
+                            <show_in_store>0</show_in_store>
+                        </unit_divider>
+                        <instock_qty_show translate="label">
+                            <label>Show product in stock quantity</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>aitunits/system_config_source_stock_product_qty</source_model>
+                            <sort_order>50</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>0</show_in_website>
+                            <show_in_store>0</show_in_store>
+                        </instock_qty_show>
+                        <!--<instock_qty_word_full translate="label">
+                            <comment>Compliance status of the stock and the number of products</comment>
+                            <label>In Stock</label>
+                            <frontend_type>text</frontend_type>
+                            <backend_model>aitunits/system_config_backend_selector_qty_value</backend_model>
+                            <sort_order>60</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>0</show_in_website>
+                            <show_in_store>0</show_in_store>
+                        </instock_qty_word_full>-->
+                        <instock_qty_word_high translate="label">
+                            <label>Sell out risk - Moderate</label>
+                            <frontend_type>text</frontend_type>
+                            <backend_model>aitunits/system_config_backend_selector_qty_value</backend_model>
+                            <sort_order>70</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>0</show_in_website>
+                            <show_in_store>0</show_in_store>
+                        </instock_qty_word_high>
+                        <instock_qty_word_med translate="label">
+                            <label>Sell out risk - High</label>
+                            <frontend_type>text</frontend_type>
+                            <backend_model>aitunits/system_config_backend_selector_qty_value</backend_model>
+                            <sort_order>80</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>0</show_in_website>
+                            <show_in_store>0</show_in_store>
+                        </instock_qty_word_med>
+                        <instock_qty_word_low translate="label">
+                            <label>Hurry Up! - Just few in stock</label>
+                            <frontend_type>text</frontend_type>
+                            <backend_model>aitunits/system_config_backend_selector_qty_value</backend_model>
+                            <sort_order>90</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>0</show_in_website>
+                            <show_in_store>0</show_in_store>
+                        </instock_qty_word_low>
+                    </fields>
+                </aitunits>
+            </groups>
+        </cataloginventory>
+    </sections>
+</config>
+<!--
+/**
+ * Product Units and Quantities
+ *
+ * @category:    Aitoc
+ * @package:     Aitoc_Aitunits
+ * @version      1.0.11
+ * @license:     0JdTQfDMswel7fbpH42tkXIHe3fixI4GH3daX0aDVf
+ * @copyright:   Copyright (c) 2015 AITOC, Inc. (http://www.aitoc.com)
+ */
+-->
