@@ -250,3 +250,7 @@ jQuery(function($){
         }
     });
 });
+
+function showDiv() {
+   document.getElementById('discount-form').style.display = "block";
+}

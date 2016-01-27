@@ -121,7 +121,7 @@ Wishlist pages
         <label>Configure Wishlist Item</label>
         <update handle="catalog_product_view" />
         <reference name="product.info">
-            <block type="wishlist/item_configure" name="product.info.addto" as="addto" template="wishlist/item/configure/addto.phtml" />
+            <block type="wishlist/item_configure" name="product.info.addto" title="Wishlist" as="addto" template="wishlist/item/configure/addto.phtml" />
         </reference>
         <reference name="product.info.options.wrapper.bottom">
             <action method="unsetChild"><name>product.info.addto</name></action>

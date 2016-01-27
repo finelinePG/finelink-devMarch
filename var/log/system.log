@@ -3249,75 +3249,208 @@
 2016-01-14T16:14:31+00:00 ERR (3): Warning: SimpleXMLElement::__construct(): Entity: line 7: parser error : Premature end of data in tag html line 1  in /var/www/magento/app/code/core/Mage/AdminNotification/Model/Feed.php on line 173
 2016-01-14T16:14:31+00:00 ERR (3): Warning: SimpleXMLElement::__construct(): &lt;/html&gt;  in /var/www/magento/app/code/core/Mage/AdminNotification/Model/Feed.php on line 173
 2016-01-14T16:14:31+00:00 ERR (3): Warning: SimpleXMLElement::__construct():        ^  in /var/www/magento/app/code/core/Mage/AdminNotification/Model/Feed.php on line 173
-2016-01-14T18:04:14+00:00 ERR (3): Warning: simplexml_load_string(): Entity: line 223: parser error : Opening and ending tag mismatch: reference line 219 and block  in C:\wamp\www\magento\app\code\core\Mage\Core\Model\Layout\Update.php on line 450
-2016-01-14T18:04:14+00:00 ERR (3): Warning: simplexml_load_string():             &lt;/block&gt;  in C:\wamp\www\magento\app\code\core\Mage\Core\Model\Layout\Update.php on line 450
-2016-01-14T18:04:14+00:00 ERR (3): Warning: simplexml_load_string():                     ^  in C:\wamp\www\magento\app\code\core\Mage\Core\Model\Layout\Update.php on line 450
-2016-01-14T18:04:14+00:00 ERR (3): Warning: simplexml_load_string(): Entity: line 224: parser error : Opening and ending tag mismatch: PRODUCT_TYPE_downloadable line 217 and reference  in C:\wamp\www\magento\app\code\core\Mage\Core\Model\Layout\Update.php on line 450
-2016-01-14T18:04:14+00:00 ERR (3): Warning: simplexml_load_string():         &lt;/reference&gt;  in C:\wamp\www\magento\app\code\core\Mage\Core\Model\Layout\Update.php on line 450
-2016-01-14T18:04:14+00:00 ERR (3): Warning: simplexml_load_string():                     ^  in C:\wamp\www\magento\app\code\core\Mage\Core\Model\Layout\Update.php on line 450
-2016-01-14T18:04:14+00:00 ERR (3): Warning: simplexml_load_string(): Entity: line 229: parser error : Opening and ending tag mismatch: layout line 29 and PRODUCT_TYPE_downloadable  in C:\wamp\www\magento\app\code\core\Mage\Core\Model\Layout\Update.php on line 450
-2016-01-14T18:04:14+00:00 ERR (3): Warning: simplexml_load_string():     &lt;/PRODUCT_TYPE_downloadable&gt;  in C:\wamp\www\magento\app\code\core\Mage\Core\Model\Layout\Update.php on line 450
-2016-01-14T18:04:14+00:00 ERR (3): Warning: simplexml_load_string():                                 ^  in C:\wamp\www\magento\app\code\core\Mage\Core\Model\Layout\Update.php on line 450
-2016-01-14T18:04:14+00:00 ERR (3): Warning: simplexml_load_string(): Entity: line 231: parser error : Extra content at the end of the document  in C:\wamp\www\magento\app\code\core\Mage\Core\Model\Layout\Update.php on line 450
-2016-01-14T18:04:14+00:00 ERR (3): Warning: simplexml_load_string(): &lt;/layout&gt;  in C:\wamp\www\magento\app\code\core\Mage\Core\Model\Layout\Update.php on line 450
-2016-01-14T18:04:14+00:00 ERR (3): Warning: simplexml_load_string(): ^  in C:\wamp\www\magento\app\code\core\Mage\Core\Model\Layout\Update.php on line 450
-2016-01-14T18:22:07+00:00 ERR (3): Warning: simplexml_load_string(): Entity: line 223: parser error : Opening and ending tag mismatch: reference line 219 and block  in C:\wamp\www\magento\app\code\core\Mage\Core\Model\Layout\Update.php on line 450
-2016-01-14T18:22:07+00:00 ERR (3): Warning: simplexml_load_string():             &lt;/block&gt;  in C:\wamp\www\magento\app\code\core\Mage\Core\Model\Layout\Update.php on line 450
-2016-01-14T18:22:07+00:00 ERR (3): Warning: simplexml_load_string():                     ^  in C:\wamp\www\magento\app\code\core\Mage\Core\Model\Layout\Update.php on line 450
-2016-01-14T18:22:07+00:00 ERR (3): Warning: simplexml_load_string(): Entity: line 224: parser error : Opening and ending tag mismatch: PRODUCT_TYPE_downloadable line 217 and reference  in C:\wamp\www\magento\app\code\core\Mage\Core\Model\Layout\Update.php on line 450
-2016-01-14T18:22:07+00:00 ERR (3): Warning: simplexml_load_string():         &lt;/reference&gt;  in C:\wamp\www\magento\app\code\core\Mage\Core\Model\Layout\Update.php on line 450
-2016-01-14T18:22:07+00:00 ERR (3): Warning: simplexml_load_string():                     ^  in C:\wamp\www\magento\app\code\core\Mage\Core\Model\Layout\Update.php on line 450
-2016-01-14T18:22:07+00:00 ERR (3): Warning: simplexml_load_string(): Entity: line 229: parser error : Opening and ending tag mismatch: layout line 29 and PRODUCT_TYPE_downloadable  in C:\wamp\www\magento\app\code\core\Mage\Core\Model\Layout\Update.php on line 450
-2016-01-14T18:22:07+00:00 ERR (3): Warning: simplexml_load_string():     &lt;/PRODUCT_TYPE_downloadable&gt;  in C:\wamp\www\magento\app\code\core\Mage\Core\Model\Layout\Update.php on line 450
-2016-01-14T18:22:07+00:00 ERR (3): Warning: simplexml_load_string():                                 ^  in C:\wamp\www\magento\app\code\core\Mage\Core\Model\Layout\Update.php on line 450
-2016-01-14T18:22:07+00:00 ERR (3): Warning: simplexml_load_string(): Entity: line 231: parser error : Extra content at the end of the document  in C:\wamp\www\magento\app\code\core\Mage\Core\Model\Layout\Update.php on line 450
-2016-01-14T18:22:07+00:00 ERR (3): Warning: simplexml_load_string(): &lt;/layout&gt;  in C:\wamp\www\magento\app\code\core\Mage\Core\Model\Layout\Update.php on line 450
-2016-01-14T18:22:07+00:00 ERR (3): Warning: simplexml_load_string(): ^  in C:\wamp\www\magento\app\code\core\Mage\Core\Model\Layout\Update.php on line 450
-2016-01-14T18:26:32+00:00 ERR (3): Warning: simplexml_load_string(): Entity: line 223: parser error : Opening and ending tag mismatch: reference line 219 and block  in C:\wamp\www\magento\app\code\core\Mage\Core\Model\Layout\Update.php on line 450
-2016-01-14T18:26:32+00:00 ERR (3): Warning: simplexml_load_string():             &lt;/block&gt;  in C:\wamp\www\magento\app\code\core\Mage\Core\Model\Layout\Update.php on line 450
-2016-01-14T18:26:32+00:00 ERR (3): Warning: simplexml_load_string():                     ^  in C:\wamp\www\magento\app\code\core\Mage\Core\Model\Layout\Update.php on line 450
-2016-01-14T18:26:32+00:00 ERR (3): Warning: simplexml_load_string(): Entity: line 224: parser error : Opening and ending tag mismatch: PRODUCT_TYPE_downloadable line 217 and reference  in C:\wamp\www\magento\app\code\core\Mage\Core\Model\Layout\Update.php on line 450
-2016-01-14T18:26:32+00:00 ERR (3): Warning: simplexml_load_string():         &lt;/reference&gt;  in C:\wamp\www\magento\app\code\core\Mage\Core\Model\Layout\Update.php on line 450
-2016-01-14T18:26:32+00:00 ERR (3): Warning: simplexml_load_string():                     ^  in C:\wamp\www\magento\app\code\core\Mage\Core\Model\Layout\Update.php on line 450
-2016-01-14T18:26:32+00:00 ERR (3): Warning: simplexml_load_string(): Entity: line 229: parser error : Opening and ending tag mismatch: layout line 29 and PRODUCT_TYPE_downloadable  in C:\wamp\www\magento\app\code\core\Mage\Core\Model\Layout\Update.php on line 450
-2016-01-14T18:26:32+00:00 ERR (3): Warning: simplexml_load_string():     &lt;/PRODUCT_TYPE_downloadable&gt;  in C:\wamp\www\magento\app\code\core\Mage\Core\Model\Layout\Update.php on line 450
-2016-01-14T18:26:32+00:00 ERR (3): Warning: simplexml_load_string():                                 ^  in C:\wamp\www\magento\app\code\core\Mage\Core\Model\Layout\Update.php on line 450
-2016-01-14T18:26:32+00:00 ERR (3): Warning: simplexml_load_string(): Entity: line 231: parser error : Extra content at the end of the document  in C:\wamp\www\magento\app\code\core\Mage\Core\Model\Layout\Update.php on line 450
-2016-01-14T18:26:32+00:00 ERR (3): Warning: simplexml_load_string(): &lt;/layout&gt;  in C:\wamp\www\magento\app\code\core\Mage\Core\Model\Layout\Update.php on line 450
-2016-01-14T18:26:32+00:00 ERR (3): Warning: simplexml_load_string(): ^  in C:\wamp\www\magento\app\code\core\Mage\Core\Model\Layout\Update.php on line 450
-2016-01-14T18:27:32+00:00 ERR (3): Warning: simplexml_load_string(): Entity: line 223: parser error : Opening and ending tag mismatch: reference line 219 and block  in C:\wamp\www\magento\app\code\core\Mage\Core\Model\Layout\Update.php on line 450
-2016-01-14T18:27:32+00:00 ERR (3): Warning: simplexml_load_string():             &lt;/block&gt;  in C:\wamp\www\magento\app\code\core\Mage\Core\Model\Layout\Update.php on line 450
-2016-01-14T18:27:32+00:00 ERR (3): Warning: simplexml_load_string():                     ^  in C:\wamp\www\magento\app\code\core\Mage\Core\Model\Layout\Update.php on line 450
-2016-01-14T18:27:32+00:00 ERR (3): Warning: simplexml_load_string(): Entity: line 224: parser error : Opening and ending tag mismatch: PRODUCT_TYPE_downloadable line 217 and reference  in C:\wamp\www\magento\app\code\core\Mage\Core\Model\Layout\Update.php on line 450
-2016-01-14T18:27:32+00:00 ERR (3): Warning: simplexml_load_string():         &lt;/reference&gt;  in C:\wamp\www\magento\app\code\core\Mage\Core\Model\Layout\Update.php on line 450
-2016-01-14T18:27:32+00:00 ERR (3): Warning: simplexml_load_string():                     ^  in C:\wamp\www\magento\app\code\core\Mage\Core\Model\Layout\Update.php on line 450
-2016-01-14T18:27:32+00:00 ERR (3): Warning: simplexml_load_string(): Entity: line 229: parser error : Opening and ending tag mismatch: layout line 29 and PRODUCT_TYPE_downloadable  in C:\wamp\www\magento\app\code\core\Mage\Core\Model\Layout\Update.php on line 450
-2016-01-14T18:27:32+00:00 ERR (3): Warning: simplexml_load_string():     &lt;/PRODUCT_TYPE_downloadable&gt;  in C:\wamp\www\magento\app\code\core\Mage\Core\Model\Layout\Update.php on line 450
-2016-01-14T18:27:32+00:00 ERR (3): Warning: simplexml_load_string():                                 ^  in C:\wamp\www\magento\app\code\core\Mage\Core\Model\Layout\Update.php on line 450
-2016-01-14T18:27:32+00:00 ERR (3): Warning: simplexml_load_string(): Entity: line 231: parser error : Extra content at the end of the document  in C:\wamp\www\magento\app\code\core\Mage\Core\Model\Layout\Update.php on line 450
-2016-01-14T18:27:32+00:00 ERR (3): Warning: simplexml_load_string(): &lt;/layout&gt;  in C:\wamp\www\magento\app\code\core\Mage\Core\Model\Layout\Update.php on line 450
-2016-01-14T18:27:32+00:00 ERR (3): Warning: simplexml_load_string(): ^  in C:\wamp\www\magento\app\code\core\Mage\Core\Model\Layout\Update.php on line 450
-2016-01-14T18:27:58+00:00 ERR (3): Warning: simplexml_load_string(): Entity: line 223: parser error : Opening and ending tag mismatch: reference line 219 and block  in C:\wamp\www\magento\app\code\core\Mage\Core\Model\Layout\Update.php on line 450
-2016-01-14T18:27:58+00:00 ERR (3): Warning: simplexml_load_string():             &lt;/block&gt;  in C:\wamp\www\magento\app\code\core\Mage\Core\Model\Layout\Update.php on line 450
-2016-01-14T18:27:58+00:00 ERR (3): Warning: simplexml_load_string():                     ^  in C:\wamp\www\magento\app\code\core\Mage\Core\Model\Layout\Update.php on line 450
-2016-01-14T18:27:58+00:00 ERR (3): Warning: simplexml_load_string(): Entity: line 224: parser error : Opening and ending tag mismatch: PRODUCT_TYPE_downloadable line 217 and reference  in C:\wamp\www\magento\app\code\core\Mage\Core\Model\Layout\Update.php on line 450
-2016-01-14T18:27:58+00:00 ERR (3): Warning: simplexml_load_string():         &lt;/reference&gt;  in C:\wamp\www\magento\app\code\core\Mage\Core\Model\Layout\Update.php on line 450
-2016-01-14T18:27:58+00:00 ERR (3): Warning: simplexml_load_string():                     ^  in C:\wamp\www\magento\app\code\core\Mage\Core\Model\Layout\Update.php on line 450
-2016-01-14T18:27:58+00:00 ERR (3): Warning: simplexml_load_string(): Entity: line 229: parser error : Opening and ending tag mismatch: layout line 29 and PRODUCT_TYPE_downloadable  in C:\wamp\www\magento\app\code\core\Mage\Core\Model\Layout\Update.php on line 450
-2016-01-14T18:27:58+00:00 ERR (3): Warning: simplexml_load_string():     &lt;/PRODUCT_TYPE_downloadable&gt;  in C:\wamp\www\magento\app\code\core\Mage\Core\Model\Layout\Update.php on line 450
-2016-01-14T18:27:58+00:00 ERR (3): Warning: simplexml_load_string():                                 ^  in C:\wamp\www\magento\app\code\core\Mage\Core\Model\Layout\Update.php on line 450
-2016-01-14T18:27:58+00:00 ERR (3): Warning: simplexml_load_string(): Entity: line 231: parser error : Extra content at the end of the document  in C:\wamp\www\magento\app\code\core\Mage\Core\Model\Layout\Update.php on line 450
-2016-01-14T18:27:58+00:00 ERR (3): Warning: simplexml_load_string(): &lt;/layout&gt;  in C:\wamp\www\magento\app\code\core\Mage\Core\Model\Layout\Update.php on line 450
-2016-01-14T18:27:58+00:00 ERR (3): Warning: simplexml_load_string(): ^  in C:\wamp\www\magento\app\code\core\Mage\Core\Model\Layout\Update.php on line 450
-2016-01-14T18:28:12+00:00 ERR (3): Warning: simplexml_load_string(): Entity: line 223: parser error : Opening and ending tag mismatch: reference line 219 and block  in C:\wamp\www\magento\app\code\core\Mage\Core\Model\Layout\Update.php on line 450
-2016-01-14T18:28:12+00:00 ERR (3): Warning: simplexml_load_string():             &lt;/block&gt;  in C:\wamp\www\magento\app\code\core\Mage\Core\Model\Layout\Update.php on line 450
-2016-01-14T18:28:12+00:00 ERR (3): Warning: simplexml_load_string():                     ^  in C:\wamp\www\magento\app\code\core\Mage\Core\Model\Layout\Update.php on line 450
-2016-01-14T18:28:12+00:00 ERR (3): Warning: simplexml_load_string(): Entity: line 224: parser error : Opening and ending tag mismatch: PRODUCT_TYPE_downloadable line 217 and reference  in C:\wamp\www\magento\app\code\core\Mage\Core\Model\Layout\Update.php on line 450
-2016-01-14T18:28:12+00:00 ERR (3): Warning: simplexml_load_string():         &lt;/reference&gt;  in C:\wamp\www\magento\app\code\core\Mage\Core\Model\Layout\Update.php on line 450
-2016-01-14T18:28:12+00:00 ERR (3): Warning: simplexml_load_string():                     ^  in C:\wamp\www\magento\app\code\core\Mage\Core\Model\Layout\Update.php on line 450
-2016-01-14T18:28:12+00:00 ERR (3): Warning: simplexml_load_string(): Entity: line 229: parser error : Opening and ending tag mismatch: layout line 29 and PRODUCT_TYPE_downloadable  in C:\wamp\www\magento\app\code\core\Mage\Core\Model\Layout\Update.php on line 450
-2016-01-14T18:28:12+00:00 ERR (3): Warning: simplexml_load_string():     &lt;/PRODUCT_TYPE_downloadable&gt;  in C:\wamp\www\magento\app\code\core\Mage\Core\Model\Layout\Update.php on line 450
-2016-01-14T18:28:12+00:00 ERR (3): Warning: simplexml_load_string():                                 ^  in C:\wamp\www\magento\app\code\core\Mage\Core\Model\Layout\Update.php on line 450
-2016-01-14T18:28:12+00:00 ERR (3): Warning: simplexml_load_string(): Entity: line 231: parser error : Extra content at the end of the document  in C:\wamp\www\magento\app\code\core\Mage\Core\Model\Layout\Update.php on line 450
-2016-01-14T18:28:12+00:00 ERR (3): Warning: simplexml_load_string(): &lt;/layout&gt;  in C:\wamp\www\magento\app\code\core\Mage\Core\Model\Layout\Update.php on line 450
-2016-01-14T18:28:12+00:00 ERR (3): Warning: simplexml_load_string(): ^  in C:\wamp\www\magento\app\code\core\Mage\Core\Model\Layout\Update.php on line 450
+2016-01-15T13:54:11+00:00 ERR (3): Warning: SimpleXMLElement::__construct(): Entity: line 6: parser error : Opening and ending tag mismatch: hr line 5 and body  in /var/www/magento/app/code/core/Mage/AdminNotification/Model/Feed.php on line 173
+2016-01-15T13:54:11+00:00 ERR (3): Warning: SimpleXMLElement::__construct(): &lt;/body&gt;  in /var/www/magento/app/code/core/Mage/AdminNotification/Model/Feed.php on line 173
+2016-01-15T13:54:11+00:00 ERR (3): Warning: SimpleXMLElement::__construct():        ^  in /var/www/magento/app/code/core/Mage/AdminNotification/Model/Feed.php on line 173
+2016-01-15T13:54:11+00:00 ERR (3): Warning: SimpleXMLElement::__construct(): Entity: line 7: parser error : Opening and ending tag mismatch: body line 3 and html  in /var/www/magento/app/code/core/Mage/AdminNotification/Model/Feed.php on line 173
+2016-01-15T13:54:11+00:00 ERR (3): Warning: SimpleXMLElement::__construct(): &lt;/html&gt;  in /var/www/magento/app/code/core/Mage/AdminNotification/Model/Feed.php on line 173
+2016-01-15T13:54:11+00:00 ERR (3): Warning: SimpleXMLElement::__construct():        ^  in /var/www/magento/app/code/core/Mage/AdminNotification/Model/Feed.php on line 173
+2016-01-15T13:54:11+00:00 ERR (3): Warning: SimpleXMLElement::__construct(): Entity: line 7: parser error : Premature end of data in tag html line 1  in /var/www/magento/app/code/core/Mage/AdminNotification/Model/Feed.php on line 173
+2016-01-15T13:54:11+00:00 ERR (3): Warning: SimpleXMLElement::__construct(): &lt;/html&gt;  in /var/www/magento/app/code/core/Mage/AdminNotification/Model/Feed.php on line 173
+2016-01-15T13:54:11+00:00 ERR (3): Warning: SimpleXMLElement::__construct():        ^  in /var/www/magento/app/code/core/Mage/AdminNotification/Model/Feed.php on line 173
+2016-01-18T12:15:16+00:00 ERR (3): Notice: Trying to get property of non-object  in /var/www/magento/app/design/frontend/smartwave/porto/template/catalog/category/category_nav.phtml on line 5
+2016-01-18T12:15:16+00:00 ERR (3): Notice: Trying to get property of non-object  in /var/www/magento/app/design/frontend/smartwave/porto/template/catalog/category/category_nav.phtml on line 5
+2016-01-18T12:15:16+00:00 ERR (3): Notice: Trying to get property of non-object  in /var/www/magento/app/design/frontend/smartwave/porto/template/catalog/category/category_nav.phtml on line 5
+2016-01-18T12:15:16+00:00 ERR (3): Notice: Trying to get property of non-object  in /var/www/magento/app/design/frontend/smartwave/porto/template/catalog/category/category_nav.phtml on line 5
+2016-01-18T12:29:27+00:00 ERR (3): Notice: Trying to get property of non-object  in /var/www/magento/app/design/frontend/smartwave/porto/template/catalog/category/category_nav.phtml on line 5
+2016-01-18T12:29:27+00:00 ERR (3): Notice: Trying to get property of non-object  in /var/www/magento/app/design/frontend/smartwave/porto/template/catalog/category/category_nav.phtml on line 5
+2016-01-18T12:29:27+00:00 ERR (3): Notice: Trying to get property of non-object  in /var/www/magento/app/design/frontend/smartwave/porto/template/catalog/category/category_nav.phtml on line 5
+2016-01-18T12:29:27+00:00 ERR (3): Notice: Trying to get property of non-object  in /var/www/magento/app/design/frontend/smartwave/porto/template/catalog/category/category_nav.phtml on line 5
+2016-01-18T13:56:12+00:00 ERR (3): Warning: SimpleXMLElement::__construct(): Entity: line 6: parser error : Opening and ending tag mismatch: hr line 5 and body  in /var/www/magento/app/code/core/Mage/AdminNotification/Model/Feed.php on line 173
+2016-01-18T13:56:12+00:00 ERR (3): Warning: SimpleXMLElement::__construct(): &lt;/body&gt;  in /var/www/magento/app/code/core/Mage/AdminNotification/Model/Feed.php on line 173
+2016-01-18T13:56:12+00:00 ERR (3): Warning: SimpleXMLElement::__construct():        ^  in /var/www/magento/app/code/core/Mage/AdminNotification/Model/Feed.php on line 173
+2016-01-18T13:56:12+00:00 ERR (3): Warning: SimpleXMLElement::__construct(): Entity: line 7: parser error : Opening and ending tag mismatch: body line 3 and html  in /var/www/magento/app/code/core/Mage/AdminNotification/Model/Feed.php on line 173
+2016-01-18T13:56:12+00:00 ERR (3): Warning: SimpleXMLElement::__construct(): &lt;/html&gt;  in /var/www/magento/app/code/core/Mage/AdminNotification/Model/Feed.php on line 173
+2016-01-18T13:56:12+00:00 ERR (3): Warning: SimpleXMLElement::__construct():        ^  in /var/www/magento/app/code/core/Mage/AdminNotification/Model/Feed.php on line 173
+2016-01-18T13:56:12+00:00 ERR (3): Warning: SimpleXMLElement::__construct(): Entity: line 7: parser error : Premature end of data in tag html line 1  in /var/www/magento/app/code/core/Mage/AdminNotification/Model/Feed.php on line 173
+2016-01-18T13:56:12+00:00 ERR (3): Warning: SimpleXMLElement::__construct(): &lt;/html&gt;  in /var/www/magento/app/code/core/Mage/AdminNotification/Model/Feed.php on line 173
+2016-01-18T13:56:12+00:00 ERR (3): Warning: SimpleXMLElement::__construct():        ^  in /var/www/magento/app/code/core/Mage/AdminNotification/Model/Feed.php on line 173
+2016-01-19T18:22:41+00:00 ERR (3): Warning: SimpleXMLElement::__construct(): Entity: line 6: parser error : Opening and ending tag mismatch: hr line 5 and body  in /var/www/magento/app/code/core/Mage/AdminNotification/Model/Feed.php on line 173
+2016-01-19T18:22:41+00:00 ERR (3): Warning: SimpleXMLElement::__construct(): &lt;/body&gt;  in /var/www/magento/app/code/core/Mage/AdminNotification/Model/Feed.php on line 173
+2016-01-19T18:22:41+00:00 ERR (3): Warning: SimpleXMLElement::__construct():        ^  in /var/www/magento/app/code/core/Mage/AdminNotification/Model/Feed.php on line 173
+2016-01-19T18:22:41+00:00 ERR (3): Warning: SimpleXMLElement::__construct(): Entity: line 7: parser error : Opening and ending tag mismatch: body line 3 and html  in /var/www/magento/app/code/core/Mage/AdminNotification/Model/Feed.php on line 173
+2016-01-19T18:22:41+00:00 ERR (3): Warning: SimpleXMLElement::__construct(): &lt;/html&gt;  in /var/www/magento/app/code/core/Mage/AdminNotification/Model/Feed.php on line 173
+2016-01-19T18:22:41+00:00 ERR (3): Warning: SimpleXMLElement::__construct():        ^  in /var/www/magento/app/code/core/Mage/AdminNotification/Model/Feed.php on line 173
+2016-01-19T18:22:41+00:00 ERR (3): Warning: SimpleXMLElement::__construct(): Entity: line 7: parser error : Premature end of data in tag html line 1  in /var/www/magento/app/code/core/Mage/AdminNotification/Model/Feed.php on line 173
+2016-01-19T18:22:41+00:00 ERR (3): Warning: SimpleXMLElement::__construct(): &lt;/html&gt;  in /var/www/magento/app/code/core/Mage/AdminNotification/Model/Feed.php on line 173
+2016-01-19T18:22:41+00:00 ERR (3): Warning: SimpleXMLElement::__construct():        ^  in /var/www/magento/app/code/core/Mage/AdminNotification/Model/Feed.php on line 173
+2016-01-20T14:29:10+00:00 ERR (3): Warning: SimpleXMLElement::__construct(): Entity: line 6: parser error : Opening and ending tag mismatch: hr line 5 and body  in /var/www/magento/app/code/core/Mage/AdminNotification/Model/Feed.php on line 173
+2016-01-20T14:29:10+00:00 ERR (3): Warning: SimpleXMLElement::__construct(): &lt;/body&gt;  in /var/www/magento/app/code/core/Mage/AdminNotification/Model/Feed.php on line 173
+2016-01-20T14:29:10+00:00 ERR (3): Warning: SimpleXMLElement::__construct():        ^  in /var/www/magento/app/code/core/Mage/AdminNotification/Model/Feed.php on line 173
+2016-01-20T14:29:10+00:00 ERR (3): Warning: SimpleXMLElement::__construct(): Entity: line 7: parser error : Opening and ending tag mismatch: body line 3 and html  in /var/www/magento/app/code/core/Mage/AdminNotification/Model/Feed.php on line 173
+2016-01-20T14:29:10+00:00 ERR (3): Warning: SimpleXMLElement::__construct(): &lt;/html&gt;  in /var/www/magento/app/code/core/Mage/AdminNotification/Model/Feed.php on line 173
+2016-01-20T14:29:10+00:00 ERR (3): Warning: SimpleXMLElement::__construct():        ^  in /var/www/magento/app/code/core/Mage/AdminNotification/Model/Feed.php on line 173
+2016-01-20T14:29:10+00:00 ERR (3): Warning: SimpleXMLElement::__construct(): Entity: line 7: parser error : Premature end of data in tag html line 1  in /var/www/magento/app/code/core/Mage/AdminNotification/Model/Feed.php on line 173
+2016-01-20T14:29:10+00:00 ERR (3): Warning: SimpleXMLElement::__construct(): &lt;/html&gt;  in /var/www/magento/app/code/core/Mage/AdminNotification/Model/Feed.php on line 173
+2016-01-20T14:29:10+00:00 ERR (3): Warning: SimpleXMLElement::__construct():        ^  in /var/www/magento/app/code/core/Mage/AdminNotification/Model/Feed.php on line 173
+2016-01-20T16:31:39+00:00 ERR (3): Warning: SimpleXMLElement::__construct(): Entity: line 6: parser error : Opening and ending tag mismatch: hr line 5 and body  in /var/www/magento/app/code/core/Mage/AdminNotification/Model/Feed.php on line 173
+2016-01-20T16:31:39+00:00 ERR (3): Warning: SimpleXMLElement::__construct(): &lt;/body&gt;  in /var/www/magento/app/code/core/Mage/AdminNotification/Model/Feed.php on line 173
+2016-01-20T16:31:39+00:00 ERR (3): Warning: SimpleXMLElement::__construct():        ^  in /var/www/magento/app/code/core/Mage/AdminNotification/Model/Feed.php on line 173
+2016-01-20T16:31:39+00:00 ERR (3): Warning: SimpleXMLElement::__construct(): Entity: line 7: parser error : Opening and ending tag mismatch: body line 3 and html  in /var/www/magento/app/code/core/Mage/AdminNotification/Model/Feed.php on line 173
+2016-01-20T16:31:39+00:00 ERR (3): Warning: SimpleXMLElement::__construct(): &lt;/html&gt;  in /var/www/magento/app/code/core/Mage/AdminNotification/Model/Feed.php on line 173
+2016-01-20T16:31:39+00:00 ERR (3): Warning: SimpleXMLElement::__construct():        ^  in /var/www/magento/app/code/core/Mage/AdminNotification/Model/Feed.php on line 173
+2016-01-20T16:31:39+00:00 ERR (3): Warning: SimpleXMLElement::__construct(): Entity: line 7: parser error : Premature end of data in tag html line 1  in /var/www/magento/app/code/core/Mage/AdminNotification/Model/Feed.php on line 173
+2016-01-20T16:31:39+00:00 ERR (3): Warning: SimpleXMLElement::__construct(): &lt;/html&gt;  in /var/www/magento/app/code/core/Mage/AdminNotification/Model/Feed.php on line 173
+2016-01-20T16:31:39+00:00 ERR (3): Warning: SimpleXMLElement::__construct():        ^  in /var/www/magento/app/code/core/Mage/AdminNotification/Model/Feed.php on line 173
+2016-01-20T18:43:48+00:00 ERR (3): Warning: SimpleXMLElement::__construct(): Entity: line 6: parser error : Opening and ending tag mismatch: hr line 5 and body  in /var/www/magento/app/code/core/Mage/AdminNotification/Model/Feed.php on line 173
+2016-01-20T18:43:48+00:00 ERR (3): Warning: SimpleXMLElement::__construct(): &lt;/body&gt;  in /var/www/magento/app/code/core/Mage/AdminNotification/Model/Feed.php on line 173
+2016-01-20T18:43:48+00:00 ERR (3): Warning: SimpleXMLElement::__construct():        ^  in /var/www/magento/app/code/core/Mage/AdminNotification/Model/Feed.php on line 173
+2016-01-20T18:43:48+00:00 ERR (3): Warning: SimpleXMLElement::__construct(): Entity: line 7: parser error : Opening and ending tag mismatch: body line 3 and html  in /var/www/magento/app/code/core/Mage/AdminNotification/Model/Feed.php on line 173
+2016-01-20T18:43:48+00:00 ERR (3): Warning: SimpleXMLElement::__construct(): &lt;/html&gt;  in /var/www/magento/app/code/core/Mage/AdminNotification/Model/Feed.php on line 173
+2016-01-20T18:43:48+00:00 ERR (3): Warning: SimpleXMLElement::__construct():        ^  in /var/www/magento/app/code/core/Mage/AdminNotification/Model/Feed.php on line 173
+2016-01-20T18:43:48+00:00 ERR (3): Warning: SimpleXMLElement::__construct(): Entity: line 7: parser error : Premature end of data in tag html line 1  in /var/www/magento/app/code/core/Mage/AdminNotification/Model/Feed.php on line 173
+2016-01-20T18:43:48+00:00 ERR (3): Warning: SimpleXMLElement::__construct(): &lt;/html&gt;  in /var/www/magento/app/code/core/Mage/AdminNotification/Model/Feed.php on line 173
+2016-01-20T18:43:48+00:00 ERR (3): Warning: SimpleXMLElement::__construct():        ^  in /var/www/magento/app/code/core/Mage/AdminNotification/Model/Feed.php on line 173
+2016-01-20T19:59:44+00:00 ERR (3): Warning: SimpleXMLElement::__construct(): Entity: line 6: parser error : Opening and ending tag mismatch: hr line 5 and body  in /var/www/magento/app/code/core/Mage/AdminNotification/Model/Feed.php on line 173
+2016-01-20T19:59:44+00:00 ERR (3): Warning: SimpleXMLElement::__construct(): &lt;/body&gt;  in /var/www/magento/app/code/core/Mage/AdminNotification/Model/Feed.php on line 173
+2016-01-20T19:59:44+00:00 ERR (3): Warning: SimpleXMLElement::__construct():        ^  in /var/www/magento/app/code/core/Mage/AdminNotification/Model/Feed.php on line 173
+2016-01-20T19:59:44+00:00 ERR (3): Warning: SimpleXMLElement::__construct(): Entity: line 7: parser error : Opening and ending tag mismatch: body line 3 and html  in /var/www/magento/app/code/core/Mage/AdminNotification/Model/Feed.php on line 173
+2016-01-20T19:59:44+00:00 ERR (3): Warning: SimpleXMLElement::__construct(): &lt;/html&gt;  in /var/www/magento/app/code/core/Mage/AdminNotification/Model/Feed.php on line 173
+2016-01-20T19:59:44+00:00 ERR (3): Warning: SimpleXMLElement::__construct():        ^  in /var/www/magento/app/code/core/Mage/AdminNotification/Model/Feed.php on line 173
+2016-01-20T19:59:44+00:00 ERR (3): Warning: SimpleXMLElement::__construct(): Entity: line 7: parser error : Premature end of data in tag html line 1  in /var/www/magento/app/code/core/Mage/AdminNotification/Model/Feed.php on line 173
+2016-01-20T19:59:44+00:00 ERR (3): Warning: SimpleXMLElement::__construct(): &lt;/html&gt;  in /var/www/magento/app/code/core/Mage/AdminNotification/Model/Feed.php on line 173
+2016-01-20T19:59:44+00:00 ERR (3): Warning: SimpleXMLElement::__construct():        ^  in /var/www/magento/app/code/core/Mage/AdminNotification/Model/Feed.php on line 173
+2016-01-21T14:55:56+00:00 ERR (3): Warning: SimpleXMLElement::__construct(): Entity: line 6: parser error : Opening and ending tag mismatch: hr line 5 and body  in /var/www/magento/app/code/core/Mage/AdminNotification/Model/Feed.php on line 173
+2016-01-21T14:55:56+00:00 ERR (3): Warning: SimpleXMLElement::__construct(): &lt;/body&gt;  in /var/www/magento/app/code/core/Mage/AdminNotification/Model/Feed.php on line 173
+2016-01-21T14:55:56+00:00 ERR (3): Warning: SimpleXMLElement::__construct():        ^  in /var/www/magento/app/code/core/Mage/AdminNotification/Model/Feed.php on line 173
+2016-01-21T14:55:56+00:00 ERR (3): Warning: SimpleXMLElement::__construct(): Entity: line 7: parser error : Opening and ending tag mismatch: body line 3 and html  in /var/www/magento/app/code/core/Mage/AdminNotification/Model/Feed.php on line 173
+2016-01-21T14:55:56+00:00 ERR (3): Warning: SimpleXMLElement::__construct(): &lt;/html&gt;  in /var/www/magento/app/code/core/Mage/AdminNotification/Model/Feed.php on line 173
+2016-01-21T14:55:56+00:00 ERR (3): Warning: SimpleXMLElement::__construct():        ^  in /var/www/magento/app/code/core/Mage/AdminNotification/Model/Feed.php on line 173
+2016-01-21T14:55:56+00:00 ERR (3): Warning: SimpleXMLElement::__construct(): Entity: line 7: parser error : Premature end of data in tag html line 1  in /var/www/magento/app/code/core/Mage/AdminNotification/Model/Feed.php on line 173
+2016-01-21T14:55:56+00:00 ERR (3): Warning: SimpleXMLElement::__construct(): &lt;/html&gt;  in /var/www/magento/app/code/core/Mage/AdminNotification/Model/Feed.php on line 173
+2016-01-21T14:55:56+00:00 ERR (3): Warning: SimpleXMLElement::__construct():        ^  in /var/www/magento/app/code/core/Mage/AdminNotification/Model/Feed.php on line 173
+2016-01-21T21:50:07+00:00 ERR (3): Warning: SimpleXMLElement::__construct(): Entity: line 6: parser error : Opening and ending tag mismatch: hr line 5 and body  in /var/www/magento/app/code/core/Mage/AdminNotification/Model/Feed.php on line 173
+2016-01-21T21:50:07+00:00 ERR (3): Warning: SimpleXMLElement::__construct(): &lt;/body&gt;  in /var/www/magento/app/code/core/Mage/AdminNotification/Model/Feed.php on line 173
+2016-01-21T21:50:07+00:00 ERR (3): Warning: SimpleXMLElement::__construct():        ^  in /var/www/magento/app/code/core/Mage/AdminNotification/Model/Feed.php on line 173
+2016-01-21T21:50:07+00:00 ERR (3): Warning: SimpleXMLElement::__construct(): Entity: line 7: parser error : Opening and ending tag mismatch: body line 3 and html  in /var/www/magento/app/code/core/Mage/AdminNotification/Model/Feed.php on line 173
+2016-01-21T21:50:07+00:00 ERR (3): Warning: SimpleXMLElement::__construct(): &lt;/html&gt;  in /var/www/magento/app/code/core/Mage/AdminNotification/Model/Feed.php on line 173
+2016-01-21T21:50:07+00:00 ERR (3): Warning: SimpleXMLElement::__construct():        ^  in /var/www/magento/app/code/core/Mage/AdminNotification/Model/Feed.php on line 173
+2016-01-21T21:50:07+00:00 ERR (3): Warning: SimpleXMLElement::__construct(): Entity: line 7: parser error : Premature end of data in tag html line 1  in /var/www/magento/app/code/core/Mage/AdminNotification/Model/Feed.php on line 173
+2016-01-21T21:50:07+00:00 ERR (3): Warning: SimpleXMLElement::__construct(): &lt;/html&gt;  in /var/www/magento/app/code/core/Mage/AdminNotification/Model/Feed.php on line 173
+2016-01-21T21:50:07+00:00 ERR (3): Warning: SimpleXMLElement::__construct():        ^  in /var/www/magento/app/code/core/Mage/AdminNotification/Model/Feed.php on line 173
+2016-01-22T20:54:38+00:00 ERR (3): Warning: SimpleXMLElement::__construct(): Entity: line 6: parser error : Opening and ending tag mismatch: hr line 5 and body  in /var/www/magento/app/code/core/Mage/AdminNotification/Model/Feed.php on line 173
+2016-01-22T20:54:38+00:00 ERR (3): Warning: SimpleXMLElement::__construct(): &lt;/body&gt;  in /var/www/magento/app/code/core/Mage/AdminNotification/Model/Feed.php on line 173
+2016-01-22T20:54:38+00:00 ERR (3): Warning: SimpleXMLElement::__construct():        ^  in /var/www/magento/app/code/core/Mage/AdminNotification/Model/Feed.php on line 173
+2016-01-22T20:54:38+00:00 ERR (3): Warning: SimpleXMLElement::__construct(): Entity: line 7: parser error : Opening and ending tag mismatch: body line 3 and html  in /var/www/magento/app/code/core/Mage/AdminNotification/Model/Feed.php on line 173
+2016-01-22T20:54:38+00:00 ERR (3): Warning: SimpleXMLElement::__construct(): &lt;/html&gt;  in /var/www/magento/app/code/core/Mage/AdminNotification/Model/Feed.php on line 173
+2016-01-22T20:54:38+00:00 ERR (3): Warning: SimpleXMLElement::__construct():        ^  in /var/www/magento/app/code/core/Mage/AdminNotification/Model/Feed.php on line 173
+2016-01-22T20:54:38+00:00 ERR (3): Warning: SimpleXMLElement::__construct(): Entity: line 7: parser error : Premature end of data in tag html line 1  in /var/www/magento/app/code/core/Mage/AdminNotification/Model/Feed.php on line 173
+2016-01-22T20:54:38+00:00 ERR (3): Warning: SimpleXMLElement::__construct(): &lt;/html&gt;  in /var/www/magento/app/code/core/Mage/AdminNotification/Model/Feed.php on line 173
+2016-01-22T20:54:38+00:00 ERR (3): Warning: SimpleXMLElement::__construct():        ^  in /var/www/magento/app/code/core/Mage/AdminNotification/Model/Feed.php on line 173
+2016-01-22T21:22:20+00:00 ERR (3): Notice: Trying to get property of non-object  in /var/www/magento/app/design/frontend/smartwave/porto/template/catalog/category/category_nav.phtml on line 5
+2016-01-22T21:22:20+00:00 ERR (3): Notice: Trying to get property of non-object  in /var/www/magento/app/design/frontend/smartwave/porto/template/catalog/category/category_nav.phtml on line 5
+2016-01-22T21:22:20+00:00 ERR (3): Notice: Trying to get property of non-object  in /var/www/magento/app/design/frontend/smartwave/porto/template/catalog/category/category_nav.phtml on line 5
+2016-01-22T21:22:20+00:00 ERR (3): Notice: Trying to get property of non-object  in /var/www/magento/app/design/frontend/smartwave/porto/template/catalog/category/category_nav.phtml on line 5
+2016-01-22T21:34:02+00:00 ERR (3): Notice: Trying to get property of non-object  in /var/www/magento/app/design/frontend/smartwave/porto/template/catalog/category/category_nav.phtml on line 5
+2016-01-22T21:34:02+00:00 ERR (3): Notice: Trying to get property of non-object  in /var/www/magento/app/design/frontend/smartwave/porto/template/catalog/category/category_nav.phtml on line 5
+2016-01-22T21:34:02+00:00 ERR (3): Notice: Trying to get property of non-object  in /var/www/magento/app/design/frontend/smartwave/porto/template/catalog/category/category_nav.phtml on line 5
+2016-01-22T21:34:02+00:00 ERR (3): Notice: Trying to get property of non-object  in /var/www/magento/app/design/frontend/smartwave/porto/template/catalog/category/category_nav.phtml on line 5
+2016-01-22T21:39:12+00:00 ERR (3): Notice: Trying to get property of non-object  in /var/www/magento/app/design/frontend/smartwave/porto/template/catalog/category/category_nav.phtml on line 5
+2016-01-22T21:39:12+00:00 ERR (3): Notice: Trying to get property of non-object  in /var/www/magento/app/design/frontend/smartwave/porto/template/catalog/category/category_nav.phtml on line 5
+2016-01-22T21:39:12+00:00 ERR (3): Notice: Trying to get property of non-object  in /var/www/magento/app/design/frontend/smartwave/porto/template/catalog/category/category_nav.phtml on line 5
+2016-01-22T21:39:12+00:00 ERR (3): Notice: Trying to get property of non-object  in /var/www/magento/app/design/frontend/smartwave/porto/template/catalog/category/category_nav.phtml on line 5
+2016-01-22T21:40:03+00:00 ERR (3): Notice: Trying to get property of non-object  in /var/www/magento/app/design/frontend/smartwave/porto/template/catalog/category/category_nav.phtml on line 5
+2016-01-22T21:40:03+00:00 ERR (3): Notice: Trying to get property of non-object  in /var/www/magento/app/design/frontend/smartwave/porto/template/catalog/category/category_nav.phtml on line 5
+2016-01-22T21:40:03+00:00 ERR (3): Notice: Trying to get property of non-object  in /var/www/magento/app/design/frontend/smartwave/porto/template/catalog/category/category_nav.phtml on line 5
+2016-01-22T21:40:03+00:00 ERR (3): Notice: Trying to get property of non-object  in /var/www/magento/app/design/frontend/smartwave/porto/template/catalog/category/category_nav.phtml on line 5
+2016-01-22T21:40:31+00:00 ERR (3): Notice: Trying to get property of non-object  in /var/www/magento/app/design/frontend/smartwave/porto/template/catalog/category/category_nav.phtml on line 5
+2016-01-22T21:40:31+00:00 ERR (3): Notice: Trying to get property of non-object  in /var/www/magento/app/design/frontend/smartwave/porto/template/catalog/category/category_nav.phtml on line 5
+2016-01-22T21:40:31+00:00 ERR (3): Notice: Trying to get property of non-object  in /var/www/magento/app/design/frontend/smartwave/porto/template/catalog/category/category_nav.phtml on line 5
+2016-01-22T21:40:31+00:00 ERR (3): Notice: Trying to get property of non-object  in /var/www/magento/app/design/frontend/smartwave/porto/template/catalog/category/category_nav.phtml on line 5
+2016-01-25T14:10:17+00:00 ERR (3): Warning: SimpleXMLElement::__construct(): Entity: line 6: parser error : Opening and ending tag mismatch: hr line 5 and body  in /var/www/magento/app/code/core/Mage/AdminNotification/Model/Feed.php on line 173
+2016-01-25T14:10:17+00:00 ERR (3): Warning: SimpleXMLElement::__construct(): &lt;/body&gt;  in /var/www/magento/app/code/core/Mage/AdminNotification/Model/Feed.php on line 173
+2016-01-25T14:10:17+00:00 ERR (3): Warning: SimpleXMLElement::__construct():        ^  in /var/www/magento/app/code/core/Mage/AdminNotification/Model/Feed.php on line 173
+2016-01-25T14:10:17+00:00 ERR (3): Warning: SimpleXMLElement::__construct(): Entity: line 7: parser error : Opening and ending tag mismatch: body line 3 and html  in /var/www/magento/app/code/core/Mage/AdminNotification/Model/Feed.php on line 173
+2016-01-25T14:10:17+00:00 ERR (3): Warning: SimpleXMLElement::__construct(): &lt;/html&gt;  in /var/www/magento/app/code/core/Mage/AdminNotification/Model/Feed.php on line 173
+2016-01-25T14:10:17+00:00 ERR (3): Warning: SimpleXMLElement::__construct():        ^  in /var/www/magento/app/code/core/Mage/AdminNotification/Model/Feed.php on line 173
+2016-01-25T14:10:17+00:00 ERR (3): Warning: SimpleXMLElement::__construct(): Entity: line 7: parser error : Premature end of data in tag html line 1  in /var/www/magento/app/code/core/Mage/AdminNotification/Model/Feed.php on line 173
+2016-01-25T14:10:17+00:00 ERR (3): Warning: SimpleXMLElement::__construct(): &lt;/html&gt;  in /var/www/magento/app/code/core/Mage/AdminNotification/Model/Feed.php on line 173
+2016-01-25T14:10:17+00:00 ERR (3): Warning: SimpleXMLElement::__construct():        ^  in /var/www/magento/app/code/core/Mage/AdminNotification/Model/Feed.php on line 173
+2016-01-25T15:37:08+00:00 ERR (3): Notice: Trying to get property of non-object  in /var/www/magento/app/design/frontend/smartwave/porto/template/catalog/category/category_nav.phtml on line 5
+2016-01-25T15:37:08+00:00 ERR (3): Notice: Trying to get property of non-object  in /var/www/magento/app/design/frontend/smartwave/porto/template/catalog/category/category_nav.phtml on line 5
+2016-01-25T15:37:08+00:00 ERR (3): Notice: Trying to get property of non-object  in /var/www/magento/app/design/frontend/smartwave/porto/template/catalog/category/category_nav.phtml on line 5
+2016-01-25T15:37:08+00:00 ERR (3): Notice: Trying to get property of non-object  in /var/www/magento/app/design/frontend/smartwave/porto/template/catalog/category/category_nav.phtml on line 5
+2016-01-25T15:37:40+00:00 ERR (3): Notice: Trying to get property of non-object  in /var/www/magento/app/design/frontend/smartwave/porto/template/catalog/category/category_nav.phtml on line 5
+2016-01-25T15:37:40+00:00 ERR (3): Notice: Trying to get property of non-object  in /var/www/magento/app/design/frontend/smartwave/porto/template/catalog/category/category_nav.phtml on line 5
+2016-01-25T15:37:40+00:00 ERR (3): Notice: Trying to get property of non-object  in /var/www/magento/app/design/frontend/smartwave/porto/template/catalog/category/category_nav.phtml on line 5
+2016-01-25T15:37:40+00:00 ERR (3): Notice: Trying to get property of non-object  in /var/www/magento/app/design/frontend/smartwave/porto/template/catalog/category/category_nav.phtml on line 5
+2016-01-25T16:19:55+00:00 ERR (3): Warning: SimpleXMLElement::__construct(): Entity: line 6: parser error : Opening and ending tag mismatch: hr line 5 and body  in /var/www/magento/app/code/core/Mage/AdminNotification/Model/Feed.php on line 173
+2016-01-25T16:19:55+00:00 ERR (3): Warning: SimpleXMLElement::__construct(): &lt;/body&gt;  in /var/www/magento/app/code/core/Mage/AdminNotification/Model/Feed.php on line 173
+2016-01-25T16:19:55+00:00 ERR (3): Warning: SimpleXMLElement::__construct():        ^  in /var/www/magento/app/code/core/Mage/AdminNotification/Model/Feed.php on line 173
+2016-01-25T16:19:55+00:00 ERR (3): Warning: SimpleXMLElement::__construct(): Entity: line 7: parser error : Opening and ending tag mismatch: body line 3 and html  in /var/www/magento/app/code/core/Mage/AdminNotification/Model/Feed.php on line 173
+2016-01-25T16:19:55+00:00 ERR (3): Warning: SimpleXMLElement::__construct(): &lt;/html&gt;  in /var/www/magento/app/code/core/Mage/AdminNotification/Model/Feed.php on line 173
+2016-01-25T16:19:55+00:00 ERR (3): Warning: SimpleXMLElement::__construct():        ^  in /var/www/magento/app/code/core/Mage/AdminNotification/Model/Feed.php on line 173
+2016-01-25T16:19:55+00:00 ERR (3): Warning: SimpleXMLElement::__construct(): Entity: line 7: parser error : Premature end of data in tag html line 1  in /var/www/magento/app/code/core/Mage/AdminNotification/Model/Feed.php on line 173
+2016-01-25T16:19:55+00:00 ERR (3): Warning: SimpleXMLElement::__construct(): &lt;/html&gt;  in /var/www/magento/app/code/core/Mage/AdminNotification/Model/Feed.php on line 173
+2016-01-25T16:19:55+00:00 ERR (3): Warning: SimpleXMLElement::__construct():        ^  in /var/www/magento/app/code/core/Mage/AdminNotification/Model/Feed.php on line 173
+2016-01-25T16:21:03+00:00 ERR (3): Warning: mkdir(): File exists  in /var/www/magento/downloader/lib/Mage/Connect/Packager.php on line 500
+2016-01-25T18:55:03+00:00 ERR (3): Warning: SimpleXMLElement::__construct(): Entity: line 6: parser error : Opening and ending tag mismatch: hr line 5 and body  in /var/www/magento/app/code/core/Mage/AdminNotification/Model/Feed.php on line 173
+2016-01-25T18:55:03+00:00 ERR (3): Warning: SimpleXMLElement::__construct(): &lt;/body&gt;  in /var/www/magento/app/code/core/Mage/AdminNotification/Model/Feed.php on line 173
+2016-01-25T18:55:03+00:00 ERR (3): Warning: SimpleXMLElement::__construct():        ^  in /var/www/magento/app/code/core/Mage/AdminNotification/Model/Feed.php on line 173
+2016-01-25T18:55:03+00:00 ERR (3): Warning: SimpleXMLElement::__construct(): Entity: line 7: parser error : Opening and ending tag mismatch: body line 3 and html  in /var/www/magento/app/code/core/Mage/AdminNotification/Model/Feed.php on line 173
+2016-01-25T18:55:03+00:00 ERR (3): Warning: SimpleXMLElement::__construct(): &lt;/html&gt;  in /var/www/magento/app/code/core/Mage/AdminNotification/Model/Feed.php on line 173
+2016-01-25T18:55:03+00:00 ERR (3): Warning: SimpleXMLElement::__construct():        ^  in /var/www/magento/app/code/core/Mage/AdminNotification/Model/Feed.php on line 173
+2016-01-25T18:55:03+00:00 ERR (3): Warning: SimpleXMLElement::__construct(): Entity: line 7: parser error : Premature end of data in tag html line 1  in /var/www/magento/app/code/core/Mage/AdminNotification/Model/Feed.php on line 173
+2016-01-25T18:55:03+00:00 ERR (3): Warning: SimpleXMLElement::__construct(): &lt;/html&gt;  in /var/www/magento/app/code/core/Mage/AdminNotification/Model/Feed.php on line 173
+2016-01-25T18:55:03+00:00 ERR (3): Warning: SimpleXMLElement::__construct():        ^  in /var/www/magento/app/code/core/Mage/AdminNotification/Model/Feed.php on line 173
+2016-01-25T18:55:42+00:00 ERR (3): Recoverable Error: Argument 1 passed to MageParts_Ddq_Helper_Data::cleanQuantityData() must be of the type array, string given, called in /var/www/magento/app/code/community/MageParts/Ddq/Model/Observer/Adminhtml.php on line 124 and defined  in /var/www/magento/app/code/community/MageParts/Ddq/Helper/Data.php on line 908
+2016-01-25T19:17:44+00:00 ERR (3): Recoverable Error: Argument 1 passed to MageParts_Ddq_Helper_Data::cleanQuantityData() must be of the type array, string given, called in /var/www/magento/app/code/community/MageParts/Ddq/Model/Observer/Adminhtml.php on line 124 and defined  in /var/www/magento/app/code/community/MageParts/Ddq/Helper/Data.php on line 908
+2016-01-25T21:13:30+00:00 ERR (3): Warning: SimpleXMLElement::__construct(): Entity: line 6: parser error : Opening and ending tag mismatch: hr line 5 and body  in /var/www/magento/app/code/core/Mage/AdminNotification/Model/Feed.php on line 173
+2016-01-25T21:13:30+00:00 ERR (3): Warning: SimpleXMLElement::__construct(): &lt;/body&gt;  in /var/www/magento/app/code/core/Mage/AdminNotification/Model/Feed.php on line 173
+2016-01-25T21:13:30+00:00 ERR (3): Warning: SimpleXMLElement::__construct():        ^  in /var/www/magento/app/code/core/Mage/AdminNotification/Model/Feed.php on line 173
+2016-01-25T21:13:30+00:00 ERR (3): Warning: SimpleXMLElement::__construct(): Entity: line 7: parser error : Opening and ending tag mismatch: body line 3 and html  in /var/www/magento/app/code/core/Mage/AdminNotification/Model/Feed.php on line 173
+2016-01-25T21:13:30+00:00 ERR (3): Warning: SimpleXMLElement::__construct(): &lt;/html&gt;  in /var/www/magento/app/code/core/Mage/AdminNotification/Model/Feed.php on line 173
+2016-01-25T21:13:30+00:00 ERR (3): Warning: SimpleXMLElement::__construct():        ^  in /var/www/magento/app/code/core/Mage/AdminNotification/Model/Feed.php on line 173
+2016-01-25T21:13:30+00:00 ERR (3): Warning: SimpleXMLElement::__construct(): Entity: line 7: parser error : Premature end of data in tag html line 1  in /var/www/magento/app/code/core/Mage/AdminNotification/Model/Feed.php on line 173
+2016-01-25T21:13:30+00:00 ERR (3): Warning: SimpleXMLElement::__construct(): &lt;/html&gt;  in /var/www/magento/app/code/core/Mage/AdminNotification/Model/Feed.php on line 173
+2016-01-25T21:13:30+00:00 ERR (3): Warning: SimpleXMLElement::__construct():        ^  in /var/www/magento/app/code/core/Mage/AdminNotification/Model/Feed.php on line 173
+2016-01-27T15:03:17+00:00 ERR (3): Notice: Trying to get property of non-object  in /var/www/magento/app/design/frontend/smartwave/porto/template/catalog/category/category_nav.phtml on line 5
+2016-01-27T15:03:17+00:00 ERR (3): Notice: Trying to get property of non-object  in /var/www/magento/app/design/frontend/smartwave/porto/template/catalog/category/category_nav.phtml on line 5
+2016-01-27T15:03:17+00:00 ERR (3): Notice: Trying to get property of non-object  in /var/www/magento/app/design/frontend/smartwave/porto/template/catalog/category/category_nav.phtml on line 5
+2016-01-27T15:03:17+00:00 ERR (3): Notice: Trying to get property of non-object  in /var/www/magento/app/design/frontend/smartwave/porto/template/catalog/category/category_nav.phtml on line 5
+2016-01-27T15:05:12+00:00 ERR (3): Notice: Trying to get property of non-object  in /var/www/magento/app/design/frontend/smartwave/porto/template/catalog/category/category_nav.phtml on line 5
+2016-01-27T15:05:12+00:00 ERR (3): Notice: Trying to get property of non-object  in /var/www/magento/app/design/frontend/smartwave/porto/template/catalog/category/category_nav.phtml on line 5
+2016-01-27T15:05:12+00:00 ERR (3): Notice: Trying to get property of non-object  in /var/www/magento/app/design/frontend/smartwave/porto/template/catalog/category/category_nav.phtml on line 5
+2016-01-27T15:05:12+00:00 ERR (3): Notice: Trying to get property of non-object  in /var/www/magento/app/design/frontend/smartwave/porto/template/catalog/category/category_nav.phtml on line 5
+2016-01-27T15:06:32+00:00 ERR (3): Notice: Trying to get property of non-object  in /var/www/magento/app/code/local/Chili/Web2print/Model/Api.php on line 499
+2016-01-27T15:25:40+00:00 ERR (3): Notice: Trying to get property of non-object  in /var/www/magento/app/design/frontend/smartwave/porto/template/catalog/category/category_nav.phtml on line 5
+2016-01-27T15:25:40+00:00 ERR (3): Notice: Trying to get property of non-object  in /var/www/magento/app/design/frontend/smartwave/porto/template/catalog/category/category_nav.phtml on line 5
+2016-01-27T15:25:40+00:00 ERR (3): Notice: Trying to get property of non-object  in /var/www/magento/app/design/frontend/smartwave/porto/template/catalog/category/category_nav.phtml on line 5
+2016-01-27T15:25:40+00:00 ERR (3): Notice: Trying to get property of non-object  in /var/www/magento/app/design/frontend/smartwave/porto/template/catalog/category/category_nav.phtml on line 5
+2016-01-27T15:26:09+00:00 ERR (3): Notice: Trying to get property of non-object  in /var/www/magento/app/design/frontend/smartwave/porto/template/catalog/category/category_nav.phtml on line 5
+2016-01-27T15:26:09+00:00 ERR (3): Notice: Trying to get property of non-object  in /var/www/magento/app/design/frontend/smartwave/porto/template/catalog/category/category_nav.phtml on line 5
+2016-01-27T15:26:09+00:00 ERR (3): Notice: Trying to get property of non-object  in /var/www/magento/app/design/frontend/smartwave/porto/template/catalog/category/category_nav.phtml on line 5
+2016-01-27T15:26:09+00:00 ERR (3): Notice: Trying to get property of non-object  in /var/www/magento/app/design/frontend/smartwave/porto/template/catalog/category/category_nav.phtml on line 5
+2016-01-27T15:31:40+00:00 ERR (3): Notice: Undefined index: groups  in /var/www/magento/app/code/core/Mage/Adminhtml/Model/System/Config/Backend/File.php on line 51
+2016-01-27T15:31:40+00:00 ERR (3): Notice: Undefined index: groups  in /var/www/magento/app/code/core/Mage/Adminhtml/Model/System/Config/Backend/File.php on line 51
+2016-01-27T15:32:20+00:00 ERR (3): Notice: Trying to get property of non-object  in /var/www/magento/app/design/frontend/smartwave/porto/template/catalog/category/category_nav.phtml on line 5
+2016-01-27T15:32:20+00:00 ERR (3): Notice: Trying to get property of non-object  in /var/www/magento/app/design/frontend/smartwave/porto/template/catalog/category/category_nav.phtml on line 5
+2016-01-27T15:32:20+00:00 ERR (3): Notice: Trying to get property of non-object  in /var/www/magento/app/design/frontend/smartwave/porto/template/catalog/category/category_nav.phtml on line 5
+2016-01-27T15:32:20+00:00 ERR (3): Notice: Trying to get property of non-object  in /var/www/magento/app/design/frontend/smartwave/porto/template/catalog/category/category_nav.phtml on line 5
+2016-01-27T15:34:04+00:00 ERR (3): Notice: Trying to get property of non-object  in /var/www/magento/app/design/frontend/smartwave/porto/template/catalog/category/category_nav.phtml on line 5
+2016-01-27T15:34:04+00:00 ERR (3): Notice: Trying to get property of non-object  in /var/www/magento/app/design/frontend/smartwave/porto/template/catalog/category/category_nav.phtml on line 5
+2016-01-27T15:34:04+00:00 ERR (3): Notice: Trying to get property of non-object  in /var/www/magento/app/design/frontend/smartwave/porto/template/catalog/category/category_nav.phtml on line 5
+2016-01-27T15:34:04+00:00 ERR (3): Notice: Trying to get property of non-object  in /var/www/magento/app/design/frontend/smartwave/porto/template/catalog/category/category_nav.phtml on line 5
+2016-01-27T15:35:01+00:00 ERR (3): Notice: Trying to get property of non-object  in /var/www/magento/app/design/frontend/smartwave/porto/template/catalog/category/category_nav.phtml on line 5
+2016-01-27T15:35:01+00:00 ERR (3): Notice: Trying to get property of non-object  in /var/www/magento/app/design/frontend/smartwave/porto/template/catalog/category/category_nav.phtml on line 5
+2016-01-27T15:35:01+00:00 ERR (3): Notice: Trying to get property of non-object  in /var/www/magento/app/design/frontend/smartwave/porto/template/catalog/category/category_nav.phtml on line 5
+2016-01-27T15:35:01+00:00 ERR (3): Notice: Trying to get property of non-object  in /var/www/magento/app/design/frontend/smartwave/porto/template/catalog/category/category_nav.phtml on line 5
+2016-01-27T15:39:14+00:00 ERR (3): Notice: Trying to get property of non-object  in /var/www/magento/app/design/frontend/smartwave/porto/template/catalog/category/category_nav.phtml on line 5
+2016-01-27T15:39:14+00:00 ERR (3): Notice: Trying to get property of non-object  in /var/www/magento/app/design/frontend/smartwave/porto/template/catalog/category/category_nav.phtml on line 5
+2016-01-27T15:39:14+00:00 ERR (3): Notice: Trying to get property of non-object  in /var/www/magento/app/design/frontend/smartwave/porto/template/catalog/category/category_nav.phtml on line 5
+2016-01-27T15:39:14+00:00 ERR (3): Notice: Trying to get property of non-object  in /var/www/magento/app/design/frontend/smartwave/porto/template/catalog/category/category_nav.phtml on line 5
+2016-01-27T15:42:29+00:00 ERR (3): Notice: Undefined variable: sticky_header  in /var/www/magento/app/design/frontend/smartwave/porto_fineline/template/catalog/product/view.phtml on line 35
+2016-01-27T15:44:29+00:00 ERR (3): Notice: Undefined variable: sticky_header  in /var/www/magento/app/design/frontend/smartwave/porto_fineline/template/catalog/product/view.phtml on line 35
+2016-01-27T15:44:39+00:00 ERR (3): Notice: Undefined variable: sticky_header  in /var/www/magento/app/design/frontend/smartwave/porto_fineline/template/catalog/product/view.phtml on line 35
+2016-01-27T15:46:41+00:00 ERR (3): Notice: Undefined variable: sticky_header  in /var/www/magento/app/design/frontend/smartwave/porto_fineline/template/catalog/product/view.phtml on line 35
+2016-01-27T15:47:47+00:00 ERR (3): Notice: Undefined variable: sticky_header  in /var/www/magento/app/design/frontend/smartwave/porto_fineline/template/catalog/product/view.phtml on line 35

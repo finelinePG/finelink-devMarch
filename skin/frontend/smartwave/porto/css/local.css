@@ -1634,16 +1634,16 @@ li.etalage_small_thumbs{margin-top:8px;top:100%}
 .cart .crosssell button.button:hover > span{border:1px solid #08c;background:#08c}
 .cart .crosssell button.button span{color:#777;font-size:12px;line-height:25px;min-width:0}
 .cart .crosssell button.button:hover span{color:#fff}
-.cart .crosssell .add-to-links{display:none}
+.cart .crosssell .add-to-links{display:none;}
 /* Discount Codes &Estimate Shipping and Tax Boxes */
 .cart .discount,.cart .shipping{margin-bottom:15px}
 .cart .discount .input-box{font-size:13px;}
-.cart .discount h2,.cart .shipping h2{cursor:pointer;border-radius:7px}
+.cart .discount h2,.cart .shipping h2{cursor:pointer;border-radius:7px 7px 0 0}/* this is new content. i'm taking 2 corners off*/
 .cart .discount h2.opened,.cart .shipping h2.opened{border-radius:7px 7px 0 0}
-.cart .discount h2:before,.cart .shipping h2:before{content:"\e80b";width:26px;height:26px;display:block;border:1px solid #ccc;font-family:'porto';position:absolute;right:15px;top:50%;margin-top:-13px;border-radius:3px;color:#ccc;text-align:center;line-height:24px;background-color:#fff;font-size:10px}
+.cart .discount h2:before,.cart .shipping h2:before{content:"\e80d";width:26px;height:26px;display:block;border:1px solid #ccc;font-family:'porto';position:absolute;right:15px;top:50%;margin-top:-13px;border-radius:3px;color:#ccc;text-align:center;line-height:24px;background-color:#fff;font-size:10px}
 .cart .discount h2.opened:before,.cart .shipping h2.opened:before{content:"\e80d"}
+.cart .discount h2 + *,.cart .shipping h2 + *{display:block;}
 .cart .discount h2:hover:before,.cart .shipping h2:hover:before{background:#08c;border-color:#08c;color:#fff}
-.cart .discount h2 + *,.cart .shipping h2 + *{display:none}
 .cart .cart-collaterals h2 + *{padding:15px;font-size:13px;border:1px solid #ddd;border-top:0;border-radius:0 0 7px 7px;background-color:#fbfbfb}
 .cart .discount p,.cart .shipping p{font-size:14px}
 .cart .discount .form-list label,.cart .shipping .form-list label{}
@@ -3615,7 +3615,8 @@ ol#products-list .bottom-home-dailydeal ul.time-left li span.text-time{font-size
 
 
 .subcategories {
-	margin-left:25%;
+	margin-left: 0;
+	margin-right: 0;
 }
 .subcategories li {  
         width: 260px;
