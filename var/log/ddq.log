@@ -11580,3 +11580,9 @@
     [0] => catalog_product_10
 )
 
+2016-02-15T15:38:18+00:00 DEBUG (7): Cleaning out cached data:
+2016-02-15T15:38:18+00:00 DEBUG (7): Array
+(
+    [0] => catalog_product_19
+)
+

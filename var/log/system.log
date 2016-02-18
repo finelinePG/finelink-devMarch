@@ -3454,3 +3454,47 @@
 2016-01-27T15:44:39+00:00 ERR (3): Notice: Undefined variable: sticky_header  in /var/www/magento/app/design/frontend/smartwave/porto_fineline/template/catalog/product/view.phtml on line 35
 2016-01-27T15:46:41+00:00 ERR (3): Notice: Undefined variable: sticky_header  in /var/www/magento/app/design/frontend/smartwave/porto_fineline/template/catalog/product/view.phtml on line 35
 2016-01-27T15:47:47+00:00 ERR (3): Notice: Undefined variable: sticky_header  in /var/www/magento/app/design/frontend/smartwave/porto_fineline/template/catalog/product/view.phtml on line 35
+2016-01-27T21:34:34+00:00 ERR (3): Notice: Trying to get property of non-object  in /var/www/magento/app/design/frontend/smartwave/porto/template/catalog/category/category_nav.phtml on line 5
+2016-01-27T21:34:34+00:00 ERR (3): Notice: Trying to get property of non-object  in /var/www/magento/app/design/frontend/smartwave/porto/template/catalog/category/category_nav.phtml on line 5
+2016-01-27T21:34:34+00:00 ERR (3): Notice: Trying to get property of non-object  in /var/www/magento/app/design/frontend/smartwave/porto/template/catalog/category/category_nav.phtml on line 5
+2016-01-27T21:34:34+00:00 ERR (3): Notice: Trying to get property of non-object  in /var/www/magento/app/design/frontend/smartwave/porto/template/catalog/category/category_nav.phtml on line 5
+2016-02-03T15:20:00+00:00 ERR (3): Notice: Trying to get property of non-object  in /var/www/magento/app/design/frontend/smartwave/porto/template/catalog/category/category_nav.phtml on line 5
+2016-02-03T15:20:00+00:00 ERR (3): Notice: Trying to get property of non-object  in /var/www/magento/app/design/frontend/smartwave/porto/template/catalog/category/category_nav.phtml on line 5
+2016-02-03T15:20:00+00:00 ERR (3): Notice: Trying to get property of non-object  in /var/www/magento/app/design/frontend/smartwave/porto/template/catalog/category/category_nav.phtml on line 5
+2016-02-03T15:20:00+00:00 ERR (3): Notice: Trying to get property of non-object  in /var/www/magento/app/design/frontend/smartwave/porto/template/catalog/category/category_nav.phtml on line 5
+2016-02-03T15:28:02+00:00 ERR (3): Notice: Trying to get property of non-object  in /var/www/magento/app/design/frontend/smartwave/porto/template/catalog/category/category_nav.phtml on line 5
+2016-02-03T15:28:02+00:00 ERR (3): Notice: Trying to get property of non-object  in /var/www/magento/app/design/frontend/smartwave/porto/template/catalog/category/category_nav.phtml on line 5
+2016-02-03T15:28:02+00:00 ERR (3): Notice: Trying to get property of non-object  in /var/www/magento/app/design/frontend/smartwave/porto/template/catalog/category/category_nav.phtml on line 5
+2016-02-03T15:28:02+00:00 ERR (3): Notice: Trying to get property of non-object  in /var/www/magento/app/design/frontend/smartwave/porto/template/catalog/category/category_nav.phtml on line 5
+2016-02-03T18:19:36+00:00 ERR (3): Notice: Trying to get property of non-object  in /var/www/magento/app/code/local/Chili/Web2print/Model/Api.php on line 243
+2016-02-03T18:19:36+00:00 ERR (3): Warning: DOMDocument::loadXML(): Empty string supplied as input  in /var/www/magento/app/code/local/Chili/Web2print/Model/Api.php on line 633
+2016-02-03T18:23:21+00:00 ERR (3): Notice: Trying to get property of non-object  in /var/www/magento/app/code/local/Chili/Web2print/Model/Api.php on line 263
+2016-02-03T18:23:21+00:00 ERR (3): Warning: DOMDocument::loadXML(): Empty string supplied as input  in /var/www/magento/app/code/local/Chili/Web2print/Model/Api.php on line 633
+2016-02-03T18:23:28+00:00 ERR (3): Notice: Trying to get property of non-object  in /var/www/magento/app/code/local/Chili/Web2print/Model/Api.php on line 263
+2016-02-03T18:23:28+00:00 ERR (3): Warning: DOMDocument::loadXML(): Empty string supplied as input  in /var/www/magento/app/code/local/Chili/Web2print/Model/Api.php on line 633
+2016-02-03T18:23:33+00:00 ERR (3): Notice: Trying to get property of non-object  in /var/www/magento/app/code/local/Chili/Web2print/Model/Api.php on line 263
+2016-02-03T18:23:33+00:00 ERR (3): Warning: DOMDocument::loadXML(): Empty string supplied as input  in /var/www/magento/app/code/local/Chili/Web2print/Model/Api.php on line 633
+2016-02-11T19:56:24+00:00 ERR (3): Notice: Trying to get property of non-object  in /var/www/magento/app/design/frontend/smartwave/porto/template/catalog/category/category_nav.phtml on line 5
+2016-02-11T19:56:24+00:00 ERR (3): Notice: Trying to get property of non-object  in /var/www/magento/app/design/frontend/smartwave/porto/template/catalog/category/category_nav.phtml on line 5
+2016-02-11T19:56:24+00:00 ERR (3): Notice: Trying to get property of non-object  in /var/www/magento/app/design/frontend/smartwave/porto/template/catalog/category/category_nav.phtml on line 5
+2016-02-11T19:56:24+00:00 ERR (3): Notice: Trying to get property of non-object  in /var/www/magento/app/design/frontend/smartwave/porto/template/catalog/category/category_nav.phtml on line 5
+2016-02-12T11:58:58+00:00 ERR (3): Notice: Trying to get property of non-object  in /var/www/magento/app/design/frontend/smartwave/porto/template/catalog/category/category_nav.phtml on line 5
+2016-02-12T11:58:58+00:00 ERR (3): Notice: Trying to get property of non-object  in /var/www/magento/app/design/frontend/smartwave/porto/template/catalog/category/category_nav.phtml on line 5
+2016-02-12T11:58:58+00:00 ERR (3): Notice: Trying to get property of non-object  in /var/www/magento/app/design/frontend/smartwave/porto/template/catalog/category/category_nav.phtml on line 5
+2016-02-12T11:58:58+00:00 ERR (3): Notice: Trying to get property of non-object  in /var/www/magento/app/design/frontend/smartwave/porto/template/catalog/category/category_nav.phtml on line 5
+2016-02-12T15:14:49+00:00 ERR (3): Notice: Trying to get property of non-object  in /var/www/magento/app/design/frontend/smartwave/porto/template/catalog/category/category_nav.phtml on line 5
+2016-02-12T15:14:49+00:00 ERR (3): Notice: Trying to get property of non-object  in /var/www/magento/app/design/frontend/smartwave/porto/template/catalog/category/category_nav.phtml on line 5
+2016-02-12T15:14:49+00:00 ERR (3): Notice: Trying to get property of non-object  in /var/www/magento/app/design/frontend/smartwave/porto/template/catalog/category/category_nav.phtml on line 5
+2016-02-12T15:14:49+00:00 ERR (3): Notice: Trying to get property of non-object  in /var/www/magento/app/design/frontend/smartwave/porto/template/catalog/category/category_nav.phtml on line 5
+2016-02-12T15:39:57+00:00 ERR (3): Notice: Undefined variable: array  in /var/www/magento/app/code/local/Chili/Web2print/Model/Api.php on line 325
+2016-02-12T15:39:57+00:00 ERR (3): Notice: Trying to get property of non-object  in /var/www/magento/app/code/local/Chili/Web2print/Model/Api.php on line 327
+2016-02-17T15:21:50+00:00 ERR (3): Notice: Trying to get property of non-object  in /var/www/magento/app/design/frontend/smartwave/porto/template/catalog/category/category_nav.phtml on line 5
+2016-02-17T15:21:50+00:00 ERR (3): Notice: Trying to get property of non-object  in /var/www/magento/app/design/frontend/smartwave/porto/template/catalog/category/category_nav.phtml on line 5
+2016-02-17T15:21:50+00:00 ERR (3): Notice: Trying to get property of non-object  in /var/www/magento/app/design/frontend/smartwave/porto/template/catalog/category/category_nav.phtml on line 5
+2016-02-17T15:21:50+00:00 ERR (3): Notice: Trying to get property of non-object  in /var/www/magento/app/design/frontend/smartwave/porto/template/catalog/category/category_nav.phtml on line 5
+2016-02-17T19:45:00+00:00 ERR (3): Notice: Trying to get property of non-object  in /var/www/magento/app/design/frontend/smartwave/porto/template/catalog/category/category_nav.phtml on line 5
+2016-02-17T19:45:00+00:00 ERR (3): Notice: Trying to get property of non-object  in /var/www/magento/app/design/frontend/smartwave/porto/template/catalog/category/category_nav.phtml on line 5
+2016-02-17T19:45:00+00:00 ERR (3): Notice: Trying to get property of non-object  in /var/www/magento/app/design/frontend/smartwave/porto/template/catalog/category/category_nav.phtml on line 5
+2016-02-17T19:45:00+00:00 ERR (3): Notice: Trying to get property of non-object  in /var/www/magento/app/design/frontend/smartwave/porto/template/catalog/category/category_nav.phtml on line 5
+2016-02-17T19:54:20+00:00 ERR (3): Notice: Trying to get property of non-object  in /var/www/magento/app/code/local/Chili/Web2print/Model/Api.php on line 243
+2016-02-17T19:54:20+00:00 ERR (3): Warning: DOMDocument::loadXML(): Empty string supplied as input  in /var/www/magento/app/code/local/Chili/Web2print/Model/Api.php on line 633
