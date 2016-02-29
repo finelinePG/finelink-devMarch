@@ -1,0 +1,11 @@
+{
+	"folders":
+	[
+		{
+			"path": ".",
+			"folder_exclude_patterns": [".*","dev", "downloader", "includes", "lib", "shell", "var"],
+			"file_exclude_patterns": [".*"]
+
+		}
+	]
+}

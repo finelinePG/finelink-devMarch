@@ -11580,9 +11580,111 @@
     [0] => catalog_product_10
 )
 
-2016-02-15T15:38:18+00:00 DEBUG (7): Cleaning out cached data:
-2016-02-15T15:38:18+00:00 DEBUG (7): Array
+2016-02-11T20:14:36+00:00 DEBUG (7): Cleaning out cached data:
+2016-02-11T20:14:36+00:00 DEBUG (7): Array
 (
-    [0] => catalog_product_19
+    [0] => catalog_product_4
+)
+
+2016-02-11T20:15:29+00:00 DEBUG (7): Cleaning out cached data:
+2016-02-11T20:15:29+00:00 DEBUG (7): Array
+(
+    [0] => catalog_product_47
+)
+
+2016-02-19T18:06:05+00:00 DEBUG (7): Cleaning out cached data:
+2016-02-19T18:06:05+00:00 DEBUG (7): Array
+(
+    [0] => catalog_product_70
+)
+
+2016-02-19T18:10:20+00:00 DEBUG (7): Cleaning out cached data:
+2016-02-19T18:10:20+00:00 DEBUG (7): Array
+(
+    [0] => catalog_product_70
+)
+
+2016-02-19T18:10:55+00:00 DEBUG (7): Cleaning out cached data:
+2016-02-19T18:10:55+00:00 DEBUG (7): Array
+(
+    [0] => catalog_product_70
+)
+
+2016-02-19T18:13:38+00:00 DEBUG (7): Cleaning out cached data:
+2016-02-19T18:13:38+00:00 DEBUG (7): Array
+(
+    [0] => catalog_product_70
+)
+
+2016-02-20T02:52:13+00:00 DEBUG (7): Cleaning out cached data:
+2016-02-20T02:52:13+00:00 DEBUG (7): Array
+(
+    [0] => catalog_product_70
+)
+
+2016-02-22T15:16:41+00:00 DEBUG (7): Cleaning out cached data:
+2016-02-22T15:16:41+00:00 DEBUG (7): Array
+(
+    [0] => catalog_product_70
+)
+
+2016-02-22T15:17:34+00:00 DEBUG (7): Cleaning out cached data:
+2016-02-22T15:17:34+00:00 DEBUG (7): Array
+(
+    [0] => catalog_product_70
+)
+
+2016-02-22T18:20:56+00:00 DEBUG (7): Cleaning out cached data:
+2016-02-22T18:20:56+00:00 DEBUG (7): Array
+(
+    [0] => catalog_product_71
+)
+
+2016-02-22T18:22:14+00:00 DEBUG (7): Cleaning out cached data:
+2016-02-22T18:22:14+00:00 DEBUG (7): Array
+(
+    [0] => catalog_product_71
+)
+
+2016-02-22T18:30:44+00:00 DEBUG (7): Cleaning out cached data:
+2016-02-22T18:30:44+00:00 DEBUG (7): Array
+(
+    [0] => catalog_product_71
+)
+
+2016-02-24T01:22:22+00:00 DEBUG (7): Cleaning out cached data:
+2016-02-24T01:22:22+00:00 DEBUG (7): Array
+(
+    [0] => catalog_product_43
+)
+
+2016-02-24T01:30:16+00:00 DEBUG (7): Cleaning out cached data:
+2016-02-24T01:30:16+00:00 DEBUG (7): Array
+(
+    [0] => catalog_product_45
+)
+
+2016-02-24T14:26:02+00:00 DEBUG (7): Cleaning out cached data:
+2016-02-24T14:26:02+00:00 DEBUG (7): Array
+(
+    [0] => catalog_product_45
+)
+
+2016-02-24T14:35:13+00:00 DEBUG (7): Cleaning out cached data:
+2016-02-24T14:35:13+00:00 DEBUG (7): Array
+(
+    [0] => catalog_product_45
+)
+
+2016-02-24T21:40:39+00:00 DEBUG (7): Cleaning out cached data:
+2016-02-24T21:40:39+00:00 DEBUG (7): Array
+(
+    [0] => catalog_product_70
+)
+
+2016-02-24T21:41:08+00:00 DEBUG (7): Cleaning out cached data:
+2016-02-24T21:41:08+00:00 DEBUG (7): Array
+(
+    [0] => catalog_product_71
 )
 

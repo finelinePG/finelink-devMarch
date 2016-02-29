@@ -44,13 +44,14 @@ body.web2print-editor-load,
 .col1-layout .main .product-web2print-links ul li { float:left; margin-right:10px; }
 .col1-layout .main .product-web2print-links h3 { float:left; margin-right:10px; display:none; }
 
-#save-options { margin: -70px 0 0 25px; position: relative; }
+#save-options { margin: -70px 0 0 0px; position: relative; }
 
 .editor-links { width:90%; margin-left: 5%; margin-right:5%;}
 .editor-links .left { float: left; margin: 20px; margin-left:0px;}
 .editor-links .right { float: right;margin: 20px; margin-right:0px;}
 .editor-links #productOptions { margin: 5px 0 0 0!important; }
 .editor-links #productOptions .product-options { margin-top:0; padding-bottom: 50px; width: 245px; }
+.editor-links #productOptions #product-options-container {background:#b3b8bb; padding:10px;border-radius:7px;}
 .editor-links #productOptions .product-options dd { border-bottom: 0; }
 .editor-links #confirmed{ margin-right:10px; }
 
@@ -60,3 +61,6 @@ body.web2print-editor-load,
 
 .my-conceptlist textarea { display: block; height: 109px; width: 97%; }
 .concept-image{ display: block; height: 135px; margin-top: 5px; overflow: hidden; width: 135px; }
+
+/*Product options on chiliEditor Page*****************/
+

@@ -1,0 +1,205 @@
+<?php
+/**
+ * Product view template
+ *
+ * @see Mage_Catalog_Block_Product_View
+ * @see Mage_Review_Block_Product_View
+ */
+$_product = $this->getProduct();
+    $store = Mage::app()->getStore();
+    $code  = $store->getCode();
+    $custom_block = Mage::getStoreConfig('porto_settings/header/static_block', $code);
+?>
+<script type="text/javascript">
+    var optionsPrice = new Product.OptionsPrice(<?php echo $this->getJsonConfig() ?>);
+    var productFormData = '<?php echo http_build_query($this->getProductOptionsData()); // Get the stored POST data to allow page refresh ?>';
+    var actionName = '<?php echo Mage::app()->getRequest()->getActionName(); ?>';
+    var isLoggedIn = '<?php echo $this->helper('customer')->isLoggedIn(); ?>';
+
+
+    var frameWindow = null;
+    var editor = null;
+    var fullyLoaded = false;
+</script>
+
+
+
+
+
+<div id="messages_product_view">
+    <?php echo $this->getMessagesBlock()->getGroupedHtml() ?>
+</div>
+
+<div class="product-view">
+<div class="product-essential">
+
+
+<!---TOP EDITOR BUTTONS-->
+<form action="<?php echo $this->getChiliAddToCartUrl($_product->getId()) ?>" method="post" id="product_addtocart_form" <?php if ($_product->getOptions()): ?> enctype="multipart/form-data"<?php endif; ?>>
+    <input type="hidden" name="related_product" id="related-products-field" value="" />
+    <input type="hidden" name="product_id" id="product_id" value="<?php echo $_product->getId(); ?>" />
+    <input type="hidden" name="chili_document_id" id="chili_document_id" value="<?php echo $this->getChiliDocumentId(); ?>" />
+	<input type="hidden" name="chili_workspace_id" id="chili_workspace_id" value="<?php echo $this->getCurrentWorkspacePreference(); ?>" />
+    <input type="hidden" name="qty" id="qty" value="<?php echo ($this->getRequest()->getParam('qty')) ? $this->getRequest()->getParam('qty') : $_product->getStockItem()->getMinSaleQty(); ?>" />
+	<div class="editor-links">   
+	<!-----------------------Left Buttons-------------------------->
+		<div class="left">
+            <span>
+				<button type="button" class="button btn-cart" >
+					<span>
+						<a href="javascript:history.go(-1)" style="color:#fff" title="<?php echo $this->__('Back'); ?>" class="">&lt;&lt; <?php echo $this->__('Back'); ?></a>
+					</span>
+				</button>
+				<div id="navigation">
+					<h3 id="headerNav"><?php echo Mage::helper('web2print')->__('Navigation'); ?></h3>
+				</div>
+			</span>
+		</div>
+	<!-----------------------Right Buttons-------------------------->		
+        <div class="right">
+            <?php if (count($_product->getOptions()) >= 1) { ?>
+                <button type="button" class="button btn-cart" >
+					<span>
+                    	<a href="#" class="actionLink" title="<?php echo $this->__('Configure options'); ?>" id="configure-options" style="color:#fff;"><?php echo $this->__('Configure Options'); ?></a>
+					</span>
+				</button>
+                <div id="productOptions" style="position:absolute!important; display:none;">
+                     <div id="product-options-container" >
+                            <?php
+                            if ($this->hasOptions()):
+                                echo $this->getChildHtml('product_options_wrapper');
+                            endif; ?>
+                            <button type="button" title="<?php echo $this->__('Save print options'); ?>" class="button btn-cart" id="save-options">
+                                <span>
+                                    <span><?php echo $this->__('Save print options'); ?></span>
+                                </span>
+                            </button>
+                     </div>
+                 </div>
+            <?php } ?>
+			
+     		<?php echo $this->getConceptActionButtonHtml(); ?>
+			<button type="button" class="button btn-cart" >
+				<span>
+					<a href="<?php echo $this->getChiliEditorUrl(); ?>" class="button btn-cart" style="color:#fff" title="Share Design" id="button btn-cart" target="_blank"><?php echo $this->__('Share URL'); ?></a>
+				</span>
+			</button>
+            <span>
+                <?php echo $this->getShoppingcartActionButtonHtml(); ?>
+            </span>
+        </div>
+    </div>
+</form>
+
+<script type="text/javascript">
+
+    var editorMode = '<?php echo $this->getMode(); ?>';
+    var conceptUrl = '<?php echo $this->getConceptUrl(); ?>';
+    var cartUrl = '<?php echo $this->getCartUrl(); ?>';
+    var productOptionCount = '<?php echo count($_product->getOptions()); ?>';
+    var productAddToCartForm = new VarienForm('product_addtocart_form');
+
+    Event.observe(window, 'load', function() {
+        // Populate product form
+        populateForm('product_addtocart_form', productFormData);
+        editorLoad('<?php echo Mage::app()->getRequest()->getActionName(); ?>',<?php echo Mage::helper('web2print')->getChiliIframeInversedHeight(); ?>);
+    });
+
+    if($('btn-concept')) {
+        $('btn-concept').observe('click', function(e) {
+            if($('productOptions')) {
+                $('productOptions').setStyle({'display': 'block'});
+            }
+
+            if(productAddToCartForm.validator.validate() != true) {
+                $('productOptions').setStyle({'display': 'block'});
+            } else {
+                if($('productOptions')) {
+                    $('productOptions').setStyle({'display': 'none'});
+                }
+
+                try{
+                    SaveDocument();
+                }catch(error){
+                    alert(error.message+"\nDocument save failed");
+                    return;
+                }
+
+                data = $('product_addtocart_form').serialize();
+                new Ajax.Request(conceptUrl, {
+                    method: 'post',
+                    parameters:data,
+                    onSuccess: function(transport){
+                        var responseObject = transport.responseText.evalJSON();
+                        showNotification(responseObject.title, responseObject.content, '300', '120');
+                    }
+                });
+            }
+        });
+    }
+
+    if($('btn-cart')) {
+        $('btn-cart').observe('click', function(e) {
+            if($('productOptions')) {
+                $('productOptions').setStyle({'display': 'block'});
+            }
+            if(productAddToCartForm.validator.validate() != true) {
+                $('productOptions').setStyle({'display': 'block'});
+
+            } else {
+                if($('productOptions')) {
+                    $('productOptions').setStyle({'display': 'none'});
+                }
+
+                try{
+                    SaveDocument();
+                }catch(error){
+                    alert(error.message+"\nDocument save failed");
+                    return;
+                }
+
+                productAddToCartForm.submit(document.getElementById('btn-cart'), cartUrl);
+            }
+        });
+    }
+
+    productAddToCartForm.submit = function(button, url) {
+        var validated = true;
+
+        if (this.validator.validate()) {
+            var form = this.form;
+            var oldUrl = form.action;
+
+            form.action = url;
+            form.submit();
+        }
+    }.bind(productAddToCartForm);
+</script>
+</div>
+
+<!------------------------------CHILI EDITOR FRAME STARTS HERE------------------------------------->
+<!------------------------------CHILI EDITOR FRAME STARTS HERE------------------------------------->
+<!------------------------------CHILI EDITOR FRAME STARTS HERE------------------------------------->
+<?php if ($this->getChiliEditorUrl()) : ?>
+    <table width="90%" height="100%" style="margin-left:5%; margin-right:5%; margin-bottom:20px;">
+        <tr valign="top">
+            <?php if ($this->isChiliVariableHtmlFormEnabled()): ?>
+                <td id="jsInput" runat="server" width="310px">
+                    <div id="jsInputForm">
+                        <h3><?php echo Mage::helper('web2print')->__('Document Content'); ?></h3>
+                        <?php echo $this->getFormHtml(); ?>
+                    </div>
+                </td>
+            <?php endif; ?>
+            <td>
+                <iframe frameborder="0" src="<?php echo $this->getChiliEditorUrl(); ?>" onload="GetEditor()" id="iframe" width="100%" height="100%" ></iframe>
+            </td>
+        </tr>
+    </table>
+<?php else :
+    echo "<p>".$this->__("Service is currently not available. Please try again later.")."</p>";
+endif; ?>
+</div>
+
+
+

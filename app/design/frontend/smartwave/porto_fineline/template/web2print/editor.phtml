@@ -40,25 +40,30 @@ $_product = $this->getProduct();
     <input type="hidden" name="product_id" id="product_id" value="<?php echo $_product->getId(); ?>" />
     <input type="hidden" name="chili_document_id" id="chili_document_id" value="<?php echo $this->getChiliDocumentId(); ?>" />
     <input type="hidden" name="qty" id="qty" value="<?php echo ($this->getRequest()->getParam('qty')) ? $this->getRequest()->getParam('qty') : $_product->getStockItem()->getMinSaleQty(); ?>" />
-    <div class="editor-links">
-        <div class="left">
+	<div class="editor-links">   
+	<!-----------------------Left Buttons-------------------------->
+		<div class="left">
             <span>
-            <button type="button" class="button btn-cart" >
-                <span>
-                    <a href="javascript:history.go(-1)" style="color:#fff" title="<?php echo $this->__('Back'); ?>" class="">&lt;&lt; <?php echo $this->__('Back'); ?></a>            </span>
-            </button>
-
-      <div id="navigation">
-            <h3 id="headerNav"><?php echo Mage::helper('web2print')->__('Navigation'); ?></h3>
-        </div>
-            </span>
-        </div>
+				<button type="button" class="button btn-cart" >
+					<span>
+						<a href="javascript:history.go(-1)" style="color:#fff" title="<?php echo $this->__('Back'); ?>" class="">&lt;&lt; <?php echo $this->__('Back'); ?></a>
+					</span>
+				</button>
+				<div id="navigation">
+					<h3 id="headerNav"><?php echo Mage::helper('web2print')->__('Navigation'); ?></h3>
+				</div>
+			</span>
+		</div>
+	<!-----------------------Right Buttons-------------------------->		
         <div class="right">
             <?php if (count($_product->getOptions()) >= 1) { ?>
-                <span>
-                    <a href="#" class="actionLink" title="<?php echo $this->__('Configure options'); ?>" id="configure-options"><?php echo $this->__('Configure options'); ?></a>
-                    <div id="productOptions" style="display:none; position:absolute!important;">
-                        <div id="product-options-container">
+                <button type="button" class="button btn-cart" >
+					<span>
+                    	<a href="#" class="actionLink" title="<?php echo $this->__('Configure options'); ?>" id="configure-options" style="color:#fff;"><?php echo $this->__('Configure Options'); ?></a>
+					</span>
+				</button>
+                <div id="productOptions" style="position:absolute!important; display:none;">
+                     <div id="product-options-container" >
                             <?php
                             if ($this->hasOptions()):
                                 echo $this->getChildHtml('product_options_wrapper');
@@ -68,18 +73,55 @@ $_product = $this->getProduct();
                                     <span><?php echo $this->__('Save print options'); ?></span>
                                 </span>
                             </button>
-                        </div>
-                    </div>
-                </span>
+                     </div>
+                 </div>
             <?php } ?>
-            
-     			  <?php echo $this->getConceptActionButtonHtml(); ?>
-			<button type="button" class="button btn-cart" >
-              <span>
-                <a href="<?php echo $this->getChiliEditorUrl(); ?>" class="button btn-cart" style="color:#fff" title="Share Design" id="button btn-cart"><?php echo $this->__('Share URL'); ?></a>
-            </span>
-			</button>
 			
+     		<?php echo $this->getConceptActionButtonHtml(); ?>
+
+<?php
+    if (isset($_POST['colabToEmail']) && isset($_POST['colabFromEmail'])) {
+        $colabToEmail = $_POST['colabToEmail'];
+        $colabFromEmail = $_POST['colabFromEmail'];
+
+        if (!empty($colabToEmail) && !empty($colabFromEmail)) {
+            $to = $colabToEmail;
+            $subject = 'Colaborate with me on this item.';
+            $body = 'Please click this link to colaborate on this item with me' .$this->getChiliEditorUrl();
+            $headers = 'From: '.$colabFromEmail;
+
+            if (mail($to, $subject, $body, $headers)) {
+                echo '<script type="text/javascript">alert("Your link has been sent successfully.");</script>';
+            } else {
+                echo $this->getChiliEditorUrl();;
+            }
+
+        } else {
+            echo 'All fields are required.';
+        }
+    }
+?>
+
+<button type="button" class="button btn-cart" onclick="toggleForm();">
+<span><a href="#" id="colabButton" style="color: #fff;">Share</a></span>
+</button>
+		<div id="colabForm" style="display:none; position: absolute;">
+            <form action="" method="post">
+                <label>To: </label><br><input type="text" name="colabToEmail" ></input><br><br>
+                <label>From: </label><br><input type="email" name="colabFromEmail" ></input><br><br>
+                <input type="submit" value="Send">
+            </form>
+        </div>	
+
+
+
+            <button type="button" class="button btn-cart" >
+				<span>
+					<a href="<?php echo $this->getChiliEditorUrl(); ?>" class="button btn-cart" style="color:#fff" title="Share Design" id="button btn-cart" target="_blank"><?php echo $this->__('Share URL'); ?></a>
+				</span>
+			</button>
+
+
             <span>
                 <?php echo $this->getShoppingcartActionButtonHtml(); ?>
             </span>
@@ -94,6 +136,21 @@ $_product = $this->getProduct();
     var cartUrl = '<?php echo $this->getCartUrl(); ?>';
     var productOptionCount = '<?php echo count($_product->getOptions()); ?>';
     var productAddToCartForm = new VarienForm('product_addtocart_form');
+    
+/*    var shareButton = document.getElementById('colabButton');
+    shareButton.onclick = function (){
+        var div = document.getElementById('colabForm');
+            if (div.style.display !== 'none') {
+                    div.style.display = 'none';
+            }
+            else {
+                div.style.display = 'block';
+            }
+    };
+*/
+function toggleForm(){
+    $('colabForm').toggle();
+}
 
     Event.observe(window, 'load', function() {
         // Populate product form
@@ -169,18 +226,19 @@ $_product = $this->getProduct();
             form.action = url;
             form.submit();
         }
-    }.bind(productAddToCartForm);
+    }.bind(productAddToCartForm);   
 </script>
 </div>
 
-<!--CHILI EDITOR FRAME STARTS HERE---->
+
+<!--CHILI EDITOR FRAME STARTS HERE-->
 <?php if ($this->getChiliEditorUrl()) : ?>
     <table width="90%" height="100%" style="margin-left:5%; margin-right:5%; margin-bottom:20px;">
         <tr valign="top">
             <?php if ($this->isChiliVariableHtmlFormEnabled()): ?>
                 <td id="jsInput" runat="server" width="310px">
                     <div id="jsInputForm">
-                        <h3><?php echo Mage::helper('web2print')->__('Document content'); ?></h3>
+                        <h3><?php echo Mage::helper('web2print')->__('Document Content'); ?></h3>
                         <?php echo $this->getFormHtml(); ?>
                     </div>
                 </td>

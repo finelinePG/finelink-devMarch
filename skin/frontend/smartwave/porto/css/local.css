@@ -24,6 +24,15 @@ form{display:inline}
 fieldset{border:0}
 legend{display:none}
 
+/*Colab*/
+#colabForm {width: 300px; margin:10px; padding:5px; background-color:#fff; border: 1px solid #000; border-radius: 7px;}
+#colabForm input,select,textarea,button{font-size:12px;vertical-align:middle;color:#484747; border-radius: 4px; width: 100%;height: 32px;}
+#colabForm input.input-text,select,textarea{background:#fff;border:1px solid #ccc;padding:2px 8px;height:32px;color:#777;font-size:13px;border-radius:3px;}
+#colabForm select{background:#fff;border:1px solid #ccc;padding:2px 8px;height:32px;color:#777;font-size:13px;}
+#colabForm input.input-text,textarea{padding:8px;}
+#colabForm label{margin:0;vertical-align:middle;color:#777;font-size:13px;font-weight:normal; margin-bottom:5px;}
+
+
 /* Table */
 table{border:0;border-spacing:0;empty-cells:show;font-size:100%}
 caption,th,td{vertical-align:middle;text-align:left;font-weight:normal}
@@ -1479,6 +1488,9 @@ li.etalage_small_thumbs{margin-top:8px;top:100%}
 .product-options-bottom .add-to-cart-box{clear:both;float:left;padding-top:12px}
 .product-options-bottom .add-to-links{padding:0;text-align:left;display:inline-block;vertical-align:middle;float:right;margin:3px 0}
 .product-options-bottom .add-to-links li:first-child a {margin-left:0}
+
+
+#product-options-container {background:#b3b8bb; padding:10px;border-radius:7px;}
 
 .qty-holder{display:inline-block;vertical-align:middle;margin-right:7px;width:57px}
 .qty-changer{display:inline-block;vertical-align:middle}
