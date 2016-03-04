@@ -101,23 +101,14 @@
 	},
 	"expanded_folders":
 	[
-		"/C/wamp/www/magento",
-		"/C/wamp/www/magento/app/code/local",
-		"/C/wamp/www/magento/app/code/local/Chili",
-		"/C/wamp/www/magento/app/code/local/Chili/Web2print/Block",
-		"/C/wamp/www/magento/app/code/local/Chili/Web2print/Block/Product",
-		"/C/wamp/www/magento/app/code/local/Chili/Web2print/controllers",
-		"/C/wamp/www/magento/app/code/local/Chili/Web2print/etc",
-		"/C/wamp/www/magento/app/code/local/Chili/Web2print/Helper",
-		"/C/wamp/www/magento/app/code/local/Chili/Web2print/Model",
-		"/C/wamp/www/magento/js/web2print"
+		"/C/wamp/www/magento"
 	],
 	"file_history":
 	[
+		"/C/wamp/www/magento/.gitignore",
 		"/C/wamp/www/magento/skin/frontend/smartwave/porto_fineline/css/web2print/web2print.css",
 		"/C/wamp/www/magento/app/design/frontend/smartwave/porto_fineline/template/web2print/editor.phtml",
 		"/C/Users/martinl/AppData/Local/Temp/fz3temp-1/editor.phtml",
-		"/C/wamp/www/magento/.gitignore",
 		"/C/wamp/www/magento/app/code/local/Chili/Web2print/Model/Observer.php",
 		"/C/wamp/www/magento/app/code/local/Chili/Web2print/Model/Pdf.php",
 		"/C/wamp/www/magento/skin/frontend/smartwave/porto/css/local.css",
