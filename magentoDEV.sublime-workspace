@@ -3,36 +3,88 @@
 	{
 		"selected_items":
 		[
+			[
+				"cola",
+				"colabContainer"
+			],
+			[
+				"colab",
+				"colabContainer"
+			],
+			[
+				"edi",
+				"editorFrame"
+			],
+			[
+				"border",
+				"border-bottom"
+			],
+			[
+				"margin",
+				"margin-bottom"
+			],
+			[
+				"colabF",
+				"colabFromEmail"
+			],
+			[
+				"sub",
+				"submit"
+			],
+			[
+				"text",
+				"textarea	(local.css)"
+			],
+			[
+				"pos",
+				"position"
+			]
 		]
 	},
 	"buffers":
 	[
 		{
-			"file": "app/bootstrap.php",
+			"file": "skin/frontend/smartwave/porto_fineline/css/web2print/web2print.css",
 			"settings":
 			{
-				"buffer_size": 1184,
+				"buffer_size": 3560,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"contents": "// Place your settings in the file \"User/Preferences.sublime-settings\", which\n// overrides the settings in here.\n//\n// Settings may also be placed in file type specific options files, for\n// example, in Packages/Python/Python.sublime-settings for python files.\n{\n    // Sets the colors used within the text area\n    \"color_scheme\": \"Packages/Color Scheme - Default/Monokai.tmTheme\",\n\n    // Note that the font_face and font_size are overridden in the platform\n    // specific settings file, for example, \"Preferences (Linux).sublime-settings\".\n    // Because of this, setting them here will have no effect: you must set them\n    // in your User File Preferences.\n    \"font_face\": \"\",\n    \"font_size\": 10,\n\n    // Valid options are \"no_bold\", \"no_italic\", \"no_antialias\", \"gray_antialias\",\n    // \"subpixel_antialias\", \"no_round\" (OS X only), \"gdi\" (Windows only) and\n    // \"directwrite\" (Windows only)\n    \"font_options\": [],\n\n    // Characters that are considered to separate words\n    \"word_separators\": \"./\\\\()\\\"'-:,.;<>~!@#$%^&*|+=[]{}`~?\",\n\n    // Set to false to prevent line numbers being drawn in the gutter\n    \"line_numbers\": true,\n\n    // Set to false to hide the gutter altogether\n    \"gutter\": true,\n\n    // Spacing between the gutter and the text\n    \"margin\": 4,\n\n    // Fold buttons are the triangles shown in the gutter to fold regions of text\n    \"fold_buttons\": true,\n\n    // Hides the fold buttons unless the mouse is over the gutter\n    \"fade_fold_buttons\": true,\n\n    // Columns in which to display vertical rulers\n    \"rulers\": [],\n\n    // Set to true to turn spell checking on by default\n    \"spell_check\": false,\n\n    // The number of spaces a tab is considered equal to\n    \"tab_size\": 4,\n\n    // Set to true to insert spaces when tab is pressed\n    \"translate_tabs_to_spaces\": false,\n\n    // If translate_tabs_to_spaces is true, use_tab_stops will make tab and\n    // backspace insert/delete up to the next tabstop\n    \"use_tab_stops\": true,\n\n    // Set to false to disable detection of tabs vs. spaces on load\n    \"detect_indentation\": true,\n\n    // Calculates indentation automatically when pressing enter\n    \"auto_indent\": true,\n\n    // Makes auto indent a little smarter, e.g., by indenting the next line\n    // after an if statement in C. Requires auto_indent to be enabled.\n    \"smart_indent\": true,\n\n    // Adds whitespace up to the first open bracket when indenting. Requires\n    // auto_indent to be enabled.\n    \"indent_to_bracket\": false,\n\n    // Trims white space added by auto_indent when moving the caret off the\n    // line.\n    \"trim_automatic_white_space\": true,\n\n    // Disables horizontal scrolling if enabled.\n    // May be set to true, false, or \"auto\", where it will be disabled for\n    // source code, and otherwise enabled.\n    \"word_wrap\": \"auto\",\n\n    // Set to a value other than 0 to force wrapping at that column rather than the\n    // window width\n    \"wrap_width\": 0,\n\n    // Set to false to prevent word wrapped lines from being indented to the same\n    // level\n    \"indent_subsequent_lines\": true,\n\n    // Draws text centered in the window rather than left aligned\n    \"draw_centered\": false,\n\n    // Controls auto pairing of quotes, brackets etc\n    \"auto_match_enabled\": true,\n\n    // Word list to use for spell checking\n    \"dictionary\": \"Packages/Language - English/en_US.dic\",\n\n    // Sets which scopes are checked for spelling errors\n    \"spelling_selector\": \"markup.raw, source string.quoted - punctuation - meta.preprocessor.c.include, source comment - source comment.block.preprocessor, -(source, constant, keyword, storage, support, variable, markup.underline.link, meta.tag)\",\n\n    // Set to true to draw a border around the visible rectangle on the minimap.\n    // The color of the border will be determined by the \"minimapBorder\" key in\n    // the color scheme\n    \"draw_minimap_border\": false,\n\n    // Always visualise the viewport on the minimap, as opposed to only\n    // showing it on mouse over\n    \"always_show_minimap_viewport\": false,\n\n    // If enabled, will highlight any line with a caret\n    \"highlight_line\": false,\n\n    // Valid values are \"smooth\", \"phase\", \"blink\" and \"solid\".\n    \"caret_style\": \"smooth\",\n\n    // These settings control the size of the caret\n    \"caret_extra_top\": 0,\n    \"caret_extra_bottom\": 0,\n    \"caret_extra_width\": 0,\n\n    // Set to false to disable underlining the brackets surrounding the caret\n    \"match_brackets\": true,\n\n    // Set to false if you'd rather only highlight the brackets when the caret is\n    // next to one\n    \"match_brackets_content\": true,\n\n    // Set to false to not highlight square brackets. This only takes effect if\n    // match_brackets is true\n    \"match_brackets_square\": true,\n\n    // Set to false to not highlight curly brackets. This only takes effect if\n    // match_brackets is true\n    \"match_brackets_braces\": true,\n\n    // Set to false to not highlight angle brackets. This only takes effect if\n    // match_brackets is true\n    \"match_brackets_angle\": false,\n\n    // Enable visualization of the matching tag in HTML and XML\n    \"match_tags\": true,\n\n    // Highlights other occurrences of the currently selected text\n    \"match_selection\": true,\n\n    // Additional spacing at the top of each line, in pixels\n    \"line_padding_top\": 0,\n\n    // Additional spacing at the bottom of each line, in pixels\n    \"line_padding_bottom\": 0,\n\n    // Set to false to disable scrolling past the end of the buffer.\n    // On OS X, this value is overridden in the platform specific settings, so\n    // you'll need to place this line in your user settings to override it.\n    \"scroll_past_end\": true,\n\n    // This controls what happens when pressing up or down when on the first\n    // or last line.\n    // On OS X, this value is overridden in the platform specific settings, so\n    // you'll need to place this line in your user settings to override it.\n    \"move_to_limit_on_up_down\": false,\n\n    // Set to \"none\" to turn off drawing white space, \"selection\" to draw only the\n    // white space within the selection, and \"all\" to draw all white space\n    \"draw_white_space\": \"selection\",\n\n    // Set to false to turn off the indentation guides.\n    // The color and width of the indent guides may be customized by editing\n    // the corresponding .tmTheme file, and specifying the colors \"guide\",\n    // \"activeGuide\" and \"stackGuide\"\n    \"draw_indent_guides\": true,\n\n    // Controls how the indent guides are drawn, valid options are\n    // \"draw_normal\" and \"draw_active\". draw_active will draw the indent\n    // guides containing the caret in a different color.\n    \"indent_guide_options\": [\"draw_normal\"],\n\n    // Set to true to removing trailing white space on save\n    \"trim_trailing_white_space_on_save\": false,\n\n    // Set to true to ensure the last line of the file ends in a newline\n    // character when saving\n    \"ensure_newline_at_eof_on_save\": false,\n\n    // Set to true to automatically save files when switching to a different file\n    // or application\n    \"save_on_focus_lost\": false,\n\n    // Save via writing to an alternate file, and then renaming it over the\n    // original file.\n    \"atomic_save\": false,\n\n    // The encoding to use when the encoding can't be determined automatically.\n    // ASCII, UTF-8 and UTF-16 encodings will be automatically detected.\n    \"fallback_encoding\": \"Western (Windows 1252)\",\n\n    // Encoding used when saving new files, and files opened with an undefined\n    // encoding (e.g., plain ascii files). If a file is opened with a specific\n    // encoding (either detected or given explicitly), this setting will be\n    // ignored, and the file will be saved with the encoding it was opened\n    // with.\n    \"default_encoding\": \"UTF-8\",\n\n    // Files containing null bytes are opened as hexadecimal by default\n    \"enable_hexadecimal_encoding\": true,\n\n    // Determines what character(s) are used to terminate each line in new files.\n    // Valid values are 'system' (whatever the OS uses), 'windows' (CRLF) and\n    // 'unix' (LF only).\n    \"default_line_ending\": \"system\",\n\n    // When enabled, pressing tab will insert the best matching completion.\n    // When disabled, tab will only trigger snippets or insert a tab.\n    // Shift+tab can be used to insert an explicit tab when tab_completion is\n    // enabled.\n    \"tab_completion\": true,\n\n    // Enable auto complete to be triggered automatically when typing.\n    \"auto_complete\": true,\n\n    // The maximum file size where auto complete will be automatically triggered.\n    \"auto_complete_size_limit\": 4194304,\n\n    // The delay, in ms, before the auto complete window is shown after typing\n    \"auto_complete_delay\": 50,\n\n    // Controls what scopes auto complete will be triggered in\n    \"auto_complete_selector\": \"meta.tag - punctuation.definition.tag.begin, source - comment - string.quoted.double.block - string.quoted.single.block - string.unquoted.heredoc\",\n\n    // Additional situations to trigger auto complete\n    \"auto_complete_triggers\": [ {\"selector\": \"text.html\", \"characters\": \"<\"} ],\n\n    // By default, auto complete will commit the current completion on enter.\n    // This setting can be used to make it complete on tab instead.\n    // Completing on tab is generally a superior option, as it removes\n    // ambiguity between committing the completion and inserting a newline.\n    \"auto_complete_commit_on_tab\": false,\n\n    // Controls if auto complete is shown when snippet fields are active.\n    // Only relevant if auto_complete_commit_on_tab is true.\n    \"auto_complete_with_fields\": false,\n\n    // Controls what happens when pressing the up key while the first item in\n    // the auto complete window is selected: if false, the window is hidden,\n    // otherwise the last item in the window is selected. Likewise for the\n    // down key when the last item is selected.\n    \"auto_complete_cycle\": false,\n\n    // Automatically close HTML and XML tags when </ is entered.\n    \"auto_close_tags\": true,\n\n    // By default, shift+tab will only unindent if the selection spans\n    // multiple lines. When pressing shift+tab at other times, it'll insert a\n    // tab character - this allows tabs to be inserted when tab_completion is\n    // enabled. Set this to true to make shift+tab always unindent, instead of\n    // inserting tabs.\n    \"shift_tab_unindent\": false,\n\n    // If true, the copy and cut commands will operate on the current line\n    // when the selection is empty, rather than doing nothing.\n    \"copy_with_empty_selection\": true,\n\n    // If true, the selected text will be copied into the find panel when it's\n    // shown.\n    // On OS X, this value is overridden in the platform specific settings, so\n    // you'll need to place this line in your user settings to override it.\n    \"find_selected_text\": true,\n\n    // When auto_find_in_selection is enabled, the \"Find in Selection\" flag\n    // will be enabled automatically when multiple lines of text are selected\n    \"auto_find_in_selection\": false,\n\n    // When drag_text is enabled, clicking on selected text will begin a\n    // drag-drop operation. This is not currently implemented under Linux.\n    \"drag_text\": true,\n\n    //\n    // User Interface Settings\n    //\n\n    // The theme controls the look of Sublime Text's UI (buttons, tabs, scroll bars, etc)\n    \"theme\": \"Default.sublime-theme\",\n\n    // Set to 0 to disable smooth scrolling. Set to a value between 0 and 1 to\n    // scroll slower, or set to larger than 1 to scroll faster\n    \"scroll_speed\": 1.0,\n\n    // Controls side bar animation when expanding or collapsing folders\n    \"tree_animation_enabled\": true,\n\n    // Controls animation throughout the application\n    \"animation_enabled\": true,\n\n    // Makes tabs with modified files more visible\n    \"highlight_modified_tabs\": false,\n\n    \"show_tab_close_buttons\": true,\n\n    // Show folders in the side bar in bold\n    \"bold_folder_labels\": false,\n\n    // OS X only: Set to true to disable Lion style full screen support.\n    // Sublime Text must be restarted for this to take effect.\n    \"use_simple_full_screen\": false,\n\n    // OS X only. Valid values are true, false, and \"auto\". Auto will enable\n    // the setting when running on a screen 2560 pixels or wider (i.e., a\n    // Retina display). When this setting is enabled, OpenGL is used to\n    // accelerate drawing. Sublime Text must be restarted for changes to take\n    // effect.\n    \"gpu_window_buffer\": \"auto\",\n\n    // Valid values are \"system\", \"enabled\" and \"disabled\"\n    \"overlay_scroll_bars\": \"system\",\n\n    // Allows tabs to scroll left and right, instead of simply shrinking\n    \"enable_tab_scrolling\": true,\n\n    // Display file encoding in the status bar\n    \"show_encoding\": false,\n\n    // Display line endings in the status bar\n    \"show_line_endings\": false,\n\n    //\n    // Application Behavior Settings\n    //\n\n    // Exiting the application with hot_exit enabled will cause it to close\n    // immediately without prompting. Unsaved modifications and open files will\n    // be preserved and restored when next starting.\n    //\n    // Closing a window with an associated project will also close the window\n    // without prompting, preserving unsaved changes in the workspace file\n    // alongside the project.\n    \"hot_exit\": true,\n\n    // remember_full_screen will allow Sublime Text to start in full screen\n    // mode if it was exited in full screen mode. When set to false, Sublime\n    // Text will never start in full screen mode.\n    \"remember_full_screen\": false,\n\n    // Always prompt before reloading a file, even if the file hasn't been\n    // modified. The default behavior is to automatically reload a file if it\n    // hasn't been edited. If a file has unsaved changes, a prompt will always\n    // be shown.\n    \"always_prompt_for_file_reload\": false,\n\n    // OS X only: When files are opened from finder, or by dragging onto the\n    // dock icon, this controls if a new window is created or not.\n    \"open_files_in_new_window\": true,\n\n    // OS X only: This controls if an empty window is created at startup or not.\n    \"create_window_at_startup\": true,\n\n    // Set to true to close windows as soon as the last file is closed, unless\n    // there's a folder open within the window.\n    // On OS X, this value is overridden in the platform specific settings, so\n    // you'll need to place this line in your user settings to override it.\n    \"close_windows_when_empty\": false,\n\n    // Show the full path to files in the title bar.\n    // On OS X, this value is overridden in the platform specific settings, so\n    // you'll need to place this line in your user settings to override it.\n    \"show_full_path\": true,\n\n    // Shows the Build Results panel when building. If set to false, the Build\n    // Results can be shown via the Tools/Build Results menu.\n    \"show_panel_on_build\": true,\n\n    // Preview file contents when clicking on a file in the side bar. Double\n    // clicking or editing the preview will open the file and assign it a tab.\n    \"preview_on_click\": true,\n\n    // folder_exclude_patterns and file_exclude_patterns control which files\n    // are listed in folders on the side bar. These can also be set on a per-\n    // project basis.\n    \"folder_exclude_patterns\": [\".svn\", \".git\", \".hg\", \"CVS\"],\n    \"file_exclude_patterns\": [\"*.pyc\", \"*.pyo\", \"*.exe\", \"*.dll\", \"*.obj\",\"*.o\", \"*.a\", \"*.lib\", \"*.so\", \"*.dylib\", \"*.ncb\", \"*.sdf\", \"*.suo\", \"*.pdb\", \"*.idb\", \".DS_Store\", \"*.class\", \"*.psd\", \"*.db\", \"*.sublime-workspace\"],\n    // These files will still show up in the side bar, but won't be included in\n    // Goto Anything or Find in Files\n    \"binary_file_patterns\": [\"*.jpg\", \"*.jpeg\", \"*.png\", \"*.gif\", \"*.ttf\", \"*.tga\", \"*.dds\", \"*.ico\", \"*.eot\", \"*.pdf\", \"*.swf\", \"*.jar\", \"*.zip\"],\n\n    // File indexing parses all files in the side bar, and builds an index of\n    // their symbols. This is required for Goto Definition to work.\n    \"index_files\": true,\n\n    // Set the number threads to use for indexing. A value of 0 will make\n    // Sublime Text guess based on the number of cores. Use the index_files\n    // setting to disable all workers.\n    \"index_workers\": 0,\n\n    // index_exclude_patterns indicate which files won't be indexed.\n    \"index_exclude_patterns\": [\"*.log\"],\n\n    // List any packages to ignore here. When removing entries from this list,\n    // a restart may be required if the package contains plugins.\n    \"ignored_packages\": [\"Vintage\"]\n}\n",
-			"file": "/C/Users/martinl/AppData/Roaming/Sublime Text 3/Packages/Default/Preferences.sublime-settings",
-			"file_size": -1,
-			"file_write_time": -1,
+			"file": "app/design/frontend/smartwave/porto_fineline/template/web2print/editor.phtml",
 			"settings":
 			{
-				"buffer_size": 16426,
+				"buffer_size": 11001,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"contents": "<?php\n/**\n * Product view template\n *\n * @see Mage_Catalog_Block_Product_View\n * @see Mage_Review_Block_Product_View\n */\n$_product = $this->getProduct();\n    $store = Mage::app()->getStore();\n    $code  = $store->getCode();\n    $custom_block = Mage::getStoreConfig('porto_settings/header/static_block', $code);\n?>\n<script type=\"text/javascript\">\n    var optionsPrice = new Product.OptionsPrice(<?php echo $this->getJsonConfig() ?>);\n    var productFormData = '<?php echo http_build_query($this->getProductOptionsData()); // Get the stored POST data to allow page refresh ?>';\n    var actionName = '<?php echo Mage::app()->getRequest()->getActionName(); ?>';\n    var isLoggedIn = '<?php echo $this->helper('customer')->isLoggedIn(); ?>';\n\n\n    var frameWindow = null;\n    var editor = null;\n    var fullyLoaded = false;\n</script>\n\n\n\n\n\n<div id=\"messages_product_view\">\n    <?php echo $this->getMessagesBlock()->getGroupedHtml() ?>\n</div>\n\n<div class=\"product-view\">\n<div class=\"product-essential\">\n\n\n<!---TOP EDITOR BUTTONS-->\n<form action=\"<?php echo $this->getChiliAddToCartUrl($_product->getId()) ?>\" method=\"post\" id=\"product_addtocart_form\" <?php if ($_product->getOptions()): ?> enctype=\"multipart/form-data\"<?php endif; ?>>\n    <input type=\"hidden\" name=\"related_product\" id=\"related-products-field\" value=\"\" />\n    <input type=\"hidden\" name=\"product_id\" id=\"product_id\" value=\"<?php echo $_product->getId(); ?>\" />\n    <input type=\"hidden\" name=\"chili_document_id\" id=\"chili_document_id\" value=\"<?php echo $this->getChiliDocumentId(); ?>\" style=\"width:100px\"/>\n    <input type=\"hidden\" name=\"qty\" id=\"qty\" value=\"<?php echo ($this->getRequest()->getParam('qty')) ? $this->getRequest()->getParam('qty') : $_product->getStockItem()->getMinSaleQty(); ?>\" />\n	<div class=\"editor-links\">   \n	<!-----------------------Left Buttons-------------------------->\n		<div class=\"left\">\n            <span>\n				<button type=\"button\" class=\"button btn-cart\" >\n					<span>\n						<a href=\"javascript:history.go(-1)\" style=\"color:#fff\" title=\"<?php echo $this->__('Back'); ?>\" class=\"\">&lt;&lt; <?php echo $this->__('Back'); ?></a>\n					</span>\n				</button>\n				<div id=\"navigation\">\n					<h3 id=\"headerNav\"><?php echo Mage::helper('web2print')->__('Navigation'); ?></h3>\n				</div>\n			</span>\n		</div>\n	<!-----------------------Right Buttons-------------------------->		\n        <div class=\"right\">\n            <?php if (count($_product->getOptions()) >= 1) { ?>\n                <button type=\"button\" class=\"button btn-cart\" >\n					<span>\n                    	<a href=\"#\" class=\"actionLink\" title=\"<?php echo $this->__('Configure options'); ?>\" id=\"configure-options\" style=\"color:#fff;\"><?php echo $this->__('Configure Options'); ?></a>\n					</span>\n				</button>\n                <div id=\"productOptions\" style=\"position:absolute!important; display:none;\">\n                     <div id=\"product-options-container\" >\n                            <?php\n                            if ($this->hasOptions()):\n                                echo $this->getChildHtml('product_options_wrapper');\n                            endif; ?>\n                            <button type=\"button\" title=\"<?php echo $this->__('Save print options'); ?>\" class=\"button btn-cart\" id=\"save-options\">\n                                <span>\n                                    <span><?php echo $this->__('Save print options'); ?></span>\n                                </span>\n                            </button>\n                     </div>\n                 </div>\n            <?php } ?>\n			\n     		<?php echo $this->getConceptActionButtonHtml(); ?>\n\n\n\n<!--Original Share URL Button-->\n           <button type=\"button\" class=\"button btn-cart\" >\n				<span>\n					<a href=\"<?php echo $this->getChiliEditorUrl(); ?>\" class=\"button btn-cart\" style=\"color:#fff\" title=\"Share Design\" id=\"button btn-cart\" target=\"_blank\"><?php echo $this->__('Share URL'); ?></a>\n				</span>\n			</button>\n<!--ends here-->\n\n            <span>\n                <?php echo $this->getShoppingcartActionButtonHtml(); ?>\n            </span>\n        </div>\n    </div>\n</form>\n\n<?php\n    if (isset($_POST['colabToEmail']) && isset($_POST['colabFromEmail'])) {\n        $colabToEmail = $_POST['colabToEmail'];\n        $colabFromEmail = $_POST['colabFromEmail'];\n\n        if (!empty($colabToEmail) && !empty($colabFromEmail)) {\n            $to = $colabToEmail;\n            $subject = 'Colaborate with me on this item from Finelink 2.0.';\n            $headers = \"From: \".$colabFromEmail . \"\\r\\n\";\n            $headers .= \"CC: \".$colabFromEmail . \"\\r\\n\";\n            $headers .= \"MIME-Version: 1.0\\r\\n\";\n            $headers .= \"Content-Type: text/html; charset=ISO-8859-1\\r\\n\";\n            $message = '<html><body>';\n            $message .= '<p>Please click this link to colaborate on this item with me</p>';\n            $message .= '<a href=\"http://google.com\">Click Here</a>'; \n            $message .= '</body></html>';\n\n\n            if (mail($to, $subject, $message, $headers)) {\n                echo \n                '<script type=\"text/javascript\">\n                alert(\"Your link has been sent successfully.\");\n                </script>';\n            } else {\n                echo $this->getChiliEditorUrl();;\n            }\n\n        } else {\n            echo 'All fields are required.';\n        }\n    }\n?>\n<div class=\"right\" style=\"margin-top: 10px;\">\n<button type=\"button\" class=\"button btn-cart\" onclick=\"toggleForm();\">\n<span><a href=\"#\" id=\"colabButton\" style=\"color: #fff;\">Share</a></span>\n</button>\n        <div id=\"colabContainer\" style=\"display:none; position: absolute;\">\n            <form action=\"\" method=\"post\" class=\"colabForm\">\n                <h2>Send to Collaborate</h2>\n                <label>To: </label><br><input type=\"email\" name=\"colabToEmail\" ></input><br><br>\n                <label>From: </label><br><input type=\"email\" name=\"colabFromEmail\" ></input><br><br>\n                <input type=\"submit\" value=\"Send\"/>\n            </form>\n            <form action=\"\" method=\"\" class=\"colabForm\" id=\"loadURL\" target=\"iframe\">\n                <h2>Load Document</h2>\n                <label>Paste URL: </label><br><input type=\"text\" name=\"colabURL\" value=\"Paste URL Here\" id=\"colabURL\" />\n                <br><br>\n                <input type=\"button\"  value=\"Load\" onclick=\"go();\"/>\n            </form> \n        </div>  \n<!-- Add this in if you want a \"load\" button. This only works if the window hasn't been navigated away from -->\n<!-- <button type=\"button\" class=\"button btn-cart\">\n<span><a href=\"<?php echo $this->getChiliEditorUrl(); ?>\" target=\"iframe\">Load</a></span>\n</button> -->\n</div>\n\n\n\n\n\n<script type=\"text/javascript\">\n\n    var editorMode = '<?php echo $this->getMode(); ?>';\n    var conceptUrl = '<?php echo $this->getConceptUrl(); ?>';\n    var colaborateURL = '<?php echo $this->getChiliEditorUrl(); ?>';\n    var cartUrl = '<?php echo $this->getCartUrl(); ?>';\n    var productOptionCount = '<?php echo count($_product->getOptions()); ?>';\n    var productAddToCartForm = new VarienForm('product_addtocart_form');\n    \n\nfunction go(){\n    var colabURL = document.getElementById('colabURL').value;\n    colaborateURL = colabURL;\n    document.getElementById('iframe').src = colaborateURL;\n    document.getElementById(\"loadURL\").reset();\n    $('colabContainer').hide();\n};\n\nfunction toggleForm(){\n    $('colabContainer').toggle();\n}\n\n    Event.observe(window, 'load', function() {\n        // Populate product form\n        populateForm('product_addtocart_form', productFormData);\n        editorLoad('<?php echo Mage::app()->getRequest()->getActionName(); ?>',<?php echo Mage::helper('web2print')->getChiliIframeInversedHeight(); ?>);\n    });\n\n    if($('btn-concept')) {\n        $('btn-concept').observe('click', function(e) {\n            if($('productOptions')) {\n                $('productOptions').setStyle({'display': 'block'});\n            }\n\n            if(productAddToCartForm.validator.validate() != true) {\n                $('productOptions').setStyle({'display': 'block'});\n            } else {\n                if($('productOptions')) {\n                    $('productOptions').setStyle({'display': 'none'});\n                }\n\n                try{\n                    SaveDocument();\n                }catch(error){\n                    alert(error.message+\"\\nDocument save failed\");\n                    return;\n                }\n\n                data = $('product_addtocart_form').serialize();\n                new Ajax.Request(conceptUrl, {\n                    method: 'post',\n                    parameters:data,\n                    onSuccess: function(transport){\n                        var responseObject = transport.responseText.evalJSON();\n                        showNotification(responseObject.title, responseObject.content, '300', '120');\n                    }\n                });\n            }\n        });\n    }\n\n    if($('btn-cart')) {\n        $('btn-cart').observe('click', function(e) {\n            if($('productOptions')) {\n                $('productOptions').setStyle({'display': 'block'});\n            }\n            if(productAddToCartForm.validator.validate() != true) {\n                $('productOptions').setStyle({'display': 'block'});\n\n            } else {\n                if($('productOptions')) {\n                    $('productOptions').setStyle({'display': 'none'});\n                }\n\n                try{\n                    SaveDocument();\n                }catch(error){\n                    alert(error.message+\"\\nDocument save failed\");\n                    return;\n                }\n\n                productAddToCartForm.submit(document.getElementById('btn-cart'), cartUrl);\n            }\n        });\n    }\n\n    productAddToCartForm.submit = function(button, url) {\n        var validated = true;\n\n        if (this.validator.validate()) {\n            var form = this.form;\n            var oldUrl = form.action;\n\n            form.action = url;\n            form.submit();\n        }\n    }.bind(productAddToCartForm);   \n</script>\n</div>\n\n\n<!--CHILI EDITOR FRAME STARTS HERE-->\n<?php if ($this->getChiliEditorUrl()) : ?>\n    <table width=\"90%\" height=\"100%\" style=\"margin-left:5%; margin-right:5%; margin-bottom:20px;\">\n        <tr valign=\"top\">\n            <?php if ($this->isChiliVariableHtmlFormEnabled()): ?>\n                <td id=\"jsInput\" runat=\"server\" width=\"310px\">\n                    <div id=\"jsInputForm\">\n                        <h3><?php echo Mage::helper('web2print')->__('Document Content'); ?></h3>\n                        <?php echo $this->getFormHtml(); ?>\n                    </div>\n                </td>\n            <?php endif; ?>\n            <td>\n                <iframe frameborder=\"0\" src=\"<?php echo $this->getChiliEditorUrl(); ?>\" onload=\"GetEditor()\" id=\"iframe\" width=\"100%\" height=\"100%\" name=\"iframe\"></iframe>\n            </td>\n        </tr>\n    </table>\n<?php else :\n    echo \"<p>\".$this->__(\"Service is currently not available. Please try again later.\").\"</p>\";\nendif; ?>\n</div>\n\n\n\n\n",
+			"file": "/C/Users/martinl/AppData/Local/Temp/fz3temp-1/editor.phtml",
+			"file_size": 11008,
+			"file_write_time": 131015161111519500,
+			"settings":
+			{
+				"buffer_size": 11008,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"contents": "Searching 9916 files for \"getChiliEditorUrl\"\n\nC:\\wamp\\www\\magento\\editor.phtml:\n   82  			<button type=\"button\" class=\"button btn-cart\" >\n   83  				<span>\n   84: 					<a href=\"<?php echo $this->getChiliEditorUrl(); ?>\" class=\"button btn-cart\" style=\"color:#fff\" title=\"Share Design\" id=\"button btn-cart\" target=\"_blank\"><?php echo $this->__('Share URL'); ?></a>\n   85  				</span>\n   86  			</button>\n   ..\n  181  <!------------------------------CHILI EDITOR FRAME STARTS HERE------------------------------------->\n  182  <!------------------------------CHILI EDITOR FRAME STARTS HERE------------------------------------->\n  183: <?php if ($this->getChiliEditorUrl()) : ?>\n  184      <table width=\"90%\" height=\"100%\" style=\"margin-left:5%; margin-right:5%; margin-bottom:20px;\">\n  185          <tr valign=\"top\">\n  ...\n  193              <?php endif; ?>\n  194              <td>\n  195:                 <iframe frameborder=\"0\" src=\"<?php echo $this->getChiliEditorUrl(); ?>\" onload=\"GetEditor()\" id=\"iframe\" width=\"100%\" height=\"100%\" ></iframe>\n  196              </td>\n  197          </tr>\n\nC:\\wamp\\www\\magento\\app\\code\\local\\Chili\\Web2print\\Block\\Editor.php:\n   10      }\n   11  \n   12:     public function getChiliEditorUrl() {\n   13:         return $this->_editor->getChiliEditorUrl();\n   14      }\n   15  \n\nC:\\wamp\\www\\magento\\app\\code\\local\\Chili\\Web2print\\Model\\Editor.php:\n  111       * @return string URL to Chili editor\n  112       */\n  113:     public function getChiliEditorUrl()\n  114      {\n  115          return $this->_chiliEditorUrl;\n\nC:\\wamp\\www\\magento\\app\\design\\frontend\\base\\default\\template\\web2print\\editor.phtml:\n  169  \n  170  <!--CHILI EDITOR FRAME STARTS HERE---->\n  171: <?php if ($this->getChiliEditorUrl()) : ?>\n  172      <table width=\"90%\" height=\"1000px\" style=\"margin-left:5%; margin-right:5%; margin-bottom:20px;\">\n  173          <tr valign=\"top\">\n  ...\n  181              <?php endif; ?>\n  182              <td>\n  183:                 <iframe frameborder=\"0\" src=\"<?php echo $this->getChiliEditorUrl(); ?>\" onload=\"GetEditor()\" id=\"iframe\" width=\"100%\" height=\"100%\"></iframe>\n  184              </td>\n  185          </tr>\n\nC:\\wamp\\www\\magento\\app\\design\\frontend\\smartwave\\porto_fineline\\template\\web2print\\editor.phtml:\n   85             <button type=\"button\" class=\"button btn-cart\" >\n   86  				<span>\n   87: 					<a href=\"<?php echo $this->getChiliEditorUrl(); ?>\" class=\"button btn-cart\" style=\"color:#fff\" title=\"Share Design\" id=\"button btn-cart\" target=\"_blank\"><?php echo $this->__('Share URL'); ?></a>\n   88  				</span>\n   89  			</button>\n   ..\n  103              $to = $colabToEmail;\n  104              $subject = 'Colaborate with me on this item.';\n  105:             $body = 'Please click this link to colaborate on this item with me' .$this->getChiliEditorUrl();\n  106              $headers = 'From: '.$colabFromEmail;\n  107  \n  ...\n  109                  echo '<script type=\"text/javascript\">alert(\"Your link has been sent successfully.\");</script>';\n  110              } else {\n  111:                 echo $this->getChiliEditorUrl();;\n  112              }\n  113  \n  ...\n  258  \n  259  <!--CHILI EDITOR FRAME STARTS HERE-->\n  260: <?php if ($this->getChiliEditorUrl()) : ?>\n  261      <table width=\"90%\" height=\"100%\" style=\"margin-left:5%; margin-right:5%; margin-bottom:20px;\">\n  262          <tr valign=\"top\">\n  ...\n  270              <?php endif; ?>\n  271              <td>\n  272:                 <iframe frameborder=\"0\" src=\"<?php echo $this->getChiliEditorUrl(); ?>\" onload=\"GetEditor()\" id=\"iframe\" width=\"100%\" height=\"100%\" name=\"iframe\"></iframe>\n  273              </td>\n  274          </tr>\n\n13 matches across 5 files\n",
+			"settings":
+			{
+				"buffer_size": 3684,
 				"line_ending": "Windows",
-				"read_only": true,
+				"name": "Find Results",
 				"scratch": true
 			}
 		},
 		{
-			"file": "/C/Users/martinl/AppData/Roaming/Sublime Text 3/Packages/User/Preferences.sublime-settings",
+			"file": "app/code/local/Chili/Web2print/Model/Editor.php",
 			"settings":
 			{
-				"buffer_size": 0,
+				"buffer_size": 3502,
 				"line_ending": "Unix"
 			}
 		}
@@ -44,10 +96,14 @@
 	"build_varint": "",
 	"command_palette":
 	{
-		"height": 354.0,
-		"last_filter": "sftp",
+		"height": 392.0,
+		"last_filter": "packa",
 		"selected_items":
 		[
+			[
+				"packa",
+				"Package Control: Install Package"
+			],
 			[
 				"sftp",
 				"SFTP: Browse Server…"
@@ -69,7 +125,7 @@
 				"Package Control: Install Package"
 			]
 		],
-		"width": 510.0
+		"width": 528.0
 	},
 	"console":
 	{
@@ -92,36 +148,56 @@
 	[
 		"/C/wamp/www/magento",
 		"/C/wamp/www/magento/app",
-		"/C/wamp/www/magento/app/code/community",
-		"/C/wamp/www/magento/app/code/community/Aitoc/Aitsys",
-		"/C/wamp/www/magento/app/code/community/Aitoc/Aitsys/Abstract",
-		"/C/wamp/www/magento/app/code/community/Aitoc/Aitsys/Abstract/Adminhtml",
-		"/C/wamp/www/magento/app/code/community/Aitoc/Aitsys/Model",
-		"/C/wamp/www/magento/app/code/community/Cm",
-		"/C/wamp/www/magento/app/code/core/Mage/Admin",
-		"/C/wamp/www/magento/app/code/core/Mage/Admin/Helper",
-		"/C/wamp/www/magento/app/code/core/Mage/Admin/Helper/Rules",
-		"/C/wamp/www/magento/app/code/core/Mage/Admin/Model"
+		"/C/wamp/www/magento/app/code",
+		"/C/wamp/www/magento/app/code/local",
+		"/C/wamp/www/magento/app/code/local/Chili",
+		"/C/wamp/www/magento/app/code/local/Chili/Web2print",
+		"/C/wamp/www/magento/app/code/local/Chili/Web2print/Block",
+		"/C/wamp/www/magento/app/code/local/Chili/Web2print/Block/Product",
+		"/C/wamp/www/magento/app/code/local/Chili/Web2print/Block/Product/View",
+		"/C/wamp/www/magento/app/code/local/Chili/Web2print/Block/Product/Widget",
+		"/C/wamp/www/magento/app/code/local/Chili/Web2print/controllers",
+		"/C/wamp/www/magento/app/code/local/Chili/Web2print/etc",
+		"/C/wamp/www/magento/app/code/local/Chili/Web2print/Helper",
+		"/C/wamp/www/magento/app/code/local/Chili/Web2print/Model",
+		"/C/wamp/www/magento/js",
+		"/C/wamp/www/magento/js/web2print"
 	],
 	"file_history":
 	[
+		"/C/wamp/www/magento/app/code/local/Chili/Web2print/Model/Observer.php",
+		"/C/wamp/www/magento/app/code/local/Chili/Web2print/Model/Pdf.php",
+		"/C/wamp/www/magento/skin/frontend/smartwave/porto/css/local.css",
+		"/C/Users/martinl/Desktop/Addtocart.php",
+		"/C/wamp/www/magento/app/design/frontend/smartwave/porto/template/checkout/cart.phtml",
+		"/C/wamp/www/magento/app/design/frontend/smartwave/porto/template/catalog/product/view/type/default.phtml",
+		"/C/wamp/www/magento/skin/frontend/smartwave/porto_fineline/css/web2print/web2print.css",
+		"/C/wamp/www/magento/app/design/frontend/smartwave/porto_fineline/template/web2print/cart/item/default.phtml",
+		"/C/wamp/www/magento/app/design/frontend/smartwave/porto_fineline/template/web2print/concept/view.phtml",
+		"/C/Users/martinl/AppData/Local/Temp/fz3temp-1/override.css",
+		"/C/Users/martinl/AppData/Local/Temp/fz3temp-1/editor.phtml",
+		"/C/wamp/www/magento/app/design/frontend/smartwave/porto_fineline/template/web2print/editor.phtml",
+		"/C/wamp/www/magento/app/code/local/Chili/Web2print/etc/config.xml",
+		"/C/wamp/www/magento/app/code/local/Smartwave/QuickView/etc/adminhtml.xml",
+		"/C/wamp/www/magento/app/etc/modules/Tawk_Widget.xml",
+		"/C/wamp/www/magento/app/etc/config.xml",
+		"/C/Users/martinl/AppData/Roaming/Sublime Text 3/Packages/User/Preferences.sublime-settings",
 		"/C/Users/martinl/AppData/Roaming/Sublime Text 3/Packages/Default/Preferences.sublime-settings",
 		"/C/wamp/www/magento/magentoDEV.sublime-project",
 		"/C/wamp/www/magento/sftp-config.json",
 		"/C/wamp/www/magento/getOrder.php",
-		"/C/Users/martinl/AppData/Roaming/Sublime Text 3/Packages/User/Preferences.sublime-settings",
-		"/C/Users/martinl/AppData/Roaming/Sublime Text 3/Packages/Git/Git.sublime-settings",
-		"/C/Users/martinl/AppData/Local/Temp/fz3temp-1/editor.phtml"
+		"/C/Users/martinl/AppData/Roaming/Sublime Text 3/Packages/Git/Git.sublime-settings"
 	],
 	"find":
 	{
-		"height": 70.0
+		"height": 34.0
 	},
 	"find_in_files":
 	{
-		"height": 0.0,
+		"height": 90.0,
 		"where_history":
 		[
+			""
 		]
 	},
 	"find_state":
@@ -129,6 +205,31 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"body",
+			"getChiliEditorUrl",
+			"AddToCartUrl",
+			"GetEditor",
+			"getConceptUrl",
+			"getChiliEditorUrl",
+			"btn-cart",
+			"button btn-cart",
+			"submit",
+			"form",
+			"SaveDocument",
+			"productAddToCartForm",
+			"Shopping cart",
+			"qty",
+			"aty",
+			"input-text",
+			"input-text qty",
+			"cart",
+			"shopping-cart",
+			"a-right",
+			"cart-table",
+			"odd",
+			"getShoppingcartActionButtonHtml",
+			"form",
+			"livechat",
 			"Mage_Livechat_Helper_Data"
 		],
 		"highlight": true,
@@ -152,19 +253,19 @@
 			[
 				{
 					"buffer": 0,
-					"file": "app/bootstrap.php",
-					"semi_transient": true,
+					"file": "skin/frontend/smartwave/porto_fineline/css/web2print/web2print.css",
+					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1184,
+						"buffer_size": 3560,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								769,
-								769
+								2734,
+								2734
 							]
 						],
 						"settings":
@@ -173,10 +274,12 @@
 							"incomplete_sync": null,
 							"remote_loading": false,
 							"synced": false,
-							"syntax": "Packages/PHP/PHP.sublime-syntax"
+							"syntax": "Packages/CSS/CSS.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 387.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 2,
@@ -184,19 +287,19 @@
 				},
 				{
 					"buffer": 1,
-					"file": "/C/Users/martinl/AppData/Roaming/Sublime Text 3/Packages/Default/Preferences.sublime-settings",
+					"file": "app/design/frontend/smartwave/porto_fineline/template/web2print/editor.phtml",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 16426,
+						"buffer_size": 11001,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								16426,
-								16426
+								4923,
+								4923
 							]
 						],
 						"settings":
@@ -205,10 +308,12 @@
 							"incomplete_sync": null,
 							"remote_loading": false,
 							"synced": false,
-							"syntax": "Packages/JavaScript/JSON.sublime-syntax"
+							"syntax": "Packages/PHP/PHP.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 1470.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 1,
@@ -216,11 +321,140 @@
 				},
 				{
 					"buffer": 2,
-					"file": "/C/Users/martinl/AppData/Roaming/Sublime Text 3/Packages/User/Preferences.sublime-settings",
+					"file": "/C/Users/martinl/AppData/Local/Temp/fz3temp-1/editor.phtml",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 0,
+						"buffer_size": 11008,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								4536,
+								4536
+							]
+						],
+						"settings":
+						{
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/PHP/PHP.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 1728.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 3684,
+						"regions":
+						{
+							"match":
+							{
+								"flags": 112,
+								"regions":
+								[
+									[
+										195,
+										212
+									],
+									[
+										648,
+										665
+									],
+									[
+										948,
+										965
+									],
+									[
+										1208,
+										1225
+									],
+									[
+										1268,
+										1285
+									],
+									[
+										1471,
+										1488
+									],
+									[
+										1716,
+										1733
+									],
+									[
+										2018,
+										2035
+									],
+									[
+										2381,
+										2398
+									],
+									[
+										2795,
+										2812
+									],
+									[
+										3068,
+										3085
+									],
+									[
+										3202,
+										3219
+									],
+									[
+										3502,
+										3519
+									]
+								],
+								"scope": ""
+							}
+						},
+						"selection":
+						[
+							[
+								1090,
+								1090
+							]
+						],
+						"settings":
+						{
+							"default_dir": "C:\\wamp\\www\\magento",
+							"detect_indentation": false,
+							"incomplete_sync": null,
+							"line_numbers": false,
+							"output_tag": 1,
+							"result_base_dir": "",
+							"result_file_regex": "^([^ 	].*):$",
+							"result_line_regex": "^ +([0-9]+):",
+							"scroll_past_end": true,
+							"syntax": "Packages/Default/Find Results.hidden-tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 4,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "app/code/local/Chili/Web2print/Model/Editor.php",
+					"semi_transient": true,
+					"settings":
+					{
+						"buffer_size": 3502,
 						"regions":
 						{
 						},
@@ -233,17 +467,17 @@
 						],
 						"settings":
 						{
-							"color_scheme": "Packages/User/Color Highlighter/themes/Monokai (SL).tmTheme",
-							"incomplete_sync": null,
 							"remote_loading": false,
 							"synced": false,
-							"syntax": "Packages/JavaScript/JSON.sublime-syntax"
+							"syntax": "Packages/PHP/PHP.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 1296.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 0,
+					"stack_index": 3,
 					"type": "text"
 				}
 			]
@@ -251,11 +485,11 @@
 	],
 	"incremental_find":
 	{
-		"height": 28.0
+		"height": 26.0
 	},
 	"input":
 	{
-		"height": 0.0
+		"height": 34.0
 	},
 	"layout":
 	{
@@ -296,7 +530,7 @@
 	"project": "magentoDEV.sublime-project",
 	"replace":
 	{
-		"height": 52.0
+		"height": 48.0
 	},
 	"save_all_on_build": true,
 	"select_file":
@@ -305,6 +539,10 @@
 		"last_filter": "",
 		"selected_items":
 		[
+			[
+				"livechat",
+				"app\\code\\local\\Smartwave\\QuickView\\etc\\adminhtml.xml"
+			]
 		],
 		"width": 0.0
 	},

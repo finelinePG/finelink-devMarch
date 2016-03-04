@@ -25,12 +25,7 @@ fieldset{border:0}
 legend{display:none}
 
 /*Colab*/
-#colabForm {width: 300px; margin:10px; padding:5px; background-color:#fff; border: 1px solid #000; border-radius: 7px;}
-#colabForm input,select,textarea,button{font-size:12px;vertical-align:middle;color:#484747; border-radius: 4px; width: 100%;height: 32px;}
-#colabForm input.input-text,select,textarea{background:#fff;border:1px solid #ccc;padding:2px 8px;height:32px;color:#777;font-size:13px;border-radius:3px;}
-#colabForm select{background:#fff;border:1px solid #ccc;padding:2px 8px;height:32px;color:#777;font-size:13px;}
-#colabForm input.input-text,textarea{padding:8px;}
-#colabForm label{margin:0;vertical-align:middle;color:#777;font-size:13px;font-weight:normal; margin-bottom:5px;}
+
 
 
 /* Table */
@@ -411,6 +406,7 @@ tr.show-details td{}
 tr.summary-details td{font-size:11px;background-color:#dae1e4;color:#626465}
 tr.summary-details-first td{border-top:1px solid #d2d8db}
 tr.summary-details-excluded{font-style:italic}
+
 
 /* Shopping cart tax info */
 .cart-tax-info{display:block}
@@ -1625,8 +1621,8 @@ li.etalage_small_thumbs{margin-top:8px;top:100%}
 .cart-table .btn-empty{float:right}
 .cart-table .btn-update{margin-left:10px}
 .cart-table .action-td{padding:15px 0}
-.cart-table .qty-holder{width:125px;white-space:nowrap}
-
+.cart-table .qty-holder{width:100px;white-space:nowrap}
+.cart-table .mp-ddq-el {width:80px;}
 /* Shopping Cart Collateral boxes */
 .cart .cart-collaterals{margin-bottom:45px}
 .cart-collaterals > *{margin-bottom:15px}

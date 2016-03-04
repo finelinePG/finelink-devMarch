@@ -38,7 +38,7 @@ $_product = $this->getProduct();
 <form action="<?php echo $this->getChiliAddToCartUrl($_product->getId()) ?>" method="post" id="product_addtocart_form" <?php if ($_product->getOptions()): ?> enctype="multipart/form-data"<?php endif; ?>>
     <input type="hidden" name="related_product" id="related-products-field" value="" />
     <input type="hidden" name="product_id" id="product_id" value="<?php echo $_product->getId(); ?>" />
-    <input type="hidden" name="chili_document_id" id="chili_document_id" value="<?php echo $this->getChiliDocumentId(); ?>" />
+    <input type="hidden" name="chili_document_id" id="chili_document_id" value="<?php echo $this->getChiliDocumentId(); ?>" style="width:100px"/>
     <input type="hidden" name="qty" id="qty" value="<?php echo ($this->getRequest()->getParam('qty')) ? $this->getRequest()->getParam('qty') : $_product->getStockItem()->getMinSaleQty(); ?>" />
 	<div class="editor-links">   
 	<!-----------------------Left Buttons-------------------------->
@@ -79,6 +79,23 @@ $_product = $this->getProduct();
 			
      		<?php echo $this->getConceptActionButtonHtml(); ?>
 
+
+
+<!--Original Share URL Button-->
+           <button type="button" class="button btn-cart" >
+				<span>
+					<a href="<?php echo $this->getChiliEditorUrl(); ?>" class="button btn-cart" style="color:#fff" title="Share Design" id="button btn-cart" target="_blank"><?php echo $this->__('Share URL'); ?></a>
+				</span>
+			</button>
+<!--ends here-->
+
+            <span>
+                <?php echo $this->getShoppingcartActionButtonHtml(); ?>
+            </span>
+        </div>
+    </div>
+</form>
+
 <?php
     if (isset($_POST['colabToEmail']) && isset($_POST['colabFromEmail'])) {
         $colabToEmail = $_POST['colabToEmail'];
@@ -86,12 +103,21 @@ $_product = $this->getProduct();
 
         if (!empty($colabToEmail) && !empty($colabFromEmail)) {
             $to = $colabToEmail;
-            $subject = 'Colaborate with me on this item.';
-            $body = 'Please click this link to colaborate on this item with me' .$this->getChiliEditorUrl();
-            $headers = 'From: '.$colabFromEmail;
+            $subject = 'Colaborate with me on this item from Finelink 2.0.';
+            $headers = "From: ".$colabFromEmail . "\r\n";
+            $headers .= "CC: ".$colabFromEmail . "\r\n";
+            $headers .= "MIME-Version: 1.0\r\n";
+            $headers .= "Content-Type: text/html; charset=ISO-8859-1\r\n";
+            $message = '<html><body>';
+            $message .= '<p>Please click this link to colaborate on this item with me <a href="<?php .$this->getChiliEditorUrl(); ?>">Click Here</a></p>'; 
+            $message .= '</body></html>';
 
-            if (mail($to, $subject, $body, $headers)) {
-                echo '<script type="text/javascript">alert("Your link has been sent successfully.");</script>';
+
+            if (mail($to, $subject, $message, $headers)) {
+                echo 
+                '<script type="text/javascript">
+                alert("Your link has been sent successfully.");
+                </script>';
             } else {
                 echo $this->getChiliEditorUrl();;
             }
@@ -101,55 +127,54 @@ $_product = $this->getProduct();
         }
     }
 ?>
-
+<div class="right" style="margin-top: 10px;">
 <button type="button" class="button btn-cart" onclick="toggleForm();">
 <span><a href="#" id="colabButton" style="color: #fff;">Share</a></span>
 </button>
-		<div id="colabForm" style="display:none; position: absolute;">
-            <form action="" method="post">
-                <label>To: </label><br><input type="text" name="colabToEmail" ></input><br><br>
+        <div id="colabContainer" style="display:none; position: absolute;">
+            <form action="" method="post" class="colabForm">
+                <h2>Send to Collaborate</h2>
+                <label>To: </label><br><input type="email" name="colabToEmail" ></input><br><br>
                 <label>From: </label><br><input type="email" name="colabFromEmail" ></input><br><br>
-                <input type="submit" value="Send">
+                <input type="submit" value="Send"/>
             </form>
-        </div>	
+            <form action="" method="" class="colabForm" id="loadURL" target="iframe">
+                <h2>Load Document</h2>
+                <label>Paste URL: </label><br><input type="text" name="colabURL" value="Paste URL Here" id="colabURL" />
+                <br><br>
+                <input type="button"  value="Load" onclick="go();"/>
+            </form> 
+        </div>  
+<!-- Add this in if you want a "load" button. This only works if the window hasn't been navigated away from -->
+<!-- <button type="button" class="button btn-cart">
+<span><a href="<?php echo $this->getChiliEditorUrl(); ?>" target="iframe">Load</a></span>
+</button> -->
+</div>
 
 
 
-            <button type="button" class="button btn-cart" >
-				<span>
-					<a href="<?php echo $this->getChiliEditorUrl(); ?>" class="button btn-cart" style="color:#fff" title="Share Design" id="button btn-cart" target="_blank"><?php echo $this->__('Share URL'); ?></a>
-				</span>
-			</button>
 
-
-            <span>
-                <?php echo $this->getShoppingcartActionButtonHtml(); ?>
-            </span>
-        </div>
-    </div>
-</form>
 
 <script type="text/javascript">
 
     var editorMode = '<?php echo $this->getMode(); ?>';
     var conceptUrl = '<?php echo $this->getConceptUrl(); ?>';
+    var colaborateURL = '<?php echo $this->getChiliEditorUrl(); ?>';
     var cartUrl = '<?php echo $this->getCartUrl(); ?>';
     var productOptionCount = '<?php echo count($_product->getOptions()); ?>';
     var productAddToCartForm = new VarienForm('product_addtocart_form');
     
-/*    var shareButton = document.getElementById('colabButton');
-    shareButton.onclick = function (){
-        var div = document.getElementById('colabForm');
-            if (div.style.display !== 'none') {
-                    div.style.display = 'none';
-            }
-            else {
-                div.style.display = 'block';
-            }
-    };
-*/
+
+function go(){
+    var colabURL = document.getElementById('colabURL').value;
+    colaborateURL = colabURL;
+    document.getElementById('iframe').src = colaborateURL;
+    document.getElementById("loadURL").reset();
+    $('colabContainer').hide();
+};
+
 function toggleForm(){
-    $('colabForm').toggle();
+    $('colabContainer').toggle();
 }
 
     Event.observe(window, 'load', function() {
@@ -244,7 +269,7 @@ function toggleForm(){
                 </td>
             <?php endif; ?>
             <td>
-                <iframe frameborder="0" src="<?php echo $this->getChiliEditorUrl(); ?>" onload="GetEditor()" id="iframe" width="100%" height="100%" ></iframe>
+                <iframe frameborder="0" src="<?php echo $this->getChiliEditorUrl(); ?>" onload="GetEditor()" id="iframe" width="100%" height="100%" name="iframe"></iframe>
             </td>
         </tr>
     </table>
@@ -252,6 +277,7 @@ function toggleForm(){
     echo "<p>".$this->__("Service is currently not available. Please try again later.")."</p>";
 endif; ?>
 </div>
+
 
 
 

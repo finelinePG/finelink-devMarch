@@ -81,13 +81,13 @@ if (Mage::helper('catalog/image')->chiliPreviewAllowed() && $documentId) {
     </td>
     <?php endif; */ ?>
 
-    <?php if ($this->helper('wishlist')->isAllowInCart()) : ?>
+<!--     <?php if ($this->helper('wishlist')->isAllowInCart()) : ?>
     <td class="a-center">
         <?php if ($isVisibleProduct): ?>
         <input type="checkbox" value="1" name="cart[<?php echo $_item->getId() ?>][wishlist]" title="<?php echo $this->__('Move to Wishlist') ?>" class="checkbox" />
         <?php endif ?>
     </td>
-    <?php endif ?>
+    <?php endif ?> -->
 
     <?php if ($canApplyMsrp): ?>
         <td class="a-right"<?php if ($this->helper('tax')->displayCartBothPrices()): ?> colspan="2"<?php endif; ?>>
@@ -187,9 +187,13 @@ if (Mage::helper('catalog/image')->chiliPreviewAllowed() && $documentId) {
         </td>
         <?php endif; ?>
     <?php endif; ?>
+
+
     <td class="a-center">
-        <input name="cart[<?php echo $_item->getId() ?>][qty]" value="<?php echo $this->getQty() ?>" size="4" title="<?php echo $this->__('Qty') ?>" class="input-text qty" maxlength="12" />
+        <input name="cart[<?php echo $_item->getId() ?>][qty]" value="<?php echo $this->getQty() ?>" size="10" title="<?php echo $this->__('Qty') ?>" class="input-text qty" style="width: 75px;" maxlength="12" />
     </td>
+
+
     <?php if ($this->helper('tax')->displayCartPriceExclTax() || $this->helper('tax')->displayCartBothPrices()): ?>
     <td class="a-right">
         <?php if (Mage::helper('weee')->typeOfDisplay($_item, array(1, 4), 'sales') && $_item->getWeeeTaxAppliedAmount()): ?>

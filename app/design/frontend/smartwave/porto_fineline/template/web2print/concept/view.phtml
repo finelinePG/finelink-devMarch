@@ -45,12 +45,13 @@ $this->_conceptCollection;
                         </div>
                         <textarea name="<?php echo 'description['.$conceptItem->getConceptId().']'; ?>" rows="2" cols="5" onfocus="focusComment(this)" onblur="focusComment(this)" title="Comment"><?php echo ($this->escapeHtml($conceptItem->getDescription())) ?></textarea>
                     </td>
-                    <td><div class="cart-cell">
-                            <div class="price-box">
+                    <td>
+                        <div class="cart-cell">
+<!--                             <div class="price-box">
                                 <span class="regular-price" id="product-price-93">
-                                    <span class="price"><?php echo Mage::helper('core')->currency($_product->getPrice(), true, false); ?></span>
+                                 <span class="price"><?php echo Mage::helper('core')->currency($_product->getPrice(), true, false); ?></span>
                                 </span>
-                            </div>
+                            </div> -->
                             <div class="add-to-cart-alt">
                                 <button type="button" title="Add to Cart" onclick="<?php echo 'addConceptToCart('.$conceptItem->getConceptId().')'; ?>" class="button btn-cart">
                                     <span><?php echo $this->__('Add to Cart') ?></span>

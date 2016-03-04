@@ -62,5 +62,79 @@ body.web2print-editor-load,
 .my-conceptlist textarea { display: block; height: 109px; width: 97%; }
 .concept-image{ display: block; height: 135px; margin-top: 5px; overflow: hidden; width: 135px; }
 
-/*Product options on chiliEditor Page*****************/
+/*Colab on chiliEditor Page*****************/
 
+
+#colabContainer {width: 300px; 
+    margin:10px; 
+    padding:5px; 
+    background-color:#fff; 
+    border: 1px solid #000; 
+    border-radius: 7px;
+}
+.colabForm h2 {
+    margin-bottom: 5px;
+    border-bottom: 1px solid #777;
+}
+
+ .colabForm input[type=submit] {
+    padding:10px 10px; 
+    color:#fff;
+    width: 25%;
+    background:#012168; 
+    border:0 none;
+    cursor:pointer;
+    -webkit-border-radius: 5px;
+    border-radius: 5px; 
+}
+ .colabForm input[type=button] {
+    padding:10px 10px; 
+    color:#fff;
+    width: 25%;
+    background:#012168; 
+    border:0 none;
+    cursor:pointer;
+    -webkit-border-radius: 5px;
+    border-radius: 5px; 
+}
+
+.colabForm input[type=text] {
+    background:#fff;
+    border:1px solid #ccc;
+    padding:2px 8px;
+    height:32px;
+    color:#777;
+    font-size:13px;
+    border-radius:3px;
+}
+.colabForm input[type=email] {
+    background:#fff;
+    border:1px solid #ccc;
+    padding:2px 8px;
+    height:32px;
+    color:#777;
+    font-size:13px;
+    border-radius:3px;
+}
+
+/*.colabForm select{
+    background:#fff;
+    border:1px solid #ccc;
+    padding:2px 8px;
+    height:32px;
+    color:#777;
+    font-size:13px;
+}
+
+.colabForm input.input-text,textarea{
+    padding:8px;
+}
+.colabForm label{
+    margin:0;
+    vertical-align:middle;
+    color:#777;
+    font-size:13px;
+    font-weight:normal; 
+    margin-bottom:5px;
+}
+*/
